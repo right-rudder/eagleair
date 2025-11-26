@@ -89,7 +89,7 @@ export const ADDRESS = "278 Aviation Rd., Pikeville, NC 27863";
 export const ADDRESS_CITY = "Pikeville";
 export const ADDRESS_STATE = "North Carolina";
 export const ADDRESS_ZIP = "27863";
-export const GMAPS = "https://maps.app.goo.gl/MIL2ATP";
+export const GMAPS = "https://maps.app.goo.gl/EagleAir";
 export const EMAIL_ADDRESS = "contact@eagleair.com";
 export const FACEBOOK_URL = "https://www.facebook.com/mil2ATP";
 export const INSTAGRAM_URL = "https://www.instagram.com/mil2ATP";
@@ -106,7 +106,7 @@ export const LOCATIONS = [
     city: "Pikeville",
     state: "NC",
     zip: "27863",
-    gMaps: "https://maps.app.goo.gl/MIL2ATP",
+    gMaps: "https://maps.app.goo.gl/EagleAir",
     phone: "(919) 526-4287",
     forwardPhone: "(919) 526-4287",
     fullAddress: "278 Aviation Rd. Pikeville, NC 27863",
