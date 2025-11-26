@@ -1,4 +1,4 @@
-// Service Worker for MIL2ATP
+// Service Worker for EagleAir
 const CACHE_VERSION = "v1";
 const CACHE_NAME = `eagleair-${CACHE_VERSION}`;
 
