@@ -1,152 +1,167 @@
 // CHANGE Default title
-export const SITE_TITLE = "M2A Aviation Academy | Professional Pilot Training";
+export const SITE_TITLE =
+  "Flight Training in Valparaiso, Indiana | Eagle Aircraft Flight Academy";
 
 // CHANGE default meta description
 export const SITE_DESCRIPTION =
-  "M2A Aviation Academy is an award-winning flight school offering professional pilot training from private pilot through airline careers. Our experienced instructors provide multi-engine training, instrument ratings, commercial certification, and flight instructor programs with transparent pricing and proven career pathways. Train with industry professionals at Wayne Executive Jetport, North Carolina.";
+  "Eagle Aircraft Flight Academy is a Cessna Pilot Center at Porter County Regional Airport in Valparaiso, Indiana, offering FAA Part 141 and Part 61 flight training from Private Pilot through ATP. Train with experienced instructors using Cessna and Tecnam aircraft, Elite simulators, and proven accelerated programs for local, VA, Liberty University, and international students.";
 
 // SEO tip -> keyword + city 1
 export const KEYWORDS = [
-  "M2A Aviation Academy",
-  "multi-engine rating",
-  "flight school North Carolina",
-  "multi-engine training",
-  "instrument rating training",
-  "commercial pilot license",
-  "private pilot training",
-  "CFI flight instructor",
-  "CFII MEI training",
-  "airline pilot training",
-  "professional pilot program",
-  "zero to airlines",
-  "flight training Wayne Executive Jetport",
-  "North Carolina flight school",
-  "multi-engine instructor",
-  "time building program",
-  "airline interview preparation",
-  "career pilot training",
-  "transparent flight training pricing",
-  "all-inclusive flight training",
+  "Eagle Aircraft Flight Academy",
+  "Eagle Aircraft Valparaiso",
+  "flight school Valparaiso Indiana",
+  "flight training Porter County Regional Airport",
+  "flight school KVPZ",
+  "Cessna Pilot Center Indiana",
+  "Part 141 flight school Indiana",
+  "private pilot training Valparaiso",
+  "instrument rating training Valparaiso",
+  "commercial pilot license Indiana",
+  "CFI training Indiana",
+  "ATP flight training Indiana",
+  "Chicagoland flight school",
+  "Northwest Indiana pilot training",
+  "Liberty University flight training affiliate",
+  "Valparaiso University flight training partner",
+  "VA approved flight training",
+  "SEVIS approved flight school",
+  "international student pilot program Indiana",
+  "Elite simulator flight training",
 ].join(", ");
 
 // Primary keywords by search intent
 export const PRIMARY_KEYWORDS = {
   informational:
-    "how to become airline pilot, multi-engine rating requirements, instrument rating training, commercial pilot license requirements, flight instructor certification",
+    "how to become a pilot, private pilot license requirements, instrument rating training, commercial pilot license requirements, certified flight instructor training, ATP flight training options",
   navigational:
-    "M2A Aviation Academy, Wayne Executive Jetport training, M2A flight school North Carolina, M2A aviation",
+    "Eagle Aircraft Flight Academy, Eagle Aircraft Valparaiso, Eagle Aircraft KVPZ, Porter County Regional Airport flight school, Eagle Aircraft contact",
   commercial:
-    "best multi-engine flight school, professional pilot training, airline preparation course, zero to airlines program, CFI instructor training",
+    "best flight school in Northwest Indiana, Cessna Pilot Center Valparaiso, Part 141 flight training Indiana, Liberty University flight training Valparaiso, VA approved pilot school Indiana",
   transactional:
-    "enroll in multi-engine training, sign up for instrument rating, book flight training, schedule discovery flight, become flight instructor",
+    "enroll in private pilot training, sign up for instrument rating, book a discovery flight in Valparaiso, schedule ATP ground course, apply for CFI training at Eagle Aircraft",
 };
 
 // Secondary keywords by program type
 export const PROGRAM_KEYWORDS = {
   multiEngine:
-    "multi-engine rating, multi-engine training, twin engine certification, Piper Seminole training, multi-engine time building",
+    "multi engine rating, multi engine training, twin engine training, multi engine time building, simulator prep for multi engine",
   instrumentRating:
-    "instrument rating training, IFR certification, instrument flight training, actual IMC flying, CFII training",
+    "instrument rating training, IFR certification, instrument flight training, Elite PI-1000 simulator training, CFII led instrument course",
   privatePilot:
-    "private pilot license, PPL training, learn to fly, discovery flight, beginner pilot training, zero flight hours",
+    "private pilot license, PPL training, learn to fly in Valparaiso, discovery flight experience, beginner pilot training, zero flight hours program",
   commercialPilot:
-    "commercial pilot license, CPL training, professional pilot certification, complex aircraft training, career pilot",
+    "commercial pilot license, CPL training, professional pilot certification, time building in Cessna and Tecnam aircraft, career pilot training Indiana",
   flightInstructor:
-    "CFI certification, flight instructor training, CFII MEI training, build flight hours, instructor employment",
+    "CFI certification, flight instructor training, CFII and MEI training, build flight hours as a CFI, instructor employment at Eagle Aircraft",
   careerPrograms:
-    "zero to airlines program, airline pilot training, career pathway, professional pilot program, airline placement",
+    "professional pilot program, Liberty University aviation degree partner, Valparaiso University flight training, VA and GI Bill flight training, international M-1 visa pilot training",
 };
 
 // Location-focused keywords
 export const LOCATION_KEYWORDS = {
-  primary: "Wayne Executive Jetport flight training, Pikeville NC aviation",
+  primary:
+    "Porter County Regional Airport flight training, Valparaiso Indiana flight school, KVPZ flight training",
   secondary:
-    "North Carolina flight school, military pilot training NC, aviation training Eastern NC, Goldsboro area flight school",
+    "Chicagoland pilot training, Northwest Indiana aviation school, flight school near Chicago, Liberty University flight training affiliate in Valparaiso",
 };
 
 export const OG_IMAGE = "/eagleair-og-image.png";
 
 export const FAVICON = "/favicon.png";
 
-export const LOGO = "/Mil2ATP_Logo_2_340x.png";
+export const LOGO = "/logo_eagle_aircraft_round_color.png";
 
-export const LOGO_ASSETS = "/src/assets/m2a-logo-1.png";
-export const LOGO_ASSETS_2 = "/src/assets/m2a-logo-2.png";
+export const LOGO_ASSETS = "/src/assets/logo_eagle_aircraft_horizontal_color.png";
+export const LOGO_ASSETS_2 = "/src/assets/logo_eagle_aircraft_round_color.png";
 
 // CHANGE client business info
-export const COMPANY_NAME = "M2A";
-export const COMPANY_NAME_CAPS = "M2A";
-export const COMPANY_NICKNAME = "M2A";
-export const LOGO_PRIMARY = "/eagleair-logo.png";
-export const LOGO_SECONDARY = "/eagleair-logo.png";
-export const PHONE_NUMBER = "(919) 526-4287";
-export const PHONE_NUMBER_HEADER = "(919) 526-4287";
-export const ADDRESS_LINE_1 = "278 Aviation Rd.";
-export const ADDRESS_LINE_2 = "Pikeville, NC 27863";
-export const AIRPORT = "Wayne Executive Jetport";
-export const AIRPORT_CODE = "KGWW";
-export const ADDRESS = "278 Aviation Rd., Pikeville, NC 27863";
-export const ADDRESS_CITY = "Pikeville";
-export const ADDRESS_STATE = "North Carolina";
-export const ADDRESS_ZIP = "27863";
-export const GMAPS = "https://maps.app.goo.gl/EagleAir";
-export const EMAIL_ADDRESS = "contact@eagleair.com";
-export const FACEBOOK_URL = "https://www.facebook.com/mil2ATP";
-export const INSTAGRAM_URL = "https://www.instagram.com/mil2ATP";
-export const LINKEDIN_URL = "https://www.linkedin.com/company/eagleair-inc.";
-export const X_URL = "https://twitter.com/eagleair";
+export const COMPANY_NAME = "Eagle Aircraft Flight Academy";
+export const COMPANY_NAME_CAPS = "EAGLE AIRCRAFT FLIGHT ACADEMY";
+export const COMPANY_NICKNAME = "Eagle Aircraft";
+export const PHONE_NUMBER = "(219) 464-0132";
+export const PHONE_NUMBER_HEADER = "(219) 464-0132";
+export const ADDRESS_LINE_1 = "4001 Murvihill Road";
+export const ADDRESS_LINE_2 = "Valparaiso, IN 46383";
+export const AIRPORT = "Porter County Regional Airport";
+export const AIRPORT_CODE = "KVPZ";
+export const ADDRESS = "4001 Murvihill Road, Valparaiso, IN 46383";
+export const ADDRESS_CITY = "Valparaiso";
+export const ADDRESS_STATE = "Indiana";
+export const ADDRESS_ZIP = "46383";
+export const GMAPS =
+  "https://maps.app.goo.gl/k8sGUpJ1DJApg1HJA";
+export const EMAIL_ADDRESS = "eaglevpz@gmail.com";
+export const FACEBOOK_URL = "https://www.facebook.com/EagleAircraft";
+export const INSTAGRAM_URL = "https://www.instagram.com/eaglevpz/";
+export const LINKEDIN_URL =
+  "https://www.linkedin.com/company/eagle-aircraft-inc";
+export const X_URL = "";
 export const YOUTUBE_URL = "";
-export const YELP_URL = "";
+export const YELP_URL = "https://www.yelp.com/biz/eagle-aircraft-valparaiso";
 export const GITHUB_URL = "";
 
 export const LOCATIONS = [
   {
-    title: "Wayne Executive Jetport",
-    address: "278 Aviation Rd.",
-    city: "Pikeville",
-    state: "NC",
-    zip: "27863",
-    gMaps: "https://maps.app.goo.gl/EagleAir",
-    phone: "(919) 526-4287",
-    forwardPhone: "(919) 526-4287",
-    fullAddress: "278 Aviation Rd. Pikeville, NC 27863",
-    fullAddressLineBreak: "278 Aviation Rd.\nPikeville, NC 27863",
+    title: "Porter County Regional Airport",
+    address: "4001 Murvihill Road",
+    city: "Valparaiso",
+    state: "IN",
+    zip: "46383",
+    gMaps:
+      "https://www.google.com/maps?q=4001+Murvihill+Rd,+Valparaiso,+IN+46383",
+    phone: "(219) 464-0132",
+    forwardPhone: "(219) 464-0132",
+    fullAddress: "4001 Murvihill Road, Valparaiso, IN 46383",
+    fullAddressLineBreak: "4001 Murvihill Road\nValparaiso, IN 46383",
   },
 ];
 
 export const COURSES = [
-  "ATP Certification Training",
-  "CTP Certification Training",
-  "Rotorcraft Transition Program (RTP)",
-  "General Flight Training",
-  "DoD SkillBridge",
-  "Private Pilot License (PPL)",
+  "Discovery Flights",
+  "Private Pilot Certificate (PPL)",
   "Instrument Rating (IR)",
+  "Commercial Pilot Certificate (CPL)",
+  "Certified Flight Instructor (CFI)",
+  "Airline Transport Pilot (ATP)",
+  "Flight Review and Currency Training",
 ];
 
 export const OTHER_COURSES = [
-  "Airline Interview Preparation",
-  "Resume Review",
-  "Application Review",
+  "Liberty University Aviation Degree partnership",
+  "Purdue Global and Valparaiso University degree pathways",
+  "VA benefits and GI Bill flight training support",
+  "International student M-1 visa and SEVIS support",
+  "DOD SkillBridge and BreakTurn career placement",
 ];
 
 export const FLEET = [
   {
-    title: "Cessna 172",
+    title: "Cessna 150",
+    path: "",
+  },
+  {
+    title: "Cessna 172 Skyhawk",
+    path: "",
+  },
+  {
+    title: "Tecnam P2010",
+    path: "",
+  },
+  {
+    title: "Elite PI-1000 Simulator",
     path: "",
   },
 ];
 
-export const VIDEOS = [
-  {
-    upperHeading: "Vegas Aviation",
-    title: "Vegas Aviation TopHawk",
-    description: "Vegas Aviation TopHawk video.",
-    link: "https://www.youtube.com/watch?v=An5Yyhl7RBE",
-    image: {
-      src: "",
-      alt: "Vegas Aviation TopHawk Video Thumbnail",
-      classes: "",
-    },
-  },
-];
+export const VIDEOS: {
+  upperHeading: string;
+  title: string;
+  description: string;
+  link: string;
+  image: {
+    src: string;
+    alt: string;
+    classes: string;
+  };
+}[] = [];
