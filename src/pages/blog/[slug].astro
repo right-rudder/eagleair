@@ -1,0 +1,158 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths = (async () => {
+  const blogPosts = await getCollection("blog");
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+// Format date helper
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
+};
+
+// Get related posts (same tags)
+const allPosts = await getCollection("blog");
+const relatedPosts = post.data.tags
+  ? allPosts
+      .filter(
+        (p) =>
+          p.slug !== post.slug &&
+          p.data.tags?.some((tag) => post.data.tags?.includes(tag))
+      )
+      .slice(0, 3)
+  : [];
+---
+
+<BaseLayout
+  siteTitle={`${post.data.title} | M2A Aviation Academy Blog`}
+  siteDescription={post.data.description}
+  siteImage={post.data.image}
+>
+  <article class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      {
+        post.data.image && (
+          <img
+            src={post.data.image}
+            alt={post.data.title}
+            class="w-full h-96 object-cover rounded-lg mb-8"
+          />
+        )
+      }
+
+      <div class="mb-8">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">{post.data.title}</h1>
+
+        <div class="flex items-center gap-4 text-gray-600 mb-6">
+          <time datetime={post.data.pubDate.toISOString()}>
+            {formatDate(post.data.pubDate)}
+          </time>
+          <span>•</span>
+          <span>By {post.data.author}</span>
+        </div>
+
+        {
+          post.data.tags && post.data.tags.length > 0 && (
+            <div class="flex flex-wrap gap-2">
+              {post.data.tags.map((tag) => (
+                <span class="bg-blue-50 text-blue-600 text-sm px-4 py-2 rounded-full">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )
+        }
+      </div>
+
+      <div class="prose prose-lg max-w-none mb-12">
+        <Content />
+      </div>
+
+      <div class="border-t pt-8">
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2">Share this article</h3>
+          <div class="flex gap-4">
+            <a
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(Astro.url.toString())}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:text-blue-700"
+            >
+              Twitter
+            </a>
+            <a
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.toString())}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:text-blue-700"
+            >
+              Facebook
+            </a>
+            <a
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.toString())}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 hover:text-blue-700"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {
+        relatedPosts.length > 0 && (
+          <div class="mt-12 pt-12 border-t">
+            <h2 class="text-3xl font-bold mb-6">Related Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {relatedPosts.map((relatedPost) => (
+                <a
+                  href={`/blog/${relatedPost.slug}`}
+                  class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden"
+                >
+                  {relatedPost.data.image && (
+                    <img
+                      src={relatedPost.data.image}
+                      alt={relatedPost.data.title}
+                      class="w-full h-40 object-cover"
+                    />
+                  )}
+                  <div class="p-4">
+                    <h3 class="font-bold mb-2 line-clamp-2">
+                      {relatedPost.data.title}
+                    </h3>
+                    <p class="text-sm text-gray-600 line-clamp-2">
+                      {relatedPost.data.description}
+                    </p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        )
+      }
+
+      <div class="mt-12 text-center">
+        <a
+          href="/blog"
+          class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          ← Back to Blog
+        </a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

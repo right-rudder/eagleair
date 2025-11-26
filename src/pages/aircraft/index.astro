@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+type Aircraft = CollectionEntry<"aircraft">;
+
+const aircraft = await getCollection("aircraft");
+const sortedAircraft = aircraft.sort(
+  (a: Aircraft, b: Aircraft) => (a.data.order || 999) - (b.data.order || 999)
+);
+---
+
+<BaseLayout
+  siteTitle="Our Fleet | M2A Aviation Academy"
+  siteDescription="Explore our modern fleet of training aircraft"
+>
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold text-center mb-4">Our Fleet</h1>
+      <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+        Train in our well-maintained fleet of modern aircraft equipped with the
+        latest avionics.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {
+          sortedAircraft.map((plane: Aircraft) => (
+            <a
+              href={`/aircraft/${plane.slug}`}
+              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <img
+                src={plane.data.image}
+                alt={plane.data.name}
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-6">
+                <h2 class="text-2xl font-bold mb-2">{plane.data.name}</h2>
+                <p class="text-lg text-blue-600 mb-3">{plane.data.model}</p>
+                <p class="text-gray-600 line-clamp-3">
+                  {plane.data.description}
+                </p>
+
+                {plane.data.specifications && (
+                  <div class="mt-4 pt-4 border-t grid grid-cols-2 gap-2 text-sm">
+                    {plane.data.specifications.seats && (
+                      <div>
+                        <span class="text-gray-500">Seats:</span>
+                        <span class="ml-1 font-semibold">
+                          {plane.data.specifications.seats}
+                        </span>
+                      </div>
+                    )}
+                    {plane.data.specifications.cruiseSpeed && (
+                      <div>
+                        <span class="text-gray-500">Speed:</span>
+                        <span class="ml-1 font-semibold">
+                          {plane.data.specifications.cruiseSpeed}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

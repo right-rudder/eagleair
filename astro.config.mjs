@@ -1,10 +1,18 @@
+// @ts-check
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import partytown from "@astrojs/partytown";
-import sitemap from "@astrojs/sitemap";
+
 import react from "@astrojs/react";
+
+import tailwindcss from "@tailwindcss/vite";
+
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), partytown(), sitemap(), react()],
+  site: "https://eagleair.com",
+  integrations: [react(), sitemap()],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
