@@ -1,8 +1,9 @@
 ---
 import "../styles/global.css";
-import "@fontsource-variable/ubuntu-sans";
 import "@fontsource/poppins";
-import '@fontsource/marcellus';
+import '@fontsource-variable/oswald';
+import '@fontsource-variable/cinzel';
+
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS, OG_IMAGE } from "../data/consts";
@@ -151,7 +152,7 @@ const breadcrumbs = generateBreadcrumbs(pathname, customBreadcrumbs);
       <slot />
       <!-- Breadcrumb Navigation -->
       {breadcrumbs.length > 1 && (
-        <nav aria-label="Breadcrumb" class="border-b font-ubuntu border-muted-200 text-muted-900">
+        <nav aria-label="Breadcrumb" class="border-b font-subtitle border-muted-200 text-muted-900">
           <div class="max-w-7xl mx-auto px-5 md:px-10 lg:px-20 py-3">
             <ol class="flex items-center space-x-2 text-sm">
               {breadcrumbs.map((crumb, index) => (
