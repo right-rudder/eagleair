@@ -29,19 +29,21 @@ const { data } = Astro.props;
 >
   <!-- Background overlay for better text readability -->
   <div
-    class="absolute inset-0 bg-linear-to-b from-muted-50/40 via-black/10 to-black/40 -z-10"
+    class="absolute inset-0 bg-linear-to-b from-muted-50/40 via-black/60 to-transparent -z-10"
     aria-hidden="true"
   >
   </div>
 
   <!-- Background Image -->
-  <ImageComp
-    src={data.image.src}
-    alt={data.image.alt}
-    class="absolute inset-0 h-full w-full object-cover object-center brightness-90 animate-slow-zoom -z-20"
-    loading="eager"
-    quality={100}
-  />
+  <div class="hero-image-mask absolute inset-0 -z-20">
+    <ImageComp
+      src={data.image.src}
+      alt={data.image.alt}
+      class="relative h-full w-full object-cover object-center brightness-90 animate-slow-zoom"
+      loading="eager"
+      quality={100}
+    />
+  </div>
 
   <!-- Content Container -->
   <div class="max-w-7xl w-full px-5 md:px-8 lg:px-12 mx-auto">
