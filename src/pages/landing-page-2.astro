@@ -1,0 +1,154 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroScreen from "../components/HeroScreen2.astro";
+import ValueProposition from "../components/ValueProposition.astro";
+import ProgramsOverview from "../components/ProgramsOverview.astro";
+import WhyChooseUs from "../components/WhyChooseUs.astro";
+import ProcessSteps from "../components/ProcessSteps2.astro";
+import Testimonials from "../components/Testimonials.astro";
+import CTASection from "../components/CTASection.astro";
+import { PHONE_NUMBER } from "../data/consts";
+
+const heroData = {
+  image: {
+    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+    alt: "Military aircraft in flight",
+  },
+  eyebrow: `Call Us: ${PHONE_NUMBER}`,
+  title: "All Inclusive<br>Military to Airline Course",
+  subTitle:
+    "Turn your military flight experience into a successful airline career",
+  cta: [
+    {
+      url: "/training/atp-certification",
+      text: "ATP Certification",
+    },
+    {
+      url: "/training/ctp-certification",
+      text: "CTP Course",
+    },
+  ],
+};
+
+const valuePropositionData = {
+  title: "Professional Pilot Training with Transparent Pricing",
+  subtitle: "About M2A Aviation Academy",
+  description:
+    "M2A Aviation Academy is an award-winning flight school offering comprehensive pilot training from private pilot through airline careers. Our experienced airline captain instructors provide multi-engine training, instrument ratings, commercial certification, and flight instructor programs with all-inclusive pricing and no hidden costs. Train with industry professionals and benefit from our proven career pathways, dual DPE access, and performance-based airline placement connections.",
+  stats: [
+    { value: "3,000+", label: "Pilots Trained" },
+    { value: "2 Years", label: "Zero Checkride Cancellations" },
+    { value: "15+", label: "Partner Airlines" },
+    { value: "100%", label: "Transparent Pricing" },
+  ],
+  image: {
+    src: "/src/assets/william-topa-7_4bU5tHRLQ-unsplash.jpg",
+    alt: "Professional pilot training",
+  },
+};
+
+const benefits = [
+  {
+    icon: "🏆",
+    title: "Award-Winning",
+    description:
+      "AOPA National Flight Training Experience Award recipient with 34,000+ successful pilots trained.",
+  },
+  {
+    icon: "👨‍✈️",
+    title: "Veteran Airline Captain Instructors",
+    description:
+      "Train with experienced airline captains who've flown professionally for decades—not just time-builders.",
+  },
+  {
+    icon: "💎",
+    title: "Transparent All-In Pricing",
+    description:
+      "No hidden costs, no hourly overages, no surprise fees. One price includes housing, checkrides, and materials.",
+  },
+  {
+    icon: "🎯",
+    title: "Dual DPE & Zero Cancellations",
+    description:
+      "12-year track record of zero checkride cancellations. Immediate scheduling, no 3-month waitlists.",
+  },
+];
+
+const processSteps = [
+  {
+    number: 1,
+    title: "Free Consultation",
+    description:
+      "Contact us to discuss your aviation goals and determine the best training path—from zero experience to airlines.",
+  },
+  {
+    number: 2,
+    title: "Enroll & Schedule",
+    description:
+      "Choose from our transparent all-inclusive programs. Immediate scheduling—no waitlists, no hidden costs.",
+  },
+  {
+    number: 3,
+    title: "Professional Training",
+    description:
+      "Train with veteran airline captain instructors in modern aircraft. Single-location seamless training with housing included.",
+  },
+  {
+    number: 4,
+    title: "Career Launch",
+    description:
+      "Build hours as M2A instructor, then transition to airlines with our performance-based placement connections.",
+  },
+];
+
+const testimonials = [
+  {
+    quote:
+      "M2A Aviation Academy's transparent pricing and professional instruction exceeded my expectations. No hidden costs, no surprises—just quality training with airline captains.",
+    author: "Peter Gibbons",
+    role: "Commercial Pilot & CFI",
+    rating: 5,
+  },
+  {
+    quote:
+      "The multi-engine training at M2A was exceptional. Real IMC flying, immediate checkride scheduling, and instructors who genuinely care about your success. Worth every penny.",
+    author: "Sarah Johnson",
+    role: "Regional Airline First Officer",
+    rating: 5,
+  },
+  {
+    quote:
+      "From zero experience to regional airline first officer in 24 months. M2A's Zero to Airlines program delivered everything they promised—and more.",
+    author: "Mike Reynolds",
+    role: "SkyWest Airlines First Officer",
+    rating: 5,
+  },
+];
+
+const ctaData = {
+  title: "Ready to Start Your Airline Career?",
+  description:
+    "The aviation industry is waiting for skilled pilots like you. Take the first step towards your dream job with M2A's comprehensive training programs tailored for structured aviators.",
+  image: {
+    src: "/src/assets/sebastian-zzWYD-tc_jI-unsplash.jpg",
+    alt: "Airliner flying above the clouds",
+  },
+  primaryCTA: {
+    text: "Get Started Today",
+    href: "/contact",
+  },
+};
+---
+
+<BaseLayout>
+  <HeroScreen data={heroData} />
+  <ProcessSteps
+    title="Your Path to the Airlines"
+    subtitle="Simple, proven process to get you from zero to airline pilot"
+    steps={processSteps}
+  />
+  <ValueProposition {...valuePropositionData} />
+  <ProgramsOverview />
+  <Testimonials testimonials={testimonials} />
+  <CTASection {...ctaData} />
+</BaseLayout>
