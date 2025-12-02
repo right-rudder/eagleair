@@ -13,14 +13,14 @@ interface Props {
 const { testimonials } = Astro.props;
 ---
 
-<section class="py-16 md:py-24 bg-gray-900 text-white">
+<section class="py-16 md:py-24 bg-muted-900 text-white">
   <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
     <!-- Section Header -->
     <div class="text-center mb-12 md:mb-16">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
         Don't Take Our Word For It
       </h2>
-      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+      <p class="text-lg md:text-xl text-muted-300 max-w-3xl mx-auto">
         Hear from the pilots who successfully transitioned from military to airline careers
       </p>
     </div>
@@ -28,7 +28,7 @@ const { testimonials } = Astro.props;
     <!-- Testimonials Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {testimonials.map((testimonial) => (
-        <div class="bg-gray-800 rounded-lg p-8 hover:bg-gray-750 transition-colors duration-300">
+        <div class="bg-muted-800 rounded-lg p-8 hover:bg-muted-750 transition-colors duration-300">
           <!-- Rating -->
           {testimonial.rating && (
             <div class="flex gap-1 mb-4">
@@ -41,17 +41,17 @@ const { testimonials } = Astro.props;
           )}
 
           <!-- Quote -->
-          <blockquote class="text-gray-100 text-lg mb-6 leading-relaxed">
+          <blockquote class="text-muted-100 text-lg mb-6 leading-relaxed">
             "{testimonial.quote}"
           </blockquote>
 
           <!-- Author -->
-          <div class="border-t border-gray-700 pt-4">
+          <div class="border-t border-muted-700 pt-4">
             <div class="font-semibold text-white">
               {testimonial.author}
             </div>
             {testimonial.role && (
-              <div class="text-sm text-gray-400">
+              <div class="text-sm text-muted-400">
                 {testimonial.role}
               </div>
             )}
