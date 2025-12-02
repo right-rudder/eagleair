@@ -263,7 +263,7 @@ Our **dual DPE system and professional operations** mean **zero checkride cancel
 
 ### Peer-Checking & Continuation Training
 
-M2A's **"gray beard" mentorship program** provides ongoing quality assurance—senior instructors review student progress, ensuring training exceeds checkride minimums.
+M2A's **"muted beard" mentorship program** provides ongoing quality assurance—senior instructors review student progress, ensuring training exceeds checkride minimums.
 
 ### 34,000+ Successful Pilots & Proven Methodology
 
