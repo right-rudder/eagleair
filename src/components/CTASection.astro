@@ -44,7 +44,7 @@ const { title, description, primaryCTA, secondaryCTA } = Astro.props;
 
     <!-- CTAs -->
     <div
-      class="flex flex-col sm:flex-row gap-4 justify-center items-center font-ubuntu mb-8"
+      class="flex flex-col sm:flex-row gap-4 justify-center items-center font-subtitle mb-8"
     >
       <a href={primaryCTA.href} class="btn-primary">
         {primaryCTA.text}
@@ -61,7 +61,7 @@ const { title, description, primaryCTA, secondaryCTA } = Astro.props;
 
     <!-- Contact Info -->
     <div
-      class="flex flex-col sm:flex-row gap-6 justify-center items-center font-ubuntu text-black text-sm"
+      class="flex flex-col sm:flex-row gap-6 justify-center items-center font-subtitle text-black text-sm"
     >
       <a
         href={`tel:${PHONE_NUMBER}`}
