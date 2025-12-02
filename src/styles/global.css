@@ -2,8 +2,8 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-title: 'Marcellus', 'serif';
-  --font-ubuntu: 'Ubuntu Sans Variable', 'sans-serif';
+  --font-title: 'Cinzel Variable', 'serif';
+  --font-subtitle: 'Oswald Variable', 'sans-serif';
   --font-sans: 'Poppins', 'sans-serif';
 
   --color-muted-50: #f5f6f6;
@@ -42,6 +42,20 @@
   --color-lucky-900: #272881;
   --color-lucky-950: #242362;
 
+  --color-madison-50: #e9f9ff;
+  --color-madison-100: #cef2ff;
+  --color-madison-200: #a7e9ff;
+  --color-madison-300: #6be0ff;
+  --color-madison-400: #26c9ff;
+  --color-madison-500: #00a3ff;
+  --color-madison-600: #0079ff;
+  --color-madison-700: #005eff;
+  --color-madison-800: #0050e6;
+  --color-madison-900: #0049b3;
+  --color-madison-950: #002557;
+
+
+
   --animate-slow-zoom: slow-zoom 27s ease forwards;
   --animate-fast-zoom: fast-zoom 9s ease alternate infinite;
   
@@ -66,15 +80,15 @@
 
 
 .btn-primary {
-  @apply bg-monza-600 border border-monza-600 text-white font-semibold rounded-md px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-white hover:border-monza-900 hover:text-monza-600 transition duration-200 hover:scale-105;
+  @apply bg-madison-950 border border-madison-950 text-white font-semibold rounded-md px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-white hover:border-monza-900 hover:text-madison-950 transition duration-200 hover:scale-105;
 }
 
 .btn-transparent {
-  @apply bg-transparent border border-white rounded-md px-5 py-2 text-white font-semibold cursor-pointer hover:bg-white hover:text-monza-600 transition duration-200 hover:scale-105;
+  @apply bg-transparent border border-white rounded-md px-5 py-2 text-white font-semibold cursor-pointer hover:bg-white hover:text-madison-950 transition duration-200 hover:scale-105;
 }
 
 .title {
-  @apply font-title text-4xl md:text-5xl lg:text-6xl font-bold text-monza-600 mb-4
+  @apply font-title text-4xl md:text-5xl lg:text-6xl font-bold text-madison-950 mb-4
 }
 
 .subtitle {
