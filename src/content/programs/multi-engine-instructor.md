@@ -56,7 +56,7 @@ Most MEI graduates stay on at M2A to instruct in multi-engine aircraft—**build
 
 ### Veteran Airline Captain Mentorship
 
-You'll train under **retired and active airline captains** with 10,000+ hours and decades of multi-engine experience. Our "gray beard" mentors provide **continuation training and peer-checking**—quality assurance no competitor offers.
+You'll train under **retired and active airline captains** with 10,000+ hours and decades of multi-engine experience. Our "muted beard" mentors provide **continuation training and peer-checking**—quality assurance no competitor offers.
 
 ### Dual DPE Access & Zero Cancellations
 
