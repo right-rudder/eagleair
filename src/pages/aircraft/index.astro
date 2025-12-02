@@ -18,7 +18,7 @@ const sortedAircraft = aircraft.sort(
   <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto">
       <h1 class="text-4xl md:text-5xl font-bold text-center mb-4">Our Fleet</h1>
-      <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+      <p class="text-xl text-center text-muted-600 mb-12 max-w-3xl mx-auto">
         Train in our well-maintained fleet of modern aircraft equipped with the
         latest avionics.
       </p>
@@ -28,7 +28,7 @@ const sortedAircraft = aircraft.sort(
           sortedAircraft.map((plane: Aircraft) => (
             <a
               href={`/aircraft/${plane.slug}`}
-              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              class="bg-muted-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
             >
               <img
                 src={plane.data.image}
@@ -38,7 +38,7 @@ const sortedAircraft = aircraft.sort(
               <div class="p-6">
                 <h2 class="text-2xl font-bold mb-2">{plane.data.name}</h2>
                 <p class="text-lg text-blue-600 mb-3">{plane.data.model}</p>
-                <p class="text-gray-600 line-clamp-3">
+                <p class="text-muted-600 line-clamp-3">
                   {plane.data.description}
                 </p>
 
@@ -46,7 +46,7 @@ const sortedAircraft = aircraft.sort(
                   <div class="mt-4 pt-4 border-t grid grid-cols-2 gap-2 text-sm">
                     {plane.data.specifications.seats && (
                       <div>
-                        <span class="text-gray-500">Seats:</span>
+                        <span class="text-muted-500">Seats:</span>
                         <span class="ml-1 font-semibold">
                           {plane.data.specifications.seats}
                         </span>
@@ -54,7 +54,7 @@ const sortedAircraft = aircraft.sort(
                     )}
                     {plane.data.specifications.cruiseSpeed && (
                       <div>
-                        <span class="text-gray-500">Speed:</span>
+                        <span class="text-muted-500">Speed:</span>
                         <span class="ml-1 font-semibold">
                           {plane.data.specifications.cruiseSpeed}
                         </span>
