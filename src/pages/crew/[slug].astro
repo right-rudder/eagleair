@@ -27,7 +27,7 @@ const { Content } = await member.render();
 >
   <article class="py-16 px-4">
     <div class="max-w-4xl mx-auto">
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div class="bg-muted-50 rounded-lg shadow-lg overflow-hidden">
         <img
           src={member.data.image}
           alt={member.data.name}
@@ -41,7 +41,7 @@ const { Content } = await member.render();
             member.data.experience && (
               <div class="mb-6">
                 <h2 class="text-xl font-semibold mb-2">Experience</h2>
-                <p class="text-gray-700">{member.data.experience}</p>
+                <p class="text-muted-700">{member.data.experience}</p>
               </div>
             )
           }
@@ -72,7 +72,7 @@ const { Content } = await member.render();
       <div class="mt-8 text-center">
         <a
           href="/crew"
-          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+          class="inline-block bg-blue-600 text-muted-50 px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
         >
           ← Back to Team
         </a>
