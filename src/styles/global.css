@@ -6,17 +6,18 @@
   --font-subtitle: 'Oswald Variable', 'sans-serif';
   --font-sans: 'Poppins', 'sans-serif';
 
-  --color-muted-50: #f5f6f6;
-  --color-muted-100: #e4e7e9;
-  --color-muted-200: #ccd2d5;
-  --color-muted-300: #a9b3b7;
-  --color-muted-400: #7e8b92;
-  --color-muted-500: #637077;
-  --color-muted-600: #555f65;
-  --color-muted-700: #495155;
-  --color-muted-800: #3d4246;
-  --color-muted-900: #393d40;
-  --color-muted-950: #232629;
+  --color-muted-50: #f6f7f8;
+  --color-muted-100: #e9edf0;
+  --color-muted-200: #d9e0e4;
+  --color-muted-300: #becad2;
+  --color-muted-400: #a3b3be;
+  --color-muted-500: #8799aa;
+  --color-muted-600: #76869a;
+  --color-muted-700: #69778c;
+  --color-muted-800: #596374;
+  --color-muted-900: #4a525e;
+  --color-muted-950: #30343b;
+
 
   --color-monza-50: #fff1f2;
   --color-monza-100: #ffe1e2;
@@ -29,7 +30,7 @@
   --color-monza-800: #a0141a;
   --color-monza-900: #84181c;
   --color-monza-950: #48070a;
-  
+
   --color-madison-50: #e9f9ff;
   --color-madison-100: #cef2ff;
   --color-madison-200: #a7e9ff;
