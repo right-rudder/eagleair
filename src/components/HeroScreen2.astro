@@ -95,7 +95,7 @@ const { data } = Astro.props;
       <!-- Statistics -->
       {
         data.stats && (
-          <ul class="flex justify-between gap-6 md:mt-24 lg:mt-32 font-title text-pretty">
+          <ul class="flex justify-between gap-6 md:mt-24 lg:mt-32 py-6 font-title text-pretty">
               {data.stats.map((stat:any) => ( 
                 <li class="flex flex-col-reverse gap-2">
                   <h2 class=" text-lg md:text-xl/tight lg:text-2xl">{stat.title}</h2>

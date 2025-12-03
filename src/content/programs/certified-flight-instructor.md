@@ -9,7 +9,7 @@ highlights:
   - "All-inclusive: 25+ flight hours, 40+ ground hours, FOI training"
   - "Right-seat proficiency and teaching from instructor position"
   - "Student error recognition and correction techniques"
-  - "Performance-based instructor employment at M2A"
+  - "Performance-based instructor employment at Eagle Aircraft"
   - "Build 1,500 hours while earning $45,000-$60,000 annually"
   - "Direct airline placement connections (no fees)"
 requirements:
@@ -24,7 +24,7 @@ requirements:
 
 The **Certified Flight Instructor (CFI)** certificate is the **fastest, most cost-effective pathway to 1,500 hours** for airline hiring. Instead of paying to rent aircraft and build time slowly, **CFI instructors earn $45,000-$60,000 annually while building flight hours**—reaching airline minimums in 12-18 months.
 
-At M2A Aviation Academy, we don't just certify instructors—we **develop professional educators** who excel at teaching, build quality hours, and transition seamlessly to airline careers through our **performance-based placement program** (no predatory fees).
+At Eagle Aircraft Aviation Academy, we don't just certify instructors—we **develop professional educators** who excel at teaching, build quality hours, and transition seamlessly to airline careers through our **performance-based placement program** (no predatory fees).
 
 ---
 
@@ -53,11 +53,11 @@ Your **$14,500 all-in price** covers:
 - **All training materials** (FOI textbooks, lesson plan templates, teaching resources)
 - **FAA written exams** (FOI + FIA—Fundamentals of Instruction + Flight Instructor Airplane)
 - **Checkride fee** (practical test with Designated Pilot Examiner)
-- **Instructor employment application** (for M2A instructor positions post-certification)
+- **Instructor employment application** (for Eagle Aircraft instructor positions post-certification)
 
 ### Career Support
 
-- **Performance-based employment at M2A** (instructor positions for qualified graduates)
+- **Performance-based employment at Eagle Aircraft** (instructor positions for qualified graduates)
 - **Ongoing mentorship** from senior instructors and airline captains
 - **Continuation training and peer-checking** (quality assurance and professional development)
 - **Airline placement connections** when reaching 1,500 hours (no fees, direct introductions)
@@ -66,26 +66,26 @@ Your **$14,500 all-in price** covers:
 
 ---
 
-## Why M2A's CFI Program Creates Superior Instructors
+## Why Eagle Aircraft's CFI Program Creates Superior Instructors
 
 ### Professional Teaching Development (Not Just Checkride Prep)
 
 - **Competitors:** Rush students through CFI checkrides—minimal teaching practice, weak fundamentals, high failure rates.
-- **M2A:** We develop **professional educators** who genuinely understand teaching theory, learning psychology, and effective communication. You'll be a **great instructor**, not just a certified one.
+- **Eagle Aircraft:** We develop **professional educators** who genuinely understand teaching theory, learning psychology, and effective communication. You'll be a **great instructor**, not just a certified one.
 
 ### Right-Seat Mastery & Real Teaching Experience
 
 - **Competitors:** Minimal right-seat time; students struggle with sight picture, control access, and teaching simultaneously.
-- **M2A:** Extensive right-seat proficiency training—**you'll be comfortable and confident teaching from the instructor position** before checkride day.
+- **Eagle Aircraft:** Extensive right-seat proficiency training—**you'll be comfortable and confident teaching from the instructor position** before checkride day.
 
 ### Veteran Instructor Mentorship
 
-Train under **M2A's most experienced instructors**—many with decades of teaching experience and thousands of students. Learn **proven teaching techniques, student management strategies, and professional standards** from those who've mastered the craft.
+Train under **Eagle Aircraft's most experienced instructors**—many with decades of teaching experience and thousands of students. Learn **proven teaching techniques, student management strategies, and professional standards** from those who've mastered the craft.
 
 ### Performance-Based Employment (Not Predatory Fees)
 
 - **Competitors:** Charge $3,000-$10,000 "instructor hiring fees" or require multi-year commitments with low pay.
-- **M2A:** **Zero hiring fees.** Meet performance criteria (safety, professionalism, teaching effectiveness) and we offer **competitive instructor positions** with clear pathways to airline careers.
+- **Eagle Aircraft:** **Zero hiring fees.** Meet performance criteria (safety, professionalism, teaching effectiveness) and we offer **competitive instructor positions** with clear pathways to airline careers.
 
 ---
 
@@ -119,7 +119,7 @@ Train under **M2A's most experienced instructors**—many with decades of teachi
 
 **10-12 flight hours | 10+ ground hours**
 
-- **Teaching actual students** (supervised instruction with M2A students under mentor oversight)
+- **Teaching actual students** (supervised instruction with Eagle Aircraft students under mentor oversight)
 - **Pre-flight and post-flight briefings** (structured teaching, effective debriefs)
 - **Error recognition and correction** (identifying student mistakes, providing actionable feedback)
 - **Handling challenging scenarios** (nervous students, repeated errors, emergency procedures)
@@ -145,34 +145,34 @@ Train under **M2A's most experienced instructors**—many with decades of teachi
 
 ## Career Pathway: CFI to Airlines in 12-18 Months
 
-### Instructor Employment at M2A
+### Instructor Employment at Eagle Aircraft
 
 **Performance-Based Hiring (No Fees)**
 
-After earning your CFI, meet M2A's performance criteria:
+After earning your CFI, meet Eagle Aircraft's performance criteria:
 
 - **Safety record:** Zero accidents, incidents, or violations during training
 - **Professionalism:** Punctuality, communication, positive attitude, teamwork
 - **Teaching effectiveness:** Strong student feedback, clear instruction, professional briefings
 
-**Meet these standards = M2A instructor position offer (typical starting pay: $45,000-$60,000 annually)**
+**Meet these standards = Eagle Aircraft instructor position offer (typical starting pay: $45,000-$60,000 annually)**
 
 ### Build Hours While Earning Income
 
 **12-18 Months to 1,500 Hours**
 
-- Instruct M2A students in private pilot, instrument, and commercial training
+- Instruct Eagle Aircraft students in private pilot, instrument, and commercial training
 - Build **100-150 hours per month** (depending on student volume and scheduling)
 - Earn competitive instructor pay while accumulating flight time
 - Gain **multi-engine instruction hours** after adding **[CFII](/programs/multi-engine-instructor)** and **[MEI](/programs/multi-engine-instructor)** certifications
 
-**Total Timeline:** Reach 1,500-hour airline minimums in **12-18 months as M2A instructor**
+**Total Timeline:** Reach 1,500-hour airline minimums in **12-18 months as Eagle Aircraft instructor**
 
 ### Airline Placement & Career Launch
 
 **Performance-Based Airline Introductions (No Fees)**
 
-When you reach 1,500 hours, M2A provides:
+When you reach 1,500 hours, Eagle Aircraft provides:
 
 - **Direct introductions** to regional airline hiring partners (SkyWest, Envoy, Republic, PSA, others)
 - **Resume and application optimization** with career advisors
@@ -212,15 +212,15 @@ Add **multi-engine instruction**—the most valuable instructor credential. Buil
 
 ---
 
-## What Sets M2A's CFI Program Apart
+## What Sets Eagle Aircraft's CFI Program Apart
 
 ### 34,000+ Successful Pilots Trained
 
-M2A instructors have trained **over 34,000 pilots**—decades of proven teaching methodology, curriculum refinement, and professional standards.
+Eagle Aircraft instructors have trained **over 34,000 pilots**—decades of proven teaching methodology, curriculum refinement, and professional standards.
 
 ### "Gray Beard" Mentorship & Peer-Checking
 
-Unlike schools with zero instructor oversight, M2A's **continuation training and peer-checking program** ensures quality:
+Unlike schools with zero instructor oversight, Eagle Aircraft's **continuation training and peer-checking program** ensures quality:
 
 - Senior instructors observe your teaching periodically
 - Constructive feedback and professional development
@@ -228,7 +228,7 @@ Unlike schools with zero instructor oversight, M2A's **continuation training and
 
 ### Realistic Instructor Employment Pathways
 
-M2A employs **15-25 flight instructors year-round** with consistent student volume—meaning **predictable hours, steady income, and fast time-building**. No seasonal slowdowns or uncertain employment.
+Eagle Aircraft employs **15-25 flight instructors year-round** with consistent student volume—meaning **predictable hours, steady income, and fast time-building**. No seasonal slowdowns or uncertain employment.
 
 ### Professional Operations & Support
 
@@ -270,7 +270,7 @@ You love flying and want to **inspire the next generation of pilots**—CFI lets
 
 ### Third-Party Financing
 
-M2A partners with **aviation-specific lenders**:
+Eagle Aircraft partners with **aviation-specific lenders**:
 
 - **Stratus Financial**
 - **AOPA Flight Training Finance**
@@ -293,7 +293,7 @@ M2A partners with **aviation-specific lenders**:
 5. **Right-Seat Training:** Build proficiency flying and teaching from instructor position.
 6. **Teaching Practice:** Supervised instruction with real students under mentor oversight.
 7. **Checkride & Certification:** Pass FAA practical test and earn your CFI certificate.
-8. **Instructor Employment:** Apply for M2A instructor positions (performance-based hiring).
+8. **Instructor Employment:** Apply for Eagle Aircraft instructor positions (performance-based hiring).
 
 ---
 
@@ -305,11 +305,11 @@ M2A partners with **aviation-specific lenders**:
 
 **Q: Is CFI training harder than other ratings?**
 
-**A:** CFI is considered the **most challenging rating** because you must master teaching while demonstrating proficiency. M2A's structured program and mentorship ensure high success rates (85%+ first-time pass rate).
+**A:** CFI is considered the **most challenging rating** because you must master teaching while demonstrating proficiency. Eagle Aircraft's structured program and mentorship ensure high success rates (85%+ first-time pass rate).
 
 **Q: What if I'm not a "natural teacher"?**
 
-**A:** Teaching is a **learned skill**—M2A's FOI training and mentorship develop effective instructors regardless of natural aptitude. Clear communication and willingness to learn are more important than innate teaching ability.
+**A:** Teaching is a **learned skill**—Eagle Aircraft's FOI training and mentorship develop effective instructors regardless of natural aptitude. Clear communication and willingness to learn are more important than innate teaching ability.
 
 **Q: Do I need to be a great public speaker?**
 
@@ -317,11 +317,11 @@ M2A partners with **aviation-specific lenders**:
 
 **Q: What if I fail the CFI checkride?**
 
-**A:** CFI has the highest failure rate of any rating (40-50% nationally on first attempt). M2A's structured program achieves **85%+ first-time pass rate**. If retest is needed, additional training and retest fees apply ($800-1,200).
+**A:** CFI has the highest failure rate of any rating (40-50% nationally on first attempt). Eagle Aircraft's structured program achieves **85%+ first-time pass rate**. If retest is needed, additional training and retest fees apply ($800-1,200).
 
-**Q: Am I guaranteed an instructor job at M2A after CFI?**
+**Q: Am I guaranteed an instructor job at Eagle Aircraft after CFI?**
 
-**A:** Not guaranteed—employment is **performance-based**. Meet safety, professionalism, and teaching effectiveness criteria and instructor positions are typically offered. M2A employs 15-25 instructors year-round with consistent openings.
+**A:** Not guaranteed—employment is **performance-based**. Meet safety, professionalism, and teaching effectiveness criteria and instructor positions are typically offered. Eagle Aircraft employs 15-25 instructors year-round with consistent openings.
 
 **Q: How many hours per month will I build as an instructor?**
 
@@ -329,7 +329,7 @@ M2A partners with **aviation-specific lenders**:
 
 **Q: Can I instruct elsewhere after earning CFI?**
 
-**A:** Absolutely—your CFI certificate is yours to use anywhere. While we hope you'll instruct at M2A, there's no employment obligation.
+**A:** Absolutely—your CFI certificate is yours to use anywhere. While we hope you'll instruct at Eagle Aircraft, there's no employment obligation.
 
 **Q: Should I add CFII and MEI immediately after CFI?**
 
@@ -341,7 +341,7 @@ M2A partners with **aviation-specific lenders**:
 
 **No predatory fees. No hiring commissions. Professional instructor development and performance-based employment.**
 
-### Contact M2A Aviation Academy Today
+### Contact Eagle Aircraft Aviation Academy Today
 
 - **Phone:** [Insert phone number]
 - **Email:** [Insert email]
@@ -349,4 +349,4 @@ M2A partners with **aviation-specific lenders**:
 
 **$14,500 all-in. Professional teaching development. Build 1,500 hours in 12-18 months. Airline placement connections.**
 
-_M2A Aviation Academy—Where commercial pilots become professional instructors and airline careers begin._
+_Eagle Aircraft Aviation Academy—Where commercial pilots become professional instructors and airline careers begin._
