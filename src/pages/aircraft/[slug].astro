@@ -27,7 +27,7 @@ const { Content } = await plane.render();
 >
   <article class="py-16 px-4">
     <div class="max-w-5xl mx-auto">
-      <div class="bg-muted-50 rounded-lg shadow-lg overflow-hidden">
+      <div class="bg-muted-50  shadow-lg overflow-hidden">
         <img
           src={plane.data.image}
           alt={plane.data.name}
@@ -40,7 +40,7 @@ const { Content } = await plane.render();
           {
             plane.data.tailNumber && (
               <div class="mb-6">
-                <span class="inline-block bg-blue-50 px-4 py-2 rounded-lg">
+                <span class="inline-block bg-blue-50 px-4 py-2 ">
                   <span class="text-sm text-muted-600">Tail Number:</span>
                   <span class="ml-2 font-semibold">
                     {plane.data.tailNumber}
@@ -58,7 +58,7 @@ const { Content } = await plane.render();
                 <h2 class="text-2xl font-bold mb-4">Specifications</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {plane.data.specifications.engines && (
-                    <div class="bg-muted-50 p-4 rounded-lg">
+                    <div class="bg-muted-50 p-4 ">
                       <div class="text-sm text-muted-600 mb-1">Engine</div>
                       <div class="font-semibold">
                         {plane.data.specifications.engines}
@@ -66,7 +66,7 @@ const { Content } = await plane.render();
                     </div>
                   )}
                   {plane.data.specifications.seats && (
-                    <div class="bg-muted-50 p-4 rounded-lg">
+                    <div class="bg-muted-50 p-4 ">
                       <div class="text-sm text-muted-600 mb-1">Seating</div>
                       <div class="font-semibold">
                         {plane.data.specifications.seats} seats
@@ -74,7 +74,7 @@ const { Content } = await plane.render();
                     </div>
                   )}
                   {plane.data.specifications.range && (
-                    <div class="bg-muted-50 p-4 rounded-lg">
+                    <div class="bg-muted-50 p-4 ">
                       <div class="text-sm text-muted-600 mb-1">Range</div>
                       <div class="font-semibold">
                         {plane.data.specifications.range}
@@ -82,7 +82,7 @@ const { Content } = await plane.render();
                     </div>
                   )}
                   {plane.data.specifications.cruiseSpeed && (
-                    <div class="bg-muted-50 p-4 rounded-lg">
+                    <div class="bg-muted-50 p-4 ">
                       <div class="text-sm text-muted-600 mb-1">Cruise Speed</div>
                       <div class="font-semibold">
                         {plane.data.specifications.cruiseSpeed}
@@ -123,13 +123,13 @@ const { Content } = await plane.render();
             <div class="flex flex-wrap gap-4">
               <a
                 href="/contact"
-                class="inline-block bg-blue-600 text-muted-50 px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                class="inline-block bg-blue-600 text-muted-50 px-8 py-3  hover:bg-blue-700 transition-colors"
               >
                 Contact Us
               </a>
               <a
                 href="/aircraft"
-                class="inline-block bg-muted-200 text-muted-800 px-8 py-3 rounded-lg hover:bg-muted-300 transition-colors"
+                class="inline-block bg-muted-200 text-muted-800 px-8 py-3  hover:bg-muted-300 transition-colors"
               >
                 View All Aircraft
               </a>

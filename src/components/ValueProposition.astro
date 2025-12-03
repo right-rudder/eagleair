@@ -40,7 +40,7 @@ const { title, subtitle, description, stats, image } = Astro.props;
           stats && stats.length > 0 && (
             <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
               {stats.map((stat) => (
-                <div class="bg-muted-50 rounded-lg p-6 shadow-none flex flex-col items-center justify-center border border-muted-100 hover:border-muted-50 hover:shadow-lg transition hover:scale-105 duration-300">
+                <div class="bg-muted-50  p-6 shadow-none flex flex-col items-center justify-center border border-muted-100 hover:border-muted-50 hover:shadow-lg transition hover:scale-105 duration-300">
                   <div class="font-subtitle text-4xl md:text-5xl font-bold text-monza-700 mb-0">
                     {stat.value}
                   </div>
@@ -63,7 +63,7 @@ const { title, subtitle, description, stats, image } = Astro.props;
       <!-- Image Side -->
       {
         image && (
-          <div class="order-1 lg:order-2 h-screen relative rounded-2xl overflow-hidden shadow-2xl">
+          <div class="order-1 lg:order-2 h-screen relative  overflow-hidden shadow-2xl">
             <ImageComp
               src={image.src}
               alt={image.alt}

@@ -69,11 +69,11 @@
 
 
 .btn-primary {
-  @apply bg-madison-950 border border-madison-950 text-muted-50 font-semibold rounded-md px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-muted-50 hover:border-muted-50 hover:text-madison-950 transition duration-200 hover:scale-105;
+  @apply bg-madison-950 border border-madison-950 text-muted-50 font-semibold  px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-muted-50 hover:border-muted-50 hover:text-madison-950 transition duration-200 hover:scale-105;
 }
 
 .btn-transparent {
-  @apply bg-transparent border border-muted-50 rounded-md px-5 py-2 text-muted-50 font-semibold cursor-pointer hover:bg-muted-50 hover:text-madison-950 transition duration-200 hover:scale-105;
+  @apply bg-transparent border border-muted-50  px-5 py-2 text-muted-50 font-semibold cursor-pointer hover:bg-muted-50 hover:text-madison-950 transition duration-200 hover:scale-105;
 }
 
 .title {

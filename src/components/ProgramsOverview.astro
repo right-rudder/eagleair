@@ -27,7 +27,7 @@ const sortedPrograms = programs.sort(
     <!-- Programs Grid -->
     <div class="flex flex-wrap justify-center gap-6">
       {sortedPrograms.map((program) => (
-        <article class="group w-full lg:w-[45%] relative flex flex-col bg-muted-50 rounded-2xl overflow-hidden shadow-md group hover:shadow-2xl transition-all duration-300 border border-muted-100">
+        <article class="group w-full lg:w-[45%] relative flex flex-col bg-muted-50  overflow-hidden shadow-md group hover:shadow-2xl transition-all duration-300 border border-muted-100">
           <!-- Top Image Container -->
           <ImageComp
             src={program.data.image}
@@ -102,7 +102,7 @@ const sortedPrograms = programs.sort(
             <!-- CTA Link -->
             <a 
               href={`/programs/${program.slug}`}
-              class="group/btn font-subtitle relative inline-flex items-center justify-center w-full px-6 py-3.5 font-semibold text-muted-50 bg-linear-to-r from-madison-950 to-monza-500 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-monza-500/30 hover:-translate-y-0.5"
+              class="group/btn font-subtitle relative inline-flex items-center justify-center w-full px-6 py-3.5 font-semibold text-muted-50 bg-linear-to-r from-madison-950 to-monza-500  overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-monza-500/30 hover:-translate-y-0.5"
             >
               <span class="relative z-10 flex items-center gap-2">
                 View Program Details
@@ -115,7 +115,7 @@ const sortedPrograms = programs.sort(
           </div>
 
           <!-- Hover effect overlay -->
-          <div class="absolute inset-0 border-2 border-madison-950 ease-out rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="absolute inset-0 border-2 border-madison-950 ease-out  opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
         </article>
       ))}
     </div>
