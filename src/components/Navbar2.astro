@@ -1,0 +1,683 @@
+---
+import ImageComp from "./ImageComp.astro";
+import { IoIosAirplane } from "react-icons/io";
+import { LOGO_ASSETS, LOGO_ASSETS_2 } from "../data/consts";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+type Program = CollectionEntry<"programs">;
+
+const programs = await getCollection("programs");
+const sortedPrograms = programs.sort(
+  (a: Program, b: Program) => (a.data.order || 999) - (b.data.order || 999)
+);
+
+export type MenuItem = {
+  label: string;
+  url: string;
+  children?: MenuItem[];
+};
+
+export type NavbarButton = {
+  text: string;
+  href: string;
+  style: string;
+};
+
+export const menu: MenuItem[] = [
+  {
+    label: "Services",
+    url: "/services",
+    children: [
+      { label: "Airline Prep Training", url: "/services/airline-prep" },
+      { label: "Interview Preparation", url: "/services/interview-prep" },
+      { label: "Resume Review", url: "/services/resume-review" },
+      { label: "Application Review", url: "/services/application-review" },
+    ],
+  },
+  {
+    label: "Partners",
+    url: "/partners",
+  },
+  {
+    label: "About",
+    url: "/about",
+    children: [
+      { label: "About EagleAir", url: "/about" },
+      { label: "FAQ", url: "/faq" },
+      { label: "Funding Options", url: "/funding-options" },
+      { label: "Blog", url: "/blog" },
+      { label: "Contact Us", url: "/contact" },
+    ],
+  },
+];
+
+export const footerMenu: MenuItem[] = [
+  {
+    label: "About",
+    url: "/about",
+    children: [
+      { label: "About EagleAir", url: "/about" },
+      { label: "FAQ", url: "/faq" },
+      { label: "Funding Options", url: "/funding-options" },
+      { label: "Blog", url: "/blog" },
+      { label: "Contact Us", url: "/contact" },
+    ],
+  },
+];
+
+const { pathname, navBarBG = false } = Astro.props;
+---
+
+<nav
+  id="navbar"
+  class={`navbar font-subtitle ${navBarBG ? "force-navbar-bg" : ""}`}
+>
+  <div class="container px-4 md:px-0">
+    <!-- Logo -->
+    <a href="/" class="object-contain h-auto">
+      <ImageComp
+        class="logo-white w-36 md:w-56 duration-200"
+        src={LOGO_ASSETS}
+        alt="EagleAir Logo"
+      />
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="nav">
+      {
+        sortedPrograms && (
+          <li
+            class={`menu-item ${sortedPrograms.length >= 1 ? "has-children" : ""}`}
+          >
+            <a href="/programs">{sortedPrograms[0].collection}</a>
+            {sortedPrograms.length >= 1 ? (
+              <ul class="sub-menu">
+                {sortedPrograms.map((program: Program) => (
+                  <li>
+                    <a
+                      href={`/programs/${program.slug}`}
+                      class={
+                        (`/programs/${program.slug}` === pathname ||
+                          `/programs/${program.slug}/` === pathname) &&
+                        `/programs/${program.slug}` !== "/programs/"
+                          ? "menu-link-hover"
+                          : ""
+                      }
+                    >
+                      {program.data.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              ""
+            )}
+          </li>
+        )
+      }
+      {
+        menu.map((item, index) => (
+          <li
+            class={`menu-item ${item.children ? "has-children" : ""}`}
+            data-index={index}
+          >
+            <a href={item.url}>{item.label}</a>
+            {item.children && (
+              <ul class="sub-menu">
+                {item.children.map((child) => (
+                  <li>
+                    <a
+                      href={child.url}
+                      class={
+                        (child.url === pathname ||
+                          child.url + "/" === pathname) &&
+                        child.url !== "/"
+                          ? "menu-link-hover"
+                          : ""
+                      }
+                    >
+                      {child.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <a href="/contact" class="btn-primary text-lg!">
+        <IoIosAirplane className="size-6" />
+        Contact Us
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button id="mobile-toggle" class="hamburger" aria-label="Toggle menu">
+      <svg
+        class="hamburger-menu-bars"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="3" x2="21" y1="6" y2="6"></line>
+        <line x1="3" x2="21" y1="12" y2="12"></line>
+        <line x1="3" x2="21" y1="18" y2="18"></line>
+      </svg>
+      <svg
+        class="hamburger-menu-x"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <ul>
+      {
+        menu.map((item, index) => (
+          <li class="mobile-item" data-index={index}>
+            <a href={item.url}>{item.label}</a>
+            {item.children && (
+              <ul class="mobile-submenu">
+                {item.children.map((child) => (
+                  <li>
+                    <a
+                      href={child.url}
+                      class={
+                        (child.url === pathname ||
+                          child.url + "/" === pathname) &&
+                        child.url !== "/"
+                          ? "menu-link-hover"
+                          : ""
+                      }
+                    >
+                      {child.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="mobile-buttons">
+      <a href="/contact" class="btn-primary text-lg!">
+        <IoIosAirplane className="size-6" />
+        Contact Us
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+    padding: 16px 16px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar.scrolled,
+  .navbar.force-navbar-bg {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav {
+    display: flex;
+    gap: 0.75rem;
+    list-style: none;
+  }
+
+  .navbar .menu-item {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navbar.scrolled .menu-item,
+  .navbar.force-navbar-bg .menu-item {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+  .menu-item {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .menu-item a {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  .menu-item a:hover,
+  .menu-item a:has(+ ul > li > a.menu-link-hover) {
+    color: #e61c24;
+  }
+
+  .navbar.scrolled .sub-menu li a:hover,
+  .navbar.scrolled .sub-menu li a.menu-link-hover,
+  .navbar.force-navbar-bg .sub-menu li a:hover,
+  .navbar.force-navbar-bg .sub-menu li a.menu-link-hover {
+    background: #e61c24;
+  }
+
+  .navbar.scrolled .nav > .menu-item > a,
+  .navbar.force-navbar-bg .nav > .menu-item > a {
+    color: #101828; /* accent-900 */
+  }
+
+  .navbar.scrolled .nav > .menu-item > a:hover,
+  .navbar.scrolled .nav > .menu-item > a.menu-link-hover,
+  .navbar.scrolled .nav > .menu-item a:has(+ ul > li > a.menu-link-hover),
+  .navbar.force-navbar-bg .nav > .menu-item > a:hover,
+  .navbar.force-navbar-bg .nav > .menu-item > a.menu-link-hover,
+  .navbar.force-navbar-bg
+    .nav
+    > .menu-item
+    a:has(+ ul > li > a.menu-link-hover) {
+    color: #e61c24;
+  }
+
+  .navbar.scrolled .sub-menu li a.menu-link-hover,
+  .navbar.force-navbar-bg .sub-menu li a.menu-link-hover {
+    background: #e61c24;
+  }
+
+  /* Dropdown (desktop) */
+  .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 40;
+    min-width: 220px;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 0.5rem 0;
+    border-radius: 0.25rem;
+
+    /* no display:none — use visibility + opacity to avoid hover gaps */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(6px);
+    pointer-events: none;
+
+    /* 0.3s transition as requested */
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s step-end; /* hide clicks when closed */
+  }
+
+  /* Show on hover */
+  .menu-item:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s step-start; /* become clickable immediately */
+  }
+
+  /* Small invisible “bridge” to prevent hover loss between item and submenu */
+  .menu-item {
+    position: relative;
+  }
+  .menu-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px; /* adjust if you like */
+    background: transparent;
+  }
+
+  /* Dropdown items */
+  .sub-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    color: #393d40;
+    transition:
+      background 0.3s ease,
+      color 0.3s ease,
+      transform 0.3s ease;
+    position: relative;
+  }
+
+  .sub-menu li a:before {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #ffa0a4;
+    transition: all 450ms ease-out;
+  }
+
+  .sub-menu li a:hover,
+  .sub-menu li a.menu-link-hover {
+    color: #fff;
+    background: #e61c24;
+  }
+
+  .sub-menu li a:hover:before,
+  .sub-menu li a.menu-link-hover:before {
+    width: 100%;
+  }
+
+  .container .hamburger .hamburger-menu-x,
+  .container.open .hamburger .hamburger-menu-bars {
+    display: none;
+  }
+
+  .container.open .hamburger .hamburger-menu-x,
+  .container .hamburger .hamburger-menu-bars {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #101828; /* accent-900 */
+  }
+
+  /* Mobile sheet (base) */
+  .mobile-menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #f3f4f6;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu.open {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-height: 100vh;
+    overflow: visible;
+  }
+
+  /* Mobile submenu animation (base) */
+  .mobile-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.5s ease,
+      opacity 0.3s ease;
+    opacity: 0;
+  }
+  .mobile-submenu.open {
+    max-height: 20rem;
+    opacity: 1;
+  }
+
+  /* ===== MOBILE-ONLY CHANGES BELOW ===== */
+  @media (max-width: 1023px) {
+    .navbar,
+    .navbar.scrolled {
+      background: #f3f4f6;
+    }
+
+    .nav,
+    .buttons {
+      display: none;
+    }
+    .hamburger {
+      display: flex;
+    }
+
+    /* Closed state: no vertical padding, zero height */
+    .mobile-menu {
+      padding: 0 16px;
+    }
+
+    /* Open state: add vertical padding + usable height */
+    .mobile-menu.open {
+      padding-top: 12px;
+      padding-bottom: 14px;
+      max-height: calc(100vh - 64px);
+      overflow: auto;
+    }
+
+    /* Parent rows: larger tap targets + right chevron */
+    .mobile-item > a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 4px;
+      font-weight: 600;
+      color: #101828; /* accent-900 */
+    }
+    .mobile-item > a::after {
+      content: "⟫";
+      margin-left: 0.5rem;
+      transition: transform 0.25s ease;
+    }
+    .mobile-item > a.open::after {
+      transform: rotate(90deg);
+    }
+
+    /* Submenu styling */
+    .mobile-submenu {
+      border-left: 2px solid #101828; /* accent-900 */
+      margin-left: 10px;
+      padding-left: 6px;
+    }
+    a:has(+ .mobile-submenu.open),
+    a:has(+ .mobile-submenu .menu-link-hover) {
+      color: oklch(75.019% 0.21579 135.347); /* primary-400 */
+    }
+    .mobile-submenu li a {
+      display: block;
+      padding: 10px 12px 10px 24px;
+      border-radius: 6px;
+      color: #101828; /* accent-900 */
+    }
+    .mobile-submenu li a:hover {
+      background: oklch(0.278 0.033 256.848); /* primary-400 */
+      color: #f3f4f6;
+      font-weight: bold;
+    }
+
+    .mobile-submenu li a.menu-link-hover {
+      background: oklch(0.278 0.033 256.848); /* primary-400 */
+      color: #f3f4f6;
+      font-weight: bold;
+    }
+
+    /* Sticky full-width CTA */
+    .mobile-buttons {
+      background-color: #f3f4f6;
+      position: sticky;
+      bottom: 0;
+      padding: 12px 0 14px;
+      border-top: 1px solid #101828; /* accent-900 */
+    }
+    .mobile-buttons a {
+      width: 100%;
+      display: flex;
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .nav {
+      gap: 2rem;
+    }
+  }
+</style>
+
+<script type="module">
+  const navbar = document.getElementById("navbar");
+  const mobileToggle = document.getElementById("mobile-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuHeaderContainer = document.querySelector("#navbar > .container");
+  const logoWhite = document.querySelector(".logo-white");
+
+  function UpdateLogo() {
+    if (
+      ((window.scrollY > 40 || window.innerWidth <= 1023) &&
+        !navbar.classList.contains("scrolled")) ||
+      navbar.classList.contains("force-navbar-bg")
+    ) {
+      navbar.classList.add("scrolled");
+      logoWhite.classList.remove("md:w-56");
+      logoWhite.classList.add("md:w-44");
+
+      return;
+    }
+
+    if (
+      window.scrollY <= 40 &&
+      window.innerWidth > 1023 &&
+      navbar.classList.contains("scrolled")
+    ) {
+      navbar.classList.remove("scrolled");
+      logoWhite.classList.remove("md:w-44");
+      logoWhite.classList.add("md:w-56");
+    }
+  }
+
+  let scrollDebounceTimer;
+  let resizeDebounceTimer;
+
+  window.addEventListener("scroll", () => {
+    clearTimeout(scrollDebounceTimer);
+
+    setTimeout(UpdateLogo, 200);
+  });
+
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeDebounceTimer);
+
+    setTimeout(UpdateLogo, 200);
+  });
+
+  document.addEventListener("DOMContentLoaded", UpdateLogo);
+
+  // Mobile menu open/close
+  mobileToggle?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("open");
+    menuHeaderContainer?.classList.toggle("open");
+    document.body.classList.toggle("overflow-hidden");
+  });
+
+  // Mobile submenu toggles (tweak: mark link .open and animate height)
+  const mobileItems = document.querySelectorAll(".mobile-item");
+  mobileItems.forEach((item) => {
+    const link = item.querySelector(":scope > a");
+    const submenu = item.querySelector(".mobile-submenu");
+    if (submenu && link) {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const isOpen = submenu.classList.contains("open");
+
+        document
+          .querySelectorAll(".mobile-submenu.open")
+          .forEach((openSubmenu) => {
+            if (openSubmenu !== submenu) {
+              openSubmenu.classList.remove("open");
+              openSubmenu.style.maxHeight = "0px";
+              openSubmenu.style.opacity = "0";
+
+              const openLink =
+                openSubmenu.parentElement.querySelector(":scope > a.open");
+              if (openLink) openLink.classList.remove("open");
+            }
+          });
+
+        submenu.classList.toggle("open", !isOpen);
+        link.classList.toggle("open", !isOpen);
+
+        if (!isOpen) {
+          submenu.style.maxHeight = submenu.scrollHeight + "px";
+          submenu.style.opacity = "1";
+        } else {
+          submenu.style.maxHeight = "0px";
+          submenu.style.opacity = "0";
+        }
+      });
+    }
+  });
+
+  document.querySelectorAll("#mobile-menu a").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const parentItem = link.closest(".mobile-item");
+      const hasSubmenu =
+        parentItem && parentItem.querySelector(".mobile-submenu");
+
+      // If this link just toggles a submenu, do nothing here
+      if (hasSubmenu && e.target.closest("a").nextElementSibling === hasSubmenu)
+        return;
+
+      // Close mobile menu if it's open
+      if (mobileMenu.classList.contains("open")) {
+        mobileMenu.classList.remove("open");
+        menuHeaderContainer?.classList.remove("open");
+        document.body.classList.remove("overflow-hidden");
+      }
+
+      // Smooth scroll to hash links on the same page
+      const href = link.getAttribute("href");
+      if (href && href.includes("#")) {
+        const targetId = href.split("#")[1];
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          setTimeout(() => {
+            targetEl.scrollIntoView({ behavior: "smooth" });
+          }, 150);
+        }
+      }
+    });
+  });
+</script>
