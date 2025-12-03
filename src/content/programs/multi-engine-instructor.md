@@ -3,7 +3,7 @@ title: "Multi-Engine Instructor (MEI)"
 description: "Add multi-engine instruction to your CFI/CFII credentials. Unlock higher-paying instruction jobs and fast-track your airline career while building twin time."
 duration: "7-10 days"
 cost: "$12,500 All-In"
-image: "/src/assets/maksim-chernishev-HM8SDqf6l-U-unsplash.jpg"
+image: "/src/assets/stock-david-b-o27uCBOPbG0-unsplash.jpg"
 order: 6
 highlights:
   - "All-inclusive: housing, checkride, equipment"
