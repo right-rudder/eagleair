@@ -90,8 +90,19 @@
   overflow: hidden;
   clip-path: polygon(
     0 100%,                 /* bottom-left: full height */
-    100% calc(100% - 5rem), /* bottom-right: lifted up by h-20 */
+    100% calc(100% - 2rem), /* bottom-right: lifted up by h-20 */
     100% 0,                 /* top-right */
     0 0                     /* top-left */
   );
+}
+
+@media (min-width: 1024px) {
+  .hero-image-mask {
+    clip-path: polygon(
+      0 100%,                 /* bottom-left full height */
+      100% calc(100% - 5rem), /* bottom-right: h-20-ish */
+      100% 0,                 /* top-right */
+      0 0                     /* top-left */
+    );
+  }
 }
