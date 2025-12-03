@@ -21,9 +21,9 @@ requirements:
 
 ## Private Pilot License—Begin Your Aviation Journey
 
-Your dream of flying starts here. M2A Aviation Academy's **Private Pilot License (PPL)** program provides **professional, comprehensive training** that exceeds FAA minimums and prepares you for a lifetime of safe, confident flying.
+Your dream of flying starts here. Eagle Aircraft Aviation Academy's **Private Pilot License (PPL)** program provides **professional, comprehensive training** that exceeds FAA minimums and prepares you for a lifetime of safe, confident flying.
 
-Whether you're pursuing aviation as a **career pathway** or **personal achievement**, M2A's transparent pricing, experienced instructors, and proven curriculum ensure you earn your wings with **quality training, not just checkride minimums**.
+Whether you're pursuing aviation as a **career pathway** or **personal achievement**, Eagle Aircraft's transparent pricing, experienced instructors, and proven curriculum ensure you earn your wings with **quality training, not just checkride minimums**.
 
 ---
 
@@ -62,21 +62,21 @@ Your **$15,500 all-in price** covers:
 
 ---
 
-## Why M2A's Private Pilot Program Stands Out
+## Why Eagle Aircraft's Private Pilot Program Stands Out
 
 ### Experienced CFI Instructors (Not Just Time-Builders)
 
 - **Competitors:** Assign students to 250-hour instructors building time toward airlines—high turnover, inconsistent teaching, limited real-world experience.
-- **M2A:** Instructors with **1,500+ hours and airline/professional backgrounds**. Many are career educators or retired airline pilots who **genuinely love teaching**, not just logging hours.
+- **Eagle Aircraft:** Instructors with **1,500+ hours and airline/professional backgrounds**. Many are career educators or retired airline pilots who **genuinely love teaching**, not just logging hours.
 
 ### Realistic Flight Hour Expectations
 
 - **Competitors:** Advertise "Private Pilot in 40 Hours!" knowing 95% of students need 60-70 hours—creating bill shock and frustration.
-- **M2A:** **Transparent 60+ hour pricing upfront**. Most students finish within included hours; if you need 65-70 hours, minimal additional cost ($150/hr).
+- **Eagle Aircraft:** **Transparent 60+ hour pricing upfront**. Most students finish within included hours; if you need 65-70 hours, minimal additional cost ($150/hr).
 
 ### Quality Over Speed
 
-Unlike "pilot factories" rushing students through checkrides, M2A emphasizes **foundational skills, decision-making, and safety culture**. You'll finish as a **confident, competent pilot**—not just someone who barely passed a checkride.
+Unlike "pilot factories" rushing students through checkrides, Eagle Aircraft emphasizes **foundational skills, decision-making, and safety culture**. You'll finish as a **confident, competent pilot**—not just someone who barely passed a checkride.
 
 ### Modern Aircraft & Glass Cockpit Training
 
@@ -169,7 +169,7 @@ Private Pilot is **the foundation for all advanced ratings**:
 
 - Local flying clubs and pilot associations
 - Fly-ins, air shows, and aviation events
-- The Pilot Network (M2A's alumni community)
+- The Pilot Network (Eagle Aircraft's alumni community)
 - Lifelong friendships with fellow aviators
 
 ---
@@ -186,7 +186,7 @@ You've dreamed of flying since childhood. Private Pilot lets you **experience th
 
 ### Career Changers & Retirees
 
-You've spent decades in other professions and want to **pursue your passion for aviation**. It's never too late—M2A trains pilots from ages 17 to 70+.
+You've spent decades in other professions and want to **pursue your passion for aviation**. It's never too late—Eagle Aircraft trains pilots from ages 17 to 70+.
 
 ### Business Owners & Professionals
 
@@ -208,7 +208,7 @@ Flying your own aircraft offers **time-saving business travel** and access to th
 
 ### Third-Party Financing
 
-M2A partners with **aviation-specific lenders**:
+Eagle Aircraft partners with **aviation-specific lenders**:
 
 - **Stratus Financial**
 - **AOPA Flight Training Finance**
@@ -242,7 +242,7 @@ M2A partners with **aviation-specific lenders**:
 
 **Q: What's the FAA minimum vs. realistic flight hours?**
 
-**A:** FAA minimum is **40 hours**, but the **national average is 60-70 hours**. M2A's pricing reflects realistic expectations—most students finish within included 60 hours.
+**A:** FAA minimum is **40 hours**, but the **national average is 60-70 hours**. Eagle Aircraft's pricing reflects realistic expectations—most students finish within included 60 hours.
 
 **Q: Can I complete training faster?**
 
@@ -278,7 +278,7 @@ M2A partners with **aviation-specific lenders**:
 
 **No hidden costs. No surprises. Professional training from day one.**
 
-### Contact M2A Aviation Academy Today
+### Contact Eagle Aircraft Aviation Academy Today
 
 - **Phone:** [Insert phone number]
 - **Email:** [Insert email]
@@ -286,4 +286,4 @@ M2A partners with **aviation-specific lenders**:
 
 **$15,500 all-in. Experienced instructors. Modern aircraft. Proven curriculum.**
 
-_M2A Aviation Academy—Where student pilots become confident, competent aviators._
+_Eagle Aircraft Aviation Academy—Where student pilots become confident, competent aviators._

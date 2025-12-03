@@ -23,7 +23,7 @@ requirements:
 
 The **Multi-Engine Instructor (MEI)** rating is the most valuable addition to your flight instructor credentials. It opens doors to **higher-paying instruction jobs**, enables you to **build multi-engine time while earning income**, and positions you for **fast-track airline hiring**.
 
-At **M2A Aviation Academy**, we train MEIs the right way: **professional mentorship, transparent pricing, and a proven performance-based airline placement program** that rewards your success.
+At **Eagle Aircraft Aviation Academy**, we train MEIs the right way: **professional mentorship, transparent pricing, and a proven performance-based airline placement program** that rewards your success.
 
 ---
 
@@ -43,16 +43,16 @@ No hourly add-ons. No surprise fees. **One price, full MEI certification, checkr
 
 ---
 
-## Why M2A's MEI Program Is Different
+## Why Eagle Aircraft's MEI Program Is Different
 
 ### Performance-Based Airline Placement (Not Predatory Commissions)
 
 - **Competitors:** Require instructors to pay $3,000–$5,000 in "placement fees" or take commissions from your salary.
-- **M2A:** **Zero placement fees.** Meet our performance criteria (safety, professionalism, student pass rates) and we connect you directly with airline hiring partners—no middleman commissions.
+- **Eagle Aircraft:** **Zero placement fees.** Meet our performance criteria (safety, professionalism, student pass rates) and we connect you directly with airline hiring partners—no middleman commissions.
 
 ### Build Twin Time, Earn Income, Fast-Track Your Career
 
-Most MEI graduates stay on at M2A to instruct in multi-engine aircraft—**building valuable twin time** while earning competitive instructor pay. Within 6–12 months, you'll have the multi-engine hours airlines want, plus proven instructional experience.
+Most MEI graduates stay on at Eagle Aircraft to instruct in multi-engine aircraft—**building valuable twin time** while earning competitive instructor pay. Within 6–12 months, you'll have the multi-engine hours airlines want, plus proven instructional experience.
 
 ### Veteran Airline Captain Mentorship
 
@@ -60,7 +60,7 @@ You'll train under **retired and active airline captains** with 10,000+ hours an
 
 ### Dual DPE Access & Zero Cancellations
 
-Unlike competitors dependent on single examiners, M2A has **two Designated Pilot Examiners on staff**. Our **12-year track record of zero checkride cancellations** means you finish on schedule.
+Unlike competitors dependent on single examiners, Eagle Aircraft has **two Designated Pilot Examiners on staff**. Our **12-year track record of zero checkride cancellations** means you finish on schedule.
 
 ---
 
@@ -119,13 +119,13 @@ Building 1,500 hours? MEI lets you **build multi-engine PIC time while earning i
 
 ## Career Pathways After MEI
 
-### Instruct at M2A & Build Multi-Engine Time
+### Instruct at Eagle Aircraft & Build Multi-Engine Time
 
-Stay on as an M2A instructor and build **500–1,000 hours of multi-engine time in 6–12 months**. Our multi-engine training volume ensures consistent flight hours, competitive pay, and mentorship from airline captains.
+Stay on as an Eagle Aircraft instructor and build **500–1,000 hours of multi-engine time in 6–12 months**. Our multi-engine training volume ensures consistent flight hours, competitive pay, and mentorship from airline captains.
 
 ### Performance-Based Airline Placement
 
-Meet M2A's performance criteria—**safety record, professionalism, student pass rates**—and we connect you with airline hiring partners. No fees, no commissions. Just **direct pathways to regional and major airline interviews**.
+Meet Eagle Aircraft's performance criteria—**safety record, professionalism, student pass rates**—and we connect you with airline hiring partners. No fees, no commissions. Just **direct pathways to regional and major airline interviews**.
 
 ### Charter & Part 135 Operations
 
@@ -137,19 +137,19 @@ High-demand MEIs work contract instruction for corporate flight departments, uni
 
 ---
 
-## What Sets M2A Apart
+## What Sets Eagle Aircraft Apart
 
 ### 34,000+ Successful Pilots & AOPA National Flight Training Experience Award
 
-M2A has trained **over 34,000 pilots** and earned AOPA's **National Flight Training Experience Award**. Our MEI graduates go on to instruct at top flight schools and fly for major airlines.
+Eagle Aircraft has trained **over 34,000 pilots** and earned AOPA's **National Flight Training Experience Award**. Our MEI graduates go on to instruct at top flight schools and fly for major airlines.
 
 ### Continuation Training & Peer-Checking Program
 
-Every M2A instructor benefits from **ongoing mentorship and peer evaluation**—ensuring teaching quality, safety culture, and professional development. No competitor offers this level of quality assurance.
+Every Eagle Aircraft instructor benefits from **ongoing mentorship and peer evaluation**—ensuring teaching quality, safety culture, and professional development. No competitor offers this level of quality assurance.
 
 ### Professional Operations & Customer Service
 
-Unlike competitors with outdated systems and non-responsive staff, M2A's **operations manager ensures 24/7 communication, seamless enrollment, and immediate follow-up**.
+Unlike competitors with outdated systems and non-responsive staff, Eagle Aircraft's **operations manager ensures 24/7 communication, seamless enrollment, and immediate follow-up**.
 
 ### Single-Location, Seamless Training
 
@@ -167,7 +167,7 @@ All MEI training happens at **Wayne Executive Jetport (KGWW)**—ground, flight,
 2. **Enrollment:** Submit CFI/CFII certificate, FAA documents, and medical certificate.
 3. **Schedule Training:** Pick your start date (typically within 7–14 days).
 4. **Arrive & Train:** Check into housing, begin ground and flight training.
-5. **Checkride & Employment:** Complete practical test with dual DPE access; apply for M2A instructor positions if desired.
+5. **Checkride & Employment:** Complete practical test with dual DPE access; apply for Eagle Aircraft instructor positions if desired.
 
 ---
 
@@ -181,7 +181,7 @@ All MEI training happens at **Wayne Executive Jetport (KGWW)**—ground, flight,
 
 **A:** Most students finish in 7–10 days with focused, full-time training. Exact duration depends on prior multi-engine experience and instructional proficiency.
 
-**Q: What are M2A's performance criteria for airline placement?**
+**Q: What are Eagle Aircraft's performance criteria for airline placement?**
 
 **A:** Safety record (zero accidents/incidents), professionalism (student and staff feedback), and student pass rates (minimum 80% first-time checkride pass rate). Meet these standards and we provide direct introductions to airline hiring partners.
 
@@ -191,7 +191,7 @@ All MEI training happens at **Wayne Executive Jetport (KGWW)**—ground, flight,
 
 **Q: Do you offer CFI/CFII if I don't have those yet?**
 
-**A:** Yes—M2A offers complete **[Flight Instructor Certification (CFI/CFII)](/programs/flight-instructor-certification)** programs. Contact us for bundled CFI + MEI pathways.
+**A:** Yes—Eagle Aircraft offers complete **[Flight Instructor Certification (CFI/CFII)](/programs/flight-instructor-certification)** programs. Contact us for bundled CFI + MEI pathways.
 
 **Q: What if I need more than 17 hours of flight time?**
 
@@ -203,7 +203,7 @@ All MEI training happens at **Wayne Executive Jetport (KGWW)**—ground, flight,
 
 **No predatory fees. No hidden costs. No fragmented training.**
 
-### Contact M2A Aviation Academy Today
+### Contact Eagle Aircraft Aviation Academy Today
 
 - **Phone:** [Insert phone number]
 - **Email:** [Insert email]
@@ -211,4 +211,4 @@ All MEI training happens at **Wayne Executive Jetport (KGWW)**—ground, flight,
 
 **Immediate availability. Professional mentorship. Performance-based airline placement.**
 
-_M2A Aviation Academy—Where flight instructors become multi-engine professionals and airline pilots._
+_Eagle Aircraft Aviation Academy—Where flight instructors become multi-engine professionals and airline pilots._

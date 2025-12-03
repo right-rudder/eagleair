@@ -24,7 +24,7 @@ requirements:
 
 The **Commercial Pilot License (CPL)** is your ticket to **flying for compensation**—the essential credential for charter operations, flight instruction, aerial photography, pipeline patrol, and the foundation for **airline careers**.
 
-At M2A Aviation Academy, we train **professional-caliber commercial pilots** who exceed checkride minimums. Our focus on **precision flying, decision-making under pressure, and career preparation** ensures you're not just certified—you're **competitively ready for the industry**.
+At Eagle Aircraft Aviation Academy, we train **professional-caliber commercial pilots** who exceed checkride minimums. Our focus on **precision flying, decision-making under pressure, and career preparation** ensures you're not just certified—you're **competitively ready for the industry**.
 
 ---
 
@@ -59,24 +59,24 @@ Your **$22,500 all-in price** covers:
 ### Optional Add-Ons
 
 - **On-site housing** for intensive training (+$800/month)
-- **Time-building flights** to reach 250-hour minimum (discounted rates for M2A students)
+- **Time-building flights** to reach 250-hour minimum (discounted rates for Eagle Aircraft students)
 - **Multi-engine add-on** immediately after CPL (see **[Multi-Engine Rating](/programs/multi-engine-rating)**)
 
 **No hidden fees. No hourly overages. No surprise costs.**
 
 ---
 
-## Why M2A's Commercial Pilot Program Stands Out
+## Why Eagle Aircraft's Commercial Pilot Program Stands Out
 
 ### Professional Standards—Not Just Checkride Minimums
 
 - **Competitors:** Train students to "barely pass" checkrides—marginal maneuvers, weak decision-making, minimal professionalism.
-- **M2A:** We train **professional-caliber pilots** who exceed ACS standards. Precision, discipline, and career readiness are non-negotiable.
+- **Eagle Aircraft:** We train **professional-caliber pilots** who exceed ACS standards. Precision, discipline, and career readiness are non-negotiable.
 
 ### Veteran Commercial Pilot Instructors
 
 - **Competitors:** Assign students to low-time CFIs with zero professional aviation experience.
-- **M2A:** Train with **airline pilots, charter captains, and career aviation professionals** who've flown commercially for decades. Learn what employers actually want.
+- **Eagle Aircraft:** Train with **airline pilots, charter captains, and career aviation professionals** who've flown commercially for decades. Learn what employers actually want.
 
 ### Complex Aircraft Mastery
 
@@ -84,7 +84,7 @@ All commercial training in **complex, high-performance aircraft** (retractable g
 
 ### Career Preparation & Industry Connections
 
-M2A doesn't just issue certificates—we prepare you for **commercial aviation careers**:
+Eagle Aircraft doesn't just issue certificates—we prepare you for **commercial aviation careers**:
 
 - Resume building and interview preparation
 - Direct connections to charter operators, flight schools, and aerial survey companies
@@ -203,20 +203,20 @@ You want to **fly professionally**—even part-time or seasonally—and commerci
 
 ## The 250-Hour Requirement & Time-Building
 
-FAA requires **250 total flight hours** before issuing a Commercial Pilot Certificate. Most students reach M2A's commercial program with **150-200 hours**—requiring additional time-building.
+FAA requires **250 total flight hours** before issuing a Commercial Pilot Certificate. Most students reach Eagle Aircraft's commercial program with **150-200 hours**—requiring additional time-building.
 
 ### Time-Building Options
 
 **Solo Time-Building Flights (Discounted Rates)**
 
-- Rent aircraft at **discounted rates** for M2A students building commercial hours
+- Rent aircraft at **discounted rates** for Eagle Aircraft students building commercial hours
 - Solo cross-country flights, local practice, pattern work
 - **$120-140/hr** (aircraft only—no instructor) for approved solo flights
 
 **Flight Instructor Career Pathway (Build Hours While Earning Income)**
 
 - Complete **[CFI/CFII/MEI certifications](/programs/multi-engine-instructor)** after commercial pilot
-- Instruct at M2A and build hours while earning **$45,000-$60,000 annually**
+- Instruct at Eagle Aircraft and build hours while earning **$45,000-$60,000 annually**
 - Fastest pathway to 1,500 hours for airline hiring
 
 **Time-Building Block Programs**
@@ -239,7 +239,7 @@ FAA requires **250 total flight hours** before issuing a Commercial Pilot Certif
 
 ### Third-Party Financing
 
-M2A partners with **aviation-specific lenders**:
+Eagle Aircraft partners with **aviation-specific lenders**:
 
 - **Stratus Financial**
 - **AOPA Flight Training Finance**
@@ -297,11 +297,11 @@ M2A partners with **aviation-specific lenders**:
 
 **Q: What's the job market for commercial pilots?**
 
-**A:** Strong demand for **flight instructors** (build hours toward airlines) and **charter/cargo pilots** (requires multi-engine). Most M2A commercial graduates pursue CFI certifications and instruct while building airline hours.
+**A:** Strong demand for **flight instructors** (build hours toward airlines) and **charter/cargo pilots** (requires multi-engine). Most Eagle Aircraft commercial graduates pursue CFI certifications and instruct while building airline hours.
 
-**Q: What's the pass rate for M2A commercial students?**
+**Q: What's the pass rate for Eagle Aircraft commercial students?**
 
-**A:** M2A's commercial pilot **first-time pass rate exceeds 90%**. Our emphasis on precision flying and professional standards ensures checkride readiness.
+**A:** Eagle Aircraft's commercial pilot **first-time pass rate exceeds 90%**. Our emphasis on precision flying and professional standards ensures checkride readiness.
 
 ---
 
@@ -309,7 +309,7 @@ M2A partners with **aviation-specific lenders**:
 
 **No hidden costs. No shortcuts. Professional training for commercial aviation careers.**
 
-### Contact M2A Aviation Academy Today
+### Contact Eagle Aircraft Aviation Academy Today
 
 - **Phone:** [Insert phone number]
 - **Email:** [Insert email]
@@ -317,4 +317,4 @@ M2A partners with **aviation-specific lenders**:
 
 **$22,500 all-in. Complex aircraft training. Veteran commercial pilot instructors. Career pathways.**
 
-_M2A Aviation Academy—Where private pilots become commercial aviation professionals._
+_Eagle Aircraft Aviation Academy—Where private pilots become commercial aviation professionals._

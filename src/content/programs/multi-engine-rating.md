@@ -21,7 +21,7 @@ requirements:
 
 ## Your Multi-Engine Rating—Transparent, Professional, All-In
 
-Get your multi-engine rating at **M2A Aviation Academy** with complete transparency and zero surprises. Unlike competitors who charge hourly overages, fragment training across locations, or book you out for months, we provide **all-inclusive training in one place with immediate availability**.
+Get your multi-engine rating at **Eagle Aircraft Aviation Academy** with complete transparency and zero surprises. Unlike competitors who charge hourly overages, fragment training across locations, or book you out for months, we provide **all-inclusive training in one place with immediate availability**.
 
 ### What's Included—No Hidden Costs
 
@@ -39,27 +39,27 @@ No hourly add-ons. No "deposit required, then we'll see." No nickel-and-diming. 
 
 ---
 
-## Why M2A Beats the Competition
+## Why Eagle Aircraft Beats the Competition
 
 ### Immediate Scheduling vs. Months-Long Waitlists
 
 - **Competitors:** Booked out into January; $1,000 non-refundable deposits; uncertain availability.
-- **M2A:** Call today, start within 7–14 days. Professional operations manager responds within 24 hours.
+- **Eagle Aircraft:** Call today, start within 7–14 days. Professional operations manager responds within 24 hours.
 
 ### Single-Location Training vs. Fragmented Instruction
 
 - **Competitors:** Ground school at one location, sim at another, flights at a third airport. Some list multi-engine training but **have no multi-engine aircraft**.
-- **M2A:** All training at Wayne Executive Jetport (KGWW)—ground, flight, checkride, housing under one roof.
+- **Eagle Aircraft:** All training at Wayne Executive Jetport (KGWW)—ground, flight, checkride, housing under one roof.
 
 ### Transparent Pricing vs. Hourly Overages
 
 - **Competitors:** "$450/hr aircraft + $62/hr instructor + sim fees"—final cost unknown until you finish (and often exceed $10,000+).
-- **M2A:** **$8,500 all-in.** You know exactly what you'll pay before you start.
+- **Eagle Aircraft:** **$8,500 all-in.** You know exactly what you'll pay before you start.
 
 ### Dual DPEs & Zero Cancellations vs. Uncertain Checkride Dates
 
 - **Competitors:** Single DPE availability; weather cancellations push checkrides weeks out.
-- **M2A:** **Two Designated Pilot Examiners on staff.** 12-year track record of **zero checkride cancellations** due to examiner unavailability.
+- **Eagle Aircraft:** **Two Designated Pilot Examiners on staff.** 12-year track record of **zero checkride cancellations** due to examiner unavailability.
 
 ---
 
@@ -122,7 +122,7 @@ Part 135 charter and cargo operators prefer (and often require) multi-engine pil
 
 ### Flight Instructor Pathway
 
-Add your **MEI (Multi-Engine Instructor)** rating and build time while earning income. M2A offers performance-based airline placement for instructors who meet criteria.
+Add your **MEI (Multi-Engine Instructor)** rating and build time while earning income. Eagle Aircraft offers performance-based airline placement for instructors who meet criteria.
 
 ### Advanced Ratings & Type Ratings
 
@@ -130,7 +130,7 @@ Multi-engine is a prerequisite for turboprop and jet type ratings (e.g., Citatio
 
 ---
 
-## What Sets M2A Apart
+## What Sets Eagle Aircraft Apart
 
 ### Veteran Airline Captain Instructors
 
@@ -142,11 +142,11 @@ Every student benefits from our **continuation training and peer-checking progra
 
 ### 34,000+ Successful Pilots & AOPA National Flight Training Experience Award
 
-M2A has trained **over 34,000 pilots** since inception and earned AOPA's **National Flight Training Experience Award**. Our reputation speaks for itself.
+Eagle Aircraft has trained **over 34,000 pilots** since inception and earned AOPA's **National Flight Training Experience Award**. Our reputation speaks for itself.
 
 ### Professional Operations & Customer Service
 
-Unlike competitors with outdated websites and non-responsive staff, M2A's operations manager ensures **24/7 communication, immediate follow-up, and seamless enrollment**. You'll never feel abandoned or uncertain.
+Unlike competitors with outdated websites and non-responsive staff, Eagle Aircraft's operations manager ensures **24/7 communication, immediate follow-up, and seamless enrollment**. You'll never feel abandoned or uncertain.
 
 ---
 
@@ -190,7 +190,7 @@ Unlike competitors with outdated websites and non-responsive staff, M2A's operat
 
 **No waitlists. No hidden costs. No fragmented training.**
 
-### Contact M2A Aviation Academy Today
+### Contact Eagle Aircraft Aviation Academy Today
 
 - **Phone:** [Insert phone number]
 - **Email:** [Insert email]
@@ -198,4 +198,4 @@ Unlike competitors with outdated websites and non-responsive staff, M2A's operat
 
 **Immediate availability. Professional instruction. Transparent pricing. 12-year zero-cancellation record.**
 
-_M2A Aviation Academy—Where military aviators and aspiring airline pilots become multi-engine rated professionals._
+_Eagle Aircraft Aviation Academy—Where military aviators and aspiring airline pilots become multi-engine rated professionals._
