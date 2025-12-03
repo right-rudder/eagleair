@@ -3,7 +3,7 @@ title: "Private Pilot License"
 description: "Start your aviation journey with professional private pilot training. All-inclusive program with experienced instructors, modern aircraft, and comprehensive ground school. Your first step toward the skies."
 duration: "3-4 months"
 cost: "$15,500 All-In"
-image: "/src/assets/maksim-chernishev-HM8SDqf6l-U-unsplash.jpg"
+image: "/src/assets/stock-victor-zhuk-3MYtBMg8Ex4-unsplash-cropped.webp"
 order: 1
 highlights:
   - "All-inclusive: 60+ flight hours, ground school, checkride"
