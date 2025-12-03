@@ -3,7 +3,7 @@ title: "Multi-Engine Time-Building Block"
 description: "Exclusive block-time multi-engine flying for military pilots, time-builders, and airline candidates. Build twin hours your way—no hourly pressure, flexible scheduling, professional mentorship."
 duration: "Flexible (10-100+ hours)"
 cost: "From $3,500/10-hour block"
-image: "/src/assets/chris-leipelt-xrKEQ70S3O0-unsplash.jpg"
+image: "/src/assets/stock-zahra-q_zVt9iTazQ-unsplash-cropped.webp"
 order: 7
 highlights:
   - "Exclusive block-time rates: $350/hr (aircraft + instructor)"

@@ -3,7 +3,7 @@ title: "Instrument Rating"
 description: "Master IFR flight and unlock all-weather flying capabilities. Professional instrument training with real IMC experience, modern avionics, and veteran CFII instructors. Fly confidently in clouds and low visibility."
 duration: "2-3 months"
 cost: "$18,500 All-In"
-image: "/src/assets/mael-balland-QRQHIYyIlp8-unsplash.jpg"
+image: "/src/assets/stock-brendan-sapp-9mF_v8c0gFQ-unsplash.webp"
 order: 2
 highlights:
   - "All-inclusive: 50+ flight hours, 30+ actual instrument time"

@@ -24,7 +24,7 @@ const formatDate = (date: Date) => {
   <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto">
       <h1 class="text-4xl md:text-5xl font-bold text-center mb-4">Blog</h1>
-      <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+      <p class="text-xl text-center text-muted-600 mb-12 max-w-3xl mx-auto">
         Stay informed with the latest aviation insights, training tips, and
         industry news.
       </p>
@@ -32,7 +32,7 @@ const formatDate = (date: Date) => {
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {
           sortedPosts.map((post) => (
-            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <article class="bg-muted-50  shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               {post.data.image && (
                 <img
                   src={post.data.image}
@@ -41,7 +41,7 @@ const formatDate = (date: Date) => {
                 />
               )}
               <div class="p-6">
-                <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                <div class="flex items-center gap-3 text-sm text-muted-500 mb-3">
                   <time datetime={post.data.pubDate.toISOString()}>
                     {formatDate(post.data.pubDate)}
                   </time>
@@ -58,7 +58,7 @@ const formatDate = (date: Date) => {
                   </a>
                 </h2>
 
-                <p class="text-gray-600 mb-4 line-clamp-3">
+                <p class="text-muted-600 mb-4 line-clamp-3">
                   {post.data.description}
                 </p>
 
