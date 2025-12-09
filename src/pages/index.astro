@@ -7,137 +7,138 @@ import WhyChooseUs from "../components/WhyChooseUs.astro";
 import ProcessSteps from "../components/ProcessSteps.astro";
 import Testimonials from "../components/Testimonials.astro";
 import CTASection from "../components/CTASection.astro";
-import { PHONE_NUMBER } from "../data/consts";
+import { PHONE_NUMBER, COMPANY_NICKNAME } from "../data/consts";
 
 const heroData = {
   image: {
-    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
-    alt: "Military aircraft in flight",
+    src: "/src/assets/eagle-air-valparaiso-old-header.jpg",
+    alt: "Eagle Aircraft Flight Academy - Flight Training in Valparaiso, Indiana",
   },
   eyebrow: `Call Us: ${PHONE_NUMBER}`,
-  title: "All Inclusive<br>Military to Airline Course",
+  title: `Become a Pilot in Indiana </br> <span class="text-madison-200">${COMPANY_NICKNAME}</span>`,
   subTitle:
-    "Turn your military flight experience into a successful airline career",
+    "Cessna Pilot Center flight training at Porter County Regional Airport in Valparaiso, Indiana.",
   cta: [
     {
-      url: "/training/atp-certification",
-      text: "ATP Certification",
+      url: "/discovery-flights",
+      text: "Schedule a Discovery Flight",
     },
     {
-      url: "/training/ctp-certification",
-      text: "CTP Course",
+      url: "/contact",
+      text: "Talk to Our Team",
     },
   ],
 };
 
 const valuePropositionData = {
-  title: "Professional Pilot Training with Transparent Pricing",
-  subtitle: "About M2A Aviation Academy",
+  title: "Flight Training in Valparaiso, Indiana",
+  subtitle: "About Eagle Aircraft Flight Academy",
   description:
-    "M2A Aviation Academy is an award-winning flight school offering comprehensive pilot training from private pilot through airline careers. Our experienced airline captain instructors provide multi-engine training, instrument ratings, commercial certification, and flight instructor programs with all-inclusive pricing and no hidden costs. Train with industry professionals and benefit from our proven career pathways, dual DPE access, and performance-based airline placement connections.",
+    "Eagle Aircraft Flight Academy has been training pilots since 1979 and has helped more than 2,000 students launch their aviation journey. As a Cessna Pilot Center and FAA Part 141 and Part 61 flight school, we offer a full training path from Private Pilot through ATP. Students train in Cessna and Tecnam aircraft and Elite simulators while taking advantage of university partnerships, VA benefits, international student support, and affordable student housing.",
   stats: [
-    { value: "3,000+", label: "Pilots Trained" },
-    { value: "2 Years", label: "Zero Checkride Cancellations" },
-    { value: "15+", label: "Partner Airlines" },
-    { value: "100%", label: "Transparent Pricing" },
+    { value: "1979", label: "Training Pilots Since" },
+    { value: "2,000+", label: "Students Trained" },
+    { value: "Part 141", label: "FAA Approved Program" },
+    { value: "2", label: "University Partners" },
   ],
   image: {
-    src: "/src/assets/william-topa-7_4bU5tHRLQ-unsplash.jpg",
-    alt: "Professional pilot training",
+    src: "/src/assets/stock-tadeu-jnr-kAzSa_azENM-unsplash.jpg",
+    alt: "Student pilot training in Cessna aircraft",
   },
 };
 
 const benefits = [
   {
-    icon: "🏆",
-    title: "Award-Winning",
+    icon: "award",
+    title: "Decades of Experience",
     description:
-      "AOPA National Flight Training Experience Award recipient with 34,000+ successful pilots trained.",
+      "Eagle Aircraft has been a trusted training center in Northwest Indiana since 1979, serving local, regional, and international students.",
   },
   {
-    icon: "👨‍✈️",
-    title: "Veteran Airline Captain Instructors",
+    icon: "aircraft",
+    title: "Cessna Pilot Center",
     description:
-      "Train with experienced airline captains who've flown professionally for decades—not just time-builders.",
+      "Train in a modern Cessna Pilot Center environment with integrated online and in-aircraft lessons designed for better learning and retention.",
   },
   {
-    icon: "💎",
-    title: "Transparent All-In Pricing",
+    icon: "shield",
+    title: "Part 141 & Part 61",
     description:
-      "No hidden costs, no hourly overages, no surprise fees. One price includes housing, checkrides, and materials.",
+      "Choose flexible Part 61 lessons or an accelerated FAA Part 141 program built to save time and help keep training costs under control.",
   },
   {
-    icon: "🎯",
-    title: "Dual DPE & Zero Cancellations",
+    icon: "pathway",
+    title: "Clear Training Pathways",
     description:
-      "12-year track record of zero checkride cancellations. Immediate scheduling, no 3-month waitlists.",
+      "From discovery flight to ATP, Eagle supports degree pathways, VA benefits, international students, and CFI opportunities to build hours.",
   },
 ];
 
 const processSteps = [
   {
     number: 1,
-    title: "Free Consultation",
+    title: "Schedule a Conversation or Flight",
     description:
-      "Contact us to discuss your aviation goals and determine the best training path—from zero experience to airlines.",
+      "Contact Eagle Aircraft or book a discovery flight to tour the school, learn about our programs, and talk through your goals.",
   },
   {
     number: 2,
-    title: "Enroll & Schedule",
+    title: "Choose Your Training Path",
     description:
-      "Choose from our transparent all-inclusive programs. Immediate scheduling—no waitlists, no hidden costs.",
+      "Select the right option for you, from stand-alone ratings to university degree partnerships, VA-backed training, or accelerated programs.",
   },
   {
     number: 3,
-    title: "Professional Training",
+    title: "Train at KVPZ",
     description:
-      "Train with veteran airline captain instructors in modern aircraft. Single-location seamless training with housing included.",
+      "Train with experienced instructors in Cessna and Tecnam aircraft and Elite simulators at Porter County Regional Airport in Valparaiso.",
   },
   {
     number: 4,
-    title: "Career Launch",
+    title: "Advance Your Aviation Career",
     description:
-      "Build hours as M2A instructor, then transition to airlines with our performance-based placement connections.",
+      "Finish your certificates and ratings, build time through rentals or instructor roles, and move on to corporate, charter, or airline opportunities.",
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "M2A Aviation Academy's transparent pricing and professional instruction exceeded my expectations. No hidden costs, no surprises—just quality training with airline captains.",
-    author: "Peter Gibbons",
-    role: "Commercial Pilot & CFI",
+      "Eagle Aircraft made training clear and organized from day one. The instructors were patient, and I felt ready and confident for my private pilot checkride.",
+    author: "Jason Miller",
+    role: "Private Pilot Graduate",
     rating: 5,
   },
   {
     quote:
-      "The multi-engine training at M2A was exceptional. Real IMC flying, immediate checkride scheduling, and instructors who genuinely care about your success. Worth every penny.",
-    author: "Sarah Johnson",
-    role: "Regional Airline First Officer",
+      "Doing my instrument and commercial training at Eagle was a great fit. The mix of simulator time and flying out of KVPZ gave me solid real-world experience.",
+    author: "Danielle Carter",
+    role: "Commercial Pilot",
     rating: 5,
   },
   {
     quote:
-      "From zero experience to regional airline first officer in 24 months. M2A's Zero to Airlines program delivered everything they promised—and more.",
-    author: "Mike Reynolds",
-    role: "SkyWest Airlines First Officer",
+      "As a student using VA benefits, I appreciated how the Eagle team helped me understand my options and plan a clear path from private through my advanced ratings.",
+    author: "Marcus Allen",
+    role: "Veteran & Flight Student",
     rating: 5,
   },
 ];
 
 const ctaData = {
-  title: "Ready to Start Your Airline Career?",
+  title: "Ready to Start Flight Training in Valparaiso?",
   description:
-    "The aviation industry is waiting for skilled pilots like you. Take the first step towards your dream job with M2A's comprehensive training programs tailored for structured aviators.",
+    "Whether you are taking your first discovery flight or planning a full path from Private through ATP, Eagle Aircraft Flight Academy can help you build a clear, affordable training plan at Porter County Regional Airport.",
   image: {
     src: "/src/assets/sebastian-zzWYD-tc_jI-unsplash.jpg",
-    alt: "Airliner flying above the clouds",
+    alt: "Single-engine training aircraft in flight",
   },
   primaryCTA: {
-    text: "Get Started Today",
+    text: "Contact Eagle Aircraft",
     href: "/contact",
   },
 };
+
 ---
 
 <BaseLayout>

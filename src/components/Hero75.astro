@@ -24,7 +24,7 @@ const { data } = Astro.props;
 ---
 
 <section
-  class="hero-section relative overflow-hidden flex justify-center items-center lg:items-end lg:pb-24 text-white min-h-[75vh]"
+  class="hero-section relative overflow-hidden flex justify-center items-center lg:items-end lg:pb-24 text-muted-50 min-h-[75vh]"
   aria-label="Hero section"
 >
   <!-- Background overlay for better text readability -->
@@ -53,7 +53,7 @@ const { data } = Astro.props;
         class="flex flex-col items-center lg:items-start gap-y-6 text-center lg:text-left"
       >
         <h1
-          class="font-title text-white text-4xl/tight sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/16 uppercase font-bold drop-shadow-2xl"
+          class="font-title text-muted-50 text-4xl/tight sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/16 uppercase font-bold drop-shadow-2xl"
           set:html={data.title}
         />
         {
