@@ -265,6 +265,7 @@ Our **dual DPE system and professional operations** mean **zero checkride cancel
 
 Eagle Aircraft's **"gray beard" mentorship program** provides ongoing quality assurance—senior instructors review student progress, ensuring training exceeds checkride minimums.
 
+
 ### 34,000+ Successful Pilots & Proven Methodology
 
 Decades of refinement mean Eagle Aircraft's curriculum, standards, and career pathways are **battle-tested and continuously optimized** based on airline feedback and graduate outcomes.

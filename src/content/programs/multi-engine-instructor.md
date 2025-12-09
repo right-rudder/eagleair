@@ -3,7 +3,7 @@ title: "Multi-Engine Instructor (MEI)"
 description: "Add multi-engine instruction to your CFI/CFII credentials. Unlock higher-paying instruction jobs and fast-track your airline career while building twin time."
 duration: "7-10 days"
 cost: "$12,500 All-In"
-image: "/src/assets/maksim-chernishev-HM8SDqf6l-U-unsplash.jpg"
+image: "/src/assets/stock-david-b-o27uCBOPbG0-unsplash.jpg"
 order: 6
 highlights:
   - "All-inclusive: housing, checkride, equipment"
@@ -56,7 +56,7 @@ Most MEI graduates stay on at Eagle Aircraft to instruct in multi-engine aircraf
 
 ### Veteran Airline Captain Mentorship
 
-You'll train under **retired and active airline captains** with 10,000+ hours and decades of multi-engine experience. Our "gray beard" mentors provide **continuation training and peer-checking**—quality assurance no competitor offers.
+You'll train under **retired and active airline captains** with 10,000+ hours and decades of multi-engine experience. Our "muted beard" mentors provide **continuation training and peer-checking**—quality assurance no competitor offers.
 
 ### Dual DPE Access & Zero Cancellations
 
