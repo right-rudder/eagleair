@@ -21,7 +21,7 @@ requirements:
 
 ## Multi-Engine Time-Building Block—Build Twin Hours Your Way
 
-Need multi-engine time for airline applications but tired of **expensive hourly rentals, scheduling uncertainty, and no mentorship**? M2A Aviation Academy's **Time-Building Block Program** offers **exclusive block-time rates, flexible scheduling, and professional guidance** from veteran airline captains.
+Need multi-engine time for airline applications but tired of **expensive hourly rentals, scheduling uncertainty, and no mentorship**? Eagle Aircraft Aviation Academy's **Time-Building Block Program** offers **exclusive block-time rates, flexible scheduling, and professional guidance** from veteran airline captains.
 
 Whether you're a **military aviator building civilian multi-engine hours**, a **CFI time-building toward airline minimums**, or a **commercial pilot preparing for regional airline interviews**, our block program accelerates your timeline **without hourly pressure or predatory fees**.
 
@@ -50,16 +50,16 @@ Whether you're a **military aviator building civilian multi-engine hours**, a **
 
 ---
 
-## Why M2A's Block Program Beats Traditional Rentals
+## Why Eagle Aircraft's Block Program Beats Traditional Rentals
 
 ### Exclusive Block-Time vs. Hourly Rental Uncertainty
 
 - **Traditional Rentals:** $400–500/hr; scheduling conflicts; aircraft unavailability; no instructor continuity.
-- **M2A Block Program:** **$320–350/hr prepaid rates**; priority scheduling; dedicated aircraft access; consistent instructor mentorship.
+- **Eagle Aircraft Block Program:** **$320–350/hr prepaid rates**; priority scheduling; dedicated aircraft access; consistent instructor mentorship.
 
 ### Safety Pilot Option (Reduce Costs Further)
 
-If you're instrument-rated and building hood time, **M2A provides safety pilots** (rated multi-engine pilots) at reduced rates or peer-to-peer arrangements—**cutting your hourly cost in half** for IFR practice.
+If you're instrument-rated and building hood time, **Eagle Aircraft provides safety pilots** (rated multi-engine pilots) at reduced rates or peer-to-peer arrangements—**cutting your hourly cost in half** for IFR practice.
 
 ### No Hourly Pressure—Fly at Your Pace
 
@@ -105,7 +105,7 @@ Planning a King Air, Citation, or PC-12 type rating? Block-time builds **multi-e
 ### PIC Time-Building (Solo or Safety Pilot)
 
 - **Solo flights:** Build PIC multi-engine time independently (cross-countries, local practice, IFR approaches).
-- **Safety pilot arrangements:** M2A connects you with rated multi-engine safety pilots for IFR hood time—**split costs and build hours simultaneously**.
+- **Safety pilot arrangements:** Eagle Aircraft connects you with rated multi-engine safety pilots for IFR hood time—**split costs and build hours simultaneously**.
 
 ### Dual Instruction (Optional Mentorship)
 
@@ -115,7 +115,7 @@ Planning a King Air, Citation, or PC-12 type rating? Block-time builds **multi-e
 
 ### Cross-Country Time-Building
 
-- **Regional trips:** Build cross-country multi-engine time; M2A coordinates airports, fueling, overnight logistics.
+- **Regional trips:** Build cross-country multi-engine time; Eagle Aircraft coordinates airports, fueling, overnight logistics.
 - **Long-distance missions:** Plan extended cross-countries (e.g., North Carolina to Florida, Midwest trips) with instructor or safety pilot support.
 
 ### IFR Time-Building (Instrument-Rated Pilots)
@@ -144,7 +144,7 @@ Most regional airlines prefer candidates with **50–100+ hours multi-engine tim
 
 ### Network & Mentorship
 
-M2A's **airline captain instructors** provide **direct connections to hiring partners**—no fees, no commissions. Meet performance criteria (safety, professionalism) and we introduce you to airline recruiters.
+Eagle Aircraft's **airline captain instructors** provide **direct connections to hiring partners**—no fees, no commissions. Meet performance criteria (safety, professionalism) and we introduce you to airline recruiters.
 
 ### Resume & Logbook Optimization
 
@@ -152,7 +152,7 @@ Our instructors help you **structure your logbook** and **highlight competitive 
 
 ### Continuation Training & Peer-Checking
 
-Unlike solo rentals with zero oversight, M2A's **peer-checking program** ensures quality and safety—periodic instructor check-ins, flight reviews, and mentorship sessions keep your skills sharp.
+Unlike solo rentals with zero oversight, Eagle Aircraft's **peer-checking program** ensures quality and safety—periodic instructor check-ins, flight reviews, and mentorship sessions keep your skills sharp.
 
 ---
 
@@ -166,7 +166,7 @@ Unlike solo rentals with zero oversight, M2A's **peer-checking program** ensures
 
 ### Extended Stay Housing Discounts
 
-Building 50+ hours over several weeks? M2A offers **on-site housing at discounted weekly rates**—cheaper than hotels, more convenient than off-site lodging.
+Building 50+ hours over several weeks? Eagle Aircraft offers **on-site housing at discounted weekly rates**—cheaper than hotels, more convenient than off-site lodging.
 
 ### Aircraft Priority & Availability
 
@@ -184,7 +184,7 @@ Block-time customers receive **priority scheduling**—reserve aircraft weeks in
 2. **Block Purchase:** Select your block size (10, 25, 50, or 100 hours) and prepay for exclusive rates.
 3. **Scheduling:** Reserve aircraft and instructor/safety pilot sessions based on your availability.
 4. **Fly & Build Hours:** Execute flights at your pace; track progress with instructor mentorship.
-5. **Airline Prep & Applications:** Leverage M2A's network for airline introductions and interview preparation.
+5. **Airline Prep & Applications:** Leverage Eagle Aircraft's network for airline introductions and interview preparation.
 
 ---
 
@@ -204,11 +204,11 @@ Block-time customers receive **priority scheduling**—reserve aircraft weeks in
 
 **Q: Can I bring my own safety pilot?**
 
-**A:** Yes—if your safety pilot holds a multi-engine rating and current medical. M2A coordinates scheduling and ensures insurance compliance. If you don't have a safety pilot, we'll match you with one.
+**A:** Yes—if your safety pilot holds a multi-engine rating and current medical. Eagle Aircraft coordinates scheduling and ensures insurance compliance. If you don't have a safety pilot, we'll match you with one.
 
 **Q: Do block hours count toward insurance minimums for solo flying?**
 
-**A:** M2A's insurance allows solo multi-engine flying for rated pilots with **minimum 10 hours multi-engine PIC** and current BFR. If you're below minimums, initial hours must be dual until insurance requirements are met.
+**A:** Eagle Aircraft's insurance allows solo multi-engine flying for rated pilots with **minimum 10 hours multi-engine PIC** and current BFR. If you're below minimums, initial hours must be dual until insurance requirements are met.
 
 **Q: Can I use block hours for checkride prep?**
 
@@ -224,7 +224,7 @@ Block-time customers receive **priority scheduling**—reserve aircraft weeks in
 
 **No hourly pressure. No scheduling games. No predatory fees.**
 
-### Contact M2A Aviation Academy Today
+### Contact Eagle Aircraft Aviation Academy Today
 
 - **Phone:** [Insert phone number]
 - **Email:** [Insert email]
@@ -232,4 +232,4 @@ Block-time customers receive **priority scheduling**—reserve aircraft weeks in
 
 **Block-time rates from $320/hr. Flexible scheduling. Veteran airline captain mentorship.**
 
-_M2A Aviation Academy—Where time-builders become airline-ready multi-engine professionals._
+_Eagle Aircraft Aviation Academy—Where time-builders become airline-ready multi-engine professionals._

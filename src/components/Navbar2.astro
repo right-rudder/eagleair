@@ -57,12 +57,11 @@ export const footerMenu: MenuItem[] = [
     label: "About",
     url: "/about",
     children: [
-      { label: "About Eagle Aircraft", url: "/about/" },
-      { label: "Partners", url: "/partners/" },
-      { label: "FAQs", url: "/faq/" },
-      { label: "Financing", url: "/financing" },
+      { label: "About EagleAir", url: "/about" },
+      { label: "FAQ", url: "/faq" },
+      { label: "Funding Options", url: "/funding-options" },
       { label: "Blog", url: "/blog" },
-      { label: "Contact Us", url: "/contact/" },
+      { label: "Contact Us", url: "/contact" },
     ],
   },
 ];
@@ -78,7 +77,7 @@ const { pathname, navBarBG = false } = Astro.props;
     <!-- Logo -->
     <a href="/" class="object-contain h-auto">
       <ImageComp
-        class="logo-muted-50 w-36 md:w-56 duration-200"
+        class="logo-white w-36 md:w-56 duration-200"
         src={LOGO_ASSETS}
         alt="EagleAir Logo"
       />

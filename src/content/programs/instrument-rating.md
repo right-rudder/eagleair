@@ -23,7 +23,7 @@ requirements:
 
 The **Instrument Rating (IR)** transforms you from a fair-weather pilot to an **all-weather professional**. Master the skills to fly in clouds, low visibility, and challenging conditions—opening doors to **serious cross-country flying, advanced ratings, and airline careers**.
 
-At M2A Aviation Academy, we don't just teach you to pass a checkride—we train you to **fly IFR like a professional**, with emphasis on **real IMC experience, advanced avionics proficiency, and airline-style procedures**.
+At Eagle Aircraft Aviation Academy, we don't just teach you to pass a checkride—we train you to **fly IFR like a professional**, with emphasis on **real IMC experience, advanced avionics proficiency, and airline-style procedures**.
 
 ---
 
@@ -63,17 +63,17 @@ Your **$18,500 all-in price** covers:
 
 ---
 
-## Why M2A's Instrument Rating Program Excels
+## Why Eagle Aircraft's Instrument Rating Program Excels
 
 ### Real IMC Flying (Not Just Hood Time Under the Foggles)
 
 - **Competitors:** Most students complete instrument ratings with minimal actual IMC—mostly simulated hood time in clear weather.
-- **M2A:** We **prioritize real cloud flying**—30+ hours actual instrument time whenever weather permits. You'll fly **real approaches in real weather**, not just simulated scenarios.
+- **Eagle Aircraft:** We **prioritize real cloud flying**—30+ hours actual instrument time whenever weather permits. You'll fly **real approaches in real weather**, not just simulated scenarios.
 
 ### Experienced CFII Instructors With Airline/IFR Backgrounds
 
 - **Competitors:** Assign students to low-time CFIIs building hours—limited real-world IFR experience.
-- **M2A:** Train with **airline pilots and experienced IFR professionals** who've flown thousands of hours in actual IMC. Learn **airline-style procedures, CRM, and professional decision-making**.
+- **Eagle Aircraft:** Train with **airline pilots and experienced IFR professionals** who've flown thousands of hours in actual IMC. Learn **airline-style procedures, CRM, and professional decision-making**.
 
 ### Modern GPS/RNAV Training (Industry Standard)
 
@@ -195,15 +195,15 @@ You want to be the **best pilot possible**—instrument training dramatically im
 
 ---
 
-## Real IMC Flying—The M2A Difference
+## Real IMC Flying—The Eagle Aircraft Difference
 
 Most flight schools complete instrument ratings with **minimal actual IMC time**—students fly under the hood in clear weather because it's easier to schedule and less demanding for instructors.
 
-**M2A prioritizes real cloud flying:**
+**Eagle Aircraft prioritizes real cloud flying:**
 
 - **Weather monitoring:** We track IFR conditions daily and schedule flights when IMC is available.
 - **Experienced CFIIs:** Our instructors are **comfortable flying real IMC**—many are airline pilots who fly in weather professionally.
-- **30+ hours actual instrument:** Most M2A students finish with **30-50 hours actual IMC**—far exceeding industry averages.
+- **30+ hours actual instrument:** Most Eagle Aircraft students finish with **30-50 hours actual IMC**—far exceeding industry averages.
 - **Real approaches in real weather:** You'll fly **ILS approaches to minimums in actual fog**, RNAV approaches in clouds, and holds in IMC—not just simulated scenarios.
 
 **This is what separates competent IFR pilots from checkride-passers.**
@@ -224,7 +224,7 @@ Most flight schools complete instrument ratings with **minimal actual IMC time**
 
 ### Third-Party Financing
 
-M2A partners with **aviation-specific lenders**:
+Eagle Aircraft partners with **aviation-specific lenders**:
 
 - **Stratus Financial**
 - **AOPA Flight Training Finance**
@@ -257,7 +257,7 @@ M2A partners with **aviation-specific lenders**:
 
 **Q: What's the FAA minimum vs. realistic flight hours?**
 
-**A:** FAA minimum is **40 hours total time** (with private pilot hours counting), but realistic instrument training requires **50-60 hours of dedicated instrument flight**. M2A's pricing reflects realistic expectations.
+**A:** FAA minimum is **40 hours total time** (with private pilot hours counting), but realistic instrument training requires **50-60 hours of dedicated instrument flight**. Eagle Aircraft's pricing reflects realistic expectations.
 
 **Q: Do I really fly in actual clouds?**
 
@@ -287,9 +287,9 @@ M2A partners with **aviation-specific lenders**:
 
 **A:** Absolutely—many students train **evenings and weekends** while maintaining careers. Part-time training takes longer but accommodates busy schedules.
 
-**Q: What's the pass rate for M2A instrument students?**
+**Q: What's the pass rate for Eagle Aircraft instrument students?**
 
-**A:** M2A's instrument rating **first-time pass rate exceeds 92%**—significantly higher than industry averages. Our emphasis on real IMC flying and professional instruction ensures checkride readiness.
+**A:** Eagle Aircraft's instrument rating **first-time pass rate exceeds 92%**—significantly higher than industry averages. Our emphasis on real IMC flying and professional instruction ensures checkride readiness.
 
 ---
 
@@ -297,7 +297,7 @@ M2A partners with **aviation-specific lenders**:
 
 **No hidden costs. No shortcuts. Real cloud flying with professional instruction.**
 
-### Contact M2A Aviation Academy Today
+### Contact Eagle Aircraft Aviation Academy Today
 
 - **Phone:** [Insert phone number]
 - **Email:** [Insert email]
@@ -305,4 +305,4 @@ M2A partners with **aviation-specific lenders**:
 
 **$18,500 all-in. Real IMC experience. Veteran CFII instructors. Modern avionics.**
 
-_M2A Aviation Academy—Where private pilots become all-weather professionals._
+_Eagle Aircraft Aviation Academy—Where private pilots become all-weather professionals._

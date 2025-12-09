@@ -10,7 +10,7 @@ highlights:
   - "All-inclusive: housing, meals, checkrides, equipment, materials"
   - "Guaranteed checkride scheduling with dual DPEs"
   - "Performance-based airline placement (no fees)"
-  - "Build 1,500+ hours as M2A instructor"
+  - "Build 1,500+ hours as Eagle Aircraft instructor"
   - "Veteran airline captain mentors throughout"
 requirements:
   - "18 years of age or older"
@@ -22,9 +22,9 @@ requirements:
 
 ## Zero to Airlines—Your Complete Career Pathway
 
-M2A Aviation Academy's **Zero to Airlines Career Program** is the most comprehensive, transparent, and professionally-executed pilot training program in the industry. From **zero flight experience to regional airline first officer**, we guide you through every rating, hour, and milestone—**all-inclusive pricing, no hidden costs, no fragmentation**.
+Eagle Aircraft Aviation Academy's **Zero to Airlines Career Program** is the most comprehensive, transparent, and professionally-executed pilot training program in the industry. From **zero flight experience to regional airline first officer**, we guide you through every rating, hour, and milestone—**all-inclusive pricing, no hidden costs, no fragmentation**.
 
-Unlike traditional flight schools that nickel-and-dime you with hourly rates, surprise fees, and uncertain timelines, M2A's **$89,500 all-in program** covers **every rating, all flight hours, housing, checkrides, and career placement**—with a proven track record of **34,000+ successful pilots and direct airline hiring partnerships**.
+Unlike traditional flight schools that nickel-and-dime you with hourly rates, surprise fees, and uncertain timelines, Eagle Aircraft's **$89,500 all-in program** covers **every rating, all flight hours, housing, checkrides, and career placement**—with a proven track record of **34,000+ successful pilots and direct airline hiring partnerships**.
 
 ---
 
@@ -57,8 +57,8 @@ Your **$89,500 all-in investment** covers:
 
 ### Career Acceleration
 
-- **Flight instructor position at M2A** (performance-based employment after CFI)
-- **Build 1,500+ hours** as M2A instructor (6–12 months post-CFI)
+- **Flight instructor position at Eagle Aircraft** (performance-based employment after CFI)
+- **Build 1,500+ hours** as Eagle Aircraft instructor (6–12 months post-CFI)
 - **Competitive instructor pay** while building time ($45,000–$60,000 annual)
 - **Performance-based airline placement** (no fees, direct hiring partner introductions)
 - **Airline interview preparation** (technical prep, checkride simulation, resume review)
@@ -66,7 +66,7 @@ Your **$89,500 all-in investment** covers:
 
 ---
 
-## Why M2A's Zero to Airlines Program Dominates
+## Why Eagle Aircraft's Zero to Airlines Program Dominates
 
 ### Transparent All-In Pricing vs. Hourly Nickel-and-Diming
 
@@ -82,27 +82,27 @@ Your **$89,500 all-in investment** covers:
 
 **Competitor Total (Hidden):** $110,000–$150,000+ (and climbing with overages)
 
-**M2A Total:** **$89,500 all-in.** Period. No surprises.
+**Eagle Aircraft Total:** **$89,500 all-in.** Period. No surprises.
 
 ### Single-Location Seamless Training vs. Fragmented Schools
 
 - **Competitors:** Ground school online (no instructor interaction), flight training at one airport, checkrides at another, housing off-site, no career support.
-- **M2A:** **Everything at Wayne Executive Jetport (KGWW)**—training, housing, checkrides, instructor employment, airline prep under one roof.
+- **Eagle Aircraft:** **Everything at Wayne Executive Jetport (KGWW)**—training, housing, checkrides, instructor employment, airline prep under one roof.
 
 ### Dual DPE Access & Guaranteed Checkride Scheduling
 
 - **Competitors:** Single DPE dependency; 4–8 week checkride delays; weather/examiner cancellations push timelines months out.
-- **M2A:** **Two Designated Pilot Examiners on staff.** **12-year track record of zero examiner-related cancellations.** Checkrides scheduled within days, not months.
+- **Eagle Aircraft:** **Two Designated Pilot Examiners on staff.** **12-year track record of zero examiner-related cancellations.** Checkrides scheduled within days, not months.
 
 ### Performance-Based Airline Placement vs. Predatory Fees
 
 - **Competitors:** Charge $3,000–$10,000 "cadet program fees" or take commissions from your first-year airline salary.
-- **M2A:** **Zero placement fees.** Meet performance criteria (safety, professionalism, pass rates) and we provide **direct introductions to regional and major airline hiring partners**—no middlemen.
+- **Eagle Aircraft:** **Zero placement fees.** Meet performance criteria (safety, professionalism, pass rates) and we provide **direct introductions to regional and major airline hiring partners**—no middlemen.
 
 ### Veteran Airline Captain Mentorship vs. 300-Hour Time-Builders
 
 - **Competitors:** Learn from instructors with 250–500 hours, no airline experience, no professional mentorship.
-- **M2A:** Train under **retired and active airline captains** with 10,000+ hours, decades of line experience, and proven teaching records. **"Gray beard" peer-checking ensures quality** beyond checkride minimums.
+- **Eagle Aircraft:** Train under **retired and active airline captains** with 10,000+ hours, decades of line experience, and proven teaching records. **"Gray beard" peer-checking ensures quality** beyond checkride minimums.
 
 ---
 
@@ -175,13 +175,13 @@ Your **$89,500 all-in investment** covers:
 - Twin-engine teaching and emergency procedures instruction
 - MEI checkride
 
-**Outcome:** CFI, CFII, MEI certificates—legal to instruct and build hours as M2A instructor.
+**Outcome:** CFI, CFII, MEI certificates—legal to instruct and build hours as Eagle Aircraft instructor.
 
-### Phase 6: Time-Building as M2A Instructor (Months 14–24+)
+### Phase 6: Time-Building as Eagle Aircraft Instructor (Months 14–24+)
 
 **Build 1,250+ hours to reach 1,500-hour airline minimums**
 
-- Instruct students at M2A in single-engine, multi-engine, and IFR training
+- Instruct students at Eagle Aircraft in single-engine, multi-engine, and IFR training
 - Earn competitive instructor pay ($45,000–$60,000 annually)
 - Continue mentorship with veteran airline captains (continuation training, peer-checking)
 - Build multi-engine PIC time (highly valued by airlines)
@@ -191,11 +191,11 @@ Your **$89,500 all-in investment** covers:
 
 ### Phase 7: Airline Hiring & Career Launch (Month 18–24)
 
-- **Resume and application optimization** with M2A career advisors
+- **Resume and application optimization** with Eagle Aircraft career advisors
 - **Airline interview preparation** (technical prep, CRM scenarios, HR questions)
 - **Direct introductions** to regional airline hiring partners (SkyWest, Envoy, Republic, PSA, others)
 - **First Officer position** at regional airline (starting pay $75,000–$90,000+)
-- **Ongoing M2A alumni network** support and career guidance
+- **Ongoing Eagle Aircraft alumni network** support and career guidance
 
 **Outcome:** Regional airline first officer position—career launched.
 
@@ -205,19 +205,19 @@ Your **$89,500 all-in investment** covers:
 
 ### Career Changers & Aspiring Professional Pilots
 
-You're leaving a corporate career, military service, or current profession to pursue your dream of flying for the airlines. M2A's structured, transparent program provides **clear milestones, guaranteed timelines, and proven career outcomes**.
+You're leaving a corporate career, military service, or current profession to pursue your dream of flying for the airlines. Eagle Aircraft's structured, transparent program provides **clear milestones, guaranteed timelines, and proven career outcomes**.
 
 ### Recent High School Graduates & College Students
 
-You want a **professional pilot career without $100,000+ in university aviation program debt**. M2A delivers the same certifications, better training, and faster timelines at **30–40% lower cost** than university programs.
+You want a **professional pilot career without $100,000+ in university aviation program debt**. Eagle Aircraft delivers the same certifications, better training, and faster timelines at **30–40% lower cost** than university programs.
 
 ### Military Veterans Using GI Bill Benefits
 
-M2A accepts **Post-9/11 GI Bill, VR&E, and SkillBridge**. Maximize your benefits with professional training and transition directly to civilian airline careers with veteran instructor mentorship.
+Eagle Aircraft accepts **Post-9/11 GI Bill, VR&E, and SkillBridge**. Maximize your benefits with professional training and transition directly to civilian airline careers with veteran instructor mentorship.
 
 ### International Students Seeking U.S. Airline Careers
 
-M2A coordinates **TSA clearances, M-1 visa sponsorship, and international student housing**. We've trained pilots from 50+ countries—you'll be in expert hands navigating FAA and immigration requirements.
+Eagle Aircraft coordinates **TSA clearances, M-1 visa sponsorship, and international student housing**. We've trained pilots from 50+ countries—you'll be in expert hands navigating FAA and immigration requirements.
 
 ---
 
@@ -225,7 +225,7 @@ M2A coordinates **TSA clearances, M-1 visa sponsorship, and international studen
 
 ### Regional Airline First Officer (18–24 Months)
 
-Upon reaching 1,500 hours, M2A alumni transition to **regional airline first officer positions** with partners including:
+Upon reaching 1,500 hours, Eagle Aircraft alumni transition to **regional airline first officer positions** with partners including:
 
 - **SkyWest Airlines** (United, Delta, American, Alaska feeders)
 - **Envoy Air** (American Eagle)
@@ -238,7 +238,7 @@ Upon reaching 1,500 hours, M2A alumni transition to **regional airline first off
 
 ### Major Airline Captain (5–10 Years)
 
-With regional airline experience, M2A alumni advance to **major and legacy carriers**:
+With regional airline experience, Eagle Aircraft alumni advance to **major and legacy carriers**:
 
 - United Airlines, Delta Air Lines, American Airlines
 - Southwest Airlines, JetBlue Airways, Alaska Airlines
@@ -246,7 +246,7 @@ With regional airline experience, M2A alumni advance to **major and legacy carri
 
 **Captain Pay:** $200,000–$400,000+ annually at major airlines.
 
-### M2A Alumni Success Stories
+### Eagle Aircraft Alumni Success Stories
 
 - **Over 34,000 pilots trained** since inception
 - **AOPA National Flight Training Experience Award** recipient
@@ -255,7 +255,7 @@ With regional airline experience, M2A alumni advance to **major and legacy carri
 
 ---
 
-## What Sets M2A Apart
+## What Sets Eagle Aircraft Apart
 
 ### 12-Year Zero-Cancellation Track Record
 
@@ -263,15 +263,16 @@ Our **dual DPE system and professional operations** mean **zero checkride cancel
 
 ### Peer-Checking & Continuation Training
 
-M2A's **"muted beard" mentorship program** provides ongoing quality assurance—senior instructors review student progress, ensuring training exceeds checkride minimums.
+Eagle Aircraft's **"gray beard" mentorship program** provides ongoing quality assurance—senior instructors review student progress, ensuring training exceeds checkride minimums.
+
 
 ### 34,000+ Successful Pilots & Proven Methodology
 
-Decades of refinement mean M2A's curriculum, standards, and career pathways are **battle-tested and continuously optimized** based on airline feedback and graduate outcomes.
+Decades of refinement mean Eagle Aircraft's curriculum, standards, and career pathways are **battle-tested and continuously optimized** based on airline feedback and graduate outcomes.
 
 ### Professional Operations & 24/7 Support
 
-Unlike unresponsive competitors, M2A's **operations manager provides 24/7 communication**—questions answered immediately, scheduling seamless, concerns addressed proactively.
+Unlike unresponsive competitors, Eagle Aircraft's **operations manager provides 24/7 communication**—questions answered immediately, scheduling seamless, concerns addressed proactively.
 
 ### Single-Location Simplicity
 
@@ -299,7 +300,7 @@ Unlike unresponsive competitors, M2A's **operations manager provides 24/7 commun
 
 ### Third-Party Financing
 
-M2A partners with **aviation-specific lenders** offering competitive rates:
+Eagle Aircraft partners with **aviation-specific lenders** offering competitive rates:
 
 - **Stratus Financial**
 - **AOPA Flight Training Finance**
@@ -321,7 +322,7 @@ M2A partners with **aviation-specific lenders** offering competitive rates:
 4. **Pre-Arrival Preparation:** Complete online ground school modules; receive welcome packet and checklist.
 5. **Arrive & Begin Training:** Check into housing, meet instructors, begin Phase 1 (PPL) ground and flight training.
 6. **Progress Through Ratings:** Complete all phases with instructor mentorship and checkride scheduling.
-7. **Instruct & Build Hours:** Transition to M2A instructor position; build 1,500+ hours while earning income.
+7. **Instruct & Build Hours:** Transition to Eagle Aircraft instructor position; build 1,500+ hours while earning income.
 8. **Airline Hiring & Career Launch:** Interview prep, airline introductions, first officer position secured.
 
 ---
@@ -338,7 +339,7 @@ M2A partners with **aviation-specific lenders** offering competitive rates:
 
 **Q: What if I already have some ratings (e.g., PPL or IR)?**
 
-**A:** M2A offers **customized pricing for partial programs**. Contact us for credit evaluation and adjusted pricing (e.g., if you hold PPL, start at Phase 2 with reduced cost).
+**A:** Eagle Aircraft offers **customized pricing for partial programs**. Contact us for credit evaluation and adjusted pricing (e.g., if you hold PPL, start at Phase 2 with reduced cost).
 
 **Q: Is housing shared or private?**
 
@@ -346,7 +347,7 @@ M2A partners with **aviation-specific lenders** offering competitive rates:
 
 **Q: What if I fail a checkride?**
 
-**A:** M2A's **first-time pass rate exceeds 90%**. If a retest is needed, additional flight training and retest fees apply ($500–$1,200 depending on rating). Our instructors prepare you thoroughly—failures are rare.
+**A:** Eagle Aircraft's **first-time pass rate exceeds 90%**. If a retest is needed, additional flight training and retest fees apply ($500–$1,200 depending on rating). Our instructors prepare you thoroughly—failures are rare.
 
 **Q: Are there any additional costs not included?**
 
@@ -354,15 +355,15 @@ M2A partners with **aviation-specific lenders** offering competitive rates:
 
 **Q: Can international students enroll?**
 
-**A:** Yes—M2A coordinates **M-1 visa sponsorship and TSA clearances**. Additional documentation required; contact our international student coordinator for details.
+**A:** Yes—Eagle Aircraft coordinates **M-1 visa sponsorship and TSA clearances**. Additional documentation required; contact our international student coordinator for details.
 
-**Q: What if I don't want to instruct at M2A after CFI?**
+**Q: What if I don't want to instruct at Eagle Aircraft after CFI?**
 
-**A:** No obligation—your CFI certificates are yours. However, **instructing at M2A is the fastest, most cost-effective way to build 1,500 hours** while earning income. Most graduates choose to stay for time-building.
+**A:** No obligation—your CFI certificates are yours. However, **instructing at Eagle Aircraft is the fastest, most cost-effective way to build 1,500 hours** while earning income. Most graduates choose to stay for time-building.
 
-**Q: Does M2A guarantee airline hiring?**
+**Q: Does Eagle Aircraft guarantee airline hiring?**
 
-**A:** No school can "guarantee" airline jobs (hiring is competitive and cyclical). However, M2A provides **direct introductions to hiring partners, interview prep, and career support**—dramatically increasing your competitiveness. Our alumni success rate speaks for itself.
+**A:** No school can "guarantee" airline jobs (hiring is competitive and cyclical). However, Eagle Aircraft provides **direct introductions to hiring partners, interview prep, and career support**—dramatically increasing your competitiveness. Our alumni success rate speaks for itself.
 
 ---
 
@@ -370,7 +371,7 @@ M2A partners with **aviation-specific lenders** offering competitive rates:
 
 **No hidden costs. No fragmented training. No uncertainty.**
 
-### Contact M2A Aviation Academy Today
+### Contact Eagle Aircraft Aviation Academy Today
 
 - **Phone:** [Insert phone number]
 - **Email:** [Insert email]
@@ -378,4 +379,4 @@ M2A partners with **aviation-specific lenders** offering competitive rates:
 
 **$89,500 all-in. 18–30 months to airline first officer. 34,000+ successful pilots.**
 
-_M2A Aviation Academy—Where zero-experience students become airline professionals._
+_Eagle Aircraft Aviation Academy—Where zero-experience students become airline professionals._
