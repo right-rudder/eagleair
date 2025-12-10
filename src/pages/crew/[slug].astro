@@ -3,6 +3,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import ImageWithZoomEffect from "../../components/ImageWithZoomEffect.astro";
+import { COMPANY_NICKNAME } from "../../data/consts";
 
 export const getStaticPaths = (async () => {
   const crewMembers = await getCollection("crew");
@@ -17,7 +20,26 @@ type Props = {
 };
 
 const { member } = Astro.props as Props;
-const { Content } = await member.render();
+
+const heroData = {
+  image: {
+    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+    alt: "Military aircraft in flight",
+  },
+  upperHeader: `Flying is Freedom`,
+  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  subTitle:
+    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+  cta: [
+    { url: "#", text: "Private Pilot (PPL)" },
+  ],
+  stats: [
+    { value: "1,500", suffix: "+", title: "Pilots Trained" },
+    { value: "95", suffix: "%", title: "Checkride Pass Rate" },
+    { value: "12", suffix: "+", title: "Training Aircraft" },
+  ],
+};
+ 
 ---
 
 <BaseLayout
@@ -25,58 +47,40 @@ const { Content } = await member.render();
   siteDescription={member.data.bio}
   siteImage={member.data.image}
 >
-  <article class="py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      <div class="bg-muted-50  shadow-lg overflow-hidden">
-        <img
-          src={member.data.image}
-          alt={member.data.name}
-          class="w-full h-96 object-cover"
-        />
-        <div class="p-8">
-          <h1 class="text-4xl font-bold mb-2">{member.data.name}</h1>
-          <p class="text-2xl text-blue-600 mb-6">{member.data.title}</p>
-
-          {
-            member.data.experience && (
-              <div class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Experience</h2>
-                <p class="text-muted-700">{member.data.experience}</p>
-              </div>
-            )
-          }
-
-          {
-            member.data.certifications &&
-              member.data.certifications.length > 0 && (
-                <div class="mb-6">
-                  <h2 class="text-xl font-semibold mb-3">Certifications</h2>
-                  <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {member.data.certifications.map((cert: string) => (
-                      <li class="flex items-start">
-                        <span class="text-blue-600 mr-2">✓</span>
-                        <span>{cert}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )
-          }
-
-          <div class="prose max-w-none mt-8">
-            <Content />
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-8 text-center">
-        <a
-          href="/crew"
-          class="inline-block bg-blue-600 text-muted-50 px-6 py-3  hover:bg-blue-700 transition-colors"
-        >
-          ← Back to Team
-        </a>
-      </div>
+<HeroScreen data={heroData}/>
+<section class="max-w-7xl mx-auto py-16 px-4 lg:px-8 space-y-8">
+  <div class="bg-madison-950 p-8 flex flex-col md:flex-row gap-8">
+    <div class="aspect-square overflow-hidden md:w-1/3 flex-shrink-0">
+      <ImageWithZoomEffect
+        src={member.data.image}
+        alt={member.data.name}
+      />
     </div>
-  </article>
+
+    <div class="flex grow flex-col">
+      <h1 class="text-4xl font-bold title !text-muted-50">{member.data.name}</h1>
+      <p class="text-xl subtitle !mx-0 !text-monza-600 mt-2">{member.data.title}</p>
+
+      {member.data.certifications && member.data.certifications.length > 0 && (
+        <div class="mt-8">
+          <h2 class="text-2xl font-bold mb-6 font-title text-muted-50">Certifications</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {member.data.certifications.map((cert: string) => (
+              <li class="flex items-start gap-3">
+                <span class="text-monza-600 text-xl">✓</span>
+                <span class="sans text-muted-50">{cert}</span>
+              </li>
+            ))}
+          </ul>
+          <h2 class="text-2xl font-bold mt-8 mb-4 font-title text-muted-50">Experience</h2>
+          <p class="sans text-muted-50">{member.data.bio}</p>
+        </div>
+      )}
+    </div>
+  </div>
+
+  <a href="/crew" class="bg-monza-800 text-base text-white sm:text-lg md:text-xl px-8 py-4 text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-auto block w-fit">
+    Back to Crew
+  </a>
+</section>
 </BaseLayout>
