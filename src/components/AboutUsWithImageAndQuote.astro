@@ -1,0 +1,102 @@
+---
+import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
+import ImageComp from "./ImageComp.astro";
+import { COMPANY_NAME } from "../data/consts";
+
+const MainImage = "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg";
+
+const whoWeAreWithQuotesData = [
+    {
+      upperHeading: "Our History",
+      title: "About Us",
+      paragraphs: [
+        `Welcome to ${COMPANY_NAME}, where dreams take flight. Founded and
+        operated by Hal Harris and his family, our academy is rooted in a love
+        for aviation that spans generations. Hal, a seasoned Certified Flight
+        Instructor (CFI) and jet pilot with a Citation type rating, has been
+        sharing his passion for flying with aspiring pilots for over 30 years.
+        His dedication to aviation is matched by his wife, MariCris, and their
+        daughter, Grace, who both contribute their unique talents and
+        enthusiasm to our family run school.`
+      ],
+      image: "/src/assets/aircraft-window-view.jpg",
+      quote: `When you join ${COMPANY_NAME}, you become part of our family.`,
+    },
+    {
+      upperHeading: "Our Vision",
+      title: "About Our Future",
+      paragraphs: [
+        `Our vision is to build a future where innovation, excellence, and meaningful
+        experiences shape everything we do. As we grow, ${COMPANY_NAME} remains committed
+        to expanding our capabilities, elevating our standards, and continually improving
+        the way we serve our community. We look ahead with intention — embracing new
+        opportunities, adopting modern solutions, and staying focused on long-term impact.
+        Our future is guided by progress, responsibility, and the belief that great
+        experiences are built through consistent dedication and purpose.`
+      ],
+      image: "/src/assets/aircraft-window-view.jpg",
+      quote: ` ${COMPANY_NAME} is a place for american students to feel proud and international students to feel welcome.`,
+    },
+]
+    
+---
+
+
+<section class="pb-12 pt-24 px-5">
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="flex flex-col justif items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1">
+                <p class="subtitle !mx-0 !text-black">
+                  {whoWeAreWithQuotesData[0].upperHeading}
+                </p>
+                <h2 class="text-5xl text-black font-bold title">
+                  {whoWeAreWithQuotesData[0].title}
+                </h2>
+                {
+                  whoWeAreWithQuotesData[0].paragraphs.map((paragraph) => (<p class="sans">{paragraph}</p>))
+                }
+              </div>
+              <div class="max-h-80 sm:max-h-140 lg:max-h-none">
+                <ImageComp
+                  src={MainImage}
+                  alt="Cessna flying over Sundance Airport"
+                  class="h-full w-full object-cover object-center lg:max-h-none"
+                />
+              </div>
+              <div
+                class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10">
+              
+                <ImQuotesLeft className="text-red-700 size-8" />
+                <p class="text-lg sans font-semibold">
+                  {whoWeAreWithQuotesData[0].quote}
+                </p>
+                <ImQuotesRight className="text-red-700 size-8 self-end" />
+              </div>
+                <div
+                class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10">
+                  <!-- other line -->
+                <ImQuotesLeft className="text-red-700 size-8" />
+                <p class="text-lg sans font-semibold">
+                  {whoWeAreWithQuotesData[1].quote}
+                </p>
+                <ImQuotesRight className="text-red-700 size-8 self-end" />
+              </div>
+                             <div class="max-h-80 sm:max-h-140 lg:max-h-none">
+                <ImageComp
+                  src={MainImage}
+                  alt="Cessna flying over Sundance Airport"
+                  class="h-full w-full object-cover object-center lg:max-h-none"
+                />
+              </div>
+            <div class="flex flex-col justif items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1">
+                <p class="subtitle !mx-0 !text-black">
+                  {whoWeAreWithQuotesData[1].upperHeading}
+                </p>
+                <h2 class="text-5xl text-black font-bold title">
+                  {whoWeAreWithQuotesData[1].title}
+                </h2>
+                {
+                  whoWeAreWithQuotesData[1].paragraphs.map((paragraph) => (<p class="sans">{paragraph}</p>))
+                }
+              </div>
+    </div>
+  </section>

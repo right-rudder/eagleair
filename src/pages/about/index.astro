@@ -1,0 +1,34 @@
+---
+import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import HeroScreen2 from "../../components/HeroScreen2.astro";
+import AboutUsWithImageAndQuote from "../../components/AboutUsWithImageAndQuote.astro";
+import { COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const heroData = {
+  image: {
+    src: "/src/assets/eagle-air-valparaiso-old-header.jpg",
+    alt: "Eagle Aircraft Flight Academy - Flight Training in Valparaiso, Indiana",
+  },
+  eyebrow: `Call Us: ${PHONE_NUMBER}`,
+  title: `Become a Pilot in Indiana </br> <span class="text-madison-200">${COMPANY_NICKNAME}</span>`,
+  subTitle:
+    "Cessna Pilot Center flight training at Porter County Regional Airport in Valparaiso, Indiana.",
+  cta: [
+    {
+      url: "/discovery-flights",
+      text: "Schedule a Discovery Flight",
+    },
+    {
+      url: "/contact",
+      text: "Talk to Our Team",
+    },
+  ],
+};
+---
+
+<BaseLayout>
+  <HeroScreen2 data={heroData} />
+  <AboutUsWithImageAndQuote/>
+  <CTAEnrollWithUs/>
+</BaseLayout>
