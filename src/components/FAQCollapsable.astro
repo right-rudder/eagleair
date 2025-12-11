@@ -1,0 +1,147 @@
+---
+class FAQsClass {
+  question: string;
+  answer: string;
+
+  constructor() {
+    this.question = "";
+    this.answer = "";
+  }
+}
+
+const faqsPlaceholder = [
+  {
+    question: "What services does Eagle Air offer?",
+    answer: "We provide comprehensive HVAC solutions, including installation, maintenance, and emergency repairs."
+  },
+  {
+    question: "How quickly can I schedule a service?",
+    answer: "Most appointments can be scheduled within 24–48 hours, depending on availability."
+  },
+  {
+    question: "Do you offer emergency assistance?",
+    answer: "Yes, we offer 24/7 emergency HVAC support. Just contact our team and we'll dispatch a technician."
+  },
+  {
+    question: "Is your team certified?",
+    answer: "All our technicians are fully licensed, trained, and certified to handle a wide range of HVAC systems."
+  }
+];
+
+const { faqs = faqsPlaceholder, type, showTitle = true } = Astro.props;
+---
+
+<script>
+  class Accordion {
+    el: HTMLDetailsElement;
+    summary: HTMLElement | null;
+    content: HTMLElement | null;
+    animation: Animation | null;
+    isAnimating: boolean;
+
+    constructor(el: HTMLDetailsElement) {
+      this.el = el;
+      this.summary = el.querySelector("summary");
+      this.content = el.querySelector(".faq-content");
+      this.animation = null;
+      this.isAnimating = false;
+      
+      this.summary?.addEventListener("click", (e) => this.onClick(e));
+    }
+
+    onClick(e: Event) {
+      e.preventDefault();
+      
+      if (this.isAnimating) return;
+      
+      if (this.el.open) {
+        this.close();
+      } else {
+        this.open();
+      }
+    }
+
+    close() {
+      this.isAnimating = true;
+      this.el.style.overflow = "hidden";
+      const startHeight = this.el.offsetHeight;
+      const endHeight = this.summary?.offsetHeight || 0;
+
+      if (this.animation) {
+        this.animation.cancel();
+      }
+
+      this.animation = this.el.animate(
+        { height: [`${startHeight}px`, `${endHeight}px`] },
+        { duration: 400, easing: "ease-out" }
+      );
+
+      this.animation.onfinish = () => {
+        this.el.open = false;
+        this.el.style.height = "";
+        this.el.style.overflow = "";
+        this.isAnimating = false;
+      };
+    }
+
+    open() {
+      this.isAnimating = true;
+      this.el.style.overflow = "hidden";
+      this.el.style.height = `${this.el.offsetHeight}px`;
+      this.el.open = true;
+
+      requestAnimationFrame(() => {
+        const startHeight = this.el.offsetHeight;
+        const summaryHeight = this.summary?.offsetHeight || 0;
+        const contentHeight = this.content?.offsetHeight || 0;
+        const endHeight = summaryHeight + contentHeight;
+
+        if (this.animation) {
+          this.animation.cancel();
+        }
+
+        this.animation = this.el.animate(
+          { height: [`${startHeight}px`, `${endHeight}px`] },
+          { duration: 400, easing: "ease-out" }
+        );
+
+        this.animation.onfinish = () => {
+          this.el.style.height = "";
+          this.el.style.overflow = "";
+          this.isAnimating = false;
+        };
+      });
+    }
+  }
+
+  document.querySelectorAll("details.faq-item").forEach((el) => {
+    new Accordion(el as HTMLDetailsElement);
+  });
+</script>
+
+
+<section class="bg-madison-950">
+    <div class="max-w-7xl p-8 px-4 lg:px-0 mx-auto text-center">
+        <div class="w-full max-w-7xl mx-auto flex flex-col items-center justify-center">
+        <div class="flex flex-col gap-2 mt-6 w-full max-w-7xl bg-red-200">
+            {
+            faqs.map((faq: FAQsClass) => (
+                <details class="bg-white w-full">
+                <summary class="bg-white w-full">
+                    <span class="faq-arrow bg-white w-full"></span>
+                    <span class="bg-white w-full">{faq.question}</span>
+                </summary>
+                <div class="mt-2 text-[#656565] text-left px-4 block min-w-0" style="width: 100%;" set:html={faq.answer} />
+                </details>
+            ))
+            }
+        </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto bg-white">
+    Got more any more questions?
+    <a href="/contact" class="text-[#0367a9] btn-primary !w-sm">
+        Contact Us
+    </a>
+    </div>
+</section>

@@ -38,10 +38,10 @@ const { aboutThisPageWithQuoteData = aboutThisPageWithQuotePlaceholder } = Astro
   <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
 
     <div class="flex flex-col items-center sm:items-start gap-3 lg:col-span-2">
-      <p class="subtitle !mx-0 !text-muted-50">
+      <p class="subtitle !mx-0 !text-muted-50 UPPER">
         {aboutThisPageWithQuotePlaceholder.upperHeading}
       </p>
-      <h2 class="text-5xl text-black font-bold title">
+      <h2 class="text-5xl !text-muted-50 font-bold title">
         {aboutThisPageWithQuotePlaceholder.title}
       </h2>
       {
@@ -51,9 +51,9 @@ const { aboutThisPageWithQuoteData = aboutThisPageWithQuotePlaceholder } = Astro
       }
     </div>
 
-    <div class="bg-madison-950 text-white p-8 aspect-video lg:aspect-square sm:p-14 lg:p-20 flex flex-col justify-center gap-10">
+    <div class="bg-muted-50 text-white aspect-video p-8 lg:px-20 lg:py-16 flex flex-col justify-center gap-10">
       <ImQuotesLeft className="text-red-700 size-8" />
-      <p class="text-lg sans font-semibold">
+      <p class="text-lg text-madison-950 !text-2xl sans font-semibold">
         {aboutThisPageWithQuotePlaceholder.quote}
       </p>
       <ImQuotesRight className="text-red-700 size-8 self-end" />

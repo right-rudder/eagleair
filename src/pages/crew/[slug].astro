@@ -6,6 +6,8 @@ import type { CollectionEntry } from "astro:content";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import ImageWithZoomEffect from "../../components/ImageWithZoomEffect.astro";
 import { COMPANY_NICKNAME } from "../../data/consts";
+import CTASection from "../../components/CTASection.astro";
+import CTAMeetOurFleet from "../../components/CTAMeetOurFleet.astro";
 
 export const getStaticPaths = (async () => {
   const crewMembers = await getCollection("crew");
@@ -83,6 +85,7 @@ const heroData = {
       Back to Crew
     </a>
   </div>
-
 </section>
+  <CTAMeetOurFleet/>
+  <CTASection/>
 </BaseLayout>

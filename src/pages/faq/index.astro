@@ -1,10 +1,9 @@
 ---
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
-import AboutUsWithImageAndQuote from "../../components/AboutUsWithImageAndQuote.astro";
+import FAQCollapsable from "../../components/FAQCollapsable.astro";
 import { COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
-import CTASection from "../../components/CTASection.astro";
 
 const heroData = {
   image: {
@@ -25,28 +24,34 @@ const heroData = {
   ],
 };
 
-const ctaData = {
-  title: "Ready to Start Your Airline Career?",
-  description:
-    "The aviation industry is waiting for skilled pilots like you. Take the first step towards your dream job with Eagle Aircraft's comprehensive training programs tailored for structured aviators.",
-  image: {
-    src: "/src/assets/sebastian-zzWYD-tc_jI-unsplash.jpg",
-    alt: "Airliner flying above the clouds",
-  },
-  primaryCTA: {
-    text: "Get Started Today",
-    href: "/contact",
-  },
-};
+const faqPagePlaceholder = {
+    upperHeader: "Questions and Answers",
+    title: "Frequently Asked Questions",
+    paragraphs: [
+        "In this page there's everything you need to know and it's usually asked about our company."
+    ]
+}
+
+const { faqPageData = faqPagePlaceholder } = Astro.props;
 
 ---
 
 <BaseLayout>
   <HeroScreen data={heroData} />
-  <AboutUsWithImageAndQuote/>
-  <CTAEnrollWithUs
-  upperHeadingTextSize="!text-xl"
-  titleTextSize = "!text-3xl"
-  showButton={true} />
-  <CTASection {...ctaData} />
+    <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col space-y-4">
+      <p class="mx-auto subtitle !text-black">{faqPageData.upperHeader}</p>
+      <h1 class="text-4xl md:text-5xl font-bold text-center title">
+        {faqPageData.title}
+      </h1>
+      {
+        faqPageData.paragraphs.map((paragraph:string)=>(
+        <p class="text-xl text-center sans max-w-2xl mx-auto">
+        {paragraph}
+      </p>))
+      }
+    </div>
+  </section> 
+  <FAQCollapsable></FAQCollapsable>
+  <CTAEnrollWithUs/>
 </BaseLayout>
