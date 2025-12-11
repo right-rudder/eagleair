@@ -155,7 +155,7 @@ export default function EnhancedFAQs({
           </dl>
         </div>
 
-        <p className="text-center mt-12 text-gray-600">
+        <p className="text-center mt-12 text-gray-600 pb-20">
           If you have any additional questions please send us an email to{" "}
           <a href="/contact" className="text-primary-800 hover:underline">
             Contact Us

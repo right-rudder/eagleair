@@ -2,11 +2,12 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
-import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import OurFleetCardGrid from "../../components/OurFleetCardGrid.astro";
 import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithImageAndQuote.astro";
 import { COMPANY_NAME } from "../../data/consts";
+import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
+import CTASection from "../../components/CTASection.astro";
 
 type Aircraft = CollectionEntry<"aircraft">;
 
@@ -94,6 +95,7 @@ const { ourFleetPageData = ourFleetData } = Astro.props;
   </section>
   <AboutThisPageWithImageAndQuote aboutThisPageWithQuoteData={aboutThisPageWithQuoteData}></AboutThisPageWithImageAndQuote>
   <OurFleetCardGrid aircrafts={sortedAircraft} data={ourFleetPageData}></OurFleetCardGrid>
-  <CTAEnrollWithUs></CTAEnrollWithUs>
+  <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
+  <CTASection/>  
 </BaseLayout>
 

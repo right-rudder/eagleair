@@ -1,9 +1,9 @@
 ---
-import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import FAQSection from "../../components/FAQ/FAQSection.jsx";
-import { COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
+import CTASection from "../../components/CTASection.astro";
 
 const heroData = {
   image: {
@@ -53,5 +53,6 @@ const { faqPageData = faqPagePlaceholder } = Astro.props;
     </div>
   </section> 
   <FAQSection client:load/>
-  <CTAEnrollWithUs/>
+  <CTAEnrollWithUsMini/>
+  <CTASection />
 </BaseLayout>

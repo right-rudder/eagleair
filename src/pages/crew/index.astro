@@ -5,9 +5,10 @@ import type { CollectionEntry } from "astro:content";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import OurCrewCard from "../../components/OurCrewCard.astro";
 import { COMPANY_NAME, COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
-import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithImageAndQuote.astro";
 import OurCrewCardGrid from "../../components/OurCrewCardGrid.astro";
+import CTASection from "../../components/CTASection.astro";
 
 type CrewMember = CollectionEntry<"crew">;
 
@@ -71,5 +72,6 @@ const { ourCrewPageData = ourCrewData } = Astro.props;
   </section>
   <AboutThisPageWithImageAndQuote></AboutThisPageWithImageAndQuote>
   <OurCrewCardGrid crew={sortedCrew} data={ourCrewPageData} />
-  <CTAEnrollWithUs></CTAEnrollWithUs>
+  <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
+  <CTASection/>  
 </BaseLayout>

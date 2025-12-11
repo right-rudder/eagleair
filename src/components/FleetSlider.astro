@@ -2,16 +2,8 @@
 import { COMPANY_NAME } from "../data/consts"; 
 import ImageWithZoomEffect from "./ImageWithZoomEffect.astro"; 
 
-const ctaEnrollWithUsData = { 
-  upperHeading: "OUR STATE-OF-THE-ART AICRAFTS", 
-  title: `MEET THE ${COMPANY_NAME} FLEET` 
-} 
 
 const {  
-  ctaData = ctaEnrollWithUsData, 
-  showButton = true, 
-  upperHeadingTextSize = "!text-xl", 
-  titleTextSize = "!text-3xl",
   plane
 } = Astro.props; 
 
@@ -25,7 +17,7 @@ const slideImages = [
     alt: "Training aircraft on runway",
   },
   {
-    src: "/src/assets/crew/team-member-placeholder.jpg",
+    src: "/src/assets/crewa/team-member-placeholder.jpg",
     alt: "Fleet of training aircraft",
   }
 ];
@@ -57,7 +49,7 @@ const slideImages = [
     </div>
       <div class="h-full mx-auto lg:mx-0 order-1 xl:order-2"> 
         <div class="relative group">
-          <div id="slider-container" class="relative overflow-hidden">
+          <div id="slider-container" class="relative h-[500px] w-auto overflow-hidden">
             <ImageWithZoomEffect src={slideImages[0].src} alt={slideImages[0].alt}/>
           </div>
           
