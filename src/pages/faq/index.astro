@@ -1,6 +1,6 @@
 ---
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
-import FAQCollapsable from "../../components/FAQCollapsable.astro";
+import FAQSection from "../../components/FAQ/FAQSection.jsx";
 import { COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
@@ -41,7 +41,7 @@ const { faqPageData = faqPagePlaceholder } = Astro.props;
     <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4">
       <p class="mx-auto subtitle !text-black">{faqPageData.upperHeader}</p>
-      <h1 class="text-4xl md:text-5xl font-bold text-center title">
+      <h1 class="mx-auto max-w-lg md:max-w-xl text-4xl md:text-5xl font-bold text-center title">
         {faqPageData.title}
       </h1>
       {
@@ -52,6 +52,6 @@ const { faqPageData = faqPagePlaceholder } = Astro.props;
       }
     </div>
   </section> 
-  <FAQCollapsable></FAQCollapsable>
+  <FAQSection client:load/>
   <CTAEnrollWithUs/>
 </BaseLayout>
