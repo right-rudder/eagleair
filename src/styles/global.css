@@ -75,6 +75,13 @@
   @apply bg-madison-950 border border-madison-950 text-muted-50 font-semibold  px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-monza-600 hover:border-muted-50 hover:text-muted-50 transition duration-200 hover:scale-105;
 }
 
+.btn-tertiary {
+  @apply bg-madison-950 text-base text-white sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+}
+.btn-tertiary-red {
+  @apply bg-monza-900 text-base text-white sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+}
+
 .btn-transparent {
   @apply bg-transparent border border-muted-50  px-5 py-2 text-muted-50 font-semibold cursor-pointer hover:bg-muted-50 hover:text-madison-950 transition duration-200 hover:scale-105;
 }

@@ -3,13 +3,13 @@ import { PHONE_NUMBER, EMAIL_ADDRESS } from "../data/consts";
 import ImageComp from "./ImageComp.astro";
 
 interface Props {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   image?: {
     src: string;
     alt: string;
   };
-  primaryCTA: {
+  primaryCTA?: {
     text: string;
     href: string;
   };
