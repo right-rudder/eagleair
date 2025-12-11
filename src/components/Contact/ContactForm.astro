@@ -1,0 +1,248 @@
+---
+const FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
+---
+
+<form class="mx-auto max-w-xl flex flex-col" id="enroll_form">
+  <div class="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
+    <!-- First Name -->
+    <div>
+      <div class="mt-2.5">
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          autocomplete="given-name"
+          placeholder="First Name"
+          required
+          class="block p-2 w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
+        />
+      </div>
+    </div>
+
+    <!-- Last Name -->
+    <div>
+      <div class="mt-2.5">
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          autocomplete="family-name"
+          placeholder="Last Name"
+          required
+          class="block p-2 w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
+        />
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="sm:col-span-2">
+      <div class="mt-2.5">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          placeholder="Email Address"
+          required
+          class="block p-2 w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
+        />
+      </div>
+    </div>
+    <p class="hidden">
+      <label>
+        Don't fill this out if you're human: <input name="confirm-email" />
+      </label>
+    </p>
+
+    <!-- Phone -->
+    <div class="sm:col-span-2">
+      <div class="relative mt-2.5">
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          autocomplete="tel"
+          placeholder="Phone Number"
+          required
+          class="block p-2 w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
+        />
+      </div>
+    </div>
+
+    <!-- Interested Program, Experience and Goals -->
+    <div class="sm:col-span-2">
+      <!-- How can we Help? -->
+      <div class="mt-2.5">
+        <textarea
+          name="notes"
+          id="notes"
+          rows="4"
+          placeholder="How can we help?"
+          class="block p-2 w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
+        ></textarea>
+      </div>
+    </div>
+
+    <!-- Agreement -->
+    <div class="flex gap-x-4 sm:col-span-2 text-white">
+      <div class="flex h-6 items-center">
+        <button
+          type="button"
+          id="terms-toggle"
+          class="ring-primary-900/5 flex w-8 flex-none cursor-pointer bg-gray-200 p-px ring-1 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          role="switch"
+          aria-checked="false"
+          aria-labelledby="switch-1-label"
+        >
+          <span class="sr-only text-white">
+            I agree to terms & conditions provided by the company.
+          </span>
+          <span
+            id="terms-thumb"
+            class="h-4 w-4 translate-x-0 transform bg-white shadow-sm ring-1 ring-gray-900/50 transition duration-200 ease-in-out"
+            aria-hidden="true"></span>
+        </button>
+        <input type="hidden" id="agree-terms" name="agree-terms" value="no" />
+      </div>
+      <label class="text-sm leading-6 text-white" id="switch-1-label">
+        I agree to the <a
+          href="/privacy-policy-terms-of-service"
+          target="_blank"
+          class="text-primary-700 hover:text-picton-blue-400 font-semibold hover:underline"
+          >Privacy Policy</a
+        > and <a
+          href="/privacy-policy-terms-of-service#terms-of-service"
+          target="_blank"
+          class="text-primary-700 hover:text-picton-blue-400 font-semibold hover:underline"
+          >Terms of Service</a
+        > provided by the company. By providing my phone number, I agree to receive
+        text notes from the business.
+      </label>
+    </div>
+  </div>
+  <div class="mt-10">
+    <button type="submit" id="submit-btn" class="btn-tertiary-red">Send</button>
+  </div>
+</form>
+
+<script define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}
+>
+  const toggle = document.getElementById("terms-toggle");
+  const thumb = document.getElementById("terms-thumb");
+  const hiddenInput = document.getElementById("agree-terms");
+  const submitBtn = document.getElementById("submit-btn");
+  const form = document.getElementById("enroll_form");
+
+  let isChecked = false;
+  const SUBMIT_COOLDOWN = 30 * 1000; // 30 seconds
+
+  // Terms toggle
+  toggle.addEventListener("click", () => {
+    isChecked = !isChecked;
+    hiddenInput.value = isChecked ? "yes" : "no";
+    toggle.setAttribute("aria-checked", isChecked);
+    toggle.classList.toggle("bg-monza-900", isChecked);
+    toggle.classList.toggle("bg-gray-200", !isChecked);
+    thumb.classList.toggle("translate-x-3.5", isChecked);
+    thumb.classList.toggle("translate-x-0", !isChecked);
+
+    submitBtn.disabled = !isChecked;
+    submitBtn.classList.toggle("cursor-not-allowed", !isChecked);
+    submitBtn.classList.toggle("bg-gray-400", !isChecked);
+  });
+
+  // Initialize submit button
+  submitBtn.disabled = true;
+  submitBtn.classList.add("cursor-not-allowed", "bg-gray-400");
+
+  if (!form) {
+    console.error("Form element not found.");
+  } else {
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      // Honeypot check
+      const formData = new FormData(form);
+      if (formData.get("confirm-email")?.trim()) return;
+
+      // Cooldown using localStorage
+      const lastSubmit = parseInt(
+        localStorage.getItem("lastSubmit") || "0",
+        10,
+      );
+      const now = Date.now();
+      if (now - lastSubmit < SUBMIT_COOLDOWN) {
+        alert("Please wait a few seconds before submitting again.");
+        return;
+      }
+      localStorage.setItem("lastSubmit", now.toString());
+
+      // Disable submit button
+      submitBtn.disabled = true;
+      submitBtn.classList.add("cursor-not-allowed", "bg-gray-400");
+
+      try {
+        const [ghlRes, portalRes] = await Promise.all([
+          fetch(FORM_WEBHOOK_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+          }),
+          fetch("https://portal.rightruddermarketing.com/api/leads", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              "x-api-key": PORTAL_API_KEY,
+            },
+            body: JSON.stringify({
+              first_name: formData.get("first-name")?.toString() || "",
+              last_name: formData.get("last-name")?.toString() || "",
+              email: formData.get("email")?.toString() || "",
+              phone: formData.get("phone")?.toString() || "",
+              campaign: "contact",
+              account_random_id: CP_ACCOUNT_RANDOM_ID,
+            }),
+          }),
+        ]);
+
+        if (ghlRes.ok && portalRes.ok) {
+          window.location.href = "/contact-confirmation";
+        } else {
+          alert("Submission failed. Please try again later.");
+          submitBtn.disabled = false;
+          submitBtn.classList.remove("cursor-not-allowed", "bg-gray-400");
+        }
+      } catch (err) {
+        console.error("Submission error:", err);
+        alert("An error occurred. Please try again later.");
+        submitBtn.disabled = false;
+        submitBtn.classList.remove("cursor-not-allowed", "bg-gray-400");
+      }
+    });
+  }
+</script>
+
+<!-- <div class="min-h-[400px] lg:min-h-[800px]">
+    <iframe
+        src="https://msg.flightschoolcrm.com/widget/form/BnkZMGU9z7mJNepsJu1a"
+        style="width:100%;height:100%;border:none;border-radius:3px;"
+        id="inline-BnkZMGU9z7mJNepsJu1a" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Contact Us Form"
+        data-height="763"
+        data-layout-iframe-id="inline-BnkZMGU9z7mJNepsJu1a"
+        data-form-id="BnkZMGU9z7mJNepsJu1a"
+        title="Contact Us Form"
+            >
+    </iframe>
+    <script src="https://msg.flightschoolcrm.com/js/form_embed.js"></script>
+</div> -->

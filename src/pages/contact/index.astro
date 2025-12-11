@@ -6,6 +6,7 @@ import BlogPostCard from "../../components/BlogPostCard.astro";
 import CTASection from "../../components/CTASection.astro";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import ContactFormSection from "../../components/Contact/ContactFormSection.astro";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -72,11 +73,7 @@ const constBlogData = {
     </div>
   </section>
   <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
-  <section class="py-16 px-4 bg-madison-950">
-    <div class="max-w-7xl mx-auto">
-      <!-- form -->
-    </div>
-  </section>
+  <ContactFormSection/>
       <CTAEnrollWithUs
       upperHeadingTextSize="!text-xl"
       titleTextSize = "!text-3xl"
