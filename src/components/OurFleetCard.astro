@@ -36,7 +36,7 @@ const { aircraft = aircraftData } = Astro.props;
 
 <a
   href={`/aircraft/${aircraft.slug}`}
-  class="group block relative overflow-hidden aspect-[3/4] shadow-lg"
+  class="group block relative overflow-hidden aspect-[3/4] shadow-lg md:max-w-[260px]"
 >
   <img
     src={aircraft.data.image}

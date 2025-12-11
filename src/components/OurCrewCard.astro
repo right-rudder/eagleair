@@ -25,7 +25,7 @@ const { member = memberData } = Astro.props;
 
 <a
   href={`/crew/${member.slug}`}
-  class="group block relative overflow-hidden aspect-[3/4] shadow-lg"
+  class="group block relative overflow-hidden aspect-[3/4] shadow-lg md:max-w-[260px]"
 >
   <img
     src={member.data.image}
