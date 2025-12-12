@@ -2,12 +2,7 @@
 import { COMPANY_NAME } from "../data/consts"; 
 import ImageWithZoomEffect from "./ImageWithZoomEffect.astro"; 
 
-
-const {  
-  plane
-} = Astro.props; 
-
-const slideImages = [
+const slideImagesPlaceholder = [
   {
     src: "/src/assets/crew/team-member-placeholder.jpg",
     alt: "Military aircraft in flight",
@@ -21,6 +16,12 @@ const slideImages = [
     alt: "Fleet of training aircraft",
   }
 ];
+
+const {  
+  plane,
+  slideImages = slideImagesPlaceholder
+} = Astro.props; 
+
 ---
 
 

@@ -1,16 +1,17 @@
 ---
 import { COMPANY_NAME } from "../data/consts";
-const ctaEnrollWithUsData = {
+const ctaEnrollWithUsDataPlaceholder = {
   upperHeading: "Take the Next Step",
   title: `Join Us at ${COMPANY_NAME} Today`
 }
 
 
 const { 
-  ctaData = ctaEnrollWithUsData,
+  ctaData = ctaEnrollWithUsDataPlaceholder,
   showButton = true,
   upperHeadingTextSize = "!text-xl",
-  titleTextSize = "!text-3xl" 
+  titleTextSize = "!text-3xl" ,
+  paragraphTextSize = "text-xl"
  } = Astro.props;
 ---
   <section id="our-mission" class="bg-monza-800">
@@ -22,7 +23,7 @@ const {
       <h2 class=`${titleTextSize} font-bold text-center title  !text-white max-w-[80%] lg:max-w-4xl mx-auto`>
         {ctaData.title}
       </h2>
-          <p class="text-white sans text-center text-xl mx-auto lg:px-52 max-w-[80%] lg:max-w-7xl">
+          <p class=`text-white sans text-center ${paragraphTextSize} mx-auto lg:px-52 max-w-[80%] lg:max-w-7xl`>
             To provide excellence in flight training, the highest levels of service,
             and the upmost focus on safety and student growth to help each pilot
             meet their aviation goals!

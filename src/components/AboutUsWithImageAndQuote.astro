@@ -5,7 +5,7 @@ import { COMPANY_NAME } from "../data/consts";
 
 const MainImage = "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg";
 
-const whoWeAreWithQuotesData = [
+const whoWeAreWithQuotesDataPlaceholder = [
     {
       upperHeading: "Our History",
       title: "About Us",
@@ -38,7 +38,8 @@ const whoWeAreWithQuotesData = [
       quote: ` ${COMPANY_NAME} is a place for american students to feel proud and international students to feel welcome.`,
     },
 ]
-    
+
+const { whoWeAreWithQuotesData = whoWeAreWithQuotesDataPlaceholder} = Astro.props;
 ---
 <section class="pb-12 pt-24 px-5">
     <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
