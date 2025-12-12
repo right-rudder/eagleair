@@ -2,7 +2,7 @@
 name: "John Doe"
 title: "Chief Flight Instructor"
 bio: "Former military pilot with over 5,000 flight hours and extensive experience in flight training."
-image: "/images/crew/john-doe.jpg"
+image: "/src/assets/crew/team-member-placeholder.jpg"
 order: 1
 certifications:
   - "ATP - Airline Transport Pilot"

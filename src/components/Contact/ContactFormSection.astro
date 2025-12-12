@@ -1,0 +1,65 @@
+---
+import {
+  COMPANY_NICKNAME,
+  LOCATIONS,
+  PHONE_NUMBER,
+//   PHONE_NUMBER_PRETTY,
+  EMAIL_ADDRESS,
+} from "../../data/consts";
+
+import ContactForm from "./ContactForm.astro";
+import ImageWithZoomEffect from "../ImageWithZoomEffect.astro";
+
+const imgForm = "/src/assets/stock-brendan-sapp-waG-U3XAb3I-unsplash.jpg";
+const upperheading = "CONTACT US";
+const title = `Reach out to <span class="text-primary-500">${COMPANY_NICKNAME}</span>`;
+const description =
+  "Have questions about our flight training programs, or just want to say hello? Reach out and we'll be happy to help you on your aviation journey.";
+---
+
+<section
+  class="relative text-white scroll-my-20 lg:scroll-my-28 py-20 bg-madison-950"
+  id="enroll"
+>
+  <div class="relative z-10 max-w-7xl mx-auto  h-full flex">
+    <div class="flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row h-full">
+      <div class="flex justify-center md:px-24 lg:px-0 lg:pl-10 2xl:px-0 lg:w-1/2">
+        <ImageWithZoomEffect
+          src={imgForm}
+          alt={"Form image"}
+          class="h-full"
+        ></ImageWithZoomEffect>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <div class="mx-auto px-10">
+          <div class="w-full py-12">
+            <p
+              class="subtitle !text-muted-50 text-lg uppercase tracking-wide mb-4 text-center lg:text-left"
+            >
+              {upperheading}
+            </p>
+            <h2
+              class="title !text-muted-50  mb-4 text-center lg:text-left"
+            >
+              <Fragment set:html={title} />
+            </h2>
+            <p class="sans text-muted-50 text-center lg:text-left">
+              {description}
+            </p>
+          </div>
+          <ContactForm />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  const contactUs = document.getElementById("contactUs");
+
+  if (isSafari && contactUs) {
+    contactUs.classList.remove("bg-fixed");
+  }
+</script>

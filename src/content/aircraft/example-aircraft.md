@@ -2,7 +2,7 @@
 name: "Cessna 172 Skyhawk"
 model: "C172"
 description: "The most popular training aircraft in the world, perfect for primary flight training."
-image: "/images/aircraft/cessna-172.jpg"
+image: "/src/assets/crew/team-member-placeholder.jpg"
 order: 1
 specifications:
   engines: "Lycoming IO-360-L2A, 180 HP"

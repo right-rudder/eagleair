@@ -1,0 +1,150 @@
+---
+import OurProgramsCard from "./OurProgramsCard.astro";
+
+const ourProgramsSwiperData = {
+  upperHeading: "Explore",
+  heading: "Our Programs",
+  description:
+    "Your aviation dreams take center stage here. Whether pursuing a professional career, building flight hours, or seeking leisurely adventure, we have the perfect path for you.",
+  cards: [
+    {
+      title: "Sport Pilot Certificate",
+      imagePath: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+      imageAlt:
+        "FlyTech Pilot Academy student and flight instructor in a Cessna airplane cockpit",
+      description: "Created for people who desire to fly recreationally. ",
+      link: "/flight-training/sports-pilot-certificate",
+    },
+    {
+      title: "Private Pilot",
+      imagePath: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+      imageAlt:
+        "FlyTech Pilot Academy student and flight instructor in a Cessna airplane",
+      description:
+        "Fly higher, farther, and with more passengers, gain the skills to command cross-country flights with confidence.",
+      link: "/flight-training/private-pilot",
+    },
+    {
+      title: "Instrument Rating",
+      imagePath: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+      imageAlt: "FlyTech Pilot Academy Cirrus airplane instrument panel",
+      description:
+        "Navigate through clouds and the skies with precision through our Instrument Rating course.",
+      link: "/flight-training/instrument-rating",
+    },
+    {
+      title: "Commercial Pilot",
+      imagePath: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+      imageAlt: "FlyTech Pilot Academy Cirrus airplane instrument panel",
+      description:
+        "Navigate through clouds and the skies with precision through our Instrument Rating course.",
+      link: "/flight-training/instrument-rating",
+    },
+    {
+      title: "Multi-Engine Rating",
+      imagePath: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+      imageAlt: "FlyTech Pilot Academy Cirrus airplane instrument panel",
+      description:
+        "Navigate through clouds and the skies with precision through our Instrument Rating course.",
+      link: "/flight-training/instrument-rating",
+    },
+  ],
+};
+
+const { content = ourProgramsSwiperData } = Astro.props;
+---
+
+<section class="bg-madison-950 py-16 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4">
+    {content.upperHeading && (
+      <p class="text-center text-lg font-bold uppercase text-white mb-2">
+        {content.upperHeading}
+      </p>
+    )}
+    {content.heading && (
+      <h2 class="text-center text-4xl lg:text-6xl font-bold text-primary-500 mb-4">
+        {content.heading}
+      </h2>
+    )}
+    {content.description && (
+      <p class="text-center text-lg text-neutral-100 max-w-3xl mx-auto mb-12">
+        {content.description}
+      </p>
+    )}
+
+    <div class="relative">
+      <div class="overflow-hidden" id="slider-container">
+        <div class="flex transition-transform duration-500 ease-out" id="slider">
+          {content.cards.map((program:any) => (
+            <div class="min-w-full sm:min-w-[50%] lg:min-w-[33.333%] px-2">
+              <OurProgramsCard
+                title={program.title}
+                imagePath={program.imagePath}
+                imageAlt={program.imageAlt}
+                link={program.link}
+                description={program.description}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <button
+        id="prev"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-4 transition-colors"
+        aria-label="Previous"
+      >
+        ←
+      </button>
+      <button
+        id="next"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-4 transition-colors"
+        aria-label="Next"
+      >
+        →
+      </button>
+
+      <div class="flex justify-center gap-2 mt-8" id="dots"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const slider = document.getElementById('slider');
+  const dotsContainer = document.getElementById('dots');
+  const total = slider?.children.length || 0;
+  let current = 0;
+
+  const getPerPage = () => window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+  
+  const updateSlider = () => {
+    const perPage = getPerPage();
+    const offset = -(current * (100 / perPage));
+    if (slider) slider.style.transform = `translateX(${offset}%)`;
+    
+    document.querySelectorAll('.dot').forEach((dot, i) => {
+      dot.classList.toggle('bg-primary-500', i === current);
+      dot.classList.toggle('bg-white/30', i !== current);
+    });
+  };
+
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement('button');
+    dot.className = 'dot w-3 h-3 rounded-full transition-colors';
+    dot.onclick = () => { current = i; updateSlider(); };
+    dotsContainer?.appendChild(dot);
+  }
+
+  document.getElementById('prev')?.addEventListener('click', () => {
+    current = current === 0 ? total - 1 : current - 1;
+    updateSlider();
+  });
+
+  document.getElementById('next')?.addEventListener('click', () => {
+    current = current === total - 1 ? 0 : current + 1;
+    updateSlider();
+  });
+
+  window.addEventListener('resize', updateSlider);
+  updateSlider();
+</script>

@@ -6,6 +6,7 @@ import BlogPostCard from "../../components/BlogPostCard.astro";
 import CTASection from "../../components/CTASection.astro";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import ContactFormSection from "../../components/Contact/ContactFormSection.astro";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -33,18 +34,13 @@ const heroData = {
   cta: [
     { url: "#", text: "Private Pilot (PPL)" },
   ],
-  stats: [
-    { value: "1,500", suffix: "+", title: "Pilots Trained" },
-    { value: "95", suffix: "%", title: "Checkride Pass Rate" },
-    { value: "12", suffix: "+", title: "Training Aircraft" },
-  ],
 };
 
 const constBlogData = {
-  upperHeader: "Eagle Air's",
-  title: "Blog",
+  upperHeader: "We're Eager To Hear From You",
+  title: "Contact Us",
   paragraphs: [
-    "Stay informed with the latest aviation insights, training tips, relevant informations, and industry news.",
+    "Stay touch with us.",
   ],
   upperHeaderTwo: "They Are Here For You",
   titleTwo: "Our Fleet Aircrafts"
@@ -72,17 +68,7 @@ const constBlogData = {
     </div>
   </section>
   <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
-  <section class="py-16 px-4 bg-madison-950">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {
-          sortedPosts.map((post) => (
-            <BlogPostCard post={post}></BlogPostCard>
-          ))
-        }
-      </div>
-    </div>
-  </section>
+  <ContactFormSection/>
       <CTAEnrollWithUs
       upperHeadingTextSize="!text-xl"
       titleTextSize = "!text-3xl"

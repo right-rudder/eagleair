@@ -1,0 +1,104 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import { getCollection } from "astro:content";
+import BlogPostCard from "../../components/BlogPostCard.astro";
+import CTASection from "../../components/CTASection.astro";
+import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
+import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import ContactFormSection from "../../components/Contact/ContactFormSection.astro";
+import CTAEnrollWithUsMiniBlue from "../../components/CTAEnrollWithUsMiniBlue.astro";
+import CTATwoTextColumns from "../../components/CTATwoTextColumns.astro";
+import RRMDivider from "../../components/RRMDivider.astro";
+import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithImageAndQuote.astro";
+import CTAMeetOurFleet from "../../components/CTAMeetOurFleet.astro";
+import CardSwiper from "../../components/CardSwiper/CardSwiper.astro";
+import AboutUsWithImageAndQuote from "../../components/AboutUsWithImageAndQuote.astro";
+
+const blogPosts = await getCollection("blog");
+const sortedPosts = blogPosts.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+// Format date helper
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
+};
+
+const heroData = {
+  image: {
+    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+    alt: "Military aircraft in flight",
+  },
+  upperHeader: `Flying is Freedom`,
+  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  subTitle:
+    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+};
+
+const componentsData = {
+  upperHeader: "Some Usefull Stuff",
+  title: "Components",
+  paragraphs: [
+    "",
+  ],
+};
+---
+
+<BaseLayout
+  siteTitle="Blog | Eagle Aircraft Aviation Academy"
+  siteDescription="Aviation insights, training tips, and industry news"
+>
+  <HeroScreen data={heroData} />
+    <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col space-y-4">
+      <p class="mx-auto subtitle !text-black">{componentsData.upperHeader}</p>
+      <h2 class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title">
+        {componentsData.title}
+      </h2>
+      {
+        componentsData.paragraphs.map((paragraph:string)=>(
+        <p class="text-xl text-center sans max-w-2xl mx-auto">
+        {paragraph}
+      </p>))
+      }
+    </div>
+  </section>
+  <RRMDivider></RRMDivider>
+  <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
+  <RRMDivider></RRMDivider>
+  <CTAEnrollWithUsMiniBlue></CTAEnrollWithUsMiniBlue>
+  <RRMDivider></RRMDivider>
+  <CTATwoTextColumns bg="blue"></CTATwoTextColumns>
+  <RRMDivider></RRMDivider>
+  <CTATwoTextColumns bg="blue" titleSide="right"></CTATwoTextColumns>
+  <RRMDivider></RRMDivider>
+  <CTATwoTextColumns bg="red"></CTATwoTextColumns>
+  <RRMDivider></RRMDivider>
+  <CTATwoTextColumns bg="red" titleSide="right"></CTATwoTextColumns>
+  <RRMDivider></RRMDivider>
+  <AboutUsWithImageAndQuote/>
+  <RRMDivider></RRMDivider>
+  <CTAEnrollWithUs></CTAEnrollWithUs>
+  <RRMDivider></RRMDivider>
+  <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
+  <RRMDivider></RRMDivider>
+  <CTAEnrollWithUsMiniBlue></CTAEnrollWithUsMiniBlue>
+  <RRMDivider></RRMDivider>
+  <AboutThisPageWithImageAndQuote></AboutThisPageWithImageAndQuote>
+  <RRMDivider></RRMDivider>
+  <CTAMeetOurFleet imageSide="left"></CTAMeetOurFleet>
+  <RRMDivider></RRMDivider>
+  <CTAMeetOurFleet imageSide="right"></CTAMeetOurFleet>
+  <RRMDivider></RRMDivider>
+  <CTAMeetOurFleet imageSide="left" background="red"></CTAMeetOurFleet>
+  <RRMDivider></RRMDivider>
+  <CTAMeetOurFleet imageSide="right" background="red"></CTAMeetOurFleet>
+  <RRMDivider></RRMDivider>
+  <CardSwiper></CardSwiper>
+  <RRMDivider></RRMDivider>
+</BaseLayout>

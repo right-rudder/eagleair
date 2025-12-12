@@ -1,0 +1,50 @@
+---
+import OurFleetCard from "./OurFleetCard.astro";
+
+const aircraftPlaceholder = [
+  {
+    slug: "cessna-172",
+    data: {
+      name: "Cessna 172 Skyhawk",
+      description: "Reliable and efficient primary trainer.",
+      image: "/src/assets/crew/team-member-placeholder.jpg",
+      order: 1
+    }
+  },
+  {
+    slug: "piper-archer",
+    data: {
+      name: "Piper Archer",
+      description: "Stable aircraft ideal for cross-country flights.",
+      image: "/src/assets/crew/team-member-placeholder.jpg",
+      order: 2
+    }
+  }
+];
+
+const dataPlaceholder = {
+  upperHeader: "Explore Our Fleet",
+  title: "Modern Aircraft, Trusted Performance",
+  paragraphs: [
+    "Discover our modern and reliable training aircraft.",
+    "Built for performance, safety, and professional pilot training."
+  ]
+};
+
+const { aircrafts = aircraftPlaceholder, data = dataPlaceholder } = Astro.props;
+---
+
+<section class="bg-madison-950 p-16 flex flex-col">
+  <div class="flex flex-col gap-4 mb-8 justify-center">
+    <p class="subtitle !text-white">{data.upperHeaderTwo}</p>
+    <h2 class="text-4xl md:text-5xl font-bold text-center title !text-white">
+      {data.titleTwo}
+    </h2>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {aircrafts.map((aircraftItem) => (
+      <OurFleetCard aircraft={aircraftItem} />
+    ))}
+  </div>
+</section>
