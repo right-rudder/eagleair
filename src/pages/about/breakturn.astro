@@ -1,0 +1,113 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import CTASection from "../../components/CTASection.astro";
+import ImageComp from "../../components/ImageComp.astro";
+import BenefitsList from "../../components/BenefitsList.astro";
+import CTATwoTextColumnsSmall from "../../components/CTATwoTextColumnsSmall.astro";
+import CTAEnrollWithUsMiniBlue from "../../components/CTAEnrollWithUsMiniBlue.astro";
+
+const heroData = {
+  image: {
+    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+    alt: "Military aircraft in flight",
+  },
+  upperHeader: `Flying is Freedom`,
+  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  subTitle:
+    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+  cta: [
+    { url: "#", text: "Private Pilot (PPL)" },
+  ],
+
+};
+
+const libertyUniversityCTAData = {
+  upperHeader: "SkillBridge Experts",
+  title: "BreakTurn",
+  paragraphs: [
+    "BreakTurn connects transitioning military service members with world-class flight schools, providing guidance, training, and career support as you pursue your dream of becoming a professional pilot.",
+  ],
+  upperHeaderTwo: "They Are Here For You",
+  titleTwo: "Our Fleet Aircrafts"
+};
+
+const BreakTurnLogo = "/src/assets/BreakTurn_Logo_Tagline_Black-Blue-768x297.png";
+
+const listOfCourses = [
+  { courseName: "AVIA 220 – Private Flight I" },
+  { courseName: "AVIA 225 – Private Flight II" },
+  { courseName: "AVIA 320 – Instrument Flight*" },
+  { courseName: "AVIA 325 – Commercial Flight I*" },
+  { courseName: "AVIA 326 – Commercial Flight II*" },
+  { courseName: "AVIA 327 – Commercial Flight III*" },
+  { courseName: "AVIA 331 – Commercial Pilot, Single Engine Land Add On" },
+  { courseName: "AVIA 420 – Flight Instructor Flight*" },
+  { courseName: "AVIA 422 – Certified Flight Instructor – Instrument (CFII)*" },
+  { courseName: "AVIA 440 – Multi-Engine Flight" },
+  { courseName: "AVIA 441 – Multi-Engine Instructor" },
+];
+
+
+const ctaDataIntroLeft = {
+    title: "From Military Service to EagleAir Training",
+    paragraphs: [
+    "Eagle Aircraft Flight Academy partners with BreakTurn to provide specialized flight training opportunities for military students.",
+    "Through this collaboration, service members can leverage programs like SkillBridge to gain hands-on experience in our modern fleet while transitioning to a civilian aviation career. Our instructors guide every step of the training, ensuring each student develops the skills and confidence needed to succeed in the aviation industry."
+]
+}
+const ctaDataIntroRight = {
+    title: "Supporting Your Aviation Journey Every Step of the Way",
+    paragraphs: [
+    "With BreakTurn’s mentorship and EagleAir’s comprehensive flight programs, military students receive unmatched guidance, access to advanced aircraft, and personalized instruction.",
+    "Whether you are pursuing your first pilot certificate or advancing toward commercial and instructor ratings, our combined expertise ensures a smooth, structured, and rewarding path from military service to professional aviation."
+    ]
+}
+
+const benefitList = [
+  "Hands-on Flight Training with Modern Aircraft – Gain real-world experience in EagleAir’s advanced fleet under the guidance of expert instructors.",
+  "SkillBridge Program Access – Utilize your remaining military service period to receive civilian aviation training while continuing to receive your military benefits.",
+  "GI Bill® / Veterans Affairs Support – Apply your military education benefits toward your flight training at EagleAir.",
+  "Military Scholarships and Tuition Assistance – Financial support designed to help transitioning service members achieve their aviation goals.",
+  "Personalized Mentorship from BreakTurn – Receive guidance on certifications, career pathways, and connecting with industry opportunities as you transition to a civilian aviation career."
+];
+
+const benefitsSection = {
+  upperHeading: "EXPERIENCE THE ADVANTAGES",
+  title: "Benefits for Our Military Students",
+  ctaText: "Apply Today",
+  ctaLink: "/"
+};
+
+---
+
+<BaseLayout>
+  <HeroScreen data={heroData} />
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col space-y-4 items-center">
+        <ImageComp
+            src={BreakTurnLogo}
+            alt="Liberty University School of Aeronautics Afiliate Logo"
+            class="pl-1 w-[400px] h-auto"/>
+        <p class="mx-auto subtitle !text-black">{libertyUniversityCTAData.upperHeader}</p>
+        <h2 class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title">
+            {libertyUniversityCTAData.title}
+        </h2>
+        {
+            libertyUniversityCTAData.paragraphs.map((paragraph:string)=>(
+            <p class="text-xl text-center sans max-w-2xl mx-auto">
+            {paragraph}
+        </p>))
+        }
+        </div>
+    </section>
+    <CTATwoTextColumnsSmall ctaData={ctaDataIntroLeft} bg="blue" titleSide="left"/>
+    <CTATwoTextColumnsSmall ctaData={ctaDataIntroRight} bg="blue" titleSide="right"/>
+    <BenefitsList
+        imageSide="left"
+        background="red"
+        benefitsData={benefitsSection} 
+        benefitList={benefitList}/>
+    <CTAEnrollWithUsMiniBlue/>
+  <CTASection/>
+</BaseLayout>

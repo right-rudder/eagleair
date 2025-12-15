@@ -2,7 +2,7 @@
 import { COMPANY_NAME } from "../data/consts";
 import ImageWithZoomEffect from "./ImageWithZoomEffect.astro";
 
-const benefitList = [
+const benefitListPlaceholder = [
   "College Credit for Military Training",
   "GI Bill®/Veterans Affairs Benefits",
   "Military Scholarships",
@@ -13,6 +13,8 @@ const benefitList = [
 const benefitsSectionPlaceholder = {
   upperHeading: "EXPERIENCE THE ADVANTAGES",
   title: "BENEFITS FOR OUR MILITARY STUDENTS",
+  ctaText: "",
+  ctaLink: ""
 };
 
 const imagePlaceholder = {
@@ -27,7 +29,8 @@ const {
   titleTextSize = "!text-3xl",
   imageSide = "left", 
   background = "blue",
-  image = imagePlaceholder
+  image = imagePlaceholder,
+  benefitList = benefitListPlaceholder
 } = Astro.props;
 
 const isImageOnLeft = imageSide === "left";
@@ -45,7 +48,7 @@ const isBackgroundBlue = background === "blue";
         </h2>
         <div class="text-white sans !mx-0 !text-center lg:!text-left text-xl mt-4">
           <ul class="list-none space-y-4">
-            {benefitList.map((benefit) => (
+            {benefitList.map((benefit:any) => (
               <li class="flex items-center">
                 <span class={`mr-3 text-2xl ${isBackgroundBlue ? "text-red-600" : "text-blue-600"}`}>
                   ✓
@@ -57,8 +60,8 @@ const isBackgroundBlue = background === "blue";
         </div>
         {
           showButton && (
-            <a href="/aircraft" class={`my-8 mx-auto lg:mx-0 ${isBackgroundBlue ? "bg-monza-800" : "bg-madison-950" } text-base text-white w-fit sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
-              Apply Today
+            <a href={benefitsData.ctaLink} class={`my-8 mx-auto lg:mx-0 ${isBackgroundBlue ? "bg-monza-800" : "bg-madison-950" } text-base text-white w-fit sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
+              {benefitsData.ctaText}
             </a>
           )
         }
