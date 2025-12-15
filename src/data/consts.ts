@@ -100,8 +100,14 @@ export const X_URL = "";
 export const YOUTUBE_URL = "https://www.youtube.com/@eagleaircraft9980";
 export const YELP_URL = "https://www.yelp.com/biz/eagle-aircraft-valparaiso";
 export const GITHUB_URL = "";
+// Podcast Eagle's Nest Eagle Aircraft
+export const SPOTIFY = "https://open.spotify.com/show/3kSF0bwT4fFBQPH5TFPThM";
 
-export const UVP = ["International School for International Students", ""];
+export const UVP = [
+  "International School for International Students",
+  "We want Americans to fill proud and International Students to fill welcome",
+  "Where Americans fill proud and International Students feel welcome",
+];
 
 export const LOCATIONS = [
   {
@@ -156,6 +162,12 @@ export const FLEET = [
   },
 ];
 
+export const OTHER_LINKS = [
+  {
+    title: "Flight Schedule Pro",
+    url: "https://app.flightschedulepro.com/Account/Login?company=143387",
+  },
+];
 export const VIDEOS: {
   upperHeading: string;
   title: string;
@@ -188,6 +200,18 @@ export const VIDEOS: {
     image: {
       src: "/videos/discover-eagle-aircraft-flight-academy.jpg",
       alt: "Discover Eagle Aircraft Flight Academy Video Thumbnail",
+      classes: "w-full h-auto rounded-lg",
+    },
+  },
+  {
+    upperHeading: "Eagle Aircraft Flight Academy",
+    title: "Liberty University Aviation Degree",
+    description:
+      "We offer an online Bachelor’s Degree Program to our students to earn college credits for flight training hours. Eagle Aircraft was the first FTA (Flight Training Affiliate) outside the state of Virginia to be established with Liberty University. We have been successfully partnered with them since June of 2014. Entering the next phase of Eagle Aircraft Flight Training as an affiliate of Liberty University School of Aeronautics means college credit for our students and help to finance your dream.",
+    link: "https://www.youtube.com/watch?v=lRN7FOMXbuw",
+    image: {
+      src: "/videos/liberty-university-aviation-degree.jpg",
+      alt: "Liberty University Aviation Degree Video Thumbnail",
       classes: "w-full h-auto rounded-lg",
     },
   },
