@@ -14,6 +14,8 @@ import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithIm
 import CTAMeetOurFleet from "../../components/CTAMeetOurFleet.astro";
 import CardSwiper from "../../components/CardSwiper/CardSwiper.astro";
 import AboutUsWithImageAndQuote from "../../components/AboutUsWithImageAndQuote.astro";
+import CTAMeetOurAffiliateProgram from "../../components/CTAMeetOurAffiliateProgram.astro";
+import ListOfCoursesSection from "../../components/ListOfCoursesSection.astro";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -101,4 +103,7 @@ const componentsData = {
   <RRMDivider></RRMDivider>
   <CardSwiper></CardSwiper>
   <RRMDivider></RRMDivider>
+  <CTAMeetOurAffiliateProgram></CTAMeetOurAffiliateProgram>
+  <RRMDivider></RRMDivider>
+  <ListOfCoursesSection></ListOfCoursesSection>
 </BaseLayout>

@@ -1,0 +1,75 @@
+---
+import { COMPANY_NAME } from "../data/consts";
+import ImageWithZoomEffect from "./ImageWithZoomEffect.astro";
+
+const benefitList = [
+  "College Credit for Military Training",
+  "GI Bill®/Veterans Affairs Benefits",
+  "Military Scholarships",
+  "Tuition Assistance For more information, visit www.Liberty.edu/MilitaryAffairs.",
+  "YELLOW RIBBON PROGRAM: Liberty University is a partner in the Yellow Ribbon program, which allows eligible students to continue their studies once their annual GI Bill® funding has been exceeded."
+];
+
+const benefitsSectionPlaceholder = {
+  upperHeading: "EXPERIENCE THE ADVANTAGES",
+  title: "BENEFITS FOR OUR MILITARY STUDENTS",
+};
+
+const imagePlaceholder = {
+  src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+  alt: "Military aircraft in flight",
+};
+
+const { 
+  benefitsData = benefitsSectionPlaceholder,
+  showButton = true,
+  upperHeadingTextSize = "!text-xl",
+  titleTextSize = "!text-3xl",
+  imageSide = "left", 
+  background = "blue",
+  image = imagePlaceholder
+} = Astro.props;
+
+const isImageOnLeft = imageSide === "left";
+const isBackgroundBlue = background === "blue";
+---
+<section id="our-mission" class={`${isBackgroundBlue ? "bg-madison-950" : "bg-monza-800" }`}>
+  <div class="max-w-7xl mx-auto p-8 lg:px-8">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+      <div class={`${isImageOnLeft ? "order-2" : "order-1" } flex flex-col justify-start`}>
+        <p class={`${upperHeadingTextSize} !text-center lg:!text-left !mx-0 subtitle !text-white uppercase mb-4`}>
+          {benefitsData.upperHeading}
+        </p>
+        <h2 class={`${titleTextSize} !text-center lg:!text-left mx-auto lg:!mx-0 max-w-[80%] lg:max-w-[50%] xl:max-w-[70%] font-bold title !text-white`}>
+          {benefitsData.title}
+        </h2>
+        <div class="text-white sans !mx-0 !text-center lg:!text-left text-xl mt-4">
+          <ul class="list-none space-y-4">
+            {benefitList.map((benefit) => (
+              <li class="flex items-center">
+                <span class={`mr-3 text-2xl ${isBackgroundBlue ? "text-red-600" : "text-blue-600"}`}>
+                  ✓
+                </span>
+                {benefit}
+              </li>
+            ))}
+          </ul>
+        </div>
+        {
+          showButton && (
+            <a href="/aircraft" class={`my-8 mx-auto lg:mx-0 ${isBackgroundBlue ? "bg-monza-800" : "bg-madison-950" } text-base text-white w-fit sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
+              Apply Today
+            </a>
+          )
+        }
+      </div>
+      <div class={`${isImageOnLeft ? "order-1" : "order-2"} h-full mx-auto lg:mx-0`}>
+        <ImageWithZoomEffect 
+            src={image.src} 
+            alt={image.alt} 
+            class="w-full h-full object-cover rounded-lg" 
+        />
+        </div>
+    </div>
+  </div>
+</section>

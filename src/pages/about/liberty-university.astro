@@ -1,0 +1,89 @@
+---
+import CTAMeetOurAffiliateProgram from "../../components/CTAMeetOurAffiliateProgram.astro";
+import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import CTASection from "../../components/CTASection.astro";
+import ImageComp from "../../components/ImageComp.astro";
+import ListOfCoursesSection from "../../components/ListOfCoursesSection.astro";
+import BenefitsList from "../../components/BenefitsList.astro";
+import { COMPANY_NAME } from "../../data/consts";
+
+const heroData = {
+  image: {
+    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+    alt: "Military aircraft in flight",
+  },
+  upperHeader: `Flying is Freedom`,
+  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  subTitle:
+    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+  cta: [
+    { url: "#", text: "Private Pilot (PPL)" },
+  ],
+
+};
+
+const libertyUniversityCTAData = {
+  upperHeader: "Explore Our Fleet",
+  title: "Modern Aircraft, Trusted Performance",
+  paragraphs: [
+    "Our fleet is composed of modern, meticulously maintained aircraft designed to deliver exceptional performance, safety, and reliability. Each machine is equipped with advanced avionics and cutting-edge systems that elevate every stage of your training.",
+  ],
+  upperHeaderTwo: "They Are Here For You",
+  titleTwo: "Our Fleet Aircrafts"
+};
+
+const LibertyUniversityLogo = "/src/assets/liberty-university-school-of-aeronautics-affiliate-logo.png";
+
+const listOfCourses = [
+  { courseName: "AVIA 220 – Private Flight I" },
+  { courseName: "AVIA 225 – Private Flight II" },
+  { courseName: "AVIA 320 – Instrument Flight*" },
+  { courseName: "AVIA 325 – Commercial Flight I*" },
+  { courseName: "AVIA 326 – Commercial Flight II*" },
+  { courseName: "AVIA 327 – Commercial Flight III*" },
+  { courseName: "AVIA 331 – Commercial Pilot, Single Engine Land Add On" },
+  { courseName: "AVIA 420 – Flight Instructor Flight*" },
+  { courseName: "AVIA 422 – Certified Flight Instructor – Instrument (CFII)*" },
+  { courseName: "AVIA 440 – Multi-Engine Flight" },
+  { courseName: "AVIA 441 – Multi-Engine Instructor" },
+];
+
+const ctaMiniData = {
+  title: `Discover What ${COMPANY_NAME} Can Offer You`,
+  description: "From private pilot training to advanced certifications, we have programs designed for every aviation goal.",
+  buttonLink:"/contact",
+  buttonTitle:"Contact Us"
+}
+---
+
+<BaseLayout>
+  <HeroScreen data={heroData} />
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col space-y-4 items-center">
+        <ImageComp
+            src={LibertyUniversityLogo}
+            alt="Liberty University School of Aeronautics Afiliate Logo"
+            class="pl-1 w-[450px] h-auto"/>
+        <p class="mx-auto subtitle !text-black">{libertyUniversityCTAData.upperHeader}</p>
+        <h2 class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title">
+            {libertyUniversityCTAData.title}
+        </h2>
+        {
+            libertyUniversityCTAData.paragraphs.map((paragraph:string)=>(
+            <p class="text-xl text-center sans max-w-2xl mx-auto">
+            {paragraph}
+        </p>))
+        }
+        </div>
+    </section>
+    <CTAMeetOurAffiliateProgram/>
+    <CTAEnrollWithUsMini/>
+    <ListOfCoursesSection listOfCoursesData={listOfCourses}/>
+    <BenefitsList
+        imageSide="right"
+        background="blue"/>
+    <CTAEnrollWithUsMini ctaData={ctaMiniData}/>
+  <CTASection/>
+</BaseLayout>

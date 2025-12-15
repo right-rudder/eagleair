@@ -1,0 +1,58 @@
+---
+import CardCourse from "./CardCourse.astro";
+
+const listOfCoursesPlaceholder = [
+    {
+        courseName: "Teste 1"
+    },
+    {
+        courseName: "Teste 2"
+    },
+    {
+        courseName: "Teste 3"
+    },
+    {
+        courseName: "Teste 4"
+    },
+]
+
+const coursesCTAPlaceholder = {
+    upperHeader: "Explore Our Courses",
+    title: "Liberty Courses at Eagle",
+    paragraphs: [
+    ],
+    ctaLink: "https://www.liberty.edu/eaglestudent",
+    observations: "*Course offerings with an asterisk next to those that are VA approved"
+};
+
+
+const { listOfCoursesData = listOfCoursesPlaceholder, coursesCTAData = coursesCTAPlaceholder } = Astro.props;
+---
+<section class="bg-muted-50">
+    <div class="max-w-7xl mx-auto py-16 flex flex-col gap-8">
+        <div class="flex flex-col items-center">
+            <div class="flex flex-col gap-2">
+                <p class="mx-auto subtitle !text-black">{coursesCTAData.upperHeader}</p>
+                 <h2 class="!text-4xl md:text-5xl mx-auto font-bold text-center title">
+                    {coursesCTAData.title}
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                    {
+                        listOfCoursesData.map((course: any) => (
+                            
+                            <CardCourse course={course} />
+                        ))
+                    }
+            </div>
+        </div>
+        <div class="w-full flex justify-center">
+            <p class="sans italic">{coursesCTAData.observations}</p>
+        </div>
+        <div class="w-full flex justify-center px-16">
+            <a href={coursesCTAData.ctaLink} class="w-full max-w-[300px] lg:w-1/2 btn-tertiary text-center">
+            Apply Today
+            </a>
+        </div>
+    </div>
+</section>
