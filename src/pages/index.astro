@@ -12,6 +12,7 @@ import { PHONE_NUMBER, COMPANY_NICKNAME } from "../data/consts";
 import RRMDivider from "../components/RRMDivider.astro";
 import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
 import CTATwoTextColumns from "../components/CTATwoTextColumns.astro";
+import CTAEnrollWithUsMiniBlue from "../components/CTAEnrollWithUsMiniBlue.astro";
 
 const heroData = {
   image: {
@@ -222,5 +223,6 @@ const processSteps2 = [
     steps={processSteps2}
   />
   <Testimonials testimonials={testimonials} />
+  <CTAEnrollWithUsMiniBlue />
   <CTASection {...ctaData} />
 </BaseLayout>
