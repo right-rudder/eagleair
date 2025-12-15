@@ -1,32 +1,41 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeroScreen from "../components/HeroScreen.astro";
+import HeroScreen from "../components/HeroScreen2.astro";
 import ValueProposition from "../components/ValueProposition.astro";
 import ProgramsOverview from "../components/ProgramsOverview.astro";
 import WhyChooseUs from "../components/WhyChooseUs.astro";
 import ProcessSteps from "../components/ProcessSteps.astro";
+import ProcessSteps2 from "../components/ProcessSteps2.astro";
 import Testimonials from "../components/Testimonials.astro";
 import CTASection from "../components/CTASection.astro";
 import { PHONE_NUMBER, COMPANY_NICKNAME } from "../data/consts";
+import RRMDivider from "../components/RRMDivider.astro";
+import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
+import CTATwoTextColumns from "../components/CTATwoTextColumns.astro";
 
 const heroData = {
   image: {
     src: "/src/assets/eagle-air-valparaiso-old-header.jpg",
     alt: "Eagle Aircraft Flight Academy - Flight Training in Valparaiso, Indiana",
   },
-  eyebrow: `Call Us: ${PHONE_NUMBER}`,
-  title: `Become a Pilot in Indiana </br> <span class="text-madison-200">${COMPANY_NICKNAME}</span>`,
+  upperHeader: `Call Us: ${PHONE_NUMBER}`,
+  title: `Become a Pilot in Indiana </br> <span class="text-madison-900">${COMPANY_NICKNAME}</span>`,
   subTitle:
     "Cessna Pilot Center flight training at Porter County Regional Airport in Valparaiso, Indiana.",
-  cta: [
-    {
-      url: "/discovery-flights",
-      text: "Schedule a Discovery Flight",
-    },
-    {
-      url: "/contact",
-      text: "Talk to Our Team",
-    },
+  // cta: [
+  //   {
+  //     url: "/discovery-flights",
+  //     text: "Schedule a Discovery Flight",
+  //   },
+  //   {
+  //     url: "/contact",
+  //     text: "Talk to Our Team",
+  //   },
+  // ],
+  stats: [
+    { value: "1,500", suffix: "+", title: "Pilots Trained" },
+    { value: "95", suffix: "%", title: "Checkride Pass Rate" },
+    { value: "12", suffix: "+", title: "Training Aircraft" },
   ],
 };
 
@@ -141,16 +150,77 @@ const ctaData = {
   },
 };
 
+
+const iconBoard = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g fill="none" stroke-width="1.5">
+    <path fill="" d="M2 4h20v18H2z"/>
+    <path stroke="#a0141a" d="M2 4h20v18H2z"/>
+    <path stroke="#a0141a" d="M15.804 6.91L9.172 9.565l-.765-1.91m4.537 3.755l-.33-3.51M5 15h6m-6 3h6m2-3h6m-6 3h6M5 1v3m14-3v3"/>
+  </g>
+</svg>
+`;
+
+const iconStudentBoard = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><g fill="#a0141a"><path d="M192 80v96h-88a32 32 0 1 0-32-32h-8V80Z" opacity="0.2"/><path d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h13.39a8 8 0 0 0 7.23-4.57a48 48 0 0 1 86.76 0a8 8 0 0 0 7.23 4.57H216a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16M80 144a24 24 0 1 1 24 24a24 24 0 0 1-24-24m136 56h-56.57a64.4 64.4 0 0 0-28.83-26.16a40 40 0 1 0-53.2 0A64.4 64.4 0 0 0 48.57 200H40V56h176ZM56 96V80a8 8 0 0 1 8-8h128a8 8 0 0 1 8 8v96a8 8 0 0 1-8 8h-16a8 8 0 0 1 0-16h8V88H72v8a8 8 0 0 1-16 0"/></g></svg>
+`;
+const iconWorldHat = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke-width="3"><path fill="" d="M41.805 24.804Q41.999 23.429 42 22c0-11.046-8.954-20-20-20S2 10.954 2 22c0 8.006 4.704 14.914 11.5 18.109V32.67l-.003-.169c0-2.424 1.445-4.56 3.658-5.558c1.199-.54 2.76-1.215 4.75-2.024c3.192-1.296 5.52-2.139 6.985-2.64c2.02-.69 4.2-.69 6.22 0c1.419.486 3.651 1.293 6.695 2.524"/><path stroke="#a0141a" stroke-linecap="round" stroke-linejoin="round" d="M3.428 28.5h10.321M3.428 15.333H40.57"/><path fill="#fff" d="M19.006 33.957c-1.344-.606-1.344-2.305 0-2.911a133 133 0 0 1 4.594-1.957c3.115-1.265 5.363-2.078 6.746-2.55a5.1 5.1 0 0 1 3.309 0c1.382.472 3.63 1.285 6.745 2.55a135 135 0 0 1 4.595 1.957c1.344.606 1.344 2.305 0 2.911a133 133 0 0 1-4.595 1.957c-3.114 1.265-5.363 2.078-6.745 2.55a5.1 5.1 0 0 1-3.31 0c-1.381-.472-3.63-1.285-6.745-2.55a133 133 0 0 1-4.595-1.957"/><path fill="#fff" d="M23.5 35.874v3.087c0 1.588.065 2.71.143 3.484c.102 1.022.68 1.893 1.617 2.313c1.268.57 3.462 1.244 6.74 1.244s5.472-.675 6.74-1.244c.936-.42 1.515-1.291 1.617-2.313c.078-.774.143-1.896.143-3.484v-3.087l-.1.04c-3.114 1.266-5.363 2.08-6.745 2.551a5.1 5.1 0 0 1-3.31 0c-1.382-.472-3.63-1.285-6.745-2.55z"/><path stroke="#a0141a" stroke-linecap="round" stroke-linejoin="round" d="M18 32.502v12.063M30.57 22c0-11.046-3.837-20-8.57-20c-4.735 0-8.572 8.954-8.572 20c0 2.275.163 4.462.463 6.5"/><path stroke="#a0141a" stroke-linecap="round" stroke-linejoin="round" d="M41.777 25q.222-1.47.223-3c0-11.046-8.954-20-20-20S2 10.954 2 22c0 7.809 4.475 14.572 11 17.865"/><path stroke="#a0141a" stroke-linecap="round" stroke-linejoin="round" d="M19.006 33.958c-1.344-.606-1.344-2.305 0-2.911A133 133 0 0 1 23.6 29.09c3.115-1.265 5.363-2.078 6.746-2.55a5.1 5.1 0 0 1 3.309 0c1.382.472 3.63 1.285 6.745 2.55a135 135 0 0 1 4.595 1.957c1.344.606 1.344 2.305 0 2.911a133 133 0 0 1-4.595 1.957c-3.114 1.265-5.363 2.078-6.745 2.55a5.1 5.1 0 0 1-3.31 0c-1.381-.472-3.63-1.285-6.745-2.55a133 133 0 0 1-4.595-1.957"/><path stroke="#a0141a" stroke-linecap="round" stroke-linejoin="round" d="M23.5 35.874v3.087c0 1.588.065 2.71.143 3.484c.102 1.022.68 1.893 1.617 2.313c1.268.57 3.462 1.244 6.74 1.244s5.472-.675 6.74-1.244c.936-.42 1.515-1.291 1.617-2.313c.078-.774.143-1.896.143-3.484v-3.087"/></g></svg>
+`;
+
+const iconDirectionsPlates = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><mask id="SVGbfJGv2GB"><g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><path stroke-linecap="round" d="M24 4v37"/><path fill="#333333" d="M24 8h15.545L42 12l-2.455 4H24zm0 14H8.455L6 26l2.455 4H24z"/><path stroke-linecap="round" d="M16 42h16"/></g></mask></defs><path fill="#a0141a" d="M0 0h48v48H0z" mask="url(#SVGbfJGv2GB)"/></svg>
+`;
+
+const processSteps2 = [
+  {
+    svg: iconBoard,
+    number: 1,
+    title: "Flight Training Programs",
+    description:
+    "Train from Private Pilot through Commercial, Instrument, and Multi-Engine — all in a modern, well-maintained fleet.",
+  },
+  {
+    svg: iconStudentBoard,
+    number: 2,
+    title: "Instructor Training (CFI / CFII / MEI)",
+    description:
+    "Advance your career with instructor ratings and opportunities to build hours by teaching at Eagle.",
+  },
+  {
+    svg: iconWorldHat,
+    number: 3,
+    title: "Accelerated Part 141 Courses",
+    description:
+    "FAA-approved structured training that helps you progress faster and more efficiently toward your certifications.",
+  },
+  {
+    svg: iconDirectionsPlates,
+    number: 4,
+    title: "Career & Aviation Support",
+    description:
+      "Get guidance, mentoring, and the resources you need to move toward airlines, corporate flying, or instruction.",
+  },
+];
 ---
 <BaseLayout>
   <HeroScreen data={heroData} />
+  
+  <CTAEnrollWithUsMini />
   <ProcessSteps
     title="Your Path to the Airlines"
     subtitle="Simple, proven process to get you from zero to airline pilot"
     steps={processSteps}
   />
   <ValueProposition {...valuePropositionData} />
+  <!-- <CTATwoTextColumns bg="red" titleSide="right" /> -->
   <ProgramsOverview />
+  <ProcessSteps2 
+    uptitle="— Our Services"
+    title="Welcome to Eagle Aircraft Flight Academy"
+    subtitle="Eagle Aircraft delivers FAA-approved, structured flight training backed by 40+ years of excellence. With expert instructors and real-world flying, we prepare you to become a confident, skilled, safety-driven pilot."
+    steps={processSteps2}
+  />
   <Testimonials testimonials={testimonials} />
   <CTASection {...ctaData} />
 </BaseLayout>

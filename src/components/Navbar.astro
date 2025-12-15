@@ -26,19 +26,24 @@ export type NavbarButton = {
 
 export const menu: MenuItem[] = [
   {
-    label: "Services",
-    url: "/services",
+    label: "New to Flying?",
+    url: "/new-to-flying",
     children: [
-      { label: "Airline Prep Training", url: "/services/airline-prep" },
-      { label: "Interview Preparation", url: "/services/interview-prep" },
-      { label: "Resume Review", url: "/services/resume-review" },
-      { label: "Application Review", url: "/services/application-review" },
+      { label: "Why become a pilot", url: "/new-to-flying" },
+      { label: "Discovery Flights", url: "/discovery-flights" },
     ],
   },
-  // {
-  //   label: "Partners",
-  //   url: "/partners",
-  // },
+  {
+    label: "Resources",
+    url: "#",
+    children: [
+      { label: "Flight Schedule Pro", url: "#" },
+      { label: "Student Resources", url: "#" },
+      { label: "Liberty University Aviation Degree", url: "#" },
+      { label: "International Students", url: "#" },
+      { label: "DOD SkillBridge", url: "#" },
+    ],
+  },
   {
     label: "About",
     url: "/about",
@@ -46,8 +51,8 @@ export const menu: MenuItem[] = [
       { label: "About EagleAir", url: "/about" },
       { label: "Our Crew", url: "/crew" },
       { label: "Our Fleet", url: "/aircraft" },
-      // { label: "Funding Options", url: "/funding-options" },
-      // { label: "Partners", url: "/partners/" },
+      // { label: "Financing", url: "/financing" },
+      // { label: "Our partners", url: "/partners/" },
       { label: "FAQ", url: "/faq" },
       { label: "Blog", url: "/blog" },
       { label: "Contact Us", url: "/contact" },
