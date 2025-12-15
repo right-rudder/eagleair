@@ -72,7 +72,8 @@ export const FAVICON = "/favicon.png";
 
 export const LOGO = "/logo_eagle_aircraft_round_color.png";
 
-export const LOGO_ASSETS = "/src/assets/logo_eagle_aircraft_horizontal_color.png";
+export const LOGO_ASSETS =
+  "/src/assets/logo_eagle_aircraft_horizontal_color.png";
 export const LOGO_ASSETS_2 = "/src/assets/logo_eagle_aircraft_round_color.png";
 
 // CHANGE client business info
@@ -89,17 +90,18 @@ export const ADDRESS = "4001 Murvihill Road, Valparaiso, IN 46383";
 export const ADDRESS_CITY = "Valparaiso";
 export const ADDRESS_STATE = "Indiana";
 export const ADDRESS_ZIP = "46383";
-export const GMAPS =
-  "https://maps.app.goo.gl/k8sGUpJ1DJApg1HJA";
+export const GMAPS = "https://maps.app.goo.gl/k8sGUpJ1DJApg1HJA";
 export const EMAIL_ADDRESS = "eaglevpz@gmail.com";
 export const FACEBOOK_URL = "https://www.facebook.com/EagleAircraft";
 export const INSTAGRAM_URL = "https://www.instagram.com/eaglevpz/";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/company/eagle-aircraft-inc";
 export const X_URL = "";
-export const YOUTUBE_URL = "";
+export const YOUTUBE_URL = "https://www.youtube.com/@eagleaircraft9980";
 export const YELP_URL = "https://www.yelp.com/biz/eagle-aircraft-valparaiso";
 export const GITHUB_URL = "";
+
+export const UVP = ["International School for International Students", ""];
 
 export const LOCATIONS = [
   {
@@ -164,4 +166,29 @@ export const VIDEOS: {
     alt: string;
     classes: string;
   };
-}[] = [];
+}[] = [
+  {
+    upperHeading: "Eagle Aircraft Flight Academy",
+    title: "Eagle Through the Years!",
+    description:
+      "Take a nostalgic journey through the history of Eagle Aircraft Flight Academy. From our humble beginnings to becoming a premier flight training center, see how we've grown and evolved over the years.",
+    link: "https://www.youtube.com/watch?v=-qmjjhObF0A",
+    image: {
+      src: "/videos/discover-eagle-aircraft-flight-academy.jpg",
+      alt: "Discover Eagle Aircraft Flight Academy Video Thumbnail",
+      classes: "w-full h-auto rounded-lg",
+    },
+  },
+  {
+    upperHeading: "Eagle Aircraft Flight Academy",
+    title: "You Can Learn to Fly!",
+    description:
+      "Take a tour of Eagle Aircraft Flight Academy located at Porter County Regional Airport in Valparaiso, Indiana. Learn about our flight training programs, fleet, and facilities.",
+    link: "https://www.youtube.com/watch?v=j_lnC-sTVjk",
+    image: {
+      src: "/videos/discover-eagle-aircraft-flight-academy.jpg",
+      alt: "Discover Eagle Aircraft Flight Academy Video Thumbnail",
+      classes: "w-full h-auto rounded-lg",
+    },
+  },
+];
