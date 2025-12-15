@@ -38,7 +38,7 @@ const { data } = Astro.props;
 >
   <!-- Background overlay for better text readability -->
   <div
-    class="absolute inset-0 bg-linear-to-b from-muted-50/80 via-muted-100/20 to-muted-100/80 -z-10"
+    class="absolute inset-0 bg-linear-to-b from-muted-800/80 via-muted-800/20 to-muted-800/80 -z-10"
     aria-hidden="true"
   >
   </div>
@@ -59,11 +59,11 @@ const { data } = Astro.props;
     >
       <!-- Main Content -->
       <div
-        class="flex flex-col items-center gap-4 lg:gap-6 text-center pt-28 lg:pt-44"
+        class="flex flex-col items-center gap-4 lg:gap-6 text-center pt-28 lg:pt-44 "
       >
-        <span class="flex lg:pb-6 items-center w-full gap-2 justify-center text-xl sm:text-2xl/tight md:text-3xl/tight lg:text-3xl font-title text-monza-800 drop-shadow-3xl"><div class="border-t border border-monza-800 w-12 "></div>{data.upperHeader}</span>
+        <span class="flex lg:pb-6 items-center w-full gap-2 justify-center text-xl sm:text-2xl/tight md:text-2xl/tight lg:text-2xl font-title drop-shadow-2xl max-w-xl"><div class="border-t border border-white w-12 "></div>{data.upperHeader}</span>
         <h1
-          class="font-title text-white text-4xl tracking-wide lg:tracking-[0.2em] sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/16  font-semibold drop-shadow-2xl "
+          class="font-title py-6 text-white text-4xl tracking-wide lg:tracking-[0.2em] sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/16  font-semibold drop-shadow-2xl bg-linear-to-br from-white-100 via-muted-100/60 to-muted-100/80 "
           set:html={data.title}
         />
         {
@@ -82,7 +82,7 @@ const { data } = Astro.props;
             {data.cta.map((item, index) => (
               <a
                 href={item.url}
-                class={`${index === 0 ? "" : ""} bg-monza-800 text-base sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
+                class={`${index === 0 ? "" : ""} bg-monza-900 text-base sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
                 aria-label={item.text}
               >
                 {item.text}
@@ -95,9 +95,9 @@ const { data } = Astro.props;
       <!-- Statistics -->
       {
         data.stats && (
-          <ul class="flex justify-between gap-6 md:mt-12 lg:mt-24 py-6 font-title text-pretty">
+          <ul class="flex justify-between gap-6 md:mt-12 py-6 font-title text-pretty">
               {data.stats.map((stat:any) => ( 
-                <li class="flex flex-col-reverse gap-2 text-monza-700">
+                <li class="flex flex-col-reverse gap-2 text-monza-900">
                   <h2 class=" text-lg md:text-xl/tight lg:text-2xl">{stat.title}</h2>
                   <div class=" flex items-center justify-center">
                     <span class="text-lg sm:text-xl/tight md:text-2xl/tight lg:text-6xl">{stat.prefix}</span>
