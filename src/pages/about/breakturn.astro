@@ -1,0 +1,110 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import CTASection from "../../components/CTASection.astro";
+import ImageComp from "../../components/ImageComp.astro";
+import BenefitsListBreakTurn from "../../components/BenefitsListBreakTurn.astro";
+import CTATwoTextColumnsSmall from "../../components/CTATwoTextColumnsSmall.astro";
+import CTAEnrollWithUsMiniBlue from "../../components/CTAEnrollWithUsMiniBlue.astro";
+import { COMPANY_NAME } from "../../data/consts";
+
+const heroData = {
+  image: {
+    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+    alt: "Military aircraft in flight",
+  },
+  upperHeader: `Flying is Freedom`,
+  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  subTitle:
+    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+  cta: [
+    { url: "#", text: "Private Pilot (PPL)" },
+  ],
+
+};
+
+const libertyUniversityCTAData = {
+  upperHeader: "SkillBridge Experts",
+  title: "BreakTurn",
+  paragraphs: [
+    "BreakTurn partners with Eagle Aircraft Flight Academy to provide specialized training opportunities for transitioning military service members.",
+    "hrough this collaboration, students can leverage programs like SkillBridge to gain hands-on flight experience in our modern fleet while receiving mentorship, guidance, and career support to pursue their dream of becoming professional pilots."
+  ],
+  upperHeaderTwo: "They Are Here For You",
+  titleTwo: "Our Fleet Aircrafts"
+};
+
+const BreakTurnLogo = "/src/assets/BreakTurn_Logo_Tagline_Black-Blue-768x297.png";
+
+const ctaDataIntroLeft = {
+    title: "From Military Service to EagleAir Training",
+    paragraphs: [
+        "Eagle Aircraft Flight Academy partners with BreakTurn to offer flight training tailored for military students.",
+        "Through SkillBridge, students gain hands-on experience in our modern fleet while developing the skills needed to succeed in civilian aviation."
+    ]
+}
+
+const ctaDataIntroRight = {
+    title: "Supporting Your Aviation Journey",
+    paragraphs: [
+        "BreakTurn’s mentorship combined with EagleAir’s programs gives students guidance, access to advanced aircraft, and personalized instruction.",
+        "Whether starting your first pilot certificate or advancing toward commercial or instructor ratings, our partnership ensures a smooth transition from military service to professional aviation."
+    ]
+}
+
+
+
+const benefitList = [
+  "Gain hands-on flight experience in a modern, well-equipped fleet",
+  "Take advantage of SkillBridge to train while serving",
+  "Use GI Bill® and other military education benefits for your training ¹",
+  "Access scholarships and financial support for a smooth transition",
+  "Receive mentorship and guidance to launch your civilian aviation career"
+];
+
+
+const benefitsSection = {
+  upperHeading: "EXPERIENCE THE ADVANTAGES",
+  title: "Benefits for Our Military Students",
+  ctaText: "Apply Today",
+  ctaLink: "/"
+};
+
+const ctaEnrollWithUsMiniData = {
+  title: `Discover What ${COMPANY_NAME} Can Offer You`,
+  description: "From private pilot training to advanced certifications, we have programs designed for every aviation goal.",
+  ctaLink: "/contact",
+  ctaText: "Contact Us"
+}
+---
+
+<BaseLayout>
+  <HeroScreen data={heroData} />
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col space-y-4 items-center">
+        <ImageComp
+            src={BreakTurnLogo}
+            alt="Liberty University School of Aeronautics Afiliate Logo"
+            class="pl-1 w-[400px] h-auto"/>
+        <p class="mx-auto subtitle !text-black">{libertyUniversityCTAData.upperHeader}</p>
+        <h2 class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title">
+            {libertyUniversityCTAData.title}
+        </h2>
+        {
+            libertyUniversityCTAData.paragraphs.map((paragraph:string)=>(
+            <p class="text-xl text-center sans max-w-2xl mx-auto">
+            {paragraph}
+        </p>))
+        }
+        </div>
+    </section>
+    <CTATwoTextColumnsSmall ctaData={ctaDataIntroLeft} bg="blue" titleSide="left"/>
+    <CTATwoTextColumnsSmall ctaData={ctaDataIntroRight} bg="blue" titleSide="right"/>
+    <BenefitsListBreakTurn
+        imageSide="left"
+        background="red"
+        benefitsData={benefitsSection} 
+        benefitList={benefitList}/>
+    <CTAEnrollWithUsMiniBlue ctaData={ctaEnrollWithUsMiniData}/>
+  <CTASection/>
+</BaseLayout>
