@@ -19,8 +19,8 @@ const heroData = {
     src: "/src/assets/eagle-air-valparaiso-old-header.jpg",
     alt: "Eagle Aircraft Flight Academy - Flight Training in Valparaiso, Indiana",
   },
-  upperHeader: `Where Americans fill pride and International Studetns fill welcome`,
-  title: `Become a Pilot in Indiana </br> <span class="text-madison-950 ">${COMPANY_NICKNAME}</span>`,
+  upperHeader: `Where Americans feel pride <br> and Visitors feel welcome`,
+  title: `Become a Pilot in Indiana <br> ${COMPANY_NICKNAME}`,
   subTitle:
     "Cessna Pilot Center flight training at Porter County Regional Airport in Valparaiso, Indiana.",
   // cta: [
@@ -215,13 +215,13 @@ const processSteps2 = [
   />
   <ValueProposition {...valuePropositionData} />
   <!-- <CTATwoTextColumns bg="red" titleSide="right" /> -->
-  <ProgramsOverview />
   <ProcessSteps2 
     uptitle="— Our Services"
     title="Welcome to Eagle Aircraft Flight Academy"
     subtitle="Eagle Aircraft delivers FAA-approved, structured flight training backed by 40+ years of excellence. With expert instructors and real-world flying, we prepare you to become a confident, skilled, safety-driven pilot."
     steps={processSteps2}
   />
+  <ProgramsOverview />
   <Testimonials testimonials={testimonials} />
   <CTAEnrollWithUsMiniBlue />
   <CTASection {...ctaData} />

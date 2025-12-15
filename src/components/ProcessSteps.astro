@@ -37,8 +37,8 @@ const { title, subtitle, steps } = Astro.props;
       {steps.map((step, index) => {
         const isReversed = index % 2 !== 0;
         const colorClass = ["bg-madison-950", "bg-white", "bg-monza-900"][index % 3];
-        const numberColor = ["bg-monza-900", "bg-madison-950", "bg-madison-950"][index % 3];
-        const numberTextColor = ["text-white", "text-white", "text-white"][index % 3];
+        const numberColor = ["bg-white", "bg-monza-900", "bg-white"][index % 3];
+        const numberTextColor = ["text-madison-950", "text-white", "text-monza-900"][index % 3];
         const textColor = ["text-white", "text-monza-900", "text-white",][index % 3];
 
         return (
