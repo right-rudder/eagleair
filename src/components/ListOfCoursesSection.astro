@@ -22,7 +22,7 @@ const coursesCTAPlaceholder = {
     paragraphs: [
     ],
     ctaLink: "https://www.liberty.edu/eaglestudent",
-    observations: "*Course offerings with an asterisk next to those that are VA approved"
+    observations: "An asterisk (*) indicates VA-approved courses."
 };
 
 
@@ -48,11 +48,6 @@ const { listOfCoursesData = listOfCoursesPlaceholder, coursesCTAData = coursesCT
         </div>
         <div class="w-full flex justify-center">
             <p class="sans italic">{coursesCTAData.observations}</p>
-        </div>
-        <div class="w-full flex justify-center px-16">
-            <a href={coursesCTAData.ctaLink} class="w-full max-w-[300px] lg:w-1/2 btn-tertiary text-center">
-            Apply Today
-            </a>
         </div>
     </div>
 </section>

@@ -6,8 +6,8 @@ import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
 import ImageComp from "../../components/ImageComp.astro";
 import ListOfCoursesSection from "../../components/ListOfCoursesSection.astro";
-import BenefitsList from "../../components/BenefitsList.astro";
-import { COMPANY_NAME } from "../../data/consts";
+import BenefitsListLibertyUniversity from "../../components/BenefitsListLibertyUniversity.astro";
+import { COMPANY_NAME, COMPANY_NICKNAME } from "../../data/consts";
 
 const heroData = {
   image: {
@@ -21,20 +21,29 @@ const heroData = {
   cta: [
     { url: "#", text: "Private Pilot (PPL)" },
   ],
-
-};
-
-const libertyUniversityCTAData = {
-  upperHeader: "Explore Our Fleet",
-  title: "Modern Aircraft, Trusted Performance",
-  paragraphs: [
-    "Our fleet is composed of modern, meticulously maintained aircraft designed to deliver exceptional performance, safety, and reliability. Each machine is equipped with advanced avionics and cutting-edge systems that elevate every stage of your training.",
-  ],
-  upperHeaderTwo: "They Are Here For You",
-  titleTwo: "Our Fleet Aircrafts"
+  
 };
 
 const LibertyUniversityLogo = "/src/assets/liberty-university-school-of-aeronautics-affiliate-logo.png";
+
+const libertyUniversityIntroData = {
+  upperHeader: "Flight Training Affiliate",
+  title: "Liberty University School of Aeronautics",
+ paragraphs: [
+    "Through our partnership with Liberty University, Eagle Aircraft serves as a Flight Training Affiliate, allowing students to earn college credit for flight training hours while completing their aviation degree online.",
+    "Established in 2014 as the first affiliate outside Virginia, Eagle Aircraft provides hands-on flight instruction under FAA Part 141 standards, fully integrated with Liberty’s academic curriculum."
+  ]
+
+};
+
+const ctaProgramsData = {
+  upperHeading: "FLIGHT TRAINING AFFILIATE PROGRAM",
+  title: `TRAIN WITH ${COMPANY_NICKNAME} AND LIBERTY UNIVERSITY`,
+  paragraph: "Discover how Eagle Aircraft partners with Liberty University to combine hands-on flight training with college credit. Watch the video to see how our students earn their aviation degree while training locally, and learn how this unique affiliation can launch your career in aviation.",
+  ctaLink: "https://www.liberty.edu/eaglestudent",
+  ctaText: "Apply Today"
+};
+
 
 const listOfCourses = [
   { courseName: "AVIA 220 – Private Flight I" },
@@ -66,22 +75,22 @@ const ctaMiniData = {
             src={LibertyUniversityLogo}
             alt="Liberty University School of Aeronautics Afiliate Logo"
             class="pl-1 w-[450px] h-auto"/>
-        <p class="mx-auto subtitle !text-black">{libertyUniversityCTAData.upperHeader}</p>
+        <p class="mx-auto subtitle !text-black">{libertyUniversityIntroData.upperHeader}</p>
         <h2 class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title">
-            {libertyUniversityCTAData.title}
+            {libertyUniversityIntroData.title}
         </h2>
         {
-            libertyUniversityCTAData.paragraphs.map((paragraph:string)=>(
+            libertyUniversityIntroData.paragraphs.map((paragraph:string)=>(
             <p class="text-xl text-center sans max-w-2xl mx-auto">
             {paragraph}
         </p>))
         }
         </div>
     </section>
-    <CTAMeetOurAffiliateProgram/>
+    <CTAMeetOurAffiliateProgram ctaData={ctaProgramsData}/>
     <CTAEnrollWithUsMini/>
     <ListOfCoursesSection listOfCoursesData={listOfCourses}/>
-    <BenefitsList
+    <BenefitsListLibertyUniversity
         imageSide="right"
         background="blue"/>
     <CTAEnrollWithUsMini ctaData={ctaMiniData}/>

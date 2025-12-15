@@ -6,15 +6,15 @@ const benefitListPlaceholder = [
   "College Credit for Military Training",
   "GI Bill®/Veterans Affairs Benefits",
   "Military Scholarships",
-  "Tuition Assistance For more information, visit www.Liberty.edu/MilitaryAffairs.",
-  "YELLOW RIBBON PROGRAM: Liberty University is a partner in the Yellow Ribbon program, which allows eligible students to continue their studies once their annual GI Bill® funding has been exceeded."
+  "Tuition Assistance ¹",
+  "Yellow Ribbon Program ²"
 ];
 
 const benefitsSectionPlaceholder = {
-  upperHeading: "EXPERIENCE THE ADVANTAGES",
+  upperHeading: "Serving Those Who Serve",
   title: "BENEFITS FOR OUR MILITARY STUDENTS",
-  ctaText: "",
-  ctaLink: ""
+  ctaText: "Apply Today",
+  ctaLink: "https://www.liberty.edu/eaglestudent"
 };
 
 const imagePlaceholder = {
@@ -57,6 +57,9 @@ const isBackgroundBlue = background === "blue";
               </li>
             ))}
           </ul>
+          <div class="flex flex-col items-start gap-2 mt-8 text-xs max-w-[60%]">
+            <p class="sans !mx-0 !text-left">¹ For more information, visit www.Liberty.edu/MilitaryAffairs.</p>
+          </div>
         </div>
         {
           showButton && (
