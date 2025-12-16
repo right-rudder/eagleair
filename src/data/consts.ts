@@ -125,6 +125,7 @@ export const LOCATIONS = [
   },
 ];
 
+export const GOOGLEMAPS = "https://maps.app.goo.gl/vwGCHmAHiU6Cbjnw5";
 export const COURSES = [
   "Discovery Flights",
   "Private Pilot Certificate (PPL)",
