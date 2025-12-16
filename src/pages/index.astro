@@ -13,6 +13,7 @@ import RRMDivider from "../components/RRMDivider.astro";
 import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
 import CTATwoTextColumns from "../components/CTATwoTextColumns.astro";
 import CTAEnrollWithUsMiniBlue from "../components/CTAEnrollWithUsMiniBlue.astro";
+import GoogleMapLocation from "../components/External/GoogleMapLocation.astro";
 
 const heroData = {
   image: {
@@ -224,5 +225,6 @@ const processSteps2 = [
   <ProgramsOverview />
   <Testimonials testimonials={testimonials} />
   <CTAEnrollWithUsMiniBlue />
+  <GoogleMapLocation />
   <CTASection {...ctaData} />
 </BaseLayout>
