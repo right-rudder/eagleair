@@ -1,6 +1,5 @@
 ---
 import CTAMeetOurAffiliateProgram from "../../components/CTAMeetOurAffiliateProgram.astro";
-import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
@@ -8,6 +7,7 @@ import ImageComp from "../../components/ImageComp.astro";
 import ListOfCoursesSection from "../../components/ListOfCoursesSection.astro";
 import BenefitsListLibertyUniversity from "../../components/BenefitsListLibertyUniversity.astro";
 import { COMPANY_NAME, COMPANY_NICKNAME } from "../../data/consts";
+import CTAEnrollWithUsMiniWhite from "../../components/CTAEnrollWithUsMiniWhite.astro";
 
 const heroData = {
   image: {
@@ -28,10 +28,9 @@ const LibertyUniversityLogo = "/src/assets/liberty-university-school-of-aeronaut
 
 const libertyUniversityIntroData = {
   upperHeader: "Flight Training Affiliate",
-  title: "Liberty University School of Aeronautics",
+  title: "Liberty University<br>School of Aeronautics",
  paragraphs: [
-    "Through our partnership with Liberty University, Eagle Aircraft serves as a Flight Training Affiliate, allowing students to earn college credit for flight training hours while completing their aviation degree online.",
-    "Established in 2014 as the first affiliate outside Virginia, Eagle Aircraft provides hands-on flight instruction under FAA Part 141 standards, fully integrated with Liberty’s academic curriculum."
+    "Through our partnership with Liberty University, Eagle Aircraft serves as a Flight Training Affiliate, allowing students to earn college credit for flight training hours while completing their aviation degree online, while providing hands-on flight instruction under FAA Part 141 standards fully integrated with Liberty’s academic curriculum—continuing the role Eagle Aircraft has held since 2014 as Liberty’s first affiliate outside Virginia.",
   ]
 
 };
@@ -76,9 +75,7 @@ const ctaMiniData = {
             alt="Liberty University School of Aeronautics Afiliate Logo"
             class="pl-1 w-[450px] h-auto"/>
         <p class="mx-auto subtitle !text-black">{libertyUniversityIntroData.upperHeader}</p>
-        <h2 class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title">
-            {libertyUniversityIntroData.title}
-        </h2>
+        <h2 set:html={libertyUniversityIntroData.title} class="text-4xl md:text-5xl mx-auto font-bold text-center title"/>
         {
             libertyUniversityIntroData.paragraphs.map((paragraph:string)=>(
             <p class="text-xl text-center sans max-w-2xl mx-auto">
@@ -87,12 +84,11 @@ const ctaMiniData = {
         }
         </div>
     </section>
-    <CTAMeetOurAffiliateProgram ctaData={ctaProgramsData}/>
-    <CTAEnrollWithUsMini/>
+    <CTAMeetOurAffiliateProgram background="red" ctaData={ctaProgramsData}/>
     <ListOfCoursesSection listOfCoursesData={listOfCourses}/>
     <BenefitsListLibertyUniversity
         imageSide="right"
-        background="blue"/>
-    <CTAEnrollWithUsMini ctaData={ctaMiniData}/>
+        background="red"/>
+    <CTAEnrollWithUsMiniWhite ctaData={ctaMiniData}/>
   <CTASection/>
 </BaseLayout>

@@ -1,6 +1,5 @@
 ---
-import { COMPANY_NAME } from "../data/consts"; 
-import ImageWithZoomEffect from "./ImageWithZoomEffect.astro"; 
+import ImageWithZoomEffectAndStripe from "./ImageWithZoomEffectAndStripe.astro";
 
 const slideImagesPlaceholder = [
   {
@@ -25,66 +24,68 @@ const {
 ---
 
 
-<div class="max-w-7xl mx-auto p-8 lg:px-8"> 
+<div class="max-w-7xl mx-auto px-8 pt-8 lg:px-8"> 
     <div class="grid grid-cols-1 xl:grid-cols-2"> 
     <div class="flex flex-col justify-start order-2 xl:order-1 p-8 space-y-4">
        <div class="mb-8">
-            <h2 class="!text-4xl font-bold title !text-muted-50">{plane.data.name}</h2>
-            <p class="text-xl subtitle !mx-0 !text-muted-50">Model: {plane.data.model}</p>
+            <h2 class="!text-4xl font-bold title !text-madison-950">{plane.data.name}</h2>
+            <p class="text-xl subtitle !mx-0 !text-monza-700">Model: {plane.data.model}</p>
        </div>
        <div class="mb-8">
-            <h3 class="text-2xl font-bold mb-4 font-title text-muted-50">Description</h3>
-            <p class="sans text-muted-50">{plane.data.description}</p>
+            <h3 class="text-2xl font-bold mb-4 font-title text-madison-950">Description</h3>
+            <p class="sans text-black">{plane.data.description}</p>
        </div>
        <div >
-           <h3 class="text-2xl font-bold mb-6 font-title text-muted-50">Features</h3>
+           <h3 class="text-2xl font-bold mb-6 font-title text-madison-950">Features</h3>
               <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {plane.data.features.map((feature: string) => (
-                  <li class="flex items-start gap-3">
-                    <span class="text-monza-600 text-xl">✓</span>
-                    <span class="sans text-muted-50">{feature}</span>
+                  <li class="flex items-start gap-3 ">
+                    <span class="text-monza-600 text-2xl font-black flex justify-center items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 " viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z"/><path fill="none" d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z"/></svg>
+                    </span>
+                    <span class="sans text-black flex w-full h-full items-center justify-start">{feature}</span>
                   </li>
                 ))}
               </ul>
        </div>
     </div>
-      <div class="h-full mx-auto lg:mx-0 order-1 xl:order-2"> 
-        <div class="relative group">
-          <div id="slider-container" class="relative h-[500px] w-auto overflow-hidden">
-            <ImageWithZoomEffect src={slideImages[0].src} alt={slideImages[0].alt}/>
-          </div>
-          
-          <button 
-            id="prev-btn"
-            class="absolute hover:cursor-pointer left-4 top-1/2 -translate-y-1/2 bg-black/30  hover:bg-muted-50/50 hover:text-monza-900 text-white/50 p-3 transition-all duration-300 z-10 backdrop-blur-sm"
-            aria-label="Previous image"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          
-          <button 
-            id="next-btn"
-            class="absolute hover:cursor-pointer right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-muted-50/50 hover:text-monza-900 text-white/50 p-3 transition-all duration-300 z-10 backdrop-blur-sm"
-            aria-label="Next image"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+    <div class="h-full mx-auto lg:mx-0 p-8 order-1 xl:order-2"> 
+      <div class="relative group">
+        <div id="slider-container" class="relative h-[500px] w-auto overflow-hidden">
+          <ImageWithZoomEffectAndStripe src={slideImages[0].src} alt={slideImages[0].alt}/>
+        </div>
+        
+        <button 
+          id="prev-btn"
+          class="absolute hover:cursor-pointer left-4 top-1/2 -translate-y-1/2 bg-black/30  hover:bg-muted-50/50 hover:text-monza-900 text-white/50 p-3 transition-all duration-300 z-10 backdrop-blur-sm"
+          aria-label="Previous image"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        
+        <button 
+          id="next-btn"
+          class="absolute hover:cursor-pointer right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-muted-50/50 hover:text-monza-900 text-white/50 p-3 transition-all duration-300 z-10 backdrop-blur-sm"
+          aria-label="Next image"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
 
-          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-            {slideImages.map((_, index) => (
-              <button
-                class="slider-dot w-2 h-2 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300"
-                data-index={index}
-                aria-label={`Go to slide ${index + 1}`}
-              ></button>
-            ))}
-          </div>
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+          {slideImages.map((_, index) => (
+            <button
+              class="slider-dot w-2 h-2 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300"
+              data-index={index}
+              aria-label={`Go to slide ${index + 1}`}
+            ></button>
+          ))}
         </div>
       </div>
+    </div>
 
 
     </div> 

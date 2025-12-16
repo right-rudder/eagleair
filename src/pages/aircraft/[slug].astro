@@ -43,53 +43,52 @@ const heroData = {
 >
   <HeroScreen data={heroData} />
 
-  <section class="bg-madison-950">
+  <section class="bg-muted-50">
     <div class="max-w-7xl mx-auto px-4 lg:px-8 space-y-8">
-
-      <div class="bg-madison-950 p-8 flex flex-col md:flex-row gap-8">
-      </div>
       {plane.data.features && plane.data.features.length > 0 && (
         <FleetSlider plane={plane}></FleetSlider>
       )}
       {plane.data.specifications && (
-        <div class="bg-madison-950 p-8 rounded-lg">
-          <h2 class="text-2xl font-bold mb-6 font-title text-muted-50">Specifications</h2>
+        <div class="px-16 rounded-lg">
+          <h2 class="text-2xl font-bold mb-6 font-title text-madison-950">Specifications</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {plane.data.specifications.engines && (
               <div class="bg-madison-900 p-4 rounded">
-                <div class="text-sm text-muted-400 mb-1">Engine</div>
-                <div class="font-semibold text-muted-50">{plane.data.specifications.engines}</div>
+                <div class="text-sm text-muted-50 mb-1">Engine</div>
+                <div class="text-md font-semibold text-muted-50">{plane.data.specifications.engines}</div>
               </div>
             )}
             {plane.data.specifications.seats && (
               <div class="bg-madison-900 p-4 rounded">
-                <div class="text-sm text-muted-400 mb-1">Seating</div>
-                <div class="font-semibold text-muted-50">
+                <div class="text-sm text-muted-50 mb-1">Seating</div>
+                <div class="text-md font-semibold text-muted-50">
                   {plane.data.specifications.seats} seats
                 </div>
               </div>
             )}
             {plane.data.specifications.range && (
               <div class="bg-madison-900 p-4 rounded">
-                <div class="text-sm text-muted-400 mb-1">Range</div>
-                <div class="font-semibold text-muted-50">{plane.data.specifications.range}</div>
+                <div class="text-sm text-muted-50 mb-1">Range</div>
+                <div class="text-md font-semibold text-muted-50">{plane.data.specifications.range}</div>
               </div>
             )}
             {plane.data.specifications.cruiseSpeed && (
               <div class="bg-madison-900 p-4 rounded">
-                <div class="text-sm text-muted-400 mb-1">Cruise Speed</div>
-                <div class="font-semibold text-muted-50">{plane.data.specifications.cruiseSpeed}</div>
+                <div class="text-sm text-muted-50 mb-1">Cruise Speed</div>
+                <div class="text-md font-semibold text-muted-50">{plane.data.specifications.cruiseSpeed}</div>
               </div>
             )}
           </div>
+      <div class="py-8">
+          <a
+          href="/aircraft"
+          class="bg-monza-800 text-base text-white sm:text-lg md:text-xl px-8 py-4 text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-auto block w-fit"
+        >
+          Back to Fleet
+        </a>
+      </div>
         </div>
       )} 
-      <a
-        href="/aircraft"
-        class="bg-monza-800 text-base text-white sm:text-lg md:text-xl px-8 py-4 text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-auto block w-fit"
-      >
-        Back to Fleet
-      </a>
 
     </div>
   </section>

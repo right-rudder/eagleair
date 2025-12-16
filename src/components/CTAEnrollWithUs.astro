@@ -11,7 +11,8 @@ const {
   showButton = true,
   upperHeadingTextSize = "!text-xl",
   titleTextSize = "!text-3xl" ,
-  paragraphTextSize = "text-xl"
+  paragraphTextSize = "text-xl",
+  ctaLink = "/about/contact"
  } = Astro.props;
 ---
   <section id="our-mission" class="bg-monza-800">
@@ -30,7 +31,7 @@ const {
           </p>
       {
         showButton && (
-           <a href="/enrollment" class="bg-madison-950 text-base text-white w-fit mx-auto sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+           <a href={ctaLink} class="bg-madison-950 text-base text-white w-fit mx-auto sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl">
              Start Your Journey
           </a>
         )

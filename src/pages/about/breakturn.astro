@@ -4,9 +4,10 @@ import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
 import ImageComp from "../../components/ImageComp.astro";
 import BenefitsListBreakTurn from "../../components/BenefitsListBreakTurn.astro";
-import CTATwoTextColumnsSmall from "../../components/CTATwoTextColumnsSmall.astro";
 import CTAEnrollWithUsMiniBlue from "../../components/CTAEnrollWithUsMiniBlue.astro";
 import { COMPANY_NAME } from "../../data/consts";
+import CTATwoTextColumnsSmall from "../../components/CTATwoTextColumnsSmall.astro";
+import CTAEnrollWithUsMiniWhite from "../../components/CTAEnrollWithUsMiniWhite.astro";
 
 const heroData = {
   image: {
@@ -45,9 +46,8 @@ const ctaDataIntroLeft = {
 }
 
 const ctaDataIntroRight = {
-    title: "Supporting Your Aviation Journey",
+    title: "Supporting Your <br> Aviation Journey",
     paragraphs: [
-        "BreakTurn’s mentorship combined with EagleAir’s programs gives students guidance, access to advanced aircraft, and personalized instruction.",
         "Whether starting your first pilot certificate or advancing toward commercial or instructor ratings, our partnership ensures a smooth transition from military service to professional aviation."
     ]
 }
@@ -98,13 +98,13 @@ const ctaEnrollWithUsMiniData = {
         }
         </div>
     </section>
-    <CTATwoTextColumnsSmall ctaData={ctaDataIntroLeft} bg="blue" titleSide="left"/>
-    <CTATwoTextColumnsSmall ctaData={ctaDataIntroRight} bg="blue" titleSide="right"/>
+    <CTATwoTextColumnsSmall ctaData={ctaDataIntroLeft} bg="red" titleSide="left"/>
+    <CTATwoTextColumnsSmall ctaData={ctaDataIntroRight} bg="white" titleSide="right"/>
     <BenefitsListBreakTurn
         imageSide="left"
         background="red"
         benefitsData={benefitsSection} 
         benefitList={benefitList}/>
-    <CTAEnrollWithUsMiniBlue ctaData={ctaEnrollWithUsMiniData}/>
+    <CTAEnrollWithUsMiniWhite ctaData={ctaEnrollWithUsMiniData}/>
   <CTASection/>
 </BaseLayout>

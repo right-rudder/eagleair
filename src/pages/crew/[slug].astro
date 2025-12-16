@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import HeroScreen from "../../components/HeroScreen2.astro";
-import ImageWithZoomEffect from "../../components/ImageWithZoomEffect.astro";
+import ImageWithZoomEffectAndStripe from "../../components/ImageWithZoomEffectAndStripe.astro";
 import { COMPANY_NICKNAME } from "../../data/consts";
 import CTASection from "../../components/CTASection.astro";
 import CTAMeetOurFleet from "../../components/CTAMeetOurFleet.astro";
@@ -45,40 +45,43 @@ const heroData = {
   siteImage={member.data.image}
 >
 <HeroScreen data={heroData}/>
-<section class=" bg-madison-950">
+<section class=" bg-muted-50">
   <div class="max-w-7xl mx-auto py-16 px-4 lg:px-8 space-y-8">
-    <div class="bg-madison-950 p-8 flex flex-col md:flex-row gap-8">
+    <div class="p-8 flex flex-col md:flex-row gap-8">
       <div class="aspect-square overflow-hidden md:w-1/3 flex-shrink-0">
-        <ImageWithZoomEffect
+        <ImageWithZoomEffectAndStripe
           src={member.data.image}
           alt={member.data.name}
+          class="shadow-lg"
         />
       </div>
   
       <div class="flex grow flex-col">
-        <h1 class="text-4xl font-bold title !text-muted-50">{member.data.name}</h1>
+        <h1 class="text-4xl font-bold title !text-madison-950">{member.data.name}</h1>
         <p class="text-xl subtitle !mx-0 !text-monza-600 mt-2">{member.data.title}</p>
   
         {member.data.certifications && member.data.certifications.length > 0 && (
           <div class="mt-8">
-            <h2 class="text-2xl font-bold mb-6 font-title text-muted-50">Certifications</h2>
+            <h2 class="text-2xl font-bold mb-6 font-title text-madison-950">Certifications</h2>
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
               {member.data.certifications.map((cert: string) => (
                 <li class="flex items-start gap-3">
                   <span class="text-monza-600 text-xl">✓</span>
-                  <span class="sans text-muted-50">{cert}</span>
+                  <span class="sans text-black">{cert}</span>
                 </li>
               ))}
             </ul>
-            <h2 class="text-2xl font-bold mt-8 mb-4 font-title text-muted-50">Experience</h2>
-            <p class="sans text-muted-50">{member.data.bio}</p>
+            <h2 class="text-2xl font-bold mt-8 mb-4 font-title text-madison-950">Experience</h2>
+            <p class="sans text-black">{member.data.bio}</p>
           </div>
         )}
       </div>
     </div>
-    <a href="/crew" class="bg-monza-800 text-base text-white sm:text-lg md:text-xl px-8 py-4 text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-auto block w-fit">
+    <div class="px-8">
+      <a href="/crew" class="bg-monza-800 text-base text-white sm:text-lg md:text-xl px-8 py-4 text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-auto block w-fit">
       Back to Crew
     </a>
+    </div>
   </div>
 </section>
   <CTAMeetOurFleet imageSide="right" background="red"/>

@@ -12,7 +12,7 @@ const benefitListPlaceholder = [
 
 const benefitsSectionPlaceholder = {
   upperHeading: "Serving Those Who Serve",
-  title: "BENEFITS FOR OUR MILITARY STUDENTS",
+  title: "BENEFITS FOR OUR<br> MILITARY STUDENTS",
   ctaText: "Apply Today",
   ctaLink: "https://www.liberty.edu/eaglestudent"
 };
@@ -43,21 +43,19 @@ const isBackgroundBlue = background === "blue";
         <p class={`${upperHeadingTextSize} !text-center lg:!text-left !mx-0 subtitle !text-white uppercase mb-4`}>
           {benefitsData.upperHeading}
         </p>
-        <h2 class={`${titleTextSize} !text-center lg:!text-left mx-auto lg:!mx-0 max-w-[80%] lg:max-w-[50%] xl:max-w-[70%] font-bold title !text-white`}>
-          {benefitsData.title}
-        </h2>
+        <h2 set:html={benefitsData.title} class={`${titleTextSize} !text-center lg:!text-left mx-auto lg:!mx-0 max-w-[80%] lg:max-w-[50%] xl:max-w-[70%] font-bold title !text-white`}/>
         <div class="text-white sans !mx-0 !text-center lg:!text-left text-xl mt-4">
           <ul class="list-none space-y-4">
             {benefitList.map((benefit:any) => (
               <li class="flex items-center">
-                <span class={`mr-3 text-2xl ${isBackgroundBlue ? "text-red-600" : "text-blue-600"}`}>
+                <span class={`mr-3 text-4xl ${isBackgroundBlue ? "text-red-600" : "text-blue-600"}`}>
                   ✓
                 </span>
                 {benefit}
               </li>
             ))}
           </ul>
-          <div class="flex flex-col items-start gap-2 mt-8 text-xs max-w-[60%]">
+          <div class="flex flex-col items-start gap-2 mt-8 text-xs md:max-w-[60%]">
             <p class="sans !mx-0 !text-left">¹ For more information, visit www.Liberty.edu/MilitaryAffairs.</p>
           </div>
         </div>
