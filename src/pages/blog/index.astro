@@ -12,6 +12,10 @@ const sortedPosts = blogPosts.sort(
   (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
 );
 
+// Separar o primeiro post (featured) dos demais
+const featuredPost = sortedPosts[0];
+const remainingPosts = sortedPosts.slice(1);
+
 // Format date helper
 const formatDate = (date: Date) => {
   return new Intl.DateTimeFormat("en-US", {
@@ -57,35 +61,35 @@ const constBlogData = {
 >
   <HeroScreen data={heroData} />
 
-    <section class="py-16 px-4">
-    <div class="max-w-7xl mx-auto flex flex-col space-y-4">
-      <p class="mx-auto subtitle !text-black">{constBlogData.upperHeader}</p>
-      <h2 class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title">
-        {constBlogData.title}
-      </h2>
-      {
-        constBlogData.paragraphs.map((paragraph:string)=>(
-        <p class="text-xl text-center sans max-w-2xl mx-auto">
-        {paragraph}
-      </p>))
-      }
-    </div>
-  </section>
   <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
-  <section class="py-16 px-4 bg-madison-950">
+  
+  <section class="py-16 px-4 bg-muted-50">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {
-          sortedPosts.map((post) => (
-            <BlogPostCard post={post}></BlogPostCard>
-          ))
-        }
+        
+        {featuredPost && (
+          <div class="md:col-span-2 lg:col-span-3">
+            <div class="relative">
+              <span class="absolute top-4 left-4 bg-monza-700 text-white px-4 py-1 text-sm font-bold uppercase z-10">
+                Featured
+              </span>
+              <BlogPostCard isHighlight={true} post={featuredPost} featured={true}></BlogPostCard>
+            </div>
+          </div>
+        )}
+        
+        {remainingPosts.map((post) => (
+          <BlogPostCard post={post}></BlogPostCard>
+        ))}
+        
       </div>
     </div>
   </section>
-      <CTAEnrollWithUs
-      upperHeadingTextSize="!text-xl"
-      titleTextSize = "!text-3xl"
-      showButton={true} />
-      <CTASection />
+  
+  <CTAEnrollWithUs
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    showButton={true} 
+  />
+  <CTASection />
 </BaseLayout>
