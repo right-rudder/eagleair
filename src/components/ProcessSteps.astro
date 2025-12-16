@@ -36,21 +36,21 @@ const { title, subtitle, steps } = Astro.props;
     <div class="flex flex-col mx-auto gap-6 max-w-5xl">
       {steps.map((step, index) => {
         const isReversed = index % 2 !== 0;
-        const colorClass = ["bg-madison-950", "bg-white", "bg-monza-700"][index % 3];
-        const numberColor = ["bg-white", "bg-monza-700", "bg-white"][index % 3];
-        const numberTextColor = ["text-madison-950", "text-white", "text-monza-900"][index % 3];
-        const textColor = ["text-white", "text-monza-900", "text-white",][index % 3];
+        const colorClass = ["bg-white", "bg-white", "bg-monza-700"][index % 3];
+        const numberColor = ["bg-monza-700", "bg-monza-700", "bg-white"][index % 3];
+        const numberTextColor = ["text-white", "text-white", "text-madison-950"][index % 3];
+        const textColor = ["text-madison-950", "text-madison-950", "text-white",][index % 3];
 
         return (
           <div
-            class={`${colorClass} border border-gray-200 shadow-md transition ease-out duration-200 hover:scale-105 hover:shadow-2xl hover:-translate-y-2`}
+            class={`${colorClass} group first:bg-madison-950 border border-gray-200 shadow-md transition ease-out duration-200 hover:scale-105 hover:shadow-2xl hover:-translate-y-2`}
           >
             <div
               class={`flex flex-col gap-6 p-8 items-center
                 ${isReversed ? "md:flex-row-reverse" : "md:flex-row"}`}
             >
               <div class="flex-shrink-0">
-                <div class={`inline-flex items-center justify-center w-20 h-20 ${numberColor} ${numberTextColor} text-5xl font-bold rounded-full shadow-lg`}>
+                <div class={`inline-flex items-center justify-center w-20 h-20 ${numberColor} ${numberTextColor} group-first:bg-white group-first:text-madison-950 text-5xl font-bold rounded-full shadow-lg`}>
                   {step.number}
                 </div>
               </div>
@@ -60,10 +60,10 @@ const { title, subtitle, steps } = Astro.props;
                   text-center
                   ${isReversed ? "md:text-right md:pr-4" : "md:text-left md:pl-4"}`}
               >
-                <h3 class={`text-2xl md:text-3xl font-title font-bold ${textColor} mb-3`}>
+                <h3 class={`text-2xl md:text-3xl font-title font-bold ${textColor} group-first:text-white mb-3`}>
                   {step.title}
                 </h3>
-                <p class="text-muted-500 leading-relaxed">
+                <p class={`text-muted-800 ${textColor} leading-relaxed group-first:text-white`}>
                   {step.description}
                 </p>
               </div>
