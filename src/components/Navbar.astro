@@ -37,11 +37,20 @@ export const menu: MenuItem[] = [
     label: "Resources",
     url: "#",
     children: [
-      { label: "Flight Schedule Pro", url: "#" },
-      { label: "Student Resources", url: "#" },
-      { label: "Liberty University Aviation Degree", url: "#" },
-      { label: "International Students", url: "#" },
-      { label: "DOD SkillBridge", url: "#" },
+      {
+        label: "Flight Schedule Pro",
+        url: "https://app.flightschedulepro.com/Account/Login?company=143387",
+      },
+      { label: "Student Resources", url: "/resources/student-resources" },
+      {
+        label: "Liberty University Aviation Degree",
+        url: "/about/liberty-university",
+      },
+      {
+        label: "International Students",
+        url: "/programs/international-students",
+      },
+      { label: "DOD SkillBridge", url: "/about/breakturn" },
     ],
   },
   {
@@ -86,10 +95,7 @@ export const footerMenu: MenuItem[] = [
 const { pathname, navBarBG = false } = Astro.props;
 ---
 
-<nav
-  id="navbar"
-  class="navbar font-subtitle"
->
+<nav id="navbar" class="navbar font-subtitle">
   <div class="container px-4 md:px-0">
     <!-- Logo -->
     <a href="/" class="object-contain h-auto">
@@ -167,7 +173,7 @@ const { pathname, navBarBG = false } = Astro.props;
 
     <!-- Buttons -->
     <div class="buttons">
-      <a href="/contact" class="btn-secondary text-xl! shadow-xl! ">
+      <a href="/contact" class="btn-secondary text-xl! shadow-xl!">
         <IoIosAirplane className="size-6" />
         Contact Us
       </a>
