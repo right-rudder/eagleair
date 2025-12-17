@@ -220,3 +220,33 @@ export const VIDEOS: {
 
 export const FLIGHT_REVIEW_GOOGLE_FORM =
   "https://docs.google.com/forms/d/e/1FAIpQLSdGEv7AiZhTsQ2AcItIyBkAEguiwenStVvGM9zAF3uKD-nlTA/viewform?usp=preview";
+
+export const FUEL_REIMBURSEMENT_FORM = {
+  title: "Cross Country Fuel Receipt Submission",
+  description:
+    "Follow the link here to submit any fuel receipts have from cross countries with Eagle’s aircraft.",
+  link: "https://docs.google.com/forms/d/e/1FAIpQLSfOPGMncSrA5WCS1n8IzrfYqWn2qvrQX4ynzzFrsXwmvBP1oQ/viewform",
+};
+
+export const CLUB_40_HOUR = {
+  description:
+    "Check out our 40 Hour Club to see students who finished in under 40 flight hours for their Private Pilot and Instrument ratings!",
+};
+
+export const SIMULATOR = {
+  title: "Elite PI-1000 Simulator",
+  description:
+    "Fly our 2021 Elite simulator! Our simulator can be used for 14 hours of your instrument rating and 11 hours of your commercial rating. It can also be used to prepare for your Multi-Engine rating, allowing you to get familiar with with the multi-engine plane before your first flight. It is also G1000 AATD equip. Call to schedule time on one of our simulators!",
+};
+
+export const VETERANS_AFFAIRS_BENEFITS = {
+  title: "Veterans Affairs (VA) Benefits",
+  description:
+    "Our VA Benefits include Instrument Rating, Commercial Certificate, CFI/CFII/MEI, and ATP Ground Course! ",
+};
+
+export const BREAK_TURN_SKILL_BRIDGE_PROVIDER = {
+  title: "BreakTurn SkillBridge Provider",
+  description:
+    "BreakTurn offers free career counseling and mentorship to Service Members transitioning to the civilian aviation industry and, as a DoD-approved SkillBridge provider, places them with partner companies for up to their last 180 days of service. Click here for more info!",
+};
