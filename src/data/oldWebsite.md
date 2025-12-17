@@ -643,3 +643,35 @@ Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more
 Call (219) 464-0132 to schedule your first flight lesson today!
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
+
+## Our Fleet
+
+G1000 Equipped Aircraft
+Training in these Tecnam P2010 aircraft featuring the highly advanced Garmin G1000 glass cockpit is the perfect airborne classroom.
+
+Tecnam P2010
+Introducing some brand new additions to our fleet, the Tecnam P2010! Our 2024 models are equip with G1000s.
+
+Cessna 172M Skyhawk Steam Gauge
+We have two 1975 model Cessna 172M. They have a 150hp engine and seating for 4. Updated avionics make these aircraft a great addition to our fleet.
+
+Cessna 172K
+N14BL is a 1968 Cessna 172 K model with 150hp. 14BL is similar to our other 172 M, P, & N models making it easy to transition from one to the other.
+
+Cessna 150
+The Cessna 150 model is a great aircraft for those looking to increase their flight time with as little expense as possible. Two of our C150’s are IFR certified and all three are on our Part 141 Flight School certificate.
+
+## Discovery Flights
+
+Experience the Thrill of Flying with an Eagle Aircraft Discovery Flight!
+If you have been thinking of becoming a pilot or simply want to fly over your home or along the lake shore, take the first step and give us a call to schedule a Discovery Flight or purchase a gift certificate for someone special!
+
+Discovery Flight 1 hour:
+
+Want to fly over the lakeshore or see the local area? Book an hour long discovery flight and experience the Northwest area from the air! This flight tour only costs $188 and you can have a total of 3 passengers (up to 500-500lbs).
+
+Flight Experience:
+
+The flight experience allows you to receive your first lesson in a plane. This one hour flight includes a safety check and pre-flight for just $188 and you can have a total of 3 passengers (up to 500-500lbs).
+
+Visit the Indiana Dunes Website to learn about all you can do in the Northwest Indiana area (www.indianadunes.com).
