@@ -42,7 +42,6 @@ const heroData = {
 };
 
 const valuePropositionData = {
-
   title: "Flight Training in Valparaiso, Indiana",
   subtitle: "About Eagle Aircraft Flight Academy",
   description:
@@ -101,7 +100,7 @@ const processSteps = [
   },
   {
     number: 3,
-    title: "Train at KVPZ",
+    title: "Train at KVPZ Airport",
     description:
       "Train with experienced instructors in Cessna and Tecnam aircraft and Elite simulators at Porter County Regional Airport in Valparaiso.",
   },
@@ -110,7 +109,12 @@ const processSteps = [
     title: "Advance Your Aviation Career",
     description:
       "Build hours as Eagle Aircraft instructor, then transition to airlines with our performance-based placement connections.",
-
+  },
+  {
+    number: 5,
+    title: "Join the Aviation Community",
+    description:
+      "Be a part of something bigger, be a part of the aviation community. Join a network of aviation professionals and enthusiasts who share your passion for flying and commitment to safety.",
   },
 ];
 
@@ -152,7 +156,6 @@ const ctaData = {
   },
 };
 
-
 const iconBoard = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <g fill="none" stroke-width="1.5">
@@ -180,21 +183,21 @@ const processSteps2 = [
     number: 1,
     title: "Flight Training Programs",
     description:
-    "Train from Private Pilot through Commercial, Instrument, and Multi-Engine — all in a modern, well-maintained fleet.",
+      "Train from Private Pilot through Commercial, Instrument, and Multi-Engine — all in a modern, well-maintained fleet.",
   },
   {
     svg: iconStudentBoard,
     number: 2,
     title: "Instructor Training (CFI / CFII / MEI)",
     description:
-    "Advance your career with instructor ratings and opportunities to build hours by teaching at Eagle.",
+      "Advance your career with instructor ratings and opportunities to build hours by teaching at Eagle.",
   },
   {
     svg: iconWorldHat,
     number: 3,
     title: "Accelerated Part 141 Courses",
     description:
-    "FAA-approved structured training that helps you progress faster and more efficiently toward your certifications.",
+      "FAA-approved structured training that helps you progress faster and more efficiently toward your certifications.",
   },
   {
     svg: iconDirectionsPlates,
@@ -205,9 +208,10 @@ const processSteps2 = [
   },
 ];
 ---
+
 <BaseLayout>
   <HeroScreen data={heroData} />
-  
+
   <CTAEnrollWithUsMini />
   <ProcessSteps
     title="Your Path to the Airlines"
@@ -216,7 +220,7 @@ const processSteps2 = [
   />
   <ValueProposition {...valuePropositionData} />
   <!-- <CTATwoTextColumns bg="red" titleSide="right" /> -->
-  <ProcessSteps2 
+  <ProcessSteps2
     uptitle="— Our Services"
     title="Welcome to Eagle Aircraft Flight Academy"
     subtitle="Eagle Aircraft delivers FAA-approved, structured flight training backed by 40+ years of excellence. With expert instructors and real-world flying, we prepare you to become a confident, skilled, safety-driven pilot."
