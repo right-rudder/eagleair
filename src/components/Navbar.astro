@@ -132,6 +132,10 @@ const { pathname, navBarBG = false } = Astro.props;
                     </a>
                   </li>
                 ))}
+                <li class="menu-item text-xl">
+                  {" "}
+                  <a href="/programs/flight-review">Flight Review</a>
+                </li>
               </ul>
             ) : (
               ""
@@ -173,7 +177,7 @@ const { pathname, navBarBG = false } = Astro.props;
 
     <!-- Buttons -->
     <div class="buttons">
-      <a href="/contact" class="btn-secondary text-xl! shadow-xl!">
+      <a href="/about/contact" class="btn-secondary text-xl! shadow-xl!">
         <IoIosAirplane className="size-6" />
         Contact Us
       </a>
@@ -246,7 +250,7 @@ const { pathname, navBarBG = false } = Astro.props;
     </ul>
 
     <div class="mobile-buttons">
-      <a href="/contact" class="btn-primary text-lg!">
+      <a href="/about/contact" class="btn-primary text-lg!">
         <IoIosAirplane className="size-6" />
         Contact Us
       </a>
