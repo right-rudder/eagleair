@@ -1,0 +1,74 @@
+---
+import { COMPANY_NAME } from "../data/consts";
+import ImageComp from "./ImageComp.astro";
+
+const example = {
+  title: `Thank you to our students! `,
+  description: `${COMPANY_NAME} is honored to be in the AOPA Flight Training Excellence Program Honor Roll.`,
+  ctaLink: "/discovery-flight",
+  ctaText: "Book a Discovery Flight",
+  images: [
+    {
+      src: "/src/assets/old website/AOPA_HonorRoll-02-768x768.png",
+      alt: "AOPA Honor Roll 02",
+    },
+    {
+      src: "/src/assets/old website/Aopa_HonorRoll2019-768x768.jpeg",
+      alt: "AOPA Honor Roll 2019",
+    },
+    {
+      src: "/src/assets/old website/AOPA_National2017-768x767.png",
+      alt: "AOPA National 2017",
+    },
+    {
+      src: "/src/assets/old website/AOPA-2021-Flight-Training-Award-768x768 (1).png",
+      alt: "AOPA 2021 Flight Training Award",
+    },
+    {
+      src: "/src/assets/old website/AOPA-2021-Flight-Training-Award-768x768.png",
+      alt: "AOPA 2021 Flight Training Award",
+    },
+  ],
+};
+
+const { content = example } = Astro.props;
+---
+
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-6">
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div class="text-center">
+        <h2 class="title !text-2xl md:!text-4xl !mb-2 py-6">
+          {content.title}
+        </h2>
+        <p class="sans text-base md:text-xl">
+          {content.description}
+        </p>
+      </div>
+
+      <div
+        class="flex flex-wrap justify-center items-center my-4 max-w-4xl xl:max-w-none"
+      >
+        {
+          content.images &&
+            content.images.map((image: { src: string; alt: string }) => (
+              <div class="w-24 h-24 md:w-56 md:h-56 inline-block mx-1">
+                <ImageComp
+                  src={image.src}
+                  alt={image.alt}
+                  class="object-contain w-full h-full"
+                />
+              </div>
+            ))
+        }
+      </div>
+      {
+        content && (
+          <a href={content.ctaLink} class="btn-tertiary-red shrink-0">
+            {content.ctaText}
+          </a>
+        )
+      }
+    </div>
+  </div>
+</section>
