@@ -217,3 +217,6 @@ export const VIDEOS: {
     },
   },
 ];
+
+export const FLIGHT_REVIEW_GOOGLE_FORM =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdGEv7AiZhTsQ2AcItIyBkAEguiwenStVvGM9zAF3uKD-nlTA/viewform?usp=preview";
