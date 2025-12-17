@@ -5,6 +5,7 @@ import { COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
+import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
 
 const heroData = {
   image: {
@@ -15,10 +16,7 @@ const heroData = {
   title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
   subTitle:
     "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
-  cta: [
-    { url: "#", text: "Private Pilot (PPL)" },
-  ],
-
+  cta: [{ url: "#", text: "Private Pilot (PPL)" }],
 };
 
 const ctaData = {
@@ -34,16 +32,17 @@ const ctaData = {
     href: "/contact",
   },
 };
-
 ---
 
 <BaseLayout>
   <HeroScreen data={heroData} />
-  <AboutUsWithImageAndQuote/>
+  <AboutUsWithImageAndQuote />
   <CTAEnrollWithUs
-  upperHeadingTextSize="!text-xl"
-  titleTextSize = "!text-3xl"
-  paragraphTextSize = "text-md"
-  showButton={false} />
-  <CTASection/>
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    paragraphTextSize="text-md"
+    showButton={false}
+  />
+  <GoogleMapLocation />
+  <CTASection />
 </BaseLayout>
