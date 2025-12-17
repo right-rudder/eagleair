@@ -1,0 +1,55 @@
+---
+import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import AboutUsWithImageAndQuote from "../../components/AboutUsWithImageAndQuote.astro";
+import { COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import CTASection from "../../components/CTASection.astro";
+import { FLIGHT_REVIEW_GOOGLE_FORM } from "../../data/consts";
+
+const heroData = {
+  image: {
+    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+    alt: "Military aircraft in flight",
+  },
+  upperHeader: `Flying is Freedom`,
+  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  subTitle:
+    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+  cta: [{ url: "#", text: "Private Pilot (PPL)" }],
+};
+
+const ctaData = {
+  title: "Ready to Start Your Airline Career?",
+  description:
+    "The aviation industry is waiting for skilled pilots like you. Take the first step towards your dream job with Eagle Aircraft's comprehensive training programs tailored for structured aviators.",
+  image: {
+    src: "/src/assets/sebastian-zzWYD-tc_jI-unsplash.jpg",
+    alt: "Airliner flying above the clouds",
+  },
+  primaryCTA: {
+    text: "Get Started Today",
+    href: "/contact",
+  },
+};
+---
+
+<BaseLayout>
+  <HeroScreen data={heroData} />
+  <h2>Flight Review</h2>
+  <p>
+    Please go to <a
+      href={FLIGHT_REVIEW_GOOGLE_FORM}
+      target="_blank"
+      rel="noopener noreferrer">this flight review form link</a
+    > to start the scheduling process for your flight review. Then call us at 219-464-0132
+    so we can schedule your flight!
+  </p>
+  <CTAEnrollWithUs
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    paragraphTextSize="text-md"
+    showButton={false}
+  />
+  <CTASection />
+</BaseLayout>
