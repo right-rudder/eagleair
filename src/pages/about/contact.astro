@@ -31,19 +31,15 @@ const heroData = {
   title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
   subTitle:
     "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
-  cta: [
-    { url: "#", text: "Private Pilot (PPL)" },
-  ],
+  cta: [{ url: "#", text: "Private Pilot (PPL)" }],
 };
 
 const constBlogData = {
   upperHeader: "We're Eager To Hear From You",
   title: "Contact Us",
-  paragraphs: [
-    "Stay touch with us.",
-  ],
+  paragraphs: ["Stay touch with us."],
   upperHeaderTwo: "They Are Here For You",
-  titleTwo: "Our Fleet Aircrafts"
+  titleTwo: "Our Fleet Aircrafts",
 };
 ---
 
@@ -53,26 +49,30 @@ const constBlogData = {
 >
   <HeroScreen data={heroData} />
 
-    <section class="py-16 px-4">
+  <CTAEnrollWithUsMini />
+  <!-- <CTAEnrollWithUs
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    showButton={true}
+    ctaLink="#enroll"
+  /> -->
+
+  <!-- <section class="py-16 px-4 bg-muted-50">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4">
       <p class="mx-auto subtitle !text-black">{constBlogData.upperHeader}</p>
-      <h2 class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title">
+      <h2
+        class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title"
+      >
         {constBlogData.title}
       </h2>
       {
-        constBlogData.paragraphs.map((paragraph:string)=>(
-        <p class="text-xl text-center sans max-w-2xl mx-auto">
-        {paragraph}
-      </p>))
+        constBlogData.paragraphs.map((paragraph: string) => (
+          <p class="text-xl text-center sans max-w-2xl mx-auto">{paragraph}</p>
+        ))
       }
     </div>
-  </section>
-  <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
-  <ContactFormSection/>
-      <CTAEnrollWithUs
-      upperHeadingTextSize="!text-xl"
-      titleTextSize = "!text-3xl"
-      showButton={true}
-      ctaLink="#enroll" />
-      <CTASection />
+  </section> -->
+
+  <ContactFormSection />
+  <CTASection />
 </BaseLayout>
