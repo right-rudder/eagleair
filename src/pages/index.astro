@@ -14,6 +14,7 @@ import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
 import CTATwoTextColumns from "../components/CTATwoTextColumns.astro";
 import CTAEnrollWithUsMiniBlue from "../components/CTAEnrollWithUsMiniBlue.astro";
 import GoogleMapLocation from "../components/External/GoogleMapLocation.astro";
+import AOP from "../components/AOP.astro";
 
 const heroData = {
   image: {
@@ -211,13 +212,13 @@ const processSteps2 = [
 
 <BaseLayout>
   <HeroScreen data={heroData} />
-
   <CTAEnrollWithUsMini />
   <ProcessSteps
     title="Your Path to the Airlines"
     subtitle="Simple, proven process to get you from zero to airline pilot"
     steps={processSteps}
   />
+  <AOP />
   <ValueProposition {...valuePropositionData} />
   <!-- <CTATwoTextColumns bg="red" titleSide="right" /> -->
   <ProcessSteps2
