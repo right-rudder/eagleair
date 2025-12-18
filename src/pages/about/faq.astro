@@ -4,55 +4,52 @@ import FAQSection from "../../components/FAQ/FAQSection.jsx";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 const heroData = {
   image: {
-    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
-    alt: "Military aircraft in flight",
+    src: "/src/assets/eagle-air-valparaiso-old-header.jpg",
+    alt: "Training aircraft parked on the ramp at Eagle Aircraft Flight Academy",
   },
-  upperHeader: `Flying is Freedom`,
-  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  upperHeader: "Frequently Asked Questions",
+  title: "Answers to Common <br> Flight Training Questions",
   subTitle:
-    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+    "From getting started and medical requirements to international students and career pathways, find clear answers to the questions we hear most often.",
   cta: [
-    { url: "#", text: "Private Pilot (PPL)" },
-  ],
-  stats: [
-    { value: "1,500", suffix: "+", title: "Pilots Trained" },
-    { value: "95", suffix: "%", title: "Checkride Pass Rate" },
-    { value: "12", suffix: "+", title: "Training Aircraft" },
+    { url: "#getting-started", text: "Getting Started" },
+    { url: "#international-students", text: "International Students" },
   ],
 };
 
 const faqPagePlaceholder = {
-    upperHeader: "Questions and Answers",
-    title: "Frequently Asked Questions",
-    paragraphs: [
-        "In this page there's everything you need to know and it's usually asked about our company."
-    ]
-}
+  upperHeader: "Questions and Answers",
+  title: "Frequently Asked Questions",
+  paragraphs: [
+    "In this page there's everything you need to know and it's usually asked about our company.",
+  ],
+};
 
 const { faqPageData = faqPagePlaceholder } = Astro.props;
-
 ---
 
 <BaseLayout>
-  <HeroScreen data={heroData} />
-    <section class="py-16 px-4">
+  <Hero75 data={heroData} />
+  <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4">
       <p class="mx-auto subtitle !text-black">{faqPageData.upperHeader}</p>
-      <h1 class="mx-auto max-w-lg md:max-w-xl text-4xl md:text-5xl font-bold text-center title">
+      <h1
+        class="mx-auto max-w-lg md:max-w-xl text-4xl md:text-5xl font-bold text-center title"
+      >
         {faqPageData.title}
       </h1>
       {
-        faqPageData.paragraphs.map((paragraph:string)=>(
-        <p class="text-xl text-center sans max-w-2xl mx-auto">
-        {paragraph}
-      </p>))
+        faqPageData.paragraphs.map((paragraph: string) => (
+          <p class="text-xl text-center sans max-w-2xl mx-auto">{paragraph}</p>
+        ))
       }
     </div>
-  </section> 
-  <FAQSection client:load/>
-  <CTAEnrollWithUsMini/>
+  </section>
+  <FAQSection client:load />
+  <CTAEnrollWithUsMini />
   <CTASection />
 </BaseLayout>
