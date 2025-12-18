@@ -9,23 +9,19 @@ const example = {
   ctaText: "Book a Discovery Flight",
   images: [
     {
-      src: "/src/assets/old website/AOPA_HonorRoll-02-768x768.png",
+      src: "/src/assets/old website/AOPA_HonorRoll-02-768x768.webp",
       alt: "AOPA Honor Roll 02",
     },
     {
-      src: "/src/assets/old website/Aopa_HonorRoll2019-768x768.jpeg",
-      alt: "AOPA Honor Roll 2019",
-    },
-    {
-      src: "/src/assets/old website/AOPA_National2017-768x767.png",
+      src: "/src/assets/old website/AOPA_National2017-768x767.webp",
       alt: "AOPA National 2017",
     },
     {
-      src: "/src/assets/old website/AOPA-2021-Flight-Training-Award-768x768 (1).png",
-      alt: "AOPA 2021 Flight Training Award",
+      src: "/src/assets/old website/Aopa_HonorRoll2019-768x768.webp",
+      alt: "AOPA Honor Roll 2019",
     },
     {
-      src: "/src/assets/old website/AOPA-2021-Flight-Training-Award-768x768.png",
+      src: "/src/assets/old website/AOPA-2021-Flight-Training-Award-768x768.webp",
       alt: "AOPA 2021 Flight Training Award",
     },
   ],
@@ -34,11 +30,11 @@ const example = {
 const { content = example } = Astro.props;
 ---
 
-<section class="bg-white">
+<section class="bg-muted-50">
   <div class="max-w-7xl mx-auto px-6 py-6">
     <div class="flex flex-col items-center justify-center gap-4">
       <div class="text-center">
-        <h2 class="title !text-2xl md:!text-4xl !mb-2 py-6">
+        <h2 class="title text-2xl! md:text-4xl! mb-2! py-6">
           {content.title}
         </h2>
         <p class="sans text-base md:text-xl">
@@ -47,12 +43,12 @@ const { content = example } = Astro.props;
       </div>
 
       <div
-        class="flex flex-wrap justify-center items-center my-4 max-w-4xl xl:max-w-none"
+        class="flex flex-wrap justify-center items-center gap-3 my-4 max-w-4xl xl:max-w-none"
       >
         {
           content.images &&
             content.images.map((image: { src: string; alt: string }) => (
-              <div class="w-24 h-24 md:w-56 md:h-56 inline-block mx-1">
+              <div class="w-24 h-24 md:w-56 md:h-56 inline-block mx-1 hover:scale-105 hover:brightness-105 transition-transform duration-300">
                 <ImageComp
                   src={image.src}
                   alt={image.alt}
