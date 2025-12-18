@@ -1,8 +1,8 @@
 ---
 title: "Commercial Pilot License"
 description: "Earn your Commercial Pilot License and fly for compensation. Professional training in advanced maneuvers, complex aircraft operations, and commercial aviation standards. Your gateway to paid flying careers."
-duration: "2-3 months"
-cost: "$25,000 All-In"
+duration: "6-8 months"
+cost: "$35,000"
 image: "/src/assets/facebook/n1449c-cessna-172s-student-with-certificate-leaning-on-plane.jpg"
 alt: "N1449C Cessna 172S student with certificate leaning on plane"
 reverse: true
