@@ -1,0 +1,118 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroScreen from "../components/HeroScreen2.astro";
+import { getCollection } from "astro:content";
+import BlogPostCard from "../components/BlogPostCard.astro";
+import CTASection from "../components/CTASection.astro";
+import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
+import CTAEnrollWithUs from "../components/CTAEnrollWithUs.astro";
+import ContactFormSection from "../components/Contact/ContactFormSection.astro";
+import SectionDiscoveryFlight from "../components/Form/SectionDiscoveryFlight.astro";
+import Hero75 from "../components/Hero75.astro";
+import CardSwiper from "../components/CardSwiper/CardSwiper.astro";
+import { COMPANY_NICKNAME } from "../data/consts";
+import CTAMeetOurFleet from "../components/CTAMeetOurFleet.astro";
+import DiscoveryFlightOffering from "../components/DiscoveryFlightOffering.astro";
+
+const blogPosts = await getCollection("blog");
+const sortedPosts = blogPosts.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+// Format date helper
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
+};
+
+const heroData = {
+  image: {
+    src: "/src/assets/facebook/students-and-staff-around-white-aircraft-blue-sky-green-grass.jpg",
+    alt: "Students and staff around white aircraft with blue sky and green grass",
+  },
+  upperHeader: `Flying is Freedom`,
+  title: `Discovery Flight`,
+  subTitle: `Experience the Thrill of Flying with an Eagle Aircraft Discovery Flight`,
+  cta: [{ url: "#discovery-flight-form", text: `Book a discovery Flight` }],
+};
+
+const constBlogData = {
+  upperHeader: "We're Eager To Hear From You",
+  title: "Contact Us",
+  paragraphs: ["Stay touch with us."],
+  upperHeaderTwo: "They Are Here For You",
+  titleTwo: "Our Fleet Aircrafts",
+};
+
+const swiper = {
+  title: "Discover The Skies under a new Perspective",
+  upperHeader: `DISCOVERY FLIGHTS`,
+  paragraphs: [""],
+  items: [
+    {
+      title: "",
+      description: "",
+      image: {
+        src: "/src/assets/old website/download-768x431.jpeg",
+        alt: "Download",
+      },
+    },
+    {
+      title: "",
+      description: "",
+      image: {
+        src: "/src/assets/drive/sky-plane-wing-clouds-sun_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+        alt: "Sky plane wing view with clouds and sun, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+      },
+    },
+    {
+      title: "",
+      description: "",
+      image: {
+        src: "/src/assets/facebook/aircraft-underview-day-city-canal-angle2.jpg",
+        alt: "Aircraft underview with city canal from angle 2",
+      },
+    },
+    {
+      title: "",
+      description: "",
+      image: {
+        src: "/src/assets/drive/sky-plane-mountains-clouds_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+        alt: "Sky plane flying over mountains and clouds, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+      },
+    },
+    {
+      title: "",
+      description: "",
+      image: {
+        src: "/src/assets/facebook/small-zeppelin-peanuts-farm-field.jpg",
+        alt: "Small zeppelin over peanuts farm field",
+      },
+    },
+    {
+      title: "",
+      description: "",
+      image: {
+        src: "/src/assets/drive/sky-sunset-plane-wing-2_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+        alt: "Sky sunset plane wing view 2, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+      },
+    },
+  ],
+};
+---
+
+<BaseLayout
+  siteTitle="Blog | Eagle Aircraft Aviation Academy"
+  siteDescription="Aviation insights, training tips, and industry news"
+>
+  <Hero75 data={heroData} />
+
+  <!-- <CTAEnrollWithUsMini /> -->
+  <!-- <SectionDiscoveryFlight /> -->
+  <DiscoveryFlightOffering />
+  <CardSwiper swiperData={swiper} items={swiper.items} />
+  <CTASection />
+</BaseLayout>

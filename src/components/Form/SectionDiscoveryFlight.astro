@@ -1,0 +1,134 @@
+---
+import {
+  COMPANY_NICKNAME,
+  LOCATIONS,
+  PHONE_NUMBER,
+  //   PHONE_NUMBER_PRETTY,
+  EMAIL_ADDRESS,
+} from "../../data/consts";
+
+import ImageWithZoomEffect from "../ImageWithZoomEffect.astro";
+import FormDiscoveryFlight from "./FormDiscoveryFlight.astro";
+
+const imgForm = "/src/assets/stock-brendan-sapp-waG-U3XAb3I-unsplash.jpg";
+const upperheading = "CONTACT US";
+const title = `Reach out to <span class="text-primary-500">${COMPANY_NICKNAME}</span>`;
+const description =
+  "Have questions about our flight training programs, or just want to say hello? Reach out and we'll be happy to help you on your aviation journey.";
+const discoveryFlight = {
+  upperHeader: `DISCOVERY FLIGHT`,
+  title: `Experience the Thrill of Flying with an Eagle Aircraft Discovery Flight`,
+  description: `If you have been thinking of becoming a pilot or simply want to see your home or the lakeshore from the air, a Discovery Flight is the perfect first step. Schedule a flight for yourself or purchase a gift certificate for someone special and experience aviation firsthand.`,
+  image: {
+    src: "/src/assets/drive/sky-plane-wing-mountains-2_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+    alt: "Sky plane wing view over mountains 2, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+  },
+  offerings: [
+    {
+      name: "Discovery Flight — 1 Hour Scenic Tour",
+      price: 188,
+      duration: "1 hour",
+      description:
+        "Enjoy a scenic flight over the lakeshore or surrounding local areas and experience Northwest Indiana from the air.",
+      passengers: {
+        maxPassengers: 3,
+        maxWeightLbs: "500–550",
+      },
+      includes: [
+        "Scenic flight over the local area or lakeshore",
+        "Professional pilot at the controls",
+        "Ideal for sightseeing or a first aviation experience",
+      ],
+      image: {
+        src: "/src/assets/drive/sky-sunset-plane-wing_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+        alt: "Sky sunset plane wing view, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+      },
+    },
+    {
+      name: "Discovery Flight — Flight Experience",
+      price: 188,
+      duration: "1 hour",
+      description:
+        "Get your first hands-on flight lesson and experience what it’s like to be a pilot. This introductory lesson includes a safety briefing and pre-flight inspection before taking the controls.",
+      passengers: {
+        maxPassengers: 3,
+        maxWeightLbs: "500–550",
+      },
+      includes: [
+        "Safety briefing and aircraft pre-flight",
+        "Introductory flight lesson with an instructor",
+        "Hands-on flying experience",
+        "Perfect for prospective student pilots",
+      ],
+      image: {
+        src: "/src/assets/drive/sky-plane-wing-clouds-sun_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+        alt: "Sky plane wing view with clouds and sun, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+      },
+    },
+  ],
+
+  giftCertificates: {
+    available: true,
+    description:
+      "Discovery Flights are available as gift certificates, making them a memorable and unique gift for aviation enthusiasts or first-time flyers.",
+    image: {
+      src: "/src/assets/facebook/aircraft-underview-day-city-canal-angle2.jpg",
+      alt: "Aircraft underview with city canal from angle 2",
+    },
+  },
+
+  localAttractions: {
+    description:
+      "Learn more about activities, attractions, and destinations in the Northwest Indiana area.",
+    website: "https://www.indianadunes.com",
+    image: {
+      src: "/src/assets/old website/download-768x431.jpeg",
+      alt: "Download",
+    },
+  },
+};
+---
+
+<section class="relative scroll-my-20 lg:scroll-my-28 py-20" id="enroll">
+  <div class="relative z-10 max-w-7xl mx-auto h-full flex">
+    <div class="flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row h-full">
+      <div
+        class="flex justify-center md:px-24 lg:px-0 lg:pl-10 2xl:px-0 lg:w-1/2"
+      >
+        <ImageWithZoomEffect
+          src={discoveryFlight.image.src}
+          alt={discoveryFlight.image.alt}
+          class="h-full"
+        />
+      </div>
+      <div class="w-full lg:w-1/2">
+        <div class="mx-auto px-10">
+          <div class="w-full py-12">
+            <p
+              class="subtitle !text-black text-lg uppercase tracking-wide mb-4 text-center lg:text-left"
+              set:html={discoveryFlight.upperHeader}
+            />
+            <h2 class="title !text-madison-950 mb-4 text-center lg:text-left">
+              <Fragment set:html={discoveryFlight.title} />
+            </h2>
+            <p
+              class="sans text-black text-center lg:text-left"
+              set:html={discoveryFlight.description}
+            />
+          </div>
+          <FormDiscoveryFlight />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  const contactUs = document.getElementById("contactUs");
+
+  if (isSafari && contactUs) {
+    contactUs.classList.remove("bg-fixed");
+  }
+</script>
