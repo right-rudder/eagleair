@@ -216,6 +216,14 @@ const { pathname, navBarBG = false } = Astro.props;
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="mobile-menu">
+    <button id="close-menu-btn" class="absolute top-4 right-4 p-2 text-gray-900" aria-label="Close menu">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+    </button>
+    <br>
+    <br>
     <ul>
       {
         sortedPrograms && (
@@ -735,5 +743,18 @@ const { pathname, navBarBG = false } = Astro.props;
         }
       }
     });
+  });
+
+  const closeBtn = document.getElementById("close-menu-btn");
+  
+  closeBtn?.addEventListener("click", () => {
+    // Fecha a gaveta do menu
+    mobileMenu?.classList.remove("open");
+    
+    // Reseta o ícone do header (se ele tiver mudado)
+    menuHeaderContainer?.classList.remove("open");
+    
+    // Libera o scroll da página
+    document.body.classList.remove("overflow-hidden");
   });
 </script>
