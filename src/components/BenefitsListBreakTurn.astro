@@ -43,7 +43,7 @@ const isBackgroundRed = background === "red";
   class={`${isBackgroundBlue ? "bg-madison-950" : isBackgroundRed ? "bg-monza-800" : "bg-white"}`}
 >
   <div class="max-w-7xl mx-auto p-8 lg:px-8">
-    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
       <div
         class={`${isImageOnLeft ? "order-2" : "order-1"} flex flex-col justify-start`}
       >
@@ -65,10 +65,13 @@ const isBackgroundRed = background === "red";
                 <li
                   class={`flex items-center  ${isBackgroundBlue || isBackgroundRed ? "!text-white" : "!text-madison-950"}`}
                 >
-                  <span
-                    class={`mr-3 text-4xl ${isBackgroundBlue ? "text-red-600" : "text-blue-600"}`}
+                <span
+                    class={`mr-3 w-8 h-8 flex-shrink-0 flex items-center justify-center ${isBackgroundBlue ? "text-monza-600" : "text-madison-950"}`}
                   >
-                    ✓
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 32 32">
+                      <path fill="currentColor" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z"/>
+                      <path fill="none" d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z"/>
+                    </svg>
                   </span>
                   {benefit}
                 </li>
@@ -94,6 +97,7 @@ const isBackgroundRed = background === "red";
           )
         }
       </div>
+      
       <div
         class={`${isImageOnLeft ? "order-1" : "order-2"} h-full mx-auto lg:mx-0`}
       >
