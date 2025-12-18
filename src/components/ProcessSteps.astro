@@ -39,12 +39,12 @@ const { title, subtitle, steps } = Astro.props;
         {
           steps.map((step, index) => {
             const isReversed = index % 2 !== 0;
-            const colorClass = ["bg-white", "bg-monza-700"][index % 2];
-            const numberColor = ["bg-monza-700", "bg-white"][index % 2];
-            const numberTextColor = ["text-white", "text-madison-950"][
+            const colorClass = ["bg-monza-700", "bg-white"][index % 2];
+            const numberColor = ["bg-white", "bg-monza-700"][index % 2];
+            const numberTextColor = ["text-madison-950", "text-white"][
               index % 2
             ];
-            const textColor = ["text-madison-950", "text-white"][index % 2];
+            const textColor = ["text-white", "text-madison-950"][index % 2];
 
             return (
               <div
@@ -73,7 +73,7 @@ const { title, subtitle, steps } = Astro.props;
                       {step.title}
                     </h3>
                     <p
-                      class={`text-muted-8 00 ${textColor} leading-relaxed group-first:text-white`}
+                      class={`text-muted-800 ${textColor} leading-relaxed group-first:text-white`}
                     >
                       {step.description}
                     </p>
