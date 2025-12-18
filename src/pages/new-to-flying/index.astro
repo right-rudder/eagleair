@@ -1,0 +1,178 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero75 from "../../components/Hero75.astro";
+import NewToFlyingStepByStep from "../../components/NewToFlyingStepByStep.astro";
+import CTAMeetOurAffiliateProgram from "../../components/CTAMeetOurAffiliateProgram.astro";
+import { COMPANY_NAME, COMPANY_NICKNAME } from "../../data/consts";
+import BenefitsListBreakTurn from "../../components/BenefitsListBreakTurn.astro";
+import CTASection from "../../components/CTASection.astro";
+import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
+
+const heroData = {
+  image: {
+    src: "/src/assets/facebook/students-and-staff-around-white-aircraft-blue-sky-green-grass.jpg",
+    alt: "New To Flying",
+  },
+  title: "New To Flying",
+  subTitle:
+    "Explore our comprehensive new to flying guide to take you from zero to hero",
+  cta: [
+    {
+      url: "/enroll",
+      text: "Enroll Now",
+    },
+  ],
+};
+
+const ctaProgramsData = {
+  upperHeading: "FLIGHT TRAINING AFFILIATE PROGRAM",
+  title: `TRAIN WITH ${COMPANY_NICKNAME} AND LIBERTY UNIVERSITY`,
+  paragraph: "Discover how Eagle Aircraft partners with Liberty University to combine hands-on flight training with college credit. Watch the video to see how our students earn their aviation degree while training locally, and learn how this unique affiliation can launch your career in aviation.",
+  ctaLink: "https://www.liberty.edu/eaglestudent",
+  ctaText: "Apply Today"
+};
+
+const benefitList = [
+  "Gain hands-on flight experience in a modern, well-equipped fleet",
+  "Take advantage of SkillBridge to train while serving",
+  "Use GI Bill® and other military education benefits for your training ¹",
+  "Access scholarships and financial support for a smooth transition",
+  "Receive mentorship and guidance to launch your civilian aviation career",
+];
+
+const benefitsSection = {
+  upperHeading: "EXPERIENCE THE ADVANTAGES",
+  title: "Benefits for Our Military Students",
+  ctaText: "Apply Today",
+  ctaLink: "/",
+};
+
+const benefitsImage = {
+  src: "/src/assets/facebook/n4347r-single-engine-plane-with-pilot-posing.jpg",
+  alt: "N4347R single engine plane with pilot posing",
+};
+
+const newToFlyingsStepsData = {
+  eyebrow: "YOUR JOURNEY",
+  title: "Your Path to Becoming a Pilot",
+  subTitle:
+    "From your first flight to a professional aviation career, Eagle Aircraft guides you every step of the way.",
+  steps: [
+    {
+      stepNumber: "01",
+      title: "Take a Discovery Flight",
+      description: `<b>Your first time at the controls — no experience required.</b>
+        A Discovery Flight is the perfect introduction to aviation. Fly with an Eagle Aircraft instructor, enjoy the view of Northwest Indiana and the lakeshore, and experience what it feels like to actually fly an airplane. It’s also a great gift for friends or family who dream of flying.
+        
+        What to expect: Safety briefing, preflight inspection, hands-on flying time, and a memorable first takeoff and landing.`,
+      image: {
+        src: "/src/assets/facebook/aircraft-underview-day-city-canal.jpg",
+        alt: "Aircraft underview with city canal",
+      },
+      cta: {
+        url: "/discovery-flights",
+        text: "Book a Discovery Flight",
+      },
+    },
+    {
+      stepNumber: "02",
+      title: "Obtain Your FAA Medical",
+      description: `<b>Make sure you’re cleared to fly before training accelerates.</b>
+        Before solo flight, every pilot must hold an FAA medical certificate. Most students begin with a Third-Class medical, while career-focused pilots will later need a Second or First-Class. Getting this done early ensures a smooth, stress-free training experience.
+        
+        What to expect: Medical history review, vision and hearing checks, and a basic physical exam with an FAA-approved AME.`,
+      image: {
+        src: "/src/assets/facebook/cessna-172s-student-front-with-certificate.jpg",
+        alt: "FAA medical certificate paperwork",
+      },
+    },
+    {
+      stepNumber: "03",
+      title: "Complete Structured Flight Training",
+      description: `<b>Train efficiently with Eagle’s FAA-approved Part 141 program.</b>
+        Your journey begins with the Private Pilot Certificate and continues through Instrument, Commercial, and Instructor ratings. Eagle Aircraft’s accelerated Part 141 program helps you finish faster and more affordably, combining aircraft training, simulator time, and focused ground instruction.
+        
+        What to expect: One-on-one instruction, modern Cessna aircraft, simulator training, progress checks, and a clear roadmap toward your aviation goals.`,
+      image: {
+        src: "/src/assets/facebook/student-simulator-with-staff-and-students.jpg",
+        alt: "Student simulator with staff and students",
+      },
+    },
+    {
+      stepNumber: "04",
+      title: "Pass Your Checkride & Build a Career",
+      description: `<b>Earn your certificate and move toward professional flying.</b>
+        Your FAA checkride is the final step for each certificate or rating. Eagle instructors prepare you thoroughly with mock orals and flight reviews so you walk in confident and ready. Many graduates continue building hours as CFIs right here at Eagle.
+        
+        What to expect: Oral exam, flight evaluation, certificate issuance, and the opportunity to train, instruct, and work where you learned.`,
+      image: {
+        src: "/src/assets/facebook/student-on-stairs-front-wall-of-fame-certificate.jpg",
+        alt: "Student on stairs in front of Wall of Fame with certificate",
+      },
+    },
+    {
+        stepNumber: "05",
+        title: "Reach the Airlines",
+        description: `<b>Turn your training into a professional airline career.</b>
+            After earning your advanced ratings and building flight time, the final destination is the airlines. Eagle Aircraft helps you prepare for this transition by developing strong aeronautical decision-making, real-world IFR experience, and professional standards that airlines expect. Many pilots build their hours as CFIs, then move on to regional and major airlines with confidence.
+            
+            What to expect: Time building toward ATP minimums, airline-focused procedures, interview readiness, and a clear path from flight school to the cockpit of an airliner.`,
+        image: {
+            src: "/src/assets/facebook/pilot-in-commercial-aircraft-cockpit.jpg",
+            alt: "Commercial airliner taking off at sunset",
+        },
+        }
+  ],
+  cta: {
+    url: "/contact",
+    text: "Start Your Aviation Journey",
+  },
+};
+
+const videoData = {
+  youtubeId: "lRZsIpOeAUY",
+  alt: "Eagle Aircraft training aircraft flying over Northwest Indiana and Lake Michigan",
+};
+
+const ctaVideoData = {
+  upperHeading: "TRAIN. FLY. ADVANCE.",
+  title: `SEE THE ${COMPANY_NAME} EXPERIENCE`,
+  paragraph:
+    "Get a behind-the-scenes look at flight training at Eagle Aircraft. From discovery flights to advanced ratings, our students train in modern Cessna aircraft, advanced simulators, and real Midwest flying conditions that build confidence, skill, and professionalism at every stage of training.",
+  ctaLink: "/discovery-flights",
+  ctaText: "Book a Discovery Flight",
+};
+
+const ctaData = {
+  title: "Ready to Start Flight Training in Valparaiso?",
+  description:
+    "Whether you are taking your first discovery flight or planning a full path from Private through ATP, Eagle Aircraft Flight Academy can help you build a clear, affordable training plan at Porter County Regional Airport.",
+  image: {
+    src: "/src/assets/sebastian-zzWYD-tc_jI-unsplash.jpg",
+    alt: "Single-engine training aircraft in flight",
+  },
+  primaryCTA: {
+    text: "Contact Eagle Aircraft",
+    href: "/contact",
+  },
+};
+---
+
+<BaseLayout
+  siteTitle="New To Flying | Eagle Aircraft Aviation Academy"
+  siteDescription="Explore our comprehensive flight training programs designed to take you from zero to hero"
+>
+  <Hero75 data={heroData} />
+  <NewToFlyingStepByStep newToFlyingStepsData={newToFlyingsStepsData}/>
+  <CTAMeetOurAffiliateProgram video={videoData}  showButton={false} background="red" ctaData={ctaVideoData}/>
+  <BenefitsListBreakTurn
+  imageSide="right"
+  background="white"
+  image={benefitsImage}
+  benefitsData={benefitsSection}
+  benefitList={benefitList}
+  />
+  <CTAMeetOurAffiliateProgram showButton={false} background="red" ctaData={ctaProgramsData}/>
+    <GoogleMapLocation />
+  <CTASection {...ctaData} />
+</BaseLayout>

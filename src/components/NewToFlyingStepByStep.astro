@@ -1,0 +1,134 @@
+---
+import { FaArrowRight } from "react-icons/fa";
+import ImageWithZoomEffectAndStripe from "./ImageWithZoomEffectAndStripe.astro";
+
+const newToFlyingStepsPlaceholder = {
+  eyebrow: "YOUR JOURNEY",
+  title: "How to Become a Pilot",
+  subTitle:
+    "Embark on the exciting journey to becoming a pilot with Vegas Aviation by following these structured steps.",
+  steps: [
+    {
+      stepNumber: "01",
+      title: "Book a Discovery Flight",
+      description: `<b>Try flying in the real cockpit, no experience required.</b>
+          Take a 30-60 minute introductory lesson at North Las Vegas Airport (KVGT) with a Vegas Aviation instructor. You'll get hands-on stick time, see basic maneuvers, and experience radio work and a takeoff/landing, a fast, fun way to confirm a career choice.
+          
+          What to expect: Pre-flight briefing, ~20-40 minutes at the controls, post-flight debrief.`,
+      image: {
+        src: "/src/assets/facebook/cessna-172s-student-front-with-certificate.jpg",
+        alt: "Airplane taking off over Las Vegas with a rainbow in the background",
+      },
+      cta: {
+        url: "/discovery-flight",
+        text: "Book a Discovery Flight",
+      }
+    },
+    {
+      stepNumber: "02",
+      title: "Get Your Medical Certificate",
+      description:
+        `<b>Secure the FAA medical you need to train and fly professionally.</b>
+        For career pilots you'll typically need at least a FAA 3rd-class medical to solo and a 2nd-class (or higher) for commercial/airline career tracks. Schedule an appointment with an FAA-authorized Aviation Medical Examiner (AME) early, it's quick, inexpensive, and clears the way for formal training.
+
+        What to expect: Medical history review, vision/hearing checks, basic physical exam.`,
+      image: {
+        src: "/src/assets/facebook/cessna-172s-student-front-with-certificate.jpg",
+        alt: "Medical certificate documents",
+      },
+    },
+    {
+      stepNumber: "03",
+      title: "Start Your Training",
+      description: `<b>Structured flight + ground training to build skills, hours, and confidence.</b>
+        At Vegas Aviation you'll combine flight lessons in our Cessna fleet with focused ground instruction and simulator time as needed. Typical Private Pilot progress for most students is ~60-75 hours (FAA minimum 40), then add Instrument, Commercial, and CFI phases for a professional path, we'll help you plan the most efficient sequence for career goals.
+
+        What to expect: Weekly or intensive lesson schedules, pre/post-flight briefings, logbook tracking, and periodic progress checks.`,
+      image: {
+        src: "/src/assets/facebook/cessna-172s-student-front-with-certificate.jpg",
+        alt: "Student and CFI on a study session indoors",
+      },
+    },
+    {
+      stepNumber: "04",
+      title: "Pass Your Checkride",
+      description:
+        `<b>Demonstrate your knowledge and skills to an FAA examiner and earn your certificate.</b>
+          Your checkride (practical test) is the final step: an oral exam covering regulations and decision-making, followed by a flight evaluation. Vegas Aviation instructors will prepare you with mock orals and flight reviews until you're ready to pass confidently. Once you pass, you'll receive your pilot certificate or rating and move on to building professional flight time.
+
+          What to expect: Examiner oral (knowledge, scenarios), flight demonstration (maneuvers, approaches, emergencies), paperwork and logbook endorsement.`,
+      image: {
+        src: "/src/assets/facebook/cessna-172s-student-front-with-certificate.jpg",
+        alt: "Student and CFI side by side in front of an airplane",
+      },
+    },
+  ],
+  cta: {
+    url: "/enroll",
+    text: "Start Your Journey Today",
+  },
+}
+
+const { newToFlyingStepsData = newToFlyingStepsPlaceholder } = Astro.props;
+---
+
+<section class="bg-accent-100 text-accent-900 py-16">
+  <div class="mx-auto max-w-7xl px-5">
+    <div class="text-center max-w-4xl mx-auto mb-16">
+      <p class="sans !text-black font-bold uppercase tracking-widest">
+        {newToFlyingStepsData.eyebrow}
+      </p>
+      <h2 class="mt-4 title !text-5xl">
+        {newToFlyingStepsData.title}
+      </h2>
+      <p class="mt-6 sans text-black text-lg text-accent-700">
+        {newToFlyingStepsData.subTitle}
+      </p>
+    </div>
+
+    <div class="space-y-16">
+      {newToFlyingStepsData.steps.map((step: any, index: number) => (
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          
+          <div class={`relative ${index % 2 !== 0 ? 'lg:order-2' : 'lg:order-1'}`}>
+            <ImageWithZoomEffectAndStripe 
+              src={step.image.src} 
+              alt={step.image.alt} 
+              class="w-full h-[500px] object-cover shadow-lg"
+            />
+            <div class="absolute top-4 left-4 bg-monza-700 title !text-white !text-xl w-20 h-20 flex items-center justify-center text-xl font-bold z-10">
+              {step.stepNumber}
+            </div>
+          </div>
+
+          <div class={index % 2 !== 0 ? 'lg:order-1' : 'lg:order-2'}>
+            <h3 class="title !text-3xl font-bold">{step.title}</h3>
+            <p class="mt-4 sans text-lg whitespace-pre-line max-w-[450px]" set:html={step.description} />
+            
+            {step.cta && (
+              <a 
+                href={step.cta.url} 
+                class="mt-6 inline-flex items-center gap-2 bg-primary-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-primary-800"
+              >
+                {step.cta.text}
+                <FaArrowRight />
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {newToFlyingStepsData.cta && (
+      <div class="mt-16 text-center">
+        <a 
+          href={newToFlyingStepsData.cta.url} 
+          class="inline-flex items-center gap-2 bg-primary-700 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-primary-800"
+        >
+          {newToFlyingStepsData.cta.text}
+          <FaArrowRight />
+        </a>
+      </div>
+    )}
+  </div>
+</section>
