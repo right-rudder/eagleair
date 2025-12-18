@@ -7,14 +7,14 @@ const benefitListPlaceholder = [
   "GI Bill®/Veterans Affairs Benefits",
   "Military Scholarships",
   "Tuition Assistance ¹",
-  "Yellow Ribbon Program ²"
+  "Yellow Ribbon Program ²",
 ];
 
 const benefitsSectionPlaceholder = {
   upperHeading: "Serving Those Who Serve",
   title: "BENEFITS FOR OUR<br> MILITARY STUDENTS",
   ctaText: "Apply Today",
-  ctaLink: "https://www.liberty.edu/eaglestudent"
+  ctaLink: "https://www.liberty.edu/eaglestudent",
 };
 
 const imagePlaceholder = {
@@ -22,58 +22,87 @@ const imagePlaceholder = {
   alt: "Military aircraft in flight",
 };
 
-const { 
+const {
   benefitsData = benefitsSectionPlaceholder,
   showButton = true,
   upperHeadingTextSize = "!text-xl",
   titleTextSize = "!text-3xl",
-  imageSide = "left", 
+  imageSide = "left",
   background = "blue",
   image = imagePlaceholder,
-  benefitList = benefitListPlaceholder
+  benefitList = benefitListPlaceholder,
 } = Astro.props;
 
 const isImageOnLeft = imageSide === "left";
 const isBackgroundBlue = background === "blue";
+const isBackgroundRed = background === "red";
 ---
-<section id="our-mission" class={`${isBackgroundBlue ? "bg-madison-950" : "bg-monza-800" }`}>
+
+<section
+  id="our-mission"
+  class={`${isBackgroundBlue ? "bg-madison-950" : isBackgroundRed ? "bg-monza-800" : "bg-white"}`}
+>
   <div class="max-w-7xl mx-auto p-8 lg:px-8">
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
-      <div class={`${isImageOnLeft ? "order-2" : "order-1" } flex flex-col justify-start`}>
-        <p class={`${upperHeadingTextSize} !text-center lg:!text-left !mx-0 subtitle !text-white uppercase mb-4`}>
+      <div
+        class={`${isImageOnLeft ? "order-2" : "order-1"} flex flex-col justify-start`}
+      >
+        <p
+          class={`${upperHeadingTextSize} !text-center lg:!text-left !mx-0 subtitle uppercase mb-4 ${isBackgroundBlue || isBackgroundRed ? "!text-white" : "!text-madison-950"}`}
+        >
           {benefitsData.upperHeading}
         </p>
-        <h2 set:html={benefitsData.title} class={`${titleTextSize} !text-center lg:!text-left mx-auto lg:!mx-0 max-w-[80%] lg:max-w-[50%] xl:max-w-[70%] font-bold title !text-white`}/>
-        <div class="text-white sans !mx-0 !text-center lg:!text-left text-xl mt-4">
+        <h2
+          set:html={benefitsData.title}
+          class={`${titleTextSize} !text-center lg:!text-left mx-auto lg:!mx-0 max-w-[80%] lg:max-w-[50%] xl:max-w-[70%] font-bold title  ${isBackgroundBlue || isBackgroundRed ? "!text-white" : "!text-madison-950"}`}
+        />
+        <div
+          class="text-white sans !mx-0 !text-center lg:!text-left text-xl mt-4"
+        >
           <ul class="list-none space-y-4">
-            {benefitList.map((benefit:any) => (
-              <li class="flex items-center">
-                <span class={`mr-3 text-4xl ${isBackgroundBlue ? "text-red-600" : "text-blue-600"}`}>
-                  ✓
-                </span>
-                {benefit}
-              </li>
-            ))}
+            {
+              benefitList.map((benefit: any) => (
+                <li
+                  class={`flex items-center  ${isBackgroundBlue || isBackgroundRed ? "!text-white" : "!text-madison-950"}`}
+                >
+                  <span
+                    class={`mr-3 text-4xl ${isBackgroundBlue ? "text-red-600" : "text-blue-600"}`}
+                  >
+                    ✓
+                  </span>
+                  {benefit}
+                </li>
+              ))
+            }
           </ul>
-          <div class="flex flex-col items-start gap-2 mt-8 text-xs md:max-w-[60%]">
-            <p class="sans !mx-0 !text-left">¹ For more information, visit www.Liberty.edu/MilitaryAffairs.</p>
+          <div
+            class="flex flex-col items-start gap-2 mt-8 text-xs md:max-w-[60%]"
+          >
+            <p class="sans !mx-0 !text-left">
+              ¹ For more information, visit www.Liberty.edu/MilitaryAffairs.
+            </p>
           </div>
         </div>
         {
           showButton && (
-            <a href={benefitsData.ctaLink} class={`my-8 mx-auto lg:mx-0 ${isBackgroundBlue ? "bg-monza-800" : "bg-madison-950" } text-base text-white w-fit sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
+            <a
+              href={benefitsData.ctaLink}
+              class={`my-8 mx-auto lg:mx-0 ${isBackgroundBlue ? "bg-monza-800" : "bg-madison-950"} text-base text-white w-fit sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
+            >
               {benefitsData.ctaText}
             </a>
           )
         }
       </div>
-      <div class={`${isImageOnLeft ? "order-1" : "order-2"} h-full mx-auto lg:mx-0`}>
-        <ImageWithZoomEffect 
-            src={image.src} 
-            alt={image.alt} 
-            class="w-full h-full object-cover rounded-lg" 
+      <div
+        class={`${isImageOnLeft ? "order-1" : "order-2"} h-full mx-auto lg:mx-0`}
+      >
+        <ImageWithZoomEffect
+          src={image.src}
+          alt={image.alt}
+          class="w-full h-full object-cover rounded-lg"
         />
-        </div>
+      </div>
     </div>
   </div>
 </section>
