@@ -8,17 +8,18 @@ import CTAEnrollWithUsMiniBlue from "../../components/CTAEnrollWithUsMiniBlue.as
 import { COMPANY_NAME } from "../../data/consts";
 import CTATwoTextColumnsSmall from "../../components/CTATwoTextColumnsSmall.astro";
 import CTAEnrollWithUsMiniWhite from "../../components/CTAEnrollWithUsMiniWhite.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 const heroData = {
   image: {
-    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
-    alt: "Military aircraft in flight",
+    src: "/src/assets/old website/background.jpg",
+    alt: "Background",
   },
-  upperHeader: `Flying is Freedom`,
-  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  upperHeader: `Elevate Your Career`,
+  title: "Partnering with Breakturn <br> Accelerate Your Aviation Journey",
   subTitle:
-    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
-  cta: [{ url: "#", text: "Private Pilot (PPL)" }],
+    "Leverage our collaboration with Breakturn for streamlined transition from training to professional aviation careers",
+  cta: [{ url: "#", text: "Explore Breakturn Partnership" }],
 };
 
 const libertyUniversityCTAData = {
@@ -75,7 +76,7 @@ const ctaEnrollWithUsMiniData = {
 ---
 
 <BaseLayout>
-  <HeroScreen data={heroData} />
+  <Hero75 data={heroData} />
   <CTATwoTextColumnsSmall
     ctaData={ctaDataIntroRight}
     bg="blue"
