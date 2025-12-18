@@ -46,7 +46,7 @@ const heroData = {
   <section class="bg-muted-50">
     <div class="max-w-7xl mx-auto px-4 lg:px-8 space-y-8">
       {plane.data.features && plane.data.features.length > 0 && (
-        <FleetSlider plane={plane}></FleetSlider>
+        <FleetSlider plane={plane} slideImageSolo={plane.data.image}></FleetSlider>
       )}
       {plane.data.specifications && (
         <div class="px-16 rounded-lg">
