@@ -2,46 +2,80 @@ import { useState } from "react";
 import Accordion from "./Accordion";
 
 
-export const generalFAQsPlaceholder = [
+export const generalFAQs = [
   {
-    title: "What are your operating hours?",
-    content: "We operate seven days a week from 8:00 AM to 8:00 PM. Flight training sessions can be scheduled during these hours based on instructor availability and weather conditions."
+    title: "What are Eagle Aircraft's operating hours?",
+    content: "Our office is open daily from 7:00 AM to 7:00 PM. Flight training sessions can be scheduled during these hours depending on instructor availability and weather conditions."
   },
   {
-    title: "Do you offer introductory or discovery flights?",
-    content: "Yes! We offer discovery flights that typically last 30-60 minutes. This is a great opportunity to experience flying firsthand with one of our certified flight instructors and see if flight training is right for you."
+    title: "Do you offer discovery flights?",
+    content: "Yes! Our Discovery Flights last approximately 1 hour and allow you to experience flying over the lakeshore or local areas. Up to 3 passengers (500 lbs max each) can join, and the cost is $188 per flight."
   },
   {
-    title: "What payment methods do you accept?",
-    content: "We accept all major credit cards, debit cards, checks, and bank transfers. We also offer flexible payment plans for students enrolled in our comprehensive training programs."
+    title: "Can I purchase a Discovery Flight as a gift?",
+    content: "Absolutely! Discovery Flight gift certificates are available and make a perfect gift for friends or family interested in aviation."
   },
   {
     title: "How do I schedule a flight lesson?",
-    content: "You can schedule lessons through our online booking system, by phone, or in person at our facility. We recommend booking at least 48 hours in advance to ensure instructor and aircraft availability."
+    content: "Lessons can be scheduled by phone, email, or through our online booking system. We recommend booking at least 48 hours in advance to ensure instructor and aircraft availability."
   },
   {
-    title: "What is your cancellation policy?",
-    content: "We require at least 24 hours notice for cancellations. Cancellations made with less than 24 hours notice may be subject to a cancellation fee. Weather-related cancellations are always free of charge."
+    title: "What payment methods do you accept?",
+    content: "We accept major credit cards, debit cards, checks, and bank transfers. Flexible payment plans are available for students enrolled in full training programs."
+  }
+];
+
+export const internationalStudentFAQs = [
+  {
+    title: "Can international students train at Eagle Aircraft?",
+    content: "Yes, we are SEVIS-approved and can issue an I-20 for M-1 visas. Affordable housing arrangements are available for international students."
   },
   {
-    title: "Do you provide ground school training?",
-    content: "Yes, we offer comprehensive ground school training both in-person and online. Our ground school covers all the knowledge areas required for your written exam and practical test."
+    title: "What is the application process for international students?",
+    content: "Students must create an account on the FTSP Flight Training Security Program website, submit required forms and payments, and complete fingerprinting as instructed by the TSA. Training should begin immediately upon approval, as visa authorization is valid for one year."
   },
   {
-    title: "What medical requirements are needed to start flight training?",
-    content: "For most pilot certificates, you'll need at least a third-class medical certificate issued by an FAA-authorized Aviation Medical Examiner (AME). We can provide you with a list of local AMEs and help you understand the medical requirements."
+    title: "What fees are involved for international students?",
+    content: "The TSA application fee is $130 USD, which is paid when instructed by TSA. Students must also submit fingerprints as part of the process."
   },
   {
-    title: "Can I use my training hours toward multiple certificates?",
-    content: "Yes, flight hours logged during training generally count toward multiple certificate and rating requirements, as long as they meet the specific requirements for each certificate."
+    title: "Are there English language requirements?",
+    content: "Yes, all international students must demonstrate English proficiency sufficient to safely operate aircraft and complete flight training."
+  },
+  {
+    title: "Who can I contact for assistance with my application?",
+    content: "Eagle Aircraft staff are available to help international students with any questions about forms, payments, or visa instructions. Call +1 (219) 464-0132 or email eaglevpz@gmail.com."
+  }
+];
+
+export const trainingFAQs = [
+  {
+    title: "What flight programs does Eagle Aircraft offer?",
+    content: "We provide FAA Part 141 flight training from Private Pilot through ATP, including Instrument, Commercial, Multi-Engine, and CFI/CFII/MEI ratings."
+  },
+  {
+    title: "What aircraft types are used in training?",
+    content: "Students train in Cessna 150 and 172 for Private through Commercial, Rockwell Commander for complex training, and Beechcraft Baron for Multi-Engine training."
+  },
+  {
+    title: "Do you offer simulator training?",
+    content: "Yes, our 2021 PI-1000 Elite full-motion simulator can be used for 14 hours of Instrument Rating training and 11 hours of Commercial Rating training, including preparation for Multi-Engine flight."
+  },
+  {
+    title: "How long does each program typically take?",
+    content: "Program duration varies: Private Pilot training can be completed quickly with our accelerated Part 141 program, Instrument Rating requires approximately 35 hours of instruction, and Commercial or Multi-Engine programs follow FAA hour requirements."
+  },
+  {
+    title: "Are there prerequisites for advanced ratings?",
+    content: "Yes. For example, Instrument training requires a Private Pilot Certificate, Commercial requires Instrument and Private ratings, and CFI training requires a Commercial Certificate and IFR rating."
   }
 ];
 
 
 export default function EnhancedFAQs({
-  generalFaqs = generalFAQsPlaceholder,
-  newStudentFaqs = generalFAQsPlaceholder,
-  currentStudentFaqs = generalFAQsPlaceholder,
+  generalFaqs = generalFAQs,
+  newStudentFaqs = internationalStudentFAQs,
+  currentStudentFaqs = trainingFAQs,
   careerTrackFaqs = [],
   recreationalPilotFaqs = [],
   type = "General",

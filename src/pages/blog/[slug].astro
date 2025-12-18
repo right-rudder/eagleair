@@ -7,6 +7,7 @@ import BlogPostCard from "../../components/BlogPostCard.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import ImageComp from "../../components/ImageComp.astro";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 export const getStaticPaths = (async () => {
   const blogPosts = await getCollection("blog");
@@ -40,21 +41,14 @@ const relatedPosts = post.data.tags
 const eagleAirLogo = "/src/assets/logo_eagle_aircraft_round_color.png";
 
 const heroData = {
-  image: {
-    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
-    alt: "Military aircraft in flight",
-  },
-  upperHeader: `Flying is Freedom`,
-  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  image: { src: "/src/assets/old website/background.jpg", alt: "Background" },
+  upperHeader: "Latest Insights",
+  title: "Stay Informed <br> About Aviation and Flight Training",
   subTitle:
-    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+    "Explore articles, tips, and updates from Eagle Aircraft Flight Academy. Learn from our instructors, discover industry news, and enhance your pilot knowledge.",
   cta: [
-    { url: "#", text: "Private Pilot (PPL)" },
-  ],
-  stats: [
-    { value: "1,500", suffix: "+", title: "Pilots Trained" },
-    { value: "95", suffix: "%", title: "Checkride Pass Rate" },
-    { value: "12", suffix: "+", title: "Training Aircraft" },
+    { url: "#our-mission", text: "Our Mission" },
+    { url: "#our-team", text: "Meet the Team" },
   ],
 };
 ---
@@ -64,7 +58,8 @@ const heroData = {
   siteDescription={post.data.description}
   siteImage={post.data.image}
 >
-  <HeroScreen data={heroData} />
+  <Hero75 data={heroData} />
+  
   <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
   <article class="py-16 px-4 bg-muted-50 lg:bg-muted-100">
     <div class="w-full lg:max-w-6xl 2xl:max-w-7xl mx-auto">

@@ -2,13 +2,6 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
-import HeroScreen from "../../components/HeroScreen2.astro";
-import OurCrewCard from "../../components/OurCrewCard.astro";
-import {
-  COMPANY_NAME,
-  COMPANY_NICKNAME,
-  PHONE_NUMBER,
-} from "../../data/consts";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithImageAndQuote.astro";
 import OurCrewCardGrid from "../../components/OurCrewCardGrid.astro";
@@ -25,8 +18,8 @@ const sortedCrew = crewMembers.sort(
 
 const heroData = {
   image: {
-    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
-    alt: "Military aircraft in flight",
+    src: "/src/assets/crew/entiry-eagle-air-family-crew.jpg",
+    alt: "Entiry Eagle Air Flight Academy instructors crew",
   },
   upperHeader: `Flying is Freedom`,
   title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
