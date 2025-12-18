@@ -218,6 +218,35 @@ const { pathname, navBarBG = false } = Astro.props;
   <div id="mobile-menu" class="mobile-menu">
     <ul>
       {
+        sortedPrograms && (
+          <li class="mobile-item">
+            <a href="/programs">Programs</a>
+            {sortedPrograms.length >= 1 ? (
+              <ul class="mobile-submenu">
+                {sortedPrograms.map((program: Program) => (
+                  <li>
+                    <a
+                      href={`/programs/${program.slug}`}
+                      class={
+                        (`/programs/${program.slug}` === pathname ||
+                          `/programs/${program.slug}/` === pathname) &&
+                        `/programs/${program.slug}` !== "/programs/"
+                          ? "menu-link-hover"
+                          : ""
+                      }
+                    >
+                      {program.data.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              ""
+            )}
+          </li>
+        )
+      }
+      {
         menu.map((item, index) => (
           <li class="mobile-item" data-index={index}>
             <a href={item.url}>{item.label}</a>
