@@ -6,6 +6,7 @@ import type { CollectionEntry } from "astro:content";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import ImageWithZoomEffect from "../../components/ImageWithZoomEffect.astro";
 import FleetSlider from "../../components/FleetSlider.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 export const getStaticPaths = (async () => {
   const aircraft = await getCollection("aircraft");
@@ -31,65 +32,75 @@ const heroData = {
   title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
   subTitle:
     "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
-  cta: [
-    { url: "#", text: "Private Pilot (PPL)" },
-  ],
+  cta: [{ url: "#", text: "Private Pilot (PPL)" }],
 };
 ---
+
 <BaseLayout
   siteTitle={`${plane.data.name} | Eagle Aircraft Aviation Academy`}
   siteDescription={plane.data.description}
   siteImage={plane.data.image}
 >
-  <HeroScreen data={heroData} />
+  <Hero75 data={heroData} />
 
   <section class="bg-muted-50">
     <div class="max-w-7xl mx-auto px-4 lg:px-8 space-y-8">
-      {plane.data.features && plane.data.features.length > 0 && (
-        <FleetSlider plane={plane} slideImageSolo={plane.data.image}></FleetSlider>
-      )}
-      {plane.data.specifications && (
-        <div class="px-16 rounded-lg">
-          <h2 class="text-2xl font-bold mb-6 font-title text-madison-950">Specifications</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {plane.data.specifications.engines && (
-              <div class="bg-madison-900 p-4 rounded">
-                <div class="text-sm text-muted-50 mb-1">Engine</div>
-                <div class="text-md font-semibold text-muted-50">{plane.data.specifications.engines}</div>
-              </div>
-            )}
-            {plane.data.specifications.seats && (
-              <div class="bg-madison-900 p-4 rounded">
-                <div class="text-sm text-muted-50 mb-1">Seating</div>
-                <div class="text-md font-semibold text-muted-50">
-                  {plane.data.specifications.seats} seats
+      {
+        plane.data.features && plane.data.features.length > 0 && (
+          <FleetSlider plane={plane} slideImageSolo={plane.data.image} />
+        )
+      }
+      {
+        plane.data.specifications && (
+          <div class="px-16 rounded-lg">
+            <h2 class="text-2xl font-bold mb-6 font-title text-madison-950">
+              Specifications
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {plane.data.specifications.engines && (
+                <div class="bg-madison-900 p-4 rounded">
+                  <div class="text-sm text-muted-50 mb-1">Engine</div>
+                  <div class="text-md font-semibold text-muted-50">
+                    {plane.data.specifications.engines}
+                  </div>
                 </div>
-              </div>
-            )}
-            {plane.data.specifications.range && (
-              <div class="bg-madison-900 p-4 rounded">
-                <div class="text-sm text-muted-50 mb-1">Range</div>
-                <div class="text-md font-semibold text-muted-50">{plane.data.specifications.range}</div>
-              </div>
-            )}
-            {plane.data.specifications.cruiseSpeed && (
-              <div class="bg-madison-900 p-4 rounded">
-                <div class="text-sm text-muted-50 mb-1">Cruise Speed</div>
-                <div class="text-md font-semibold text-muted-50">{plane.data.specifications.cruiseSpeed}</div>
-              </div>
-            )}
+              )}
+              {plane.data.specifications.seats && (
+                <div class="bg-madison-900 p-4 rounded">
+                  <div class="text-sm text-muted-50 mb-1">Seating</div>
+                  <div class="text-md font-semibold text-muted-50">
+                    {plane.data.specifications.seats} seats
+                  </div>
+                </div>
+              )}
+              {plane.data.specifications.range && (
+                <div class="bg-madison-900 p-4 rounded">
+                  <div class="text-sm text-muted-50 mb-1">Range</div>
+                  <div class="text-md font-semibold text-muted-50">
+                    {plane.data.specifications.range}
+                  </div>
+                </div>
+              )}
+              {plane.data.specifications.cruiseSpeed && (
+                <div class="bg-madison-900 p-4 rounded">
+                  <div class="text-sm text-muted-50 mb-1">Cruise Speed</div>
+                  <div class="text-md font-semibold text-muted-50">
+                    {plane.data.specifications.cruiseSpeed}
+                  </div>
+                </div>
+              )}
+            </div>
+            <div class="py-8">
+              <a
+                href="/aircraft"
+                class="bg-monza-800 text-base text-white sm:text-lg md:text-xl px-8 py-4 text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-auto block w-fit"
+              >
+                Back to Fleet
+              </a>
+            </div>
           </div>
-      <div class="py-8">
-          <a
-          href="/aircraft"
-          class="bg-monza-800 text-base text-white sm:text-lg md:text-xl px-8 py-4 text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-auto block w-fit"
-        >
-          Back to Fleet
-        </a>
-      </div>
-        </div>
-      )} 
-
+        )
+      }
     </div>
   </section>
 </BaseLayout>
