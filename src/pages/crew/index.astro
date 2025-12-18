@@ -4,11 +4,16 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import OurCrewCard from "../../components/OurCrewCard.astro";
-import { COMPANY_NAME, COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
+import {
+  COMPANY_NAME,
+  COMPANY_NICKNAME,
+  PHONE_NUMBER,
+} from "../../data/consts";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithImageAndQuote.astro";
 import OurCrewCardGrid from "../../components/OurCrewCardGrid.astro";
 import CTASection from "../../components/CTASection.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 type CrewMember = CollectionEntry<"crew">;
 
@@ -27,21 +32,19 @@ const heroData = {
   title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
   subTitle:
     "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
-  cta: [
-    { url: "#", text: "Private Pilot (PPL)" },
-  ],
+  cta: [{ url: "#", text: "Private Pilot (PPL)" }],
 };
 
 const ourCrewData = {
-  upperHeader:  "Meet The Team",
+  upperHeader: "Meet The Team",
   title: "Our Crew",
   paragraphs: [
     "Our crew is made up of passionate instructors, skilled professionals, and dedicated staff who bring years of aviation experience to every student they support.",
-    "Each member plays a vital role in creating a safe, welcoming, and growth-focused environment, ensuring that every aspiring pilot receives the guidance, knowledge, and confidence needed to succeed in their aviation journey."
+    "Each member plays a vital role in creating a safe, welcoming, and growth-focused environment, ensuring that every aspiring pilot receives the guidance, knowledge, and confidence needed to succeed in their aviation journey.",
   ],
   upperHeaderTwo: "They Are Here For You",
-  titleTwo: "Our Team Members"
-}
+  titleTwo: "Our Team Members",
+};
 
 const { ourCrewPageData = ourCrewData } = Astro.props;
 ---
@@ -50,7 +53,7 @@ const { ourCrewPageData = ourCrewData } = Astro.props;
   siteTitle="Our Team | Eagle Aircraft Aviation Academy"
   siteDescription="Meet our experienced flight instructors and staff"
 >
-  <HeroScreen data={heroData} />
+  <Hero75 data={heroData} />
   <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4">
       <p class="mx-auto subtitle !text-black">{ourCrewPageData.upperHeader}</p>
@@ -58,15 +61,14 @@ const { ourCrewPageData = ourCrewData } = Astro.props;
         {ourCrewPageData.title}
       </h1>
       {
-        ourCrewPageData.paragraphs.map((paragraph:string)=>(
-        <p class="text-xl text-center sans max-w-2xl mx-auto">
-        {paragraph}
-      </p>))
+        ourCrewPageData.paragraphs.map((paragraph: string) => (
+          <p class="text-xl text-center sans max-w-2xl mx-auto">{paragraph}</p>
+        ))
       }
     </div>
   </section>
-  <AboutThisPageWithImageAndQuote></AboutThisPageWithImageAndQuote>
+  <AboutThisPageWithImageAndQuote />
   <OurCrewCardGrid crew={sortedCrew} data={ourCrewPageData} />
-  <CTAEnrollWithUsMini ></CTAEnrollWithUsMini>
-  <CTASection/>  
+  <CTAEnrollWithUsMini />
+  <CTASection />
 </BaseLayout>
