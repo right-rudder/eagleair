@@ -7,6 +7,7 @@ import CTASection from "../../components/CTASection.astro";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
 import ContactFormSection from "../../components/Contact/ContactFormSection.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -24,14 +25,17 @@ const formatDate = (date: Date) => {
 
 const heroData = {
   image: {
-    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
-    alt: "Military aircraft in flight",
+    src: "/src/assets/facebook/eagle-aircraft-flight-academy-headquarters-with-three-airplanes.jpg",
+    alt: "Eagle Aircraft Flight Academy headquarters with three airplanes",
   },
-  upperHeader: `Flying is Freedom`,
-  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  upperHeader: "Get in Touch",
+  title: "Let’s Start Your <br> Aviation Journey",
   subTitle:
-    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
-  cta: [{ url: "#", text: "Private Pilot (PPL)" }],
+    "Have questions about flight training, international enrollment, or partnerships? Our team is ready to help you take the next step with confidence.",
+  cta: [
+    { url: "#contact-form", text: "Contact Us" },
+    { url: "#discovery-flight", text: "Book a Discovery Flight" },
+  ],
 };
 
 const constBlogData = {
@@ -47,7 +51,7 @@ const constBlogData = {
   siteTitle="Blog | Eagle Aircraft Aviation Academy"
   siteDescription="Aviation insights, training tips, and industry news"
 >
-  <HeroScreen data={heroData} />
+  <Hero75 data={heroData} />
 
   <CTAEnrollWithUsMini />
   <!-- <CTAEnrollWithUs

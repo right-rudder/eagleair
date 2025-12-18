@@ -6,17 +6,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
 import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 const heroData = {
-  image: {
-    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
-    alt: "Military aircraft in flight",
-  },
-  upperHeader: `Flying is Freedom`,
-  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  image: { src: "/src/assets/old website/background.jpg", alt: "Background" },
+  upperHeader: "Who We Are",
+  title: "Training Pilots with <br> Purpose, Precision, and Safety",
   subTitle:
-    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
-  cta: [{ url: "#", text: "Private Pilot (PPL)" }],
+    "Eagle Aircraft Flight Academy is dedicated to developing confident, skilled pilots through professional instruction, structured training, and a strong safety culture—serving both domestic and international students.",
+  cta: [
+    { url: "#our-mission", text: "Our Mission" },
+    { url: "#our-team", text: "Meet the Team" },
+  ],
 };
 
 const ctaData = {
@@ -35,7 +36,7 @@ const ctaData = {
 ---
 
 <BaseLayout>
-  <HeroScreen data={heroData} />
+  <Hero75 data={heroData} />
   <AboutUsWithImageAndQuote />
   <CTAEnrollWithUs
     upperHeadingTextSize="!text-xl"
