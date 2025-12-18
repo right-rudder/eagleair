@@ -25,16 +25,16 @@ const heroData = {
   title: `Become a Pilot in Indiana <br> ${COMPANY_NICKNAME}`,
   subTitle:
     "Cessna Pilot Center flight training at Porter County Regional Airport in Valparaiso, Indiana.",
-  // cta: [
-  //   {
-  //     url: "/discovery-flights",
-  //     text: "Schedule a Discovery Flight",
-  //   },
-  //   {
-  //     url: "/contact",
-  //     text: "Talk to Our Team",
-  //   },
-  // ],
+  cta: [
+    {
+      url: "/discovery-flights",
+      text: "Discovery Flight",
+    },
+    {
+      url: "/contact",
+      text: "Contact Eagle",
+    },
+  ],
   stats: [
     { value: "1,500", suffix: "+", title: "Pilots Trained" },
     { value: "95", suffix: "%", title: "Checkride Pass Rate" },
@@ -212,7 +212,6 @@ const processSteps2 = [
 
 <BaseLayout>
   <HeroScreen data={heroData} />
-  <CTAEnrollWithUsMini />
   <ProcessSteps
     title="Your Path to the Airlines"
     subtitle="Simple, proven process to get you from zero to airline pilot"
