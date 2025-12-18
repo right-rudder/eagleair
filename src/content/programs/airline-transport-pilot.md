@@ -1,7 +1,7 @@
 ---
 title: "Airline Transport Pilot"
 description: "Reach the highest level of professional aviation with FAA Airline Transport Pilot (ATP) training at Eagle Air Flight Academy. Complete your ATP requirements with expert guidance, simulator-based training, and real-world preparation."
-duration: "Varies by flight time and eligibility"
+duration: "1-2 Years"
 cost: "Varies"
 image: "/src/assets/facebook/pilot-in-commercial-aircraft-cockpit.jpg"
 alt: "Pilot in commercial aircraft cockpit"
