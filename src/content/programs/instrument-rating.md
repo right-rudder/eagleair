@@ -2,7 +2,7 @@
 title: "Instrument Rating"
 description: "Master IFR flight and unlock all-weather flying capabilities. Professional instrument training with real IMC experience, modern avionics, and veteran CFII instructors. Fly confidently in clouds and low visibility."
 duration: "2-3 months"
-cost: "$10,000 - $16,000"
+cost: "$18,000"
 image: "/src/assets/drive/cockpit-pilot-flying_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg"
 alt: "Cockpit view of pilot flying, Eagle Air Indiana USA Valparaiso IN flight school pilot training"
 reverse: false
