@@ -8,6 +8,7 @@ import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
 import CTAEnrollWithUs from "../components/CTAEnrollWithUs.astro";
 import ContactFormSection from "../components/Contact/ContactFormSection.astro";
 import Hero75 from "../components/Hero75.astro";
+import EnrollmentFormSection from "../components/EnrollmentFormSection.astro";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -28,13 +29,12 @@ const heroData = {
     src: "/src/assets/facebook/eagle-aircraft-flight-academy-headquarters-with-three-airplanes.jpg",
     alt: "Eagle Aircraft Flight Academy headquarters with three airplanes",
   },
-  upperHeader: "Get in Touch",
-  title: "Let’s Start Your <br> Aviation Journey",
+  upperHeader: "Enrollment",
+  title: "Begin Your <br> Flight Training",
   subTitle:
-    "Have questions about flight training, international enrollment, or partnerships? Our team is ready to help you take the next step with confidence.",
+    "Ready to enroll at Eagle Aircraft Flight Academy? Our admissions team will guide you through program options, requirements, and next steps for domestic and international students.",
   cta: [
-    { url: "#contact-form", text: "Contact Us" },
-    { url: "#discovery-flight", text: "Book a Discovery Flight" },
+    { url: "/enrollment#enroll", text: "Start Enrollment" },
   ],
 };
 
@@ -48,7 +48,7 @@ const constBlogData = {
 ---
 
 <BaseLayout
-  siteTitle="Blog | Eagle Aircraft Aviation Academy"
+  siteTitle="Enrollment | Eagle Aircraft Aviation Academy"
   siteDescription="Aviation insights, training tips, and industry news"
 >
   <Hero75 data={heroData} />
@@ -77,6 +77,6 @@ const constBlogData = {
     </div>
   </section> -->
 
-  <ContactFormSection />
+  <EnrollmentFormSection />
   <CTASection />
 </BaseLayout>

@@ -23,12 +23,12 @@ const heroData = {
     alt: "Fleet two Cessnas team, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
   },
   upperHeader: "Our Training Fleet",
-  title: "Modern, Reliable Aircraft <br> Built for Professional Training",
+  title: "Modern Aircraft <br> Built for Professional Training",
   subTitle:
     "Our diverse fleet is meticulously maintained and equipped for every stage of pilot training—from first solo to advanced multi-engine and instrument operations.",
   cta: [
-    { url: "#single-engine", text: "Single-Engine Aircraft" },
-    { url: "#multi-engine", text: "Multi-Engine Aircraft" },
+    { url: "/discovery-flight", text: "Book a Discovery Flight"  },
+    { url: "/crew", text: "Meet the Team" },
   ],
 };
 
@@ -71,8 +71,8 @@ const { ourFleetPageData = ourFleetData } = Astro.props;
 ---
 
 <BaseLayout
-  siteTitle="Our Team | Eagle Aircraft Aviation Academy"
-  siteDescription="Meet our experienced flight instructors and staff"
+  siteTitle="Our Fleet | Eagle Aircraft Aviation Academy"
+  siteDescription="Meet our modern and reliable fleet"
 >
   <Hero75 data={heroData} />
   <section class="py-16 px-4">

@@ -1,9 +1,7 @@
 ---
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
 import AboutUsWithImageAndQuote from "../../components/AboutUsWithImageAndQuote.astro";
-import { COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
 import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
 import Hero75 from "../../components/Hero75.astro";
@@ -11,12 +9,12 @@ import Hero75 from "../../components/Hero75.astro";
 const heroData = {
   image: { src: "/src/assets/old website/background.jpg", alt: "Background" },
   upperHeader: "Who We Are",
-  title: "Training Pilots with <br> Purpose, Precision, and Safety",
+  title: "Training Pilots with<br> Purpose,Precision,<br> and Safety",
   subTitle:
     "Eagle Aircraft Flight Academy is dedicated to developing confident, skilled pilots through professional instruction, structured training, and a strong safety culture—serving both domestic and international students.",
   cta: [
-    { url: "#our-mission", text: "Our Mission" },
-    { url: "#our-team", text: "Meet the Team" },
+    { url: "/discovery-flight", text: "Book a Discovery Flight"  },
+    { url: "/crew", text: "Meet the Team" },
   ],
 };
 
