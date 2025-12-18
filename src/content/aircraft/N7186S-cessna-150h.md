@@ -1,8 +1,11 @@
 ---
 name: "Cessna 150H"
 model: "C150H"
+tailNumber: "N7186S"
 description: "Lightweight and nimble two-seat trainer, ideal for primary flight instruction and recreational flying."
+year: "1967"
 image: "/src/assets/fleet/fleet-cesna-N7186S_Eagle-air_Indiana-USA.jpg"
+imageAlt: "Cessna N7186S Eagle-air Indiana USA"
 order: 2
 specifications:
   engines: "CONT Motor O-200 Series, 100 HP"

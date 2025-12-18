@@ -1,8 +1,11 @@
 ---
 name: "Cessna 172K Skyhawk"
 model: "C172K"
+tailNumber: "N14BL"
 description: "Reliable and classic trainer, ideal for primary flight training and general aviation."
+year: "1968"
 image: "/src/assets/fleet/fleet-cesna-N14BL_Eagle-air_Indiana-USA.jpg"
+imageAlt: "Cessna N14BL Eagle-air Indiana USA"
 order: 1
 specifications:
   engines: "Lycoming O-320 Series, 180 HP"

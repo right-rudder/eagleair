@@ -13,9 +13,11 @@ import Hero75 from "../../components/Hero75.astro";
 type Aircraft = CollectionEntry<"aircraft">;
 
 const aircraft = await getCollection("aircraft");
-const sortedAircraft = aircraft.sort(
-  (a: Aircraft, b: Aircraft) => (a.data.order || 999) - (b.data.order || 999)
-);
+const sortedAircraft = aircraft.sort((a: Aircraft, b: Aircraft) => {
+  const yearA = parseInt(a.data.year);
+  const yearB = parseInt(b.data.year);
+  return yearB - yearA;
+});
 
 const heroData = {
   image: {

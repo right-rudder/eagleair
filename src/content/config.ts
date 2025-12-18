@@ -37,7 +37,15 @@ const aircraftCollection = defineCollection({
     model: z.string(),
     description: z.string(),
     tailNumber: z.string().optional(),
+    year: z.string(),
     image: z.string(),
+    imageAlt: z.string(),
+    gallery: z.array(
+      z.object({
+        image: z.string(), // Caminho da imagem
+        alt: z.string(),   // Texto alternativo
+      })
+    ).optional(),
     specifications: z
       .object({
         engines: z.string().optional(),
