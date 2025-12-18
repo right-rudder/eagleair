@@ -35,7 +35,7 @@ export const menu: MenuItem[] = [
   },
   {
     label: "Resources",
-    url: "#",
+    url: "/resources/student-resources",
     children: [
       {
         label: "Flight Schedule Pro",
@@ -46,11 +46,14 @@ export const menu: MenuItem[] = [
         label: "Liberty University Aviation Degree",
         url: "/about/liberty-university",
       },
-      {
-        label: "International Students",
-        url: "/programs/international-students",
+      { 
+        label: "DOD SkillBridge",
+        url: "/about/breakturn" 
       },
-      { label: "DOD SkillBridge", url: "/about/breakturn" },
+      { 
+        label: "Flight Review",
+        url: "/programs/flight-review" 
+      },
     ],
   },
   {
@@ -132,10 +135,6 @@ const { pathname, navBarBG = false } = Astro.props;
                     </a>
                   </li>
                 ))}
-                <li class="menu-item text-xl">
-                  {" "}
-                  <a href="/programs/flight-review">Flight Review</a>
-                </li>
               </ul>
             ) : (
               ""
