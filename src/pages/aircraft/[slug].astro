@@ -23,6 +23,11 @@ type Props = {
 const { plane } = Astro.props as Props;
 const { Content } = await plane.render();
 
+const galleryImages = plane.data.gallery?.map((item) => ({
+  src: item.image,
+  alt: item.alt
+})) || [];
+
 const heroData = {
   image: {
     src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
@@ -47,7 +52,7 @@ const heroData = {
     <div class="max-w-7xl mx-auto px-4 lg:px-8 space-y-8">
       {
         plane.data.features && plane.data.features.length > 0 && (
-          <FleetSlider plane={plane} slideImageSolo={plane.data.image} />
+          <FleetSlider plane={plane} slideImageSoloAlt={plane.data.imageAlt} slideImageSolo={plane.data.image} slideImages={galleryImages}/>
         )
       }
       {

@@ -1,8 +1,11 @@
 ---
 name: "Cessna 172M Skyhawk"
 model: "C172M"
+tailNumber: "N6896H"
 description: "Classic 1975 Cessna 172M, ideal for primary flight training and recreational flying."
+year: "1975"
 image: "/src/assets/fleet/fleet-cesna-N6896H_Eagle-air_Indiana-USA.jpg"
+imageAlt: "Cessna N6896H Eagle-air Indiana USA"
 order: 1
 specifications:
   engines: "Lycoming O-320 Series, 180 HP"

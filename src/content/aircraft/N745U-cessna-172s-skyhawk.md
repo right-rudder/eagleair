@@ -1,8 +1,11 @@
 ---
 name: "Cessna 172S Skyhawk"
 model: "C172S"
+tailNumber: "N745U"
 description: "Popular training aircraft with reliable performance, ideal for pilot instruction."
+year: "2019"
 image: "/src/assets/fleet/fleet-cesna-N745U_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg"
+imageAlt: "Cessna N745U Eagle-air Indiana USA"
 order: 1
 specifications:
   engines: "Lycoming IO-360-L2A, 180 HP"

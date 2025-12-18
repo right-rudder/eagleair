@@ -43,7 +43,7 @@ const { aircrafts = aircraftPlaceholder, data = dataPlaceholder } = Astro.props;
   </div>
 
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-8">
-    {aircrafts.map((aircraftItem) => (
+    {aircrafts.map((aircraftItem:any) => (
       <OurFleetCard aircraft={aircraftItem} />
     ))}
   </div>

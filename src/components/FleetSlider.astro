@@ -19,8 +19,11 @@ const slideImagesPlaceholder = [
 const {  
   plane,
   slideImages,
-  slideImageSolo = "/src/assets/crewa/team-member-placeholder.jpg"
+  slideImageSolo = "/src/assets/crewa/team-member-placeholder.jpg",
+  slideImageSoloAlt = "Plane from Eagle Aircraft fleet"
 } = Astro.props; 
+
+
 
 // Verifica se slideImages foi passado e tem conteúdo
 const hasSlider = slideImages && slideImages.length > 0;
@@ -33,7 +36,9 @@ const imagesToUse = hasSlider ? slideImages : slideImagesPlaceholder;
     <div class="flex flex-col justify-start order-2 xl:order-1 p-8 space-y-4">
        <div class="mb-8">
             <h2 class="!text-4xl font-bold title !text-madison-950">{plane.data.name}</h2>
-            <p class="text-xl subtitle !mx-0 !text-monza-700">Model: {plane.data.model}</p>
+            <p class="subtitle !text-lg  !mx-0 !text-black"><span class="font-bold">Model:</span> {plane.data.model}</p>
+            <p class="subtitle !text-lg  !mx-0 !text-black"><span class="font-bold">Tail Number:</span> {plane.data.tailNumber}</p>
+            <p class="subtitle !text-lg  !mx-0 !text-black"><span class="font-bold">Year</span> {plane.data.year}</p>
        </div>
        <div class="mb-8">
             <h3 class="text-2xl font-bold mb-4 font-title text-madison-950">Description</h3>
@@ -55,7 +60,6 @@ const imagesToUse = hasSlider ? slideImages : slideImagesPlaceholder;
     </div>
     <div class="h-full mx-auto lg:mx-0 p-8 order-1 xl:order-2"> 
       {hasSlider ? (
-        <!-- Renderiza o slider -->
         <div class="relative group">
           <div id="slider-container" class="relative h-[500px] w-auto overflow-hidden">
             <ImageWithZoomEffectAndStripe src={imagesToUse[0].src} alt={imagesToUse[0].alt}/>
@@ -82,7 +86,7 @@ const imagesToUse = hasSlider ? slideImages : slideImagesPlaceholder;
           </button>
 
           <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-            {imagesToUse.map((_, index) => (
+            {imagesToUse.map((_, index:number) => (
               <button
                 class="slider-dot w-2 h-2 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300"
                 data-index={index}
@@ -92,11 +96,10 @@ const imagesToUse = hasSlider ? slideImages : slideImagesPlaceholder;
           </div>
         </div>
       ) : (
-        <!-- Renderiza apenas a imagem solo -->
         <div class="h-[500px] w-auto">
           <ImageWithZoomEffectAndStripe 
             src={slideImageSolo} 
-            alt={plane.data.name}
+            alt={slideImageSoloAlt}
             class="h-full"
           />
         </div>
