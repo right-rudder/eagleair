@@ -25,7 +25,9 @@ const { Content } = await program.render();
 const heroData = {
   image: {
     src: program.data.image,
-    alt: program.data.title,
+    alt: program.data.alt || program.data.title,
+    reverse: program.data.reverse || false,
+    top: program.data.top || false,
   },
   title: program.data.title,
   subTitle: program.data.description,

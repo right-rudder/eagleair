@@ -13,6 +13,8 @@ interface Props {
     image: {
       src: string;
       alt: string;
+      reverse?: boolean;
+      top?: boolean;
     };
     title: string;
     subTitle?: string;
@@ -38,7 +40,7 @@ const { data } = Astro.props;
   <ImageComp
     src={data.image.src}
     alt={data.image.alt}
-    class="absolute inset-0 h-full w-full object-cover object-center brightness-90 animate-slow-zoom -z-20"
+    class={`absolute inset-0 h-full w-full object-cover ${data.image.top ? 'object-top' : 'object-center'} brightness-90 animate-slow-zoom -z-20 ${data.image.reverse ? 'scale-x-[-1]' : ''}`}
     loading="eager"
     quality={100}
   />

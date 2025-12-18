@@ -1,10 +1,13 @@
 ---
-title: "International Student TSA Flight Training Approval"
+title: "International Student"
 description: "Step-by-step guidance for international students applying for FAA flight training in the United States through the TSA Flight Training Security Program (FTSP). Required for Private, Instrument, and Multi-Engine training."
 duration: "Approval required before training begins"
-cost: "$130 TSA application fee"
-image: "/src/assets/stock-victor-zhuk-3MYtBMg8Ex4-unsplash-cropped.webp"
-order: 2
+cost: "$130 TSA fee"
+image: "/src/assets/drive/pilot-ifly-looking_ifly_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg"
+alt: "Pilot looking at iFly, Eagle Air Indiana USA Valparaiso IN flight school pilot training"
+reverse: false
+top: true
+order: 6
 highlights:
   - "Required TSA approval for international flight students"
   - "Step-by-step FTSP (AFSP) application guidance"
