@@ -1,5 +1,24 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero75 from "../../components/Hero75.astro";
+import ImageComp from "../../components/ImageComp.astro";
+
+const heroData = {
+  image: {
+    src: "/src/assets/facebook/n4397r-cessna-172m-with-instructor-and-student.jpg",
+    alt: "N4397R Cessna 172M with instructor and student",
+    top: true,
+  },
+  title: "Helpful Documents for Student Pilots",
+  subTitle:
+    "Access essential resources and study materials to support your flight training journey",
+  cta: [
+    {
+      url: "/about/contact",
+      text: "Contact Us",
+    },
+  ],
+};
 
 const trainingDocs = [
   {
@@ -248,6 +267,7 @@ const trainingDocs = [
 ---
 
 <BaseLayout>
+  <Hero75 data={heroData} />
   <section class="py-16 px-4 md:px-8 lg:px-16 bg-muted-50">
     <div class="max-w-7xl mx-auto">
       <h1 class="title text-center mb-8">Student Resources</h1>
@@ -257,8 +277,43 @@ const trainingDocs = [
         hesitate to reach out to your instructor or our support team.
       </p>
 
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-col my-auto">
+        {
+          trainingDocs.slice(0, 2).map((section) => (
+              <div class="my-12">
+                <h2 class="text-2xl font-title font-bold text-monza-900 mb-4">
+                  {section.section}
+                </h2>
+                {section.description && (
+                  <p class="text-muted-700 mb-4">{section.description}</p>
+                )}
+                <ul class="list-disc list-inside">
+                  {section.links.map((link) => (
+                    <li class="mb-2">
+                      <a
+                        href={link.href}
+                        class="text-monza-700 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {link.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+          ))
+        }
+        </div>
+        <ImageComp
+          src="/src/assets/facebook/student-in-front-of-wall-of-fame.jpg",
+          alt="Student in front of Wall of Fame",
+          class="w-1/2 h-auto shadow-md" 
+        />
+      </div>
       {
-        trainingDocs.map((section) => (
+        trainingDocs.slice(2).map((section) => (
           <div class="mb-12">
             <h2 class="text-2xl font-title font-bold text-monza-900 mb-4">
               {section.section}
