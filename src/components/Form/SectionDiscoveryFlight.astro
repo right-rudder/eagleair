@@ -8,6 +8,7 @@ import {
 } from "../../data/consts";
 
 import ImageWithZoomEffect from "../ImageWithZoomEffect.astro";
+import ImageWithZoomEffectAndStripe from "../ImageWithZoomEffectAndStripe.astro";
 import FormDiscoveryFlight from "./FormDiscoveryFlight.astro";
 
 const imgForm = "/src/assets/stock-brendan-sapp-waG-U3XAb3I-unsplash.jpg";
@@ -17,7 +18,7 @@ const description =
   "Have questions about our flight training programs, or just want to say hello? Reach out and we'll be happy to help you on your aviation journey.";
 const discoveryFlight = {
   upperHeader: `DISCOVERY FLIGHT`,
-  title: `Experience the Thrill of Flying with an Eagle Aircraft Discovery Flight`,
+  title: `Experience the Thrill of Flying with a Discovery Flight`,
   description: `If you have been thinking of becoming a pilot or simply want to see your home or the lakeshore from the air, a Discovery Flight is the perfect first step. Schedule a flight for yourself or purchase a gift certificate for someone special and experience aviation firsthand.`,
   image: {
     src: "/src/assets/drive/sky-plane-wing-mountains-2_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
@@ -90,7 +91,7 @@ const discoveryFlight = {
 ---
 
 <section
-  class="relative scroll-my-20 lg:scroll-my-28 py-20"
+  class="relative scroll-my-20 lg:scroll-my-28 py-4"
   id="discovery-flight-form"
 >
   <div class="relative z-10 max-w-7xl mx-auto h-full flex">
@@ -98,7 +99,7 @@ const discoveryFlight = {
       <div
         class="flex justify-center md:px-24 lg:px-0 lg:pl-10 2xl:px-0 lg:w-1/2"
       >
-        <ImageWithZoomEffect
+        <ImageWithZoomEffectAndStripe
           src={discoveryFlight.image.src}
           alt={discoveryFlight.image.alt}
           class="h-full"

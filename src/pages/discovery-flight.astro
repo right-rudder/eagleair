@@ -13,6 +13,7 @@ import CardSwiper from "../components/CardSwiper/CardSwiper.astro";
 import { COMPANY_NICKNAME } from "../data/consts";
 import CTAMeetOurFleet from "../components/CTAMeetOurFleet.astro";
 import DiscoveryFlightOffering from "../components/DiscoveryFlightOffering.astro";
+import DiscoveryFlightPostOffering from "../components/DiscoveryFlightPostOffering.astro";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -109,10 +110,9 @@ const swiper = {
   siteDescription="Aviation insights, training tips, and industry news"
 >
   <Hero75 data={heroData} />
-
-  <!-- <CTAEnrollWithUsMini /> -->
-  <!-- <SectionDiscoveryFlight /> -->
   <DiscoveryFlightOffering />
+  <SectionDiscoveryFlight />
+  <DiscoveryFlightPostOffering/>
   <div class="py-6"></div>
   <CardSwiper swiperData={swiper} items={swiper.items} />
   <div class="py-12"></div>
