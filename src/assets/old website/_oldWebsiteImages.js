@@ -1,4 +1,4 @@
-const images = [
+const oldWebsiteImages = [
   {
     src: "/src/assets/old website/AOPA_HonorRoll-02-768x768.png",
     alt: "AOPA Honor Roll 02",
