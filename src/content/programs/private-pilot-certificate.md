@@ -1,8 +1,8 @@
 ---
 title: "Private Pilot Certificate"
 description: "Begin your aviation journey with FAA Private Pilot training at Eagle Air Flight Academy. Personalized instruction, flexible scheduling, and a strong foundation in safe, confident flying."
-duration: "Varies by schedule and availability"
-cost: "$14,000 - $18,000"
+duration: "3-5 Months"
+cost: "$25,000"
 image: "/src/assets/facebook/student-instructor-front-of-aircraft.jpg"
 alt: "Student and instructor in front of aircraft"
 reverse: false
