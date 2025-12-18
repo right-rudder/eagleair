@@ -2,6 +2,12 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import type { GetStaticPaths } from "astro";
+import ImageWithZoomEffect from "../../components/ImageWithZoomEffect.astro";
+import BlogPostCard from "../../components/BlogPostCard.astro";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import ImageComp from "../../components/ImageComp.astro";
+import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 export const getStaticPaths = (async () => {
   const blogPosts = await getCollection("blog");
@@ -14,7 +20,6 @@ export const getStaticPaths = (async () => {
 const { post } = Astro.props;
 const { Content } = await post.render();
 
-// Format date helper
 const formatDate = (date: Date) => {
   return new Intl.DateTimeFormat("en-US", {
     year: "numeric",
@@ -23,7 +28,6 @@ const formatDate = (date: Date) => {
   }).format(date);
 };
 
-// Get related posts (same tags)
 const allPosts = await getCollection("blog");
 const relatedPosts = post.data.tags
   ? allPosts
@@ -34,6 +38,19 @@ const relatedPosts = post.data.tags
       )
       .slice(0, 3)
   : [];
+const eagleAirLogo = "/src/assets/logo_eagle_aircraft_round_color.png";
+
+const heroData = {
+  image: { src: "/src/assets/old website/background.jpg", alt: "Background" },
+  upperHeader: "Latest Insights",
+  title: "Stay Informed <br> About Aviation and Flight Training",
+  subTitle:
+    "Explore articles, tips, and updates from Eagle Aircraft Flight Academy. Learn from our instructors, discover industry news, and enhance your pilot knowledge.",
+  cta: [
+    { url: "#our-mission", text: "Our Mission" },
+    { url: "#our-team", text: "Meet the Team" },
+  ],
+};
 ---
 
 <BaseLayout
@@ -41,118 +58,100 @@ const relatedPosts = post.data.tags
   siteDescription={post.data.description}
   siteImage={post.data.image}
 >
-  <article class="py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      {
-        post.data.image && (
-          <img
+  <Hero75 data={heroData} />
+  
+  <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
+  <article class="py-16 px-4 bg-muted-50 lg:bg-muted-100">
+    <div class="w-full lg:max-w-6xl 2xl:max-w-7xl mx-auto">
+
+      <div class="bg-muted-50 lg:shadow-lg p-8 lg:p-12 mb-8">
+      {post.data.image && (
+        <div class="mb-12 overflow-hidden">
+          <ImageWithZoomEffect
             src={post.data.image}
             alt={post.data.title}
-            class="w-full h-96 object-cover  mb-8"
+            class="w-full h-96 object-cover"
           />
-        )
-      }
-
-      <div class="mb-8">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">{post.data.title}</h1>
-
-        <div class="flex items-center gap-4 text-muted-600 mb-6">
-          <time datetime={post.data.pubDate.toISOString()}>
-            {formatDate(post.data.pubDate)}
-          </time>
-          <span>•</span>
-          <span>By {post.data.author}</span>
         </div>
-
-        {
-          post.data.tags && post.data.tags.length > 0 && (
-            <div class="flex flex-wrap gap-2">
-              {post.data.tags.map((tag) => (
-                <span class="bg-blue-50 text-blue-600 text-sm px-4 py-2 rounded-full">
-                  {tag}
-                </span>
-              ))}
+      )}
+        <h1 class="title !text-4xl !text-madison-950 !mb-6">{post.data.title}</h1>
+        <div class="flex items-center gap-3 text-sm text-black my-4">
+              <ImageComp
+              class="w-6"
+              src={eagleAirLogo}
+              alt="Eagle Air logo"/>
+              <span >{post.data.author}</span>
+              <span>|</span>
+              <time datetime={post.data.pubDate.toISOString()}>
+                {formatDate(post.data.pubDate)}
+              </time>
             </div>
-          )
-        }
-      </div>
 
-      <div class="prose prose-lg max-w-none mb-12">
-        <Content />
-      </div>
-
-      <div class="border-t pt-8">
-        <div class="bg-muted-50  p-6">
-          <h3 class="text-xl font-bold mb-2">Share this article</h3>
-          <div class="flex gap-4">
-            <a
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(Astro.url.toString())}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-blue-600 hover:text-blue-700"
-            >
-              Twitter
-            </a>
-            <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.toString())}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-blue-600 hover:text-blue-700"
-            >
-              Facebook
-            </a>
-            <a
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.toString())}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-blue-600 hover:text-blue-700"
-            >
-              LinkedIn
-            </a>
+        {post.data.tags && post.data.tags.length > 0 && (
+          <div class="flex flex-wrap gap-2 mb-8">
+            {post.data.tags.map((tag) => (
+              <span class="bg-monza-700 text-white text-sm px-4 py-2 rounded-full font-sans">
+                {tag}
+              </span>
+            ))}
           </div>
+        )}
+
+        <div class="prose prose-lg max-w-none text-black font-sans">
+          <Content />
         </div>
       </div>
 
-      {
-        relatedPosts.length > 0 && (
-          <div class="mt-12 pt-12 border-t">
-            <h2 class="text-3xl font-bold mb-6">Related Articles</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {relatedPosts.map((relatedPost) => (
-                <a
-                  href={`/blog/${relatedPost.slug}`}
-                  class="bg-muted-50  shadow hover:shadow-lg transition-shadow overflow-hidden"
-                >
-                  {relatedPost.data.image && (
-                    <img
-                      src={relatedPost.data.image}
-                      alt={relatedPost.data.title}
-                      class="w-full h-40 object-cover"
-                    />
-                  )}
-                  <div class="p-4">
-                    <h3 class="font-bold mb-2 line-clamp-2">
-                      {relatedPost.data.title}
-                    </h3>
-                    <p class="text-sm text-muted-600 line-clamp-2">
-                      {relatedPost.data.description}
-                    </p>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        )
-      }
-
-      <div class="mt-12 text-center">
-        <a
-          href="/blog"
-          class="inline-block bg-blue-600 text-muted-50 px-8 py-3  hover:bg-blue-700 transition-colors"
-        >
-          ← Back to Blog
-        </a>
+      <div class="bg-muted-50 border-t-1 border-monza-900 lg:border-t-0 lg:shadow-lg p-8 mb-8">
+        <h3 class="subtitle !mx-0 !text-madison-950 !mb-4">Share this article</h3>
+        <div class="flex gap-4">
+          <a
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(Astro.url.toString())}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+          >
+            Twitter
+          </a>
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.toString())}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+          >
+            Facebook
+          </a>
+          <a
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.toString())}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+          >
+            LinkedIn
+          </a>
+        </div>
       </div>
     </div>
   </article>
+  <section class="bg-monza-800 p-8">
+    <div class="max-w-7xl mx-auto flex flex-col space-y-4">
+      {relatedPosts.length > 0 && (
+    <div class="flex flex-col">
+      <p class="mx-auto subtitle !text-white">Read More</p>
+      <h2 class="title !text-muted-50 !mb-8 text-center">Related Articles</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {relatedPosts.map((relatedPost) => (
+          <BlogPostCard post={relatedPost} />
+        ))}
+      </div>
+    </div>
+  )}
+
+  <div class="mt-12 text-center">
+    <a href="/blog" class="btn-tertiary inline-block">
+      Back to Blog
+    </a>
+  </div>
+    </div>
+  </section>
 </BaseLayout>

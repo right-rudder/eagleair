@@ -1,0 +1,145 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroScreen from "../components/HeroScreen2.astro";
+import { getCollection } from "astro:content";
+import BlogPostCard from "../components/BlogPostCard.astro";
+import CTASection from "../components/CTASection.astro";
+import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
+import CTAEnrollWithUs from "../components/CTAEnrollWithUs.astro";
+import ContactFormSection from "../components/Contact/ContactFormSection.astro";
+import CTAEnrollWithUsMiniBlue from "../components/CTAEnrollWithUsMiniBlue.astro";
+import CTATwoTextColumns from "../components/CTATwoTextColumns.astro";
+import RRMDivider from "../components/RRMDivider.astro";
+import AboutThisPageWithImageAndQuote from "../components/AboutThisPageWithImageAndQuote.astro";
+import CTAMeetOurFleet from "../components/CTAMeetOurFleet.astro";
+import CardSwiper from "../components/CardSwiper/CardSwiper.astro";
+import AboutUsWithImageAndQuote from "../components/AboutUsWithImageAndQuote.astro";
+import CTAMeetOurAffiliateProgram from "../components/CTAMeetOurAffiliateProgram.astro";
+import ListOfCoursesSection from "../components/ListOfCoursesSection.astro";
+
+const blogPosts = await getCollection("blog");
+const sortedPosts = blogPosts.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+// Format date helper
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
+};
+
+const heroData = {
+  image: {
+    src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
+    alt: "Military aircraft in flight",
+  },
+  upperHeader: `Flying is Freedom`,
+  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  subTitle:
+    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+};
+
+const componentsData = {
+  upperHeader: "Some Usefull Stuff",
+  title: "Components",
+  paragraphs: [""],
+};
+---
+
+<BaseLayout
+  siteTitle="Blog | Eagle Aircraft Aviation Academy"
+  siteDescription="Aviation insights, training tips, and industry news"
+>
+  <HeroScreen data={heroData} />
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col space-y-4">
+      <p class="mx-auto subtitle !text-black">{componentsData.upperHeader}</p>
+      <h2
+        class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title"
+      >
+        {componentsData.title}
+      </h2>
+      {
+        componentsData.paragraphs.map((paragraph: string) => (
+          <p class="text-xl text-center sans max-w-2xl mx-auto">{paragraph}</p>
+        ))
+      }
+    </div>
+  </section>
+  <RRMDivider />
+  <h2>CTAEnrollWithUsMini</h2>
+  <CTAEnrollWithUsMini />
+
+  <RRMDivider />
+  <h2>CTAEnrollWithUsMiniBlue</h2>
+  <CTAEnrollWithUsMiniBlue />
+
+  <RRMDivider />
+  <h2>CTATwoTextColumns</h2>
+  <CTATwoTextColumns bg="blue" />
+  <h3>CTATwoTextColumns titleSlide="right"</h3>
+  <CTATwoTextColumns bg="blue" titleSide="right" />
+  <h3>CTATwoTextColumns titleSlide="right"</h3>
+  <h3>CTATwoTextColumns bg="red" titleSlide="right"</h3>
+  <CTATwoTextColumns bg="red" />
+  <h3>CTATwoTextColumns bg="red" titleSlide="right"</h3>
+  <CTATwoTextColumns bg="red" titleSide="right" />
+
+  <RRMDivider />
+  <h2>AboutUsWithImageAndQuote</h2>
+  <AboutUsWithImageAndQuote />
+
+  <RRMDivider />
+  <h2>CTAEnrollWithUs</h2>
+  <CTAEnrollWithUs />
+
+  <RRMDivider />
+  <h2>CTAEnrollWithUsMini</h2>
+  <CTAEnrollWithUsMini />
+
+  <RRMDivider />
+  <h2>CTAEnrollWithUsMiniBlue</h2>
+  <CTAEnrollWithUsMiniBlue />
+
+  <RRMDivider />
+  <h2>AboutThisPageWithImageAndQuote</h2>
+  <AboutThisPageWithImageAndQuote />
+
+  <RRMDivider />
+  <h2>CTAMeetOurFleet</h2>
+  <CTAMeetOurFleet imageSide="left" />
+  <h3>CTAMeetOurFleet imageSide="right"</h3>
+  <CTAMeetOurFleet imageSide="right" />
+
+  <RRMDivider />
+  <h2>CTAMeetOurFleet</h2>
+  <CTAMeetOurFleet imageSide="left" background="red" />
+  <h3>CTAMeetOurFleet imageSide="right" background="red"</h3>
+  <CTAMeetOurFleet imageSide="right" background="red" />
+
+  <RRMDivider />
+  <h2>CardSwiper</h2>
+  <CardSwiper />
+
+  <RRMDivider />
+  <h2>CTAMeetOurAffiliateProgram</h2>
+  <CTAMeetOurAffiliateProgram />
+
+  <RRMDivider />
+  <h2>ListOfCoursesSection</h2>
+  <ListOfCoursesSection />
+</BaseLayout>
+<style>
+  h2,
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+  }
+</style>

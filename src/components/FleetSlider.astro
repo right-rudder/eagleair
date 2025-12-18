@@ -1,0 +1,171 @@
+---
+import ImageWithZoomEffectAndStripe from "./ImageWithZoomEffectAndStripe.astro";
+
+const slideImagesPlaceholder = [
+  {
+    src: "/src/assets/crew/team-member-placeholder.jpg",
+    alt: "Military aircraft in flight",
+  },
+  {
+    src: "/src/assets/crew/team-member-placeholder.jpg",
+    alt: "Training aircraft on runway",
+  },
+  {
+    src: "/src/assets/crewa/team-member-placeholder.jpg",
+    alt: "Fleet of training aircraft",
+  }
+];
+
+const {  
+  plane,
+  slideImages,
+  slideImageSolo = "/src/assets/crewa/team-member-placeholder.jpg"
+} = Astro.props; 
+
+// Verifica se slideImages foi passado e tem conteúdo
+const hasSlider = slideImages && slideImages.length > 0;
+const imagesToUse = hasSlider ? slideImages : slideImagesPlaceholder;
+---
+
+
+<div class="max-w-7xl mx-auto px-8 pt-8 lg:px-8"> 
+    <div class="grid grid-cols-1 xl:grid-cols-2"> 
+    <div class="flex flex-col justify-start order-2 xl:order-1 p-8 space-y-4">
+       <div class="mb-8">
+            <h2 class="!text-4xl font-bold title !text-madison-950">{plane.data.name}</h2>
+            <p class="text-xl subtitle !mx-0 !text-monza-700">Model: {plane.data.model}</p>
+       </div>
+       <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-4 font-title text-madison-950">Description</h3>
+            <p class="sans text-black">{plane.data.description}</p>
+       </div>
+       <div >
+           <h3 class="text-2xl font-bold mb-6 font-title text-madison-950">Features</h3>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {plane.data.features.map((feature: string) => (
+                  <li class="flex items-start gap-3 ">
+                    <span class="text-monza-600 text-2xl font-black flex justify-center items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 " viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z"/><path fill="none" d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z"/></svg>
+                    </span>
+                    <span class="sans text-black flex w-full h-full pt-1 items-start justify-start">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+       </div>
+    </div>
+    <div class="h-full mx-auto lg:mx-0 p-8 order-1 xl:order-2"> 
+      {hasSlider ? (
+        <!-- Renderiza o slider -->
+        <div class="relative group">
+          <div id="slider-container" class="relative h-[500px] w-auto overflow-hidden">
+            <ImageWithZoomEffectAndStripe src={imagesToUse[0].src} alt={imagesToUse[0].alt}/>
+          </div>
+          
+          <button 
+            id="prev-btn"
+            class="absolute hover:cursor-pointer left-4 top-1/2 -translate-y-1/2 bg-black/30  hover:bg-muted-50/50 hover:text-monza-900 text-white/50 p-3 transition-all duration-300 z-10 backdrop-blur-sm"
+            aria-label="Previous image"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <button 
+            id="next-btn"
+            class="absolute hover:cursor-pointer right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-muted-50/50 hover:text-monza-900 text-white/50 p-3 transition-all duration-300 z-10 backdrop-blur-sm"
+            aria-label="Next image"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            {imagesToUse.map((_, index) => (
+              <button
+                class="slider-dot w-2 h-2 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300"
+                data-index={index}
+                aria-label={`Go to slide ${index + 1}`}
+              ></button>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <!-- Renderiza apenas a imagem solo -->
+        <div class="h-[500px] w-auto">
+          <ImageWithZoomEffectAndStripe 
+            src={slideImageSolo} 
+            alt={plane.data.name}
+            class="h-full"
+          />
+        </div>
+      )}
+    </div>
+
+
+    </div> 
+</div> 
+
+
+{hasSlider && (
+  <script define:vars={{ slideImages: imagesToUse }}>
+    let currentIndex = 0;
+    const container = document.getElementById('slider-container');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const dots = document.querySelectorAll('.slider-dot');
+
+    function updateSlider() {
+      const img = container.querySelector('img');
+      if (img) {
+        img.src = slideImages[currentIndex].src;
+        img.alt = slideImages[currentIndex].alt;
+      }
+      
+      dots.forEach((dot, index) => {
+        if (index === currentIndex) {
+          dot.classList.remove('bg-white/50');
+          dot.classList.add('bg-white', 'w-8');
+        } else {
+          dot.classList.remove('bg-white', 'w-8');
+          dot.classList.add('bg-white/50');
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slideImages.length;
+      updateSlider();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slideImages.length) % slideImages.length;
+      updateSlider();
+    }
+
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        updateSlider();
+      });
+    });
+
+    // Auto-play (opcional)
+    let autoplayInterval = setInterval(nextSlide, 5000);
+
+    // Pause autoplay on hover
+    container.addEventListener('mouseenter', () => {
+      clearInterval(autoplayInterval);
+    });
+
+    container.addEventListener('mouseleave', () => {
+      autoplayInterval = setInterval(nextSlide, 5000);
+    });
+
+    updateSlider();
+  </script>
+)}

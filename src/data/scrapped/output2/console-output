@@ -1,0 +1,211 @@
+❯ node scrape-site.js https://jseagle.com
+
+🔍 Crawling: https://jseagle.com
+📝 Saved: https---jseagle-com.md
+
+🔍 Crawling: https://jseagle.com/
+📝 Saved: https---jseagle-com-.md
+
+🔍 Crawling: https://jseagle.com/discovery-flights/
+📝 Saved: https---jseagle-com-discovery-flights-.md
+
+🔍 Crawling: https://jseagle.com/forms/trainingcertifications/
+📝 Saved: https---jseagle-com-forms-trainingcertifications-.md
+
+🔍 Crawling: https://jseagle.com/forms/trainingcertifications/private-pilot/
+📝 Saved: https---jseagle-com-forms-trainingcertifications-private-pilot-.md
+
+🔍 Crawling: https://jseagle.com/instrument_rating/
+📝 Saved: https---jseagle-com-instrument_rating-.md
+
+🔍 Crawling: https://jseagle.com/commercial_pilot/
+📝 Saved: https---jseagle-com-commercial_pilot-.md
+
+🔍 Crawling: https://jseagle.com/elementor-3741/
+📝 Saved: https---jseagle-com-elementor-3741-.md
+
+🔍 Crawling: https://jseagle.com/airline-transport-pilot/
+📝 Saved: https---jseagle-com-airline-transport-pilot-.md
+
+🔍 Crawling: https://jseagle.com/elementor-4148/
+📝 Saved: https---jseagle-com-elementor-4148-.md
+
+🔍 Crawling: https://jseagle.com/instructors/
+📝 Saved: https---jseagle-com-instructors-.md
+
+🔍 Crawling: https://jseagle.com/fleet/
+📝 Saved: https---jseagle-com-fleet-.md
+
+🔍 Crawling: https://jseagle.com/forms/
+📝 Saved: https---jseagle-com-forms-.md
+
+🔍 Crawling: https://jseagle.com/liberty-university-eagle-aircraft/
+📝 Saved: https---jseagle-com-liberty-university-eagle-aircraft-.md
+
+🔍 Crawling: https://jseagle.com/for-international-students/
+📝 Saved: https---jseagle-com-for-international-students-.md
+
+🔍 Crawling: https://jseagle.com/flight-schedule-pro/
+📝 Saved: https---jseagle-com-flight-schedule-pro-.md
+
+🔍 Crawling: https://jseagle.com/contact/
+📝 Saved: https---jseagle-com-contact-.md
+
+🔍 Crawling: http://jseagle.com/forms/trainingcertifications/
+📝 Saved: http---jseagle-com-forms-trainingcertifications-.md
+
+🔍 Crawling: https://jseagle.com/cfi-application/
+📝 Saved: https---jseagle-com-cfi-application-.md
+
+🔍 Crawling: https://jseagle.com/aircraft-checkout-rental-rates/
+📝 Saved: https---jseagle-com-aircraft-checkout-rental-rates-.md
+
+🔍 Crawling: https://jseagle.com/elementor-3125/
+📝 Saved: https---jseagle-com-elementor-3125-.md
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2025/07/Eagle-Aircraft-Operations-Manual-04_10_2023-1.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2025-07-Eagle-Aircraft-Operations-Manual-04_10_2023-1-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2021/05/Aviation-Terminology.docx
+⚠️ Failed to load: http://jseagle.com/wp-content/uploads/2021/05/Aviation-Terminology.docx
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2021/05/Written-Exam-Sign-Up-Sheet.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2021-05-Written-Exam-Sign-Up-Sheet-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2024/07/Student-Checkride-list.docx.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2024-07-Student-Checkride-list-docx-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2013/01/141-Private-Requirements-black-white.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2013-01-141-Private-Requirements-black-white-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/Private-Pilot-Part-141-Requirements.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-Private-Pilot-Part-141-Requirements-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2013/01/INSTRUMENT-PILOT-REQUIREMENTS.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2013-01-INSTRUMENT-PILOT-REQUIREMENTS-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/09/Instrument-Part-141-Requirements.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-09-Instrument-Part-141-Requirements-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/09/Instrument-Part-61-Requirements.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-09-Instrument-Part-61-Requirements-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/09/Commercial-Part-141-Requirements.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-09-Commercial-Part-141-Requirements-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/09/Commercial-Part-61-Requirements.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-09-Commercial-Part-61-Requirements-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/09/Multi-Engine-61-vs-141-Requirements.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-09-Multi-Engine-61-vs-141-Requirements-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/09/CFI-Part-141-vs-61-Requirements.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-09-CFI-Part-141-vs-61-Requirements-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/06/Private-Cessna-172-Maneuvers.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-06-Private-Cessna-172-Maneuvers-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/08/C-172M-Private-Maneuvers.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-08-C-172M-Private-Maneuvers-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/06/Private-Cessna-150-Maneuvers-1.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-06-Private-Cessna-150-Maneuvers-1-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/06/Commercial-Cessna-172-Maneuvers.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-06-Commercial-Cessna-172-Maneuvers-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/08/Commercial-Cessna-172M-Maneuvers.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-08-Commercial-Cessna-172M-Maneuvers-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/06/Commercial-150-Maneuvers.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-06-Commercial-150-Maneuvers-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/VPZ-Airport-Diagram.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-VPZ-Airport-Diagram-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/03/C-172-Traffic-Pattern.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-03-C-172-Traffic-Pattern-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/03/C-150-Traffic-Pattern.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-03-C-150-Traffic-Pattern-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2019/08/Radio-Communications-Handout.docx
+⚠️ Failed to load: https://jseagle.com/wp-content/uploads/2019/08/Radio-Communications-Handout.docx
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/04/Takeoff-Briefing.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-04-Takeoff-Briefing-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/04/Cross-Country-Requirements.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-04-Cross-Country-Requirements-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/04/Instrument-Manuevers.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-04-Instrument-Manuevers-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/09/Restricted-ATP-vs-Unrestricted-ATP.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-09-Restricted-ATP-vs-Unrestricted-ATP-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/06/SkyhawkPOH04N.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-06-SkyhawkPOH04N-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2024/01/N4347R-POH.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2024-01-N4347R-POH-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/06/Cessna-1967-150-POH.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-06-Cessna-1967-150-POH-pdf.pdf
+
+🔍 Crawling: http://jseagle.com/wp-content/uploads/2019/06/Cessna-1973-150-POH.pdf
+📄 Saved file: http---jseagle-com-wp-content-uploads-2019-06-Cessna-1973-150-POH-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/C172S-G1000-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-C172S-G1000-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2023/06/C150-N7186S-Emergency-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2023-06-C150-N7186S-Emergency-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2023/06/C172S-G1000-Emergency-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2023-06-C172S-G1000-Emergency-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/C172S-N5204N-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-C172S-N5204N-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2023/06/C-172S-Emergency-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2023-06-C-172S-Emergency-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/C150-N1NS-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-C150-N1NS-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2023/06/C150-N1NS-Emergency-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2023-06-C150-N1NS-Emergency-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/C150-N7186S-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-C150-N7186S-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/C150-N10839-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-C150-N10839-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2023/06/C150-N10839-Emergency-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2023-06-C150-N10839-Emergency-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/C172M-N4347R-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-C172M-N4347R-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/C172M_N-Emergency-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-C172M_N-Emergency-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/C172P-N5314K-Checklist.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-C172P-N5314K-Checklist-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2022/11/Exterior-Inspections.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2022-11-Exterior-Inspections-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2023/01/BE-95-55-Checklists.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2023-01-BE-95-55-Checklists-pdf.pdf
+
+🔍 Crawling: https://jseagle.com/wp-content/uploads/2024/12/Checklists-Sheet1-2.pdf
+📄 Saved file: https---jseagle-com-wp-content-uploads-2024-12-Checklists-Sheet1-2-pdf.pdf
+
+✅ COMPLETE!
+📄 Pages saved to: output/pages
+📘 Combined file: output/all_content.md
+🧾 URL report: output/urls.csv
+📁 Downloads: output/downloads

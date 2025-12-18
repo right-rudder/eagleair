@@ -2,6 +2,13 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import OurFleetCardGrid from "../../components/OurFleetCardGrid.astro";
+import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithImageAndQuote.astro";
+import { COMPANY_NAME } from "../../data/consts";
+import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
+import CTASection from "../../components/CTASection.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 type Aircraft = CollectionEntry<"aircraft">;
 
@@ -9,64 +16,84 @@ const aircraft = await getCollection("aircraft");
 const sortedAircraft = aircraft.sort(
   (a: Aircraft, b: Aircraft) => (a.data.order || 999) - (b.data.order || 999)
 );
+
+const heroData = {
+  image: {
+    src: "/src/assets/drive/fleet-two-cesnas-team_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+    alt: "Fleet two Cessnas team, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+  },
+  upperHeader: "Our Training Fleet",
+  title: "Modern Aircraft <br> Built for Professional Training",
+  subTitle:
+    "Our diverse fleet is meticulously maintained and equipped for every stage of pilot training—from first solo to advanced multi-engine and instrument operations.",
+  cta: [
+    { url: "/discovery-flight", text: "Book a Discovery Flight"  },
+    { url: "/crew", text: "Meet the Team" },
+  ],
+};
+
+const ourFleetData = {
+  upperHeader: "Explore Our Fleet",
+  title: "Modern Aircraft, Trusted Performance",
+  paragraphs: [
+    "Our fleet is composed of modern, meticulously maintained aircraft designed to deliver exceptional performance, safety, and reliability. Each machine is equipped with advanced avionics and cutting-edge systems that elevate every stage of your training.",
+    "From primary trainers to advanced platforms, our aircraft provide a smooth and efficient learning experience, ensuring you gain real-world skills in the same high-standard environment used by today's professional pilots.",
+  ],
+  upperHeaderTwo: "They Are Here For You",
+  titleTwo: "Our Fleet Aircrafts",
+};
+
+const aboutThisPageWithQuoteData = {
+  upperHeading: "Our History",
+  title: "About Our Fleet",
+  paragraphs: [
+    `Welcome to ${COMPANY_NAME}, where dreams take flight. Founded and
+        operated by Hal Harris and his family, our academy is rooted in a love
+        for aviation that spans generations. Hal, a seasoned Certified Flight
+        Instructor (CFI) and jet pilot with a Citation type rating, has been
+        sharing his passion for flying with aspiring pilots for over 30 years.
+        His dedication to aviation is matched by his wife, MariCris, and their
+        daughter, Grace, who both contribute their unique talents and
+        enthusiasm to our family run school.`,
+    `Our vision is to build a future where innovation, excellence, and meaningful
+        experiences shape everything we do. As we grow, ${COMPANY_NAME} remains committed
+        to expanding our capabilities, elevating our standards, and continually improving
+        the way we serve our community. We look ahead with intention — embracing new
+        opportunities, adopting modern solutions, and staying focused on long-term impact.
+        Our future is guided by progress, responsibility, and the belief that great
+        experiences are built through consistent dedication and purpose.`,
+  ],
+  image: "/src/assets/aircraft-window-view.jpg",
+  quote: `When you join ${COMPANY_NAME}, you become part of our family.`,
+};
+
+const { ourFleetPageData = ourFleetData } = Astro.props;
 ---
 
 <BaseLayout
   siteTitle="Our Fleet | Eagle Aircraft Aviation Academy"
-  siteDescription="Explore our modern fleet of training aircraft"
+  siteDescription="Meet our modern and reliable fleet"
 >
+  <Hero75 data={heroData} />
   <section class="py-16 px-4">
-    <div class="max-w-7xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold text-center mb-4">Our Fleet</h1>
-      <p class="text-xl text-center text-muted-600 mb-12 max-w-3xl mx-auto">
-        Train in our well-maintained fleet of modern aircraft equipped with the
-        latest avionics.
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {
-          sortedAircraft.map((plane: Aircraft) => (
-            <a
-              href={`/aircraft/${plane.slug}`}
-              class="bg-muted-50  shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-            >
-              <img
-                src={plane.data.image}
-                alt={plane.data.name}
-                class="w-full h-64 object-cover"
-              />
-              <div class="p-6">
-                <h2 class="text-2xl font-bold mb-2">{plane.data.name}</h2>
-                <p class="text-lg text-blue-600 mb-3">{plane.data.model}</p>
-                <p class="text-muted-600 line-clamp-3">
-                  {plane.data.description}
-                </p>
-
-                {plane.data.specifications && (
-                  <div class="mt-4 pt-4 border-t grid grid-cols-2 gap-2 text-sm">
-                    {plane.data.specifications.seats && (
-                      <div>
-                        <span class="text-muted-500">Seats:</span>
-                        <span class="ml-1 font-semibold">
-                          {plane.data.specifications.seats}
-                        </span>
-                      </div>
-                    )}
-                    {plane.data.specifications.cruiseSpeed && (
-                      <div>
-                        <span class="text-muted-500">Speed:</span>
-                        <span class="ml-1 font-semibold">
-                          {plane.data.specifications.cruiseSpeed}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            </a>
-          ))
-        }
-      </div>
+    <div class="max-w-7xl mx-auto flex flex-col space-y-4">
+      <p class="mx-auto subtitle !text-black">{ourFleetPageData.upperHeader}</p>
+      <h2
+        class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title"
+      >
+        {ourFleetPageData.title}
+      </h2>
+      {
+        ourFleetPageData.paragraphs.map((paragraph: string) => (
+          <p class="text-xl text-center sans max-w-2xl mx-auto">{paragraph}</p>
+        ))
+      }
     </div>
   </section>
+  <AboutThisPageWithImageAndQuote
+    aboutThisPageWithQuoteData={aboutThisPageWithQuoteData}
+  />
+  <OurFleetCardGrid aircrafts={sortedAircraft} data={ourFleetPageData} />
+  <CTAEnrollWithUsMini />
+  <CTASection />
 </BaseLayout>

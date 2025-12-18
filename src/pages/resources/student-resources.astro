@@ -1,0 +1,343 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero75 from "../../components/Hero75.astro";
+import ImageComp from "../../components/ImageComp.astro";
+
+const heroData = {
+  image: {
+    src: "/src/assets/facebook/n4397r-cessna-172m-with-instructor-and-student.jpg",
+    alt: "N4397R Cessna 172M with instructor and student",
+    top: true,
+  },
+  title: "Helpful Documents for Student Pilots",
+  subTitle:
+    "Access essential resources and study materials to support your flight training journey",
+  cta: [
+    {
+      url: "/about/contact",
+      text: "Contact Us",
+    },
+  ],
+};
+
+const trainingDocs = [
+  {
+    section: "Helpful Training Docs",
+    description: "",
+    links: [
+      {
+        href: "/files/Eagle-Aircraft-Operations-Manual-04_10_2023-1.pdf",
+        title: "Eagle Aircraft Operations Manual 04_10_2023",
+      },
+      {
+        href: "/files/Aviation-Terminology.docx",
+        title: "Aviation Terminology",
+      },
+      {
+        href: "/files/Written-Exam-Sign-Up-Sheet.pdf",
+        title: "Written Exam Instructions",
+      },
+      {
+        href: "/files/Student-Checkride-list.docx.pdf",
+        title: "Checkride Checklist",
+      },
+      {
+        href: "https://docs.google.com/forms/d/1zUM8bCothotjkPw0gYWt4ZBR-2PkwtkqH4yUeeU6t5I/edit#responses",
+        title: "Fuel Reimbursement",
+      },
+    ],
+  },
+  {
+    section: "Requirements",
+    description: "",
+    links: [
+      {
+        href: "/files/Private-Pilot-Part-141-Requirements.pdf",
+        title: "Private Pilot Part 141 Requirements",
+      },
+      {
+        href: "/files/Instrument-Part-141-Requirements.pdf",
+        title: "Instrument Part 141 Requirements",
+      },
+      {
+        href: "/files/Instrument-Part-61-Requirements.pdf",
+        title: "Instrument Part 61 Requirements",
+      },
+      {
+        href: "/files/Commercial-Part-141-Requirements.pdf",
+        title: "Commercial Part 141 Requirements",
+      },
+      {
+        href: "/files/Commercial-Part-61-Requirements.pdf",
+        title: "Commercial Part 61 Requirements",
+      },
+      {
+        href: "/files/Multi-Engine-61-vs-141-Requirements.pdf",
+        title: "Multi-Engine 61 vs 141 Requirements",
+      },
+      {
+        href: "/files/CFI-Part-141-vs-61-Requirements.pdf",
+        title: "CFI Part 141 vs 61 Requirements",
+      },
+    ],
+  },
+  {
+    section: "Study Guides",
+    description:
+      "Every instructor uses these guides for the maneuvers you will learn. You can study these ahead of time to be ready for your lesson.",
+    links: [],
+  },
+  {
+    section: "Private Pilot Maneuvers",
+    description: "",
+    links: [
+      {
+        href: "/files/Private-Cessna-172-Maneuvers.pdf",
+        title: "C-172S Private Pilot Maneuvers Study Guide",
+      },
+      {
+        href: "/files/C-172M-Private-Maneuvers.pdf",
+        title: "C-172M Private Maneuvers Study Guide",
+      },
+      {
+        href: "/files/Private-Cessna-150-Maneuvers-1.pdf",
+        title: "C-150 Private Pilot Maneuvers Study Guide",
+      },
+    ],
+  },
+  {
+    section: "Commercial Pilot Maneuvers",
+    description: "",
+    links: [
+      {
+        href: "/files/Commercial-Cessna-172-Maneuvers.pdf",
+        title: "C-172S Commercial Pilot Maneuvers Study Guide",
+      },
+      {
+        href: "/files/Commercial-Cessna-172M-Maneuvers.pdf",
+        title: "C-172M Commercial Maneuvers Study Guide",
+      },
+      {
+        href: "/files/Commercial-150-Maneuvers.pdf",
+        title: "C-150 Commercial Pilot Maneuvers Study Guide",
+      },
+    ],
+  },
+  {
+    section: "Traffic Pattern",
+    description: "",
+    links: [
+      {
+        href: "/files/VPZ-Airport-Diagram.pdf",
+        title: "VPZ Airport Diagram",
+      },
+      {
+        href: "/files/C-172-Traffic-Pattern.pdf",
+        title: "C-172S Traffic Pattern",
+      },
+      {
+        href: "/files/C-150-Traffic-Pattern.pdf",
+        title: "C-150 Traffic Pattern",
+      },
+    ],
+  },
+  {
+    section: "Additional Training Docs",
+    description: "",
+    links: [
+      {
+        href: "/files/Radio-Communications-Handout.docx",
+        title: "Radio Communications Handout",
+      },
+      {
+        href: "/files/Takeoff-Briefing.pdf",
+        title: "Standard Takeoff Briefing",
+      },
+      {
+        href: "/files/Cross-Country-Requirements.pdf",
+        title: "Cross Country Requirements",
+      },
+      {
+        href: "/files/Instrument-Manuevers.pdf",
+        title: "Instrument Maneuvers",
+      },
+      {
+        href: "/files/Restricted-ATP-vs-Unrestricted-ATP.pdf",
+        title: "Restricted ATP vs Unrestricted ATP",
+      },
+    ],
+  },
+  {
+    section: "Aircraft POH",
+    description: "",
+    links: [
+      {
+        href: "/files/SkyhawkPOH04N.pdf",
+        title: "Cessna 172S Skyhawk (steam gauge)",
+      },
+      {
+        href: "/files/N4347R-POH.pdf",
+        title: "Cessna 172M (steam gauge)",
+      },
+      {
+        href: "/files/Cessna-1967-150-POH.pdf",
+        title: "Cessna 150 (1967)",
+      },
+      {
+        href: "/files/Cessna-1973-150-POH.pdf",
+        title: "Cessna 150 (1973)",
+      },
+    ],
+  },
+  {
+    section: "Aircraft Checklists",
+    description: "",
+    links: [
+      {
+        href: "/files/C172S-G1000-Checklist.pdf",
+        title: "C172S G1000 Checklist",
+      },
+      {
+        href: "/files/C150-N7186S-Emergency-Checklist.pdf",
+        title: "Emergency Checklist",
+      },
+      {
+        href: "/files/C172S-G1000-Emergency-Checklist.pdf",
+        title: "C172S G1000 Emergency Checklist",
+      },
+      {
+        href: "/files/C172S-N5204N-Checklist.pdf",
+        title: "C172S N5204N Checklist",
+      },
+      {
+        href: "/files/C-172S-Emergency-Checklist.pdf",
+        title: "C-172S Emergency Checklist",
+      },
+      {
+        href: "/files/C150-N1NS-Checklist.pdf",
+        title: "C150 N1NS Checklist",
+      },
+      {
+        href: "/files/C150-N1NS-Emergency-Checklist.pdf",
+        title: "C150 N1NS Emergency Checklist",
+      },
+      {
+        href: "/files/C150-N7186S-Checklist.pdf",
+        title: "C150 N7186S Checklist",
+      },
+      {
+        href: "/files/C150-N7186S-Emergency-Checklist.pdf",
+        title: "C150 N7186S Emergency Checklist",
+      },
+      {
+        href: "/files/C150-N10839-Checklist.pdf",
+        title: "C150 N10839 Checklist",
+      },
+      {
+        href: "/files/C150-N10839-Emergency-Checklist.pdf",
+        title: "C150 N10839 Emergency Checklist",
+      },
+      {
+        href: "/files/C172M-N4347R-Checklist.pdf",
+        title: "C172M N4347R Checklist",
+      },
+      {
+        href: "/files/C172M_N-Emergency-Checklist.pdf",
+        title: "C172M_N Emergency Checklist",
+      },
+      {
+        href: "/files/C172P-N5314K-Checklist.pdf",
+        title: "C172P N5314K Checklist",
+      },
+      {
+        href: "/files/Exterior-Inspections.pdf",
+        title: "Exterior Inspections",
+      },
+      {
+        href: "/files/BE-95-55-Checklists.pdf",
+        title: "BE-95-55 Checklists",
+      },
+      {
+        href: "/files/Checklists-Sheet1-2.pdf",
+        title: "P2010 Tecnam Checklist",
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout>
+  <Hero75 minHeight="min-h-[70vh]" data={heroData} />
+  <section class="py-16 px-4 md:px-8 lg:px-16 bg-muted-50">
+    <div class="max-w-7xl mx-auto">
+      <h1 class="title text-center mb-8">Student Resources</h1>
+      <p class="text-center text-muted-700 mb-12 max-w-3xl mx-auto">
+        Below are various resources to help you during your training with Eagle
+        Air. If you have any questions or need further assistance, please don't
+        hesitate to reach out to your instructor or our support team.
+      </p>
+
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-col my-auto">
+        {
+          trainingDocs.slice(0, 2).map((section) => (
+              <div class="my-12">
+                <h2 class="text-2xl font-title font-bold text-monza-900 mb-4">
+                  {section.section}
+                </h2>
+                {section.description && (
+                  <p class="text-muted-700 mb-4">{section.description}</p>
+                )}
+                <ul class="list-disc list-inside">
+                  {section.links.map((link) => (
+                    <li class="mb-2">
+                      <a
+                        href={link.href}
+                        class="text-monza-700 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {link.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+          ))
+        }
+        </div>
+        <ImageComp
+          src="/src/assets/facebook/student-in-front-of-wall-of-fame.jpg",
+          alt="Student in front of Wall of Fame",
+          class="w-1/2 h-auto shadow-md" 
+        />
+      </div>
+      {
+        trainingDocs.slice(2).map((section) => (
+          <div class="mb-12">
+            <h2 class="text-2xl font-title font-bold text-monza-900 mb-4">
+              {section.section}
+            </h2>
+            {section.description && (
+              <p class="text-muted-700 mb-4">{section.description}</p>
+            )}
+            <ul class="list-disc list-inside">
+              {section.links.map((link) => (
+                <li class="mb-2">
+                  <a
+                    href={link.href}
+                    class="text-monza-700 hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

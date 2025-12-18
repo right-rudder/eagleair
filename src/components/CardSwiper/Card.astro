@@ -1,0 +1,40 @@
+---
+import ImageComp from "../ImageComp.astro";
+
+const {
+  title = "Program Title",
+  description = "Program Description",
+  image = "/src/assets/crew/team-member-placeholder.jpg",
+  targetsWhere = "/",
+  showControls = false,
+} = Astro.props;
+---
+
+<a href={targetsWhere} class="block group relative w-full aspect-video overflow-hidden bg-gray-900">
+  <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-madison-950 via-monza-500 to-monza-400 z-50"></div>
+  <div class="h-full w-full overflow-hidden">
+    <ImageComp
+      src={image.src}
+      alt={image.alt}
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      widths={[480, 720, 1080]}
+      sizes="(max-width: 720px) 100vw, 33vw"
+    />
+  </div>
+  <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+    <h3 class="text-xl font-bold text-white">{title}</h3>
+    <p class="mt-2 text-sm text-gray-200">{description}</p>
+  </div>
+  
+  {showControls && (
+    <>
+      <button class="swiper-prev hover:cursor-pointer absolute left-0 top-1/2 h-full -translate-y-1/2 z-10 bg-black/50 text-white p-3  hover:bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M7.94 13.06a1.5 1.5 0 0 1 0-2.12l5.656-5.658a1.5 1.5 0 1 1 2.121 2.122L11.122 12l4.596 4.596a1.5 1.5 0 1 1-2.12 2.122l-5.66-5.658Z"/></g></svg>
+      </button>
+      
+      <button class="swiper-next hover:cursor-pointer absolute right-0 top-1/2 h-full -translate-y-1/2 z-10 bg-black/50 text-white p-3 hover:bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M16.06 10.94a1.5 1.5 0 0 1 0 2.12l-5.656 5.658a1.5 1.5 0 1 1-2.121-2.122L12.879 12L8.283 7.404a1.5 1.5 0 0 1 2.12-2.122l5.658 5.657Z"/></g></svg>
+      </button>
+    </>
+  )}
+</a>

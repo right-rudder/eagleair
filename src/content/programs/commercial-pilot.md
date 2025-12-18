@@ -1,10 +1,13 @@
 ---
 title: "Commercial Pilot License"
 description: "Earn your Commercial Pilot License and fly for compensation. Professional training in advanced maneuvers, complex aircraft operations, and commercial aviation standards. Your gateway to paid flying careers."
-duration: "2-3 months"
-cost: "$22,500 All-In"
-image: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg"
-order: 4
+duration: "6-8 months"
+cost: "$35,000"
+image: "/src/assets/facebook/n1449c-cessna-172s-student-with-certificate-leaning-on-plane.jpg"
+alt: "N1449C Cessna 172S student with certificate leaning on plane"
+reverse: true
+top: true
+order: 3
 highlights:
   - "All-inclusive: 60+ flight hours, complex aircraft training"
   - "Advanced commercial maneuvers (chandelles, lazy eights, eights-on-pylons)"

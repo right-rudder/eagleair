@@ -1,0 +1,47 @@
+---
+const ctaDataPlaceholder = {
+    title: "Get In Touch With Eagle Air",
+    paragraphs: [
+        "Have questions about flight training, Discovery Flights, or program options? Our team at FlyTech is here to help you every step of the way. Whether you’re just exploring aviation or ready to begin your pilot journey, we’ll provide the guidance you need",
+        "Reach out to schedule a visit, request more information, or speak directly with an instructor. We’re committed to making your path to the skies clear, simple, and exciting."
+    ]
+}
+
+const { 
+    ctaData = ctaDataPlaceholder,
+    bg = "red", 
+    titleSide = "left"
+} = Astro.props;
+
+const bgClass = bg === "red" ? "bg-monza-700" : "bg-madison-950";
+const titleOnLeft = titleSide === "left";
+---
+<section class={bgClass}>
+  <div class="max-w-7xl mx-auto px-6 py-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <div
+        class={`w-full h-full flex items-center justify-center
+                order-1
+                lg:${titleOnLeft ? "order-1" : "order-2"}`}
+      >
+        <h2 class="title !text-white !text-center">
+          {ctaData.title}
+        </h2>
+      </div>
+      <div
+        class={`w-full h-full flex items-center justify-center
+                order-2
+                lg:${titleOnLeft ? "order-2" : "order-1"}`}
+      >
+        <div class="flex flex-col gap-4">
+          {ctaData.paragraphs.map((paragraph: string) => (
+            <p class="text-white/90 sans text-base md:text-lg">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

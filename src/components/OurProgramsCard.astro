@@ -1,0 +1,63 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+const {
+  title,
+  imagePath,
+  imageAlt,
+  link,
+  linkText = "Explore",
+  description,
+  style = "",
+} = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`,
+  );
+---
+
+<div class=`${style} flex flex-col bg-white group relative overflow-hidden `>
+  <div
+    class="w-full h-[27rem] overflow-hidden flex flex-col justify-center items-center align-middle"
+  >
+    <h3
+      class="z-10 mb-12 w-full uppercase px-2 text-3xl font-title font-bold lg:translate-y-12 drop-shadow-xl text-center leading-7 text-white group-hover:text-primary-950 group-hover:-translate-y-3 duration-300 ease-in-out"
+      set:html={title}
+    />
+    {
+      description && (
+        <p
+          class="z-10 mt-3 lg:my-0 px-4 w-full lg:leading-3 lg:translate-y-10 font-sans font-normal text-lg lg:opacity-0 text-center leading-tight text-gray-50 group-hover:text-primary-900 group-hover:opacity-95 group-hover:-translate-y-1 group-hover:leading-tight duration-500 ease-out"
+          set:html={description}
+        />
+      )
+    }
+    <Image
+      src={images[imagePath]()}
+      alt={imageAlt}
+      class="absolute -z-0 h-full w-full object-cover object-center group-hover:blur-sm group-hover:-translate-y-3 group-hover:scale-105 duration-100 ease-out"
+      quality={60}
+    />
+    <div
+      class="absolute z-0 w-full h-full bg-slate-900/30 lg:bg-slate-600/10 group-hover:bg-white/80 duration-500"
+    >
+    </div>
+  </div>
+  <a
+    href={link}
+    target="_self"
+    class="absolute btn-animate text-white bottom-0 w-full h-16 bg-primary-800 lg:opacity-50 lg:translate-y-[101%] group-hover:brightness-125 group-hover:opacity-100 group-hover:translate-y-0 duration-300 hover:text-primary-50"
+  >
+    <div class="flex h-full w-full justify-center align-middle items-center">
+      <p
+        class="relative block z-10 text-center font-title text-lg tracking-wide font-bold leading-loose uppercase drop-shadow-sm"
+      >
+        {linkText}
+      </p>
+    </div>
+  </a>
+</div>

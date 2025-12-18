@@ -1,0 +1,35 @@
+---
+import { COMPANY_NAME } from "../data/consts";
+
+const ctaEnrollWithUsDataPlaceholder = {
+  title: `Discover What ${COMPANY_NAME} Can Offer You`,
+  description: "From private pilot training to advanced certifications, we have programs designed for every aviation goal.",
+  buttonLink: "/programs",
+  buttonTitle: "View Our Programs"
+}
+
+const { 
+  ctaData = ctaEnrollWithUsDataPlaceholder,
+  showButton = true
+} = Astro.props;
+---
+
+<section class="bg-monza-800">
+  <div class="max-w-7xl mx-auto px-6 py-6">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-center md:text-left flex-1">
+        <h2 class="title !text-xl md:!text-2xl !text-white !mb-2">
+          {ctaData.title}
+        </h2>
+        <p class="text-white/90 sans text-base md:text-lg">
+          {ctaData.description}
+        </p>
+      </div>
+      {showButton && (
+        <a href={ctaData.buttonLink} class="btn-tertiary shrink-0">
+          {ctaData.buttonTitle}
+        </a>
+      )}
+    </div>
+  </div>
+</section>

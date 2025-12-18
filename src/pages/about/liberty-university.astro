@@ -1,0 +1,96 @@
+---
+import CTAMeetOurAffiliateProgram from "../../components/CTAMeetOurAffiliateProgram.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import CTASection from "../../components/CTASection.astro";
+import ImageComp from "../../components/ImageComp.astro";
+import ListOfCoursesSection from "../../components/ListOfCoursesSection.astro";
+import BenefitsListLibertyUniversity from "../../components/BenefitsListLibertyUniversity.astro";
+import { COMPANY_NAME, COMPANY_NICKNAME } from "../../data/consts";
+import CTAEnrollWithUsMiniWhite from "../../components/CTAEnrollWithUsMiniWhite.astro";
+import Hero75 from "../../components/Hero75.astro";
+
+const heroData = {
+  image: {
+    src: "/src/assets/drive/fleet-two-cesnas-team_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+    alt: "Fleet two Cessnas team, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+  },
+  upperHeader: `Flying is Freedom`,
+  title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
+  subTitle:
+    "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
+  cta: [{ url: "/discovery-flight", text: "Book a Discovery Flight" }],
+};
+
+const LibertyUniversityLogo =
+  "/src/assets/liberty-university-school-of-aeronautics-affiliate-logo.png";
+
+const libertyUniversityIntroData = {
+  upperHeader: "Flight Training Affiliate",
+  title: "Liberty University<br>School of Aeronautics",
+  paragraphs: [
+    "Through our partnership with Liberty University, Eagle Aircraft serves as a Flight Training Affiliate, allowing students to earn college credit for flight training hours while completing their aviation degree online, while providing hands-on flight instruction under FAA Part 141 standards fully integrated with Liberty’s academic curriculum—continuing the role Eagle Aircraft has held since 2014 as Liberty’s first affiliate outside Virginia.",
+  ],
+};
+
+const ctaProgramsData = {
+  upperHeading: "FLIGHT TRAINING AFFILIATE PROGRAM",
+  title: `TRAIN WITH ${COMPANY_NICKNAME} AND LIBERTY UNIVERSITY`,
+  paragraph:
+    "Discover how Eagle Aircraft partners with Liberty University to combine hands-on flight training with college credit. Watch the video to see how our students earn their aviation degree while training locally, and learn how this unique affiliation can launch your career in aviation.",
+  ctaLink: "https://www.liberty.edu/eaglestudent",
+  ctaText: "Apply Today",
+};
+
+const listOfCourses = [
+  { courseName: "AVIA 220 – Private Flight I" },
+  { courseName: "AVIA 225 – Private Flight II" },
+  { courseName: "AVIA 320 – Instrument Flight*" },
+  { courseName: "AVIA 325 – Commercial Flight I*" },
+  { courseName: "AVIA 326 – Commercial Flight II*" },
+  { courseName: "AVIA 327 – Commercial Flight III*" },
+  { courseName: "AVIA 331 – Commercial Pilot, Single Engine Land Add On" },
+  { courseName: "AVIA 420 – Flight Instructor Flight*" },
+  { courseName: "AVIA 422 – Certified Flight Instructor – Instrument (CFII)*" },
+  { courseName: "AVIA 440 – Multi-Engine Flight" },
+  { courseName: "AVIA 441 – Multi-Engine Instructor" },
+];
+
+const ctaMiniData = {
+  title: `Discover What ${COMPANY_NAME} Can Offer You`,
+  description:
+    "From private pilot training to advanced certifications, we have programs designed for every aviation goal.",
+  ctaLink: "/about/contact",
+  ctaText: "Contact Us",
+};
+---
+
+<BaseLayout>
+  <Hero75 data={heroData} />
+  <section class="py-16 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col space-y-4 items-center">
+      <ImageComp
+        src={LibertyUniversityLogo}
+        alt="Liberty University School of Aeronautics Afiliate Logo"
+        class="pl-1 w-[450px] h-auto"
+      />
+      <p class="mx-auto subtitle !text-black">
+        {libertyUniversityIntroData.upperHeader}
+      </p>
+      <h2
+        set:html={libertyUniversityIntroData.title}
+        class="text-4xl md:text-5xl mx-auto font-bold text-center title"
+      />
+      {
+        libertyUniversityIntroData.paragraphs.map((paragraph: string) => (
+          <p class="text-xl text-center sans max-w-2xl mx-auto">{paragraph}</p>
+        ))
+      }
+    </div>
+  </section>
+  <CTAMeetOurAffiliateProgram background="red" ctaData={ctaProgramsData} />
+  <ListOfCoursesSection listOfCoursesData={listOfCourses} />
+  <BenefitsListLibertyUniversity imageSide="right" background="red" />
+  <CTAEnrollWithUsMiniWhite ctaData={ctaMiniData} />
+  <CTASection />
+</BaseLayout>

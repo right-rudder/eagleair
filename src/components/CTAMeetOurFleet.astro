@@ -1,0 +1,78 @@
+---
+import { COMPANY_NAME } from "../data/consts";
+import ImageWithZoomEffect from "./ImageWithZoomEffect.astro";
+
+const ctaMeetOurFleetPlaceholder = {
+  upperHeading: "OUR STATE-OF-THE-ART AICRAFTS",
+  title: `MEET THE ${COMPANY_NAME} FLEET`,
+  description: ``,
+  image: {
+    src: "/src/assets/facebook/fleet-cesna-N4347R_Eagle-air_Indiana-USA.jpg",
+    alt: "Military aircraft in flight",
+  },
+};
+
+const imagePlaceholder = {
+  src: "/src/assets/fleet/fleet-cesna-N4347R_Eagle-air_Indiana-USA.jpg",
+  alt: "Military aircraft in flight",
+};
+
+const {
+  ctaData = ctaMeetOurFleetPlaceholder,
+  showButton = true,
+  upperHeadingTextSize = "!text-xl",
+  titleTextSize = "!text-3xl",
+  imageSide = "left",
+  background = "blue",
+  image = imagePlaceholder,
+} = Astro.props;
+
+const isImageOnLeft = imageSide === "left";
+const isBackgroundBlue = background === "blue";
+---
+
+<section
+  id="our-mission"
+  class=`${isBackgroundBlue ? "bg-madison-950" : "bg-monza-800" }`
+>
+  <div class="max-w-7xl mx-auto p-8 lg:px-8">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+      <div
+        class=`${isImageOnLeft ? "order-2" : "order-1" } flex flex-col justify-start`
+      >
+        <p
+          class=`${upperHeadingTextSize} !text-center lg:!text-left  !mx-0 subtitle !text-white  uppercase mb-4`
+        >
+          {ctaData.upperHeading}
+        </p>
+        <h2
+          class=`${titleTextSize} !text-center lg:!text-left mx-auto lg:!mx-0 max-w-[80%] lg:max-w-[50%] xl:max-w-[70%] font-bold title  !text-white`
+        >
+          {ctaData.title}
+        </h2>
+        <p class="text-white sans !mx-0 !text-center lg:!text-left text-xl">
+          Our fleet is meticulously maintained to the highest standards,
+          combining reliability, safety, and modern avionics to deliver a
+          premium training experience. Each aircraft is selected to support
+          pilots at every stage of their journey, from foundational skills to
+          advanced flight operations.
+        </p>
+        {
+          showButton && (
+            <a
+              href="/aircraft"
+              class={`my-8 mx-auto lg:mx-0 ${isBackgroundBlue ? "bg-monza-800" : "bg-madison-950"} text-base text-white w-fit sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
+            >
+              Meet Our Fleet
+            </a>
+          )
+        }
+      </div>
+      <div
+        class=`${isImageOnLeft ? "order-1" : "order-2" } h-full  mx-auto lg:mx-0`
+      >
+        <ImageWithZoomEffect src={image.src} alt={image.alt} />
+      </div>
+    </div>
+  </div>
+</section>

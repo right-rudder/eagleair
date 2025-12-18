@@ -72,7 +72,8 @@ export const FAVICON = "/favicon.png";
 
 export const LOGO = "/logo_eagle_aircraft_round_color.png";
 
-export const LOGO_ASSETS = "/src/assets/logo_eagle_aircraft_horizontal_color.png";
+export const LOGO_ASSETS =
+  "/src/assets/logo_eagle_aircraft_horizontal_color.png";
 export const LOGO_ASSETS_2 = "/src/assets/logo_eagle_aircraft_round_color.png";
 
 // CHANGE client business info
@@ -89,17 +90,24 @@ export const ADDRESS = "4001 Murvihill Road, Valparaiso, IN 46383";
 export const ADDRESS_CITY = "Valparaiso";
 export const ADDRESS_STATE = "Indiana";
 export const ADDRESS_ZIP = "46383";
-export const GMAPS =
-  "https://maps.app.goo.gl/k8sGUpJ1DJApg1HJA";
+export const GMAPS = "https://maps.app.goo.gl/k8sGUpJ1DJApg1HJA";
 export const EMAIL_ADDRESS = "eaglevpz@gmail.com";
 export const FACEBOOK_URL = "https://www.facebook.com/EagleAircraft";
 export const INSTAGRAM_URL = "https://www.instagram.com/eaglevpz/";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/company/eagle-aircraft-inc";
 export const X_URL = "";
-export const YOUTUBE_URL = "";
+export const YOUTUBE_URL = "https://www.youtube.com/@eagleaircraft9980";
 export const YELP_URL = "https://www.yelp.com/biz/eagle-aircraft-valparaiso";
 export const GITHUB_URL = "";
+// Podcast Eagle's Nest Eagle Aircraft
+export const SPOTIFY = "https://open.spotify.com/show/3kSF0bwT4fFBQPH5TFPThM";
+
+export const UVP = [
+  "International School for International Students",
+  "We want Americans to fill proud and International Students to fill welcome",
+  "Where Americans fill proud and International Students feel welcome",
+];
 
 export const LOCATIONS = [
   {
@@ -117,6 +125,7 @@ export const LOCATIONS = [
   },
 ];
 
+export const GOOGLEMAPS = "https://maps.app.goo.gl/vwGCHmAHiU6Cbjnw5";
 export const COURSES = [
   "Discovery Flights",
   "Private Pilot Certificate (PPL)",
@@ -154,6 +163,12 @@ export const FLEET = [
   },
 ];
 
+export const OTHER_LINKS = [
+  {
+    title: "Flight Schedule Pro",
+    url: "https://app.flightschedulepro.com/Account/Login?company=143387",
+  },
+];
 export const VIDEOS: {
   upperHeading: string;
   title: string;
@@ -164,4 +179,74 @@ export const VIDEOS: {
     alt: string;
     classes: string;
   };
-}[] = [];
+}[] = [
+  {
+    upperHeading: "Eagle Aircraft Flight Academy",
+    title: "Eagle Through the Years!",
+    description:
+      "Take a nostalgic journey through the history of Eagle Aircraft Flight Academy. From our humble beginnings to becoming a premier flight training center, see how we've grown and evolved over the years.",
+    link: "https://www.youtube.com/watch?v=-qmjjhObF0A",
+    image: {
+      src: "/videos/discover-eagle-aircraft-flight-academy.jpg",
+      alt: "Discover Eagle Aircraft Flight Academy Video Thumbnail",
+      classes: "w-full h-auto rounded-lg",
+    },
+  },
+  {
+    upperHeading: "Eagle Aircraft Flight Academy",
+    title: "You Can Learn to Fly!",
+    description:
+      "Take a tour of Eagle Aircraft Flight Academy located at Porter County Regional Airport in Valparaiso, Indiana. Learn about our flight training programs, fleet, and facilities.",
+    link: "https://www.youtube.com/watch?v=j_lnC-sTVjk",
+    image: {
+      src: "/videos/discover-eagle-aircraft-flight-academy.jpg",
+      alt: "Discover Eagle Aircraft Flight Academy Video Thumbnail",
+      classes: "w-full h-auto rounded-lg",
+    },
+  },
+  {
+    upperHeading: "Eagle Aircraft Flight Academy",
+    title: "Liberty University Aviation Degree",
+    description:
+      "We offer an online Bachelor’s Degree Program to our students to earn college credits for flight training hours. Eagle Aircraft was the first FTA (Flight Training Affiliate) outside the state of Virginia to be established with Liberty University. We have been successfully partnered with them since June of 2014. Entering the next phase of Eagle Aircraft Flight Training as an affiliate of Liberty University School of Aeronautics means college credit for our students and help to finance your dream.",
+    link: "https://www.youtube.com/watch?v=lRN7FOMXbuw",
+    image: {
+      src: "/videos/liberty-university-aviation-degree.jpg",
+      alt: "Liberty University Aviation Degree Video Thumbnail",
+      classes: "w-full h-auto rounded-lg",
+    },
+  },
+];
+
+export const FLIGHT_REVIEW_GOOGLE_FORM =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdGEv7AiZhTsQ2AcItIyBkAEguiwenStVvGM9zAF3uKD-nlTA/viewform?usp=preview";
+
+export const FUEL_REIMBURSEMENT_FORM = {
+  title: "Cross Country Fuel Receipt Submission",
+  description:
+    "Follow the link here to submit any fuel receipts have from cross countries with Eagle’s aircraft.",
+  link: "https://docs.google.com/forms/d/e/1FAIpQLSfOPGMncSrA5WCS1n8IzrfYqWn2qvrQX4ynzzFrsXwmvBP1oQ/viewform",
+};
+
+export const CLUB_40_HOUR = {
+  description:
+    "Check out our 40 Hour Club to see students who finished in under 40 flight hours for their Private Pilot and Instrument ratings!",
+};
+
+export const SIMULATOR = {
+  title: "Elite PI-1000 Simulator",
+  description:
+    "Fly our 2021 Elite simulator! Our simulator can be used for 14 hours of your instrument rating and 11 hours of your commercial rating. It can also be used to prepare for your Multi-Engine rating, allowing you to get familiar with with the multi-engine plane before your first flight. It is also G1000 AATD equip. Call to schedule time on one of our simulators!",
+};
+
+export const VETERANS_AFFAIRS_BENEFITS = {
+  title: "Veterans Affairs (VA) Benefits",
+  description:
+    "Our VA Benefits include Instrument Rating, Commercial Certificate, CFI/CFII/MEI, and ATP Ground Course! ",
+};
+
+export const BREAK_TURN_SKILL_BRIDGE_PROVIDER = {
+  title: "BreakTurn SkillBridge Provider",
+  description:
+    "BreakTurn offers free career counseling and mentorship to Service Members transitioning to the civilian aviation industry and, as a DoD-approved SkillBridge provider, places them with partner companies for up to their last 180 days of service. Click here for more info!",
+};

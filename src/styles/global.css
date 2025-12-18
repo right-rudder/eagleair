@@ -2,9 +2,9 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-title: 'Cinzel Variable', 'serif';
-  --font-subtitle: 'Oswald Variable', 'sans-serif';
-  --font-sans: 'Poppins', 'sans-serif';
+  --font-title: "Cinzel Variable", "serif";
+  --font-subtitle: "Oswald Variable", "sans-serif";
+  --font-sans: "Poppins", "sans-serif";
 
   --color-muted-50: #f6f7f8;
   --color-muted-100: #e9edf0;
@@ -17,7 +17,6 @@
   --color-muted-800: #596374;
   --color-muted-900: #4a525e;
   --color-muted-950: #30343b;
-
 
   --color-monza-50: #fff1f2;
   --color-monza-100: #ffe1e2;
@@ -43,33 +42,40 @@
   --color-madison-900: #0049b3;
   --color-madison-950: #002557;
 
-
-
   --animate-slow-zoom: slow-zoom 27s ease forwards;
   --animate-fast-zoom: fast-zoom 9s ease alternate infinite;
-  
-  @keyframes slow-zoom {
-      0% {
-        transform: scale(1);
-      }
-      100% {
-        transform: scale(1.15);
-      }
-    }
-  
-    @keyframes fast-zoom {
-      0% {
-        transform: scale(1);
-      }
-      100% {
-        transform: scale(1.25);
-      }
-    }
-}
 
+  @keyframes slow-zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.15);
+    }
+  }
+
+  @keyframes fast-zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.25);
+    }
+  }
+}
 
 .btn-primary {
   @apply bg-madison-950 border border-madison-950 text-muted-50 font-semibold  px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-muted-50 hover:border-muted-50 hover:text-madison-950 transition duration-200 hover:scale-105;
+}
+.btn-secondary {
+  @apply bg-madison-950 border border-madison-950 text-muted-50 font-semibold  px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-monza-600 hover:border-muted-50 hover:text-muted-50 transition duration-200 hover:scale-105;
+}
+
+.btn-tertiary {
+  @apply bg-madison-950 text-base text-white sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+}
+.btn-tertiary-red {
+  @apply bg-monza-700 text-base text-white sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl;
 }
 
 .btn-transparent {
@@ -77,11 +83,15 @@
 }
 
 .title {
-  @apply font-title text-4xl md:text-5xl lg:text-6xl font-bold text-madison-950 mb-4
+  @apply font-title text-4xl md:text-5xl lg:text-6xl font-bold text-madison-950 mb-4;
 }
 
 .subtitle {
-  @apply font-subtitle text-lg md:text-xl text-muted-600 max-w-3xl mx-auto tracking-wide
+  @apply font-subtitle text-lg md:text-xl text-muted-600 max-w-3xl mx-auto tracking-wide;
+}
+
+.subtitle-white {
+  @apply font-subtitle text-lg md:text-xl text-muted-100 max-w-3xl mx-auto tracking-wide;
 }
 
 .hero-image-mask {
@@ -89,20 +99,20 @@
   inset: 0;
   overflow: hidden;
   clip-path: polygon(
-    0 100%,                 /* bottom-left: full height */
-    100% calc(100% - 2rem), /* bottom-right: lifted up by h-20 */
-    100% 0,                 /* top-right */
-    0 0                     /* top-left */
+    0 100%,
+    /* bottom-left: full height */ 100% calc(100% - 2rem),
+    /* bottom-right: lifted up by h-20 */ 100% 0,
+    /* top-right */ 0 0 /* top-left */
   );
 }
 
 @media (min-width: 1024px) {
   .hero-image-mask {
     clip-path: polygon(
-      0 100%,                 /* bottom-left full height */
-      100% calc(100% - 5rem), /* bottom-right: h-20-ish */
-      100% 0,                 /* top-right */
-      0 0                     /* top-left */
+      0 100%,
+      /* bottom-left full height */ 100% calc(100% - 5rem),
+      /* bottom-right: h-20-ish */ 100% 0,
+      /* top-right */ 0 0 /* top-left */
     );
   }
 }

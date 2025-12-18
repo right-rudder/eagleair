@@ -1,10 +1,13 @@
 ---
 title: "Certified Flight Instructor (CFI)"
 description: "Become a professional flight instructor and build hours while earning income. Comprehensive CFI training with right-seat proficiency, teaching techniques, and performance-based airline placement. Your pathway to 1,500 hours."
-duration: "6-8 weeks"
-cost: "$14,500 All-In"
-image: "/src/assets/stock-rod-long-YUUUrkTzdgQ-unsplash-cropped.webp"
-order: 3
+duration: "4-8 weeks"
+cost: "$9,000"
+image: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate-and-instructor.jpg"
+alt: "N4397R Cessna 172M student with certificate and instructor"
+reverse: false
+top: true
+order: 4
 highlights:
   - "All-inclusive: 25+ flight hours, 40+ ground hours, FOI training"
   - "Right-seat proficiency and teaching from instructor position"

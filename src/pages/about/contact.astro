@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroScreen from "../../components/HeroScreen2.astro";
+import { getCollection } from "astro:content";
+import BlogPostCard from "../../components/BlogPostCard.astro";
+import CTASection from "../../components/CTASection.astro";
+import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
+import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import ContactFormSection from "../../components/Contact/ContactFormSection.astro";
+import Hero75 from "../../components/Hero75.astro";
+
+const blogPosts = await getCollection("blog");
+const sortedPosts = blogPosts.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+// Format date helper
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
+};
+
+const heroData = {
+  image: {
+    src: "/src/assets/facebook/eagle-aircraft-flight-academy-headquarters-with-three-airplanes.jpg",
+    alt: "Eagle Aircraft Flight Academy headquarters with three airplanes",
+  },
+  upperHeader: "Get in Touch",
+  title: "Let’s Start Your <br> Aviation Journey",
+  subTitle:
+    "Have questions about flight training, international enrollment, or partnerships? Our team is ready to help you take the next step with confidence.",
+  cta: [
+    { url: "/about/contact#enroll", text: "Contact Us" },
+    { url: "/discovery-flight", text: "Book a Discovery Flight" },
+  ],
+};
+
+const constBlogData = {
+  upperHeader: "We're Eager To Hear From You",
+  title: "Contact Us",
+  paragraphs: ["Stay touch with us."],
+  upperHeaderTwo: "They Are Here For You",
+  titleTwo: "Our Fleet Aircrafts",
+};
+---
+
+<BaseLayout
+  siteTitle="Contact Us | Eagle Aircraft Aviation Academy"
+  siteDescription="Aviation insights, training tips, and industry news"
+>
+  <Hero75 minHeight="min-h-[70vh]"  data={heroData} />
+
+  <CTAEnrollWithUsMini />
+  <!-- <CTAEnrollWithUs
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    showButton={true}
+    ctaLink="#enroll"
+  /> -->
+
+  <!-- <section class="py-16 px-4 bg-muted-50">
+    <div class="max-w-7xl mx-auto flex flex-col space-y-4">
+      <p class="mx-auto subtitle !text-black">{constBlogData.upperHeader}</p>
+      <h2
+        class="text-4xl md:text-5xl max-w-3xl mx-auto font-bold text-center title"
+      >
+        {constBlogData.title}
+      </h2>
+      {
+        constBlogData.paragraphs.map((paragraph: string) => (
+          <p class="text-xl text-center sans max-w-2xl mx-auto">{paragraph}</p>
+        ))
+      }
+    </div>
+  </section> -->
+
+  <ContactFormSection />
+  <CTASection />
+</BaseLayout>

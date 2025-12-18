@@ -3,13 +3,13 @@ import { PHONE_NUMBER, EMAIL_ADDRESS } from "../data/consts";
 import ImageComp from "./ImageComp.astro";
 
 interface Props {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   image?: {
     src: string;
     alt: string;
   };
-  primaryCTA: {
+  primaryCTA?: {
     text: string;
     href: string;
   };
@@ -19,7 +19,25 @@ interface Props {
   };
 }
 
-const { title, description, primaryCTA, secondaryCTA } = Astro.props;
+const ctaDataPlaceholder = {
+  title: "Ready to Start Your Airline Career?",
+  description:
+    "The aviation industry is waiting for skilled pilots like you. Take the first step towards your dream job with Eagle Aircraft's comprehensive training programs tailored for structured aviators.",
+  image: {
+    src: "/src/assets/sebastian-zzWYD-tc_jI-unsplash.jpg",
+    alt: "Airliner flying above the clouds",
+  },
+  primaryCTA: {
+    text: "Get Started Today",
+    href: "/about/contact",
+  },
+};
+
+const { 
+  title = ctaDataPlaceholder.title,
+  description = ctaDataPlaceholder.description,
+  primaryCTA = ctaDataPlaceholder.primaryCTA,
+  secondaryCTA } = Astro.props;
 ---
 
 <section class="relative py-16 md:py-24 text-white">

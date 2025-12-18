@@ -1,11 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeroScreen from "../../components/HeroScreen2.astro";
 import { getCollection } from "astro:content";
+import BlogPostCard from "../../components/BlogPostCard.astro";
+import CTASection from "../../components/CTASection.astro";
+import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
+import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import Hero75 from "../../components/Hero75.astro";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
   (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
 );
+
+// Separar o primeiro post (featured) dos demais
+const featuredPost = sortedPosts[0];
+const remainingPosts = sortedPosts.slice(1);
 
 // Format date helper
 const formatDate = (date: Date) => {
@@ -15,74 +25,65 @@ const formatDate = (date: Date) => {
     day: "numeric",
   }).format(date);
 };
+
+const heroData = {
+  image: { src: "/src/assets/old website/background.jpg", alt: "Background" },
+  upperHeader: "Latest Insights",
+  title: "Stay Informed <br> About Aviation and Flight Training",
+  subTitle:
+    "Explore articles, tips, and updates from Eagle Aircraft Flight Academy. Learn from our instructors, discover industry news, and enhance your pilot knowledge.",
+  cta: [
+    { url: "/discovery-flight", text: "Book a Discovery Flight"  },
+    { url: "/crew", text: "Meet the Team" },
+  ],
+};
+
+const constBlogData = {
+  upperHeader: "Eagle Air's",
+  title: "Blog",
+  paragraphs: [
+    "Stay informed with the latest aviation insights, training tips, relevant informations, and industry news.",
+  ],
+  upperHeaderTwo: "They Are Here For You",
+  titleTwo: "Our Fleet Aircrafts"
+};
 ---
 
 <BaseLayout
   siteTitle="Blog | Eagle Aircraft Aviation Academy"
   siteDescription="Aviation insights, training tips, and industry news"
 >
-  <section class="py-16 px-4">
+  <Hero75 data={heroData} />
+
+  <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
+  
+  <section class="py-16 px-4 bg-muted-50">
     <div class="max-w-7xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold text-center mb-4">Blog</h1>
-      <p class="text-xl text-center text-muted-600 mb-12 max-w-3xl mx-auto">
-        Stay informed with the latest aviation insights, training tips, and
-        industry news.
-      </p>
-
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {
-          sortedPosts.map((post) => (
-            <article class="bg-muted-50  shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              {post.data.image && (
-                <img
-                  src={post.data.image}
-                  alt={post.data.title}
-                  class="w-full h-48 object-cover"
-                />
-              )}
-              <div class="p-6">
-                <div class="flex items-center gap-3 text-sm text-muted-500 mb-3">
-                  <time datetime={post.data.pubDate.toISOString()}>
-                    {formatDate(post.data.pubDate)}
-                  </time>
-                  <span>•</span>
-                  <span>{post.data.author}</span>
-                </div>
-
-                <h2 class="text-2xl font-bold mb-3">
-                  <a
-                    href={`/blog/${post.slug}`}
-                    class="hover:text-blue-600 transition-colors"
-                  >
-                    {post.data.title}
-                  </a>
-                </h2>
-
-                <p class="text-muted-600 mb-4 line-clamp-3">
-                  {post.data.description}
-                </p>
-
-                {post.data.tags && post.data.tags.length > 0 && (
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    {post.data.tags.map((tag) => (
-                      <span class="bg-blue-50 text-blue-600 text-xs px-3 py-1 rounded-full">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-
-                <a
-                  href={`/blog/${post.slug}`}
-                  class="text-blue-600 hover:text-blue-700 font-semibold"
-                >
-                  Read More →
-                </a>
-              </div>
-            </article>
-          ))
-        }
+        
+        {featuredPost && (
+          <div class="md:col-span-2 lg:col-span-3">
+            <div class="relative">
+              <span class="absolute top-4 left-4 bg-monza-700 text-white px-4 py-1 text-sm font-bold uppercase z-10">
+                Featured
+              </span>
+              <BlogPostCard isHighlight={true} post={featuredPost} featured={true}></BlogPostCard>
+            </div>
+          </div>
+        )}
+        
+        {remainingPosts.map((post) => (
+          <BlogPostCard post={post}></BlogPostCard>
+        ))}
+        
       </div>
     </div>
   </section>
+  
+  <CTAEnrollWithUs
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    showButton={true} 
+  />
+  <CTASection />
 </BaseLayout>

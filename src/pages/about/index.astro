@@ -1,0 +1,47 @@
+---
+import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import AboutUsWithImageAndQuote from "../../components/AboutUsWithImageAndQuote.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CTASection from "../../components/CTASection.astro";
+import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
+import Hero75 from "../../components/Hero75.astro";
+
+const heroData = {
+  image: { src: "/src/assets/old website/background.jpg", alt: "Background" },
+  upperHeader: "Who We Are",
+  title: "Training Pilots with<br> Purpose,Precision,<br> and Safety",
+  subTitle:
+    "Eagle Aircraft Flight Academy is dedicated to developing confident, skilled pilots through professional instruction, structured training, and a strong safety culture—serving both domestic and international students.",
+  cta: [
+    { url: "/discovery-flight", text: "Book a Discovery Flight"  },
+    { url: "/crew", text: "Meet the Team" },
+  ],
+};
+
+const ctaData = {
+  title: "Ready to Start Your Airline Career?",
+  description:
+    "The aviation industry is waiting for skilled pilots like you. Take the first step towards your dream job with Eagle Aircraft's comprehensive training programs tailored for structured aviators.",
+  image: {
+    src: "/src/assets/sebastian-zzWYD-tc_jI-unsplash.jpg",
+    alt: "Airliner flying above the clouds",
+  },
+  primaryCTA: {
+    text: "Get Started Today",
+    href: "/contact",
+  },
+};
+---
+
+<BaseLayout>
+  <Hero75 data={heroData} />
+  <AboutUsWithImageAndQuote />
+  <CTAEnrollWithUs
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    paragraphTextSize="text-md"
+    showButton={false}
+  />
+  <GoogleMapLocation />
+  <CTASection />
+</BaseLayout>
