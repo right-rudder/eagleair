@@ -1,20 +1,20 @@
 ---
 title: "Airline Transport Pilot"
-description: "Reach the highest level of professional aviation with FAA Airline Transport Pilot (ATP) training at Eagle Air Flight Academy. Complete your ATP requirements with expert guidance, simulator-based training, and real-world preparation."
-duration: "1-2 Years"
-cost: "Varies"
+description: "Understand the requirements for the FAA Airline Transport Pilot (ATP) Certificate. Learn about the pathways to professional airline operations and the criteria for ATP eligibility."
+duration: "Informational Only"
+cost: ""
 image: "/src/assets/facebook/pilot-in-commercial-aircraft-cockpit.jpg"
 alt: "Pilot in commercial aircraft cockpit"
 reverse: false
 top: false
 order: 5
 highlights:
-  - "FAA Airline Transport Pilot (ATP) certification pathway"
-  - "Guidance for ATP and Restricted ATP (R-ATP) eligibility"
-  - "FAA-required ATP Certification Training Program (CTP) support"
-  - "Simulator-based ATP preparation"
-  - "Experienced instructors with professional aviation backgrounds"
-  - "Career-focused training aligned with airline standards"
+  - "FAA Airline Transport Pilot (ATP) certification standards"
+  - "Information on ATP and Restricted ATP (R-ATP) eligibility"
+  - "FAA-required ATP Certification Training Program (CTP) overview"
+  - "Guidance on meeting airline industry flight hour minimums"
+  - "Professional instructors available for career mentorship"
+  - "Pathway alignment with commercial airline standards"
 requirements:
   - "Minimum age 23 for ATP (21 for Restricted ATP)"
   - "1,500 total flight hours (1,000–1,250 hours for R-ATP)"
@@ -25,15 +25,15 @@ requirements:
 
 ## Airline Transport Pilot Certificate — The Highest Level of Pilot Certification
 
-The **Airline Transport Pilot (ATP) Certificate** represents the pinnacle of professional aviation. At **Eagle Air Flight Academy**, ATP training is designed for pilots preparing to transition into **airline and advanced commercial flight operations**, meeting the most demanding FAA standards.
+The **Airline Transport Pilot (ATP) Certificate** represents the pinnacle of professional aviation. While **Eagle Aircraft** does not currently offer a formal ATP training program, we provide this information to help our students and alumni understand the requirements for transitioning into **airline and advanced commercial flight operations**.
 
-This program supports both **traditional ATP candidates** and those pursuing a **Restricted ATP (R-ATP)** through approved university pathways such as **Liberty University**.
+This guide supports pilots understanding both **traditional ATP requirements** and those pursuing a **Restricted ATP (R-ATP)** through approved university pathways.
 
 ---
 
 ## What Is an Airline Transport Pilot Certificate?
 
-An ATP certificate authorizes pilots to serve as **Captain (Pilot in Command)** for:
+An ATP certificate is required for pilots to serve as **Captain (Pilot in Command)** for:
 
 - Part 121 airline operations
 - Advanced charter and corporate flight departments
@@ -64,10 +64,10 @@ Pilots may qualify for a **Restricted ATP** with reduced flight-hour requirement
 - **Minimum age:** 21
 - **Flight time requirements:**
   - **1,000–1,250 hours**, depending on degree type
-- **University partnerships supported**, including **Liberty University**
+- **University partnerships supported**, providing a structured route for students
 - Same ATP knowledge and practical testing standards apply
 
-Eagle Air provides guidance to ensure pilots follow the **most efficient and compliant path** toward ATP eligibility.
+Eagle Aircraft provides mentorship to help students determine the **most efficient and compliant path** toward eventual ATP eligibility.
 
 ---
 
@@ -94,84 +94,72 @@ Due to FAA regulations, **all ATP candidates must complete a separate ATP Certif
 - **Simulator-based training**
 - Mandatory completion before taking the ATP knowledge exam
 
-**Eagle Air offers ATP testing support and guidance**, including simulator preparation, and remains available to help candidates navigate this FAA requirement efficiently.
+While not taught on-site, Eagle Aircraft provides guidance on where to find approved CTP providers to navigate this FAA requirement efficiently.
 
 ---
 
-## Why Complete ATP Training with Eagle Air
+## Preparing for the ATP with Eagle Aircraft
 
-### Professional-Level Preparation
+### Professional-Level Foundation
 
-ATP training at Eagle Air emphasizes:
+Even though we do not offer the final ATP rating, our Commercial and CFI programs emphasize:
 
 - Airline-standard operating procedures
 - Crew resource management (CRM)
 - Scenario-based decision-making
 - Professional cockpit discipline
 
-### Structured Guidance Through a Complex Process
+### Hour Building Toward 1,500 Hours
 
-The ATP pathway involves **strict FAA requirements**, medical considerations, and eligibility rules. Eagle Air provides:
+Most pilots reach ATP minimums by instructing. At Eagle Aircraft, our instructors build experience through:
 
-- Clear planning for hour building and certification sequencing
-- Support for ATP vs. R-ATP eligibility decisions
-- Instructor mentorship from pilots familiar with airline environments
-
-### Testing & Training Continuity
-
-Eagle Air continues to support ATP candidates through:
-
-- Knowledge test preparation
-- Simulator readiness
-- Practical test coordination
+- Clear progression and hour-building opportunities
+- Mentor-based environments with senior instructors
+- Consistent flight schedules to meet career goals
 
 ---
 
-## Who This Program Is For
+## Who This Information Is For
 
 ### Airline-Bound Pilots
 
-Pilots preparing for **Part 121 airline careers** who need ATP certification to advance.
+Pilots planning **Part 121 airline careers** who need to understand the sequencing of ATP certification.
 
 ### R-ATP University Graduates
 
-Students completing aviation degrees and transitioning from Commercial to ATP certification.
+Students completing aviation degrees and transitioning from Commercial certificates to the flight hour minimums required for the airlines.
 
 ### Professional Commercial Pilots
 
-Experienced pilots seeking to upgrade credentials for advanced commercial or corporate operations.
+Current pilots seeking to understand the medical and knowledge requirements for upgrading to the ATP.
 
 ---
 
-## Getting Started with ATP Training
+## Understanding the ATP Pathway
 
-### Next Steps
+### Common Milestone Steps
 
-1. **ATP Eligibility Review** — Confirm flight time, certificates, and medical status
-2. **Degree & R-ATP Consultation** — Review eligibility through university programs if applicable
-3. **ATP CTP Planning** — Coordinate required simulator-based training
+1. **ATP Eligibility Review** — Monitor flight time, certificates, and medical status
+2. **Degree & R-ATP Consultation** — Verify eligibility through collegiate programs
+3. **ATP CTP Planning** — Identify a provider for required simulator-based training
 4. **Knowledge Test Preparation**
 5. **Practical Test Scheduling**
 6. **ATP Certification**
 
-Eagle Air instructors are happy to discuss **your specific pathway** and help you plan the most efficient route to ATP certification.
+Our professional instructors are available to discuss **your career pathway** and help you plan your time-building phases.
 
 ---
 
 ## Frequently Asked Questions
 
-**Q: Do I need 1,500 hours before starting ATP training?**  
-**A:** You must meet flight-hour requirements before taking the ATP practical test, but planning and preparation can begin earlier.
+**Q: Does Eagle Aircraft offer an ATP program?** **A:** No. We do not currently offer a dedicated ATP program, but we provide the foundational training (Private through CFI) needed to reach the required hours for the ATP.
 
-**Q: What is the ATP CTP course?**  
-**A:** It is an FAA-mandated training program that includes ground instruction and simulator training, required before taking the ATP knowledge exam.
+**Q: What is the ATP CTP course?** **A:** It is an FAA-mandated training program that includes ground instruction and simulator training, required before taking the ATP knowledge exam.
 
-**Q: Can I qualify for a Restricted ATP?**  
-**A:** Yes, if you complete an approved aviation degree. Hour requirements are reduced to **1,000–1,250 hours**, depending on the program.
+**Q: Can I qualify for a Restricted ATP?** **A:** Yes, if you complete an approved aviation degree. Hour requirements are reduced to **1,000–1,250 hours**, depending on the program.
 
-**Q: Does Eagle Air offer ATP testing?**  
-**A:** Yes. Eagle Air continues to support ATP candidates and offers ATP testing guidance and coordination.
+**Q: Does Eagle Aircraft provide ATP testing?** **A:** No. We provide guidance and career mentorship for pilots as they prepare for external ATP certification.
 
 ---
 
-_Eagle Air Flight Academy — Supporting professional pilots at every stage of their aviation career._
+_Eagle Aircraft — Supporting professional pilots as they advance toward their aviation career goals._

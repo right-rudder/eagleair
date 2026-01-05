@@ -4,7 +4,7 @@ description: "Step-by-step guidance for international students applying for FAA 
 duration: "Approval required before training begins"
 cost: "$130 TSA fee"
 image: "/src/assets/drive/pilot-ifly-looking_ifly_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg"
-alt: "Pilot looking at iFly, Eagle Air Indiana USA Valparaiso IN flight school pilot training"
+alt: "Pilot looking at iFly, Eagle Aircraft Indiana USA Valparaiso IN flight school pilot training"
 reverse: false
 top: true
 order: 6
@@ -32,9 +32,9 @@ This process is mandatory before beginning flight training and applies to studen
 
 ## Overview of the FTSP / AFSP Process
 
-The TSA conducts a background security assessment for international flight students. Once approved, students may begin training, but **training must start promptly**, as approval and visa eligibility are typically valid for **365 days**.
+The TSA conducts a background security assessment for international flight students. At Eagle Aircraft, international training is primarily conducted under our **FAA Part 141 syllabus**, which provides the structured environment required for most international training programs. 
 
-Students are responsible for submitting applications, fees, and fingerprints directly to the TSA, while Eagle Aircraft confirms enrollment as the training provider.
+Once approved, students may begin training, but **training must start promptly**, as approval and visa eligibility are typically valid for **365 days**. Students are responsible for submitting applications, fees, and fingerprints directly to the TSA, while Eagle Aircraft confirms enrollment as the training provider.
 
 ---
 
@@ -76,13 +76,11 @@ Log in to the **Flight School Candidate** portal and complete the application us
 #### Course Details
 
 - **Course Name:**
-
   - Private Pilot
   - Instrument Rating
   - Multi-Engine Rating
 
 - **Course Description:**
-
   - Private Pilot Training
   - Instrument Rating
   - Multi-Engine Rating
@@ -95,7 +93,7 @@ Log in to the **Flight School Candidate** portal and complete the application us
 #### Aircraft Types
 
 - **Cessna 172 / Cessna 150** — Private through Commercial
-- **Rockwell Commander** — Complex aircraft training
+- **Piper Aircraft** — Complex aircraft training
 - **Beechcraft Baron** — Multi-Engine training
 
 #### Training Dates

@@ -138,7 +138,7 @@ export const COURSES = [
 
 export const OTHER_COURSES = [
   "Liberty University Aviation Degree partnership",
-  "Purdue Global and Valparaiso University degree pathways",
+  "Valparaiso University degree pathways",
   "VA benefits and GI Bill flight training support",
   "International student M-1 visa and SEVIS support",
   "DOD SkillBridge and BreakTurn career placement",
