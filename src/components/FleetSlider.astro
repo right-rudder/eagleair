@@ -28,6 +28,8 @@ const {
 // Verifica se slideImages foi passado e tem conteúdo
 const hasSlider = slideImages && slideImages.length > 0;
 const imagesToUse = hasSlider ? slideImages : slideImagesPlaceholder;
+
+
 ---
 
 
@@ -59,7 +61,7 @@ const imagesToUse = hasSlider ? slideImages : slideImagesPlaceholder;
        </div>
     </div>
     <div class="h-full mx-auto lg:mx-0 p-8 order-1 xl:order-2"> 
-      {hasSlider ? (
+      <!-- {hasSlider ? (
         <div class="relative group">
           <div id="slider-container" class="relative h-[500px] w-auto overflow-hidden">
             <ImageWithZoomEffectAndStripe src={imagesToUse[0].src} alt={imagesToUse[0].alt}/>
@@ -103,7 +105,14 @@ const imagesToUse = hasSlider ? slideImages : slideImagesPlaceholder;
             class="h-full"
           />
         </div>
-      )}
+      )} -->
+      <div class="h-[500px] w-auto">
+          <ImageWithZoomEffectAndStripe 
+            src={slideImageSolo} 
+            alt={slideImageSoloAlt}
+            class="h-full"
+          />
+        </div>
     </div>
 
 
@@ -170,5 +179,7 @@ const imagesToUse = hasSlider ? slideImages : slideImagesPlaceholder;
     });
 
     updateSlider();
+
+    console.log(slideImages)
   </script>
 )}
