@@ -82,6 +82,7 @@ export const COMPANY_NAME_CAPS = "EAGLE AIRCRAFT FLIGHT ACADEMY";
 export const COMPANY_NICKNAME = "Eagle Aircraft";
 export const PHONE_NUMBER = "(219) 464-0132";
 export const PHONE_NUMBER_HEADER = "(219) 464-0132";
+export const PHONE_NUMBER_UNFORMATED = "+12194640132";
 export const ADDRESS_LINE_1 = "4001 Murvihill Road";
 export const ADDRESS_LINE_2 = "Valparaiso, IN 46383";
 export const AIRPORT = "Porter County Regional Airport";
