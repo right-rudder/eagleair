@@ -30,6 +30,14 @@ Whether your goal is to fly for personal enjoyment or to continue toward advance
 
 ---
 
+## Training Pathways: Part 141 & Part 61
+
+Eagle Aircraft is primarily a **Part 141 flight school**, which is the required path for our Liberty University, International, and Veteran programs. However, we also offer **Part 61 training** for students who require a more flexible, less rigid schedule. 
+
+Regardless of the pathway you choose, we utilize our structured **Part 141 syllabus** for all students to ensure the highest standards of safety and proficiency.
+
+---
+
 ## What's Included — FAA Part 141 Primary Training
 
 Eagle Aircraft emphasizes **FAA Part 141** training as our primary path, providing a highly structured environment that ensures maximum training efficiency and consistency.
@@ -64,7 +72,7 @@ Eagle Aircraft emphasizes **FAA Part 141** training as our primary path, providi
 
 ### Structured Professional Instruction
 
-As a Part 141 flight school, Eagle Aircraft focuses on **standardized training**. Lessons follow a proven syllabus, ensuring strong comprehension and skill development through regular **Phase Checks**.
+As a Part 141 flight school, Eagle Aircraft focuses on **standardized training**. Lessons follow a proven syllabus, ensuring strong comprehension and skill development through regular **Phase Checks**. To maintain the highest level of quality, these critical evaluations are conducted exclusively by our **senior flight instructors**.
 
 ### Experienced, Safety-Oriented Instructors
 
@@ -90,7 +98,7 @@ Under Part 141, your training is divided into logical phases, each concluding wi
 - Basic maneuvers: climbs, turns, descents
 - Airport operations and radio communications
 - Takeoffs, landings, and traffic patterns
-- **Milestone:** First Phase Check and first solo flight
+- **Milestone:** First Phase Check (Senior Instructor) and first solo flight
 
 ---
 
@@ -110,7 +118,7 @@ Under Part 141, your training is divided into logical phases, each concluding wi
 - Weather analysis and risk management
 - Practical test standards (ACS) review
 - Oral exam preparation and mock checkrides
-- **Milestone:** Final Phase Check and FAA knowledge exam completion
+- **Milestone:** Final Phase Check (Senior Instructor) and FAA knowledge exam completion
 
 ---
 
@@ -127,7 +135,7 @@ Under Part 141, your training is divided into logical phases, each concluding wi
 
 **Q: How long does it take to earn a Private Pilot Certificate?**
 
-**A:** The typical timeline is **5–12 months**. While 3 months is possible in rare exceptions, our structured program ensures you have the time to master the material.
+**A:** The typical timeline is **5–12 months**. While 3 months is possible in rare exceptions, our structured program ensures you have the time to master the material while balancing work or school commitments.
 
 **Q: How much does the program cost?**
 
@@ -135,7 +143,7 @@ Under Part 141, your training is divided into logical phases, each concluding wi
 
 **Q: What is the difference between Part 61 and Part 141?**
 
-**A:** Part 141 training follows a more rigid, FAA-approved syllabus and oversight structure, which often allows for lower flight hour minimums compared to Part 61.
+**A:** Part 141 training follows a more rigid, FAA-approved syllabus and oversight structure, which often allows for lower flight hour minimums. Part 61 is more flexible but requires more total flight hours. At Eagle Aircraft, both paths use the same high-quality syllabus.
 
 **Q: What medical certificate is required?**
 
