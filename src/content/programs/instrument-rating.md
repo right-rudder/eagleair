@@ -1,6 +1,6 @@
 ---
 title: "Instrument Rating"
-description: "Master IFR flight and unlock all-weather flying capabilities. Professional instrument training with modern avionics and experienced CFII instructors. Fly confidently using a structured Part 141 syllabus."
+description: "Master IFR flight and unlock all-weather flying capabilities. Professional instrument training with modern avionics and experienced CFII instructors. Fly confidently using a structured Part 141 syllabus.<br><span class=\"text-sm italic\">*Contact us for your personalized pricing estimate</span>"
 order: 2
 image: "/src/assets/drive/cockpit-pilot-flying_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg"
 alt: "Cockpit view of pilot flying, Eagle Aircraft flight school pilot training"
@@ -17,7 +17,7 @@ programIntroduction:
     - highlightName: "Duration"
       highlightValue: "3–5 months"
     - highlightName: "Cost"
-      highlightValue: "~$12,000"
+      highlightValue: "$10,500 – $14,500*"
   programHighlights:
     benefits:
       - "Primary training path via FAA Part 141 syllabus"

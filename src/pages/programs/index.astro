@@ -76,9 +76,7 @@ const heroData = {
               {program.data.title}
             </h3>
 
-            <p class="text-muted-600 pb-12 mb-6 leading-relaxed flex-1">
-              {program.data.description}
-            </p>
+            <p class="text-muted-600 pb-12 mb-6 leading-relaxed" set:html={program.data.description}></p>
 
             {benefits.length > 0 && (
               <div class="mb-6">
