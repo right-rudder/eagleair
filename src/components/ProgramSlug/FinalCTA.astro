@@ -1,4 +1,6 @@
 ---
+import ImageComp from '../ImageComp.astro';
+
 interface Props {
   data: {
     mainImage?: string;
@@ -19,8 +21,12 @@ const { data } = Astro.props;
 <section class="relative py-24 px-4 overflow-hidden">
   <div class="absolute inset-0 z-0">
     {data.mainImage && (
-      <img src={data.mainImage} alt="" class={`w-full h-full object-cover ${data.imagePosition || ""}`} />
-    )}
+      <ImageComp 
+        src={data.mainImage} 
+        alt={data.title || ""} 
+        class={`w-full h-full object-cover ${data.imagePosition || ""}`} 
+      />
+    )}
     <div class="absolute inset-0 bg-gradient-to-r from-madison-950/95 to-madison-900/80"></div>
   </div>
 
