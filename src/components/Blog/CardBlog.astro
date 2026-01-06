@@ -1,0 +1,86 @@
+---
+// Import necessary components and utilities
+// import AvatarBlog from "../ui/AvatarBlog.astro";
+import { Image } from "astro:assets";
+import { formatDate } from "./utils";
+import type { CollectionEntry } from "astro:content";
+
+const { blogEntry, smallCard = false } = Astro.props;
+
+interface Props {
+  blogEntry: CollectionEntry<"blog">;
+  smallCard?: boolean;
+}
+---
+
+<!-- The following anchor tag is the main container for the card.
+     It's a link to the blog post detailed page.
+     The data-astro-prefetch is an Astro specific Dynamic HTML feature,
+     which automatically prefetches the linked page to speed up navigation. -->
+<a
+  class={smallCard
+    ? "group block rounded-xl overflow-hidden outline-hidden border-gray-200 border-2 flex-1"
+    : "group block rounded-xl overflow-hidden outline-hidden shadow-lg shadow-gray-400 transition duration-300 hover:scale-105 focus-visible:scale-105"}
+  href={`/blog/${blogEntry.id}/`}
+  data-astro-prefetch
+>
+  <!-- The container for the blog post's cover image. Uses astro:assets' Image for image source -->
+  {
+    !smallCard && (
+      <div class="relative h-[350px] w-full shrink-0 overflow-hidden">
+        <Image
+          class="size-full object-cover"
+          src={blogEntry.data.cardImage}
+          alt={blogEntry.data.cardImageAlt}
+          draggable={"false"}
+          loading={"eager"}
+          format={"avif"}
+        />
+      </div>
+    )
+  }
+
+  <div class="p-4 sm:p-6">
+    <!-- The container for the blog author's avatar and associated metadata (author name and publication date) -->
+    <div>
+      <div class="flex h-full flex-col mb-4 sm:mb-6">
+        <div class="flex items-center">
+          <div class="shrink-0">
+            <Image
+              class="size-[46px] rounded-full border-2 border-gray-900"
+              src={blogEntry.data.authorImage}
+              alt={blogEntry.data.authorImageAlt}
+              draggable={"false"}
+              format={"avif"}
+            />
+          </div>
+
+          <div class="ms-2.5 sm:ms-4">
+            <h4 class="font-bold text-[#0b326b]">
+              {blogEntry.data.author}
+            </h4>
+            <p class="text-xs text-[#0b326b]">
+              {formatDate(blogEntry.data.pubDate)}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The container for the blog post's title and description -->
+    <div>
+      <div class="flex h-full flex-col">
+        <h3
+          class={smallCard
+            ? "text-balance text-lg font-bold text-[#0b326b] transition-colors duration-300 group-hover:text-orange-400 sm:text-xl"
+            : "text-balance text-lg font-bold text-[#0b326b] sm:text-3xl"}
+        >
+          {blogEntry.data.title}
+        </h3>
+        <p class="mt-2 text-pretty text-[#0b326b]">
+          {blogEntry.data.description}
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
