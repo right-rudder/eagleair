@@ -41,6 +41,11 @@ const heroData = {
       const keyDetails = intro?.highlights || [];
       const duration = keyDetails.find(h => h.highlightName.toLowerCase().includes('duration'))?.highlightValue;
       const cost = keyDetails.find(h => h.highlightName.toLowerCase().includes('cost') || h.highlightName.toLowerCase().includes('fee'))?.highlightValue;
+      const costHighlight = keyDetails.find(h => 
+        h.highlightName.toLowerCase().includes('cost') || 
+        h.highlightName.toLowerCase().includes('fee')
+      );
+      const pricingObservation = costHighlight?.pricingObservation;
       const benefits = intro?.programHighlights?.benefits || [];
       const requirements = intro?.programHighlights?.requirements || [];
 
@@ -76,7 +81,16 @@ const heroData = {
               {program.data.title}
             </h3>
 
-            <p class="text-muted-600 pb-12 mb-6 leading-relaxed" set:html={program.data.description}></p>
+            <p class="text-muted-600 pb-12 leading-relaxed">
+              {program.data.description}
+              <br>
+                    {
+                    pricingObservation && 
+                      <span class="text-sm italic">{pricingObservation}</span>
+                    
+                  }
+              <br><br>
+            </p> 
 
             {benefits.length > 0 && (
               <div class="mb-6">

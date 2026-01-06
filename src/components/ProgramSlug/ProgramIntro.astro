@@ -4,7 +4,7 @@ interface Props {
     title?: string;
     upperheader?: string;
     descriptionParagraphs?: string[];
-    highlights?: { highlightName: string; highlightValue: string }[];
+    highlights?: { highlightName: string; highlightValue: string, pricingObservation?: string; }[];
     programHighlights?: {
       benefits?: string[];
       requirements?: string[];
@@ -13,6 +13,14 @@ interface Props {
 }
 
 const { data } = Astro.props;
+
+const costHighlight = data.highlights?.find(h =>
+  h.highlightName.toLowerCase().includes("cost") || 
+  h.highlightName.toLowerCase().includes("fee")
+);
+
+const cost = costHighlight?.highlightValue;
+const pricingObservation = costHighlight?.pricingObservation;
 ---
 
 <section class="py-12 md:py-16">
@@ -102,9 +110,15 @@ const { data } = Astro.props;
                 </span>
                 <span class="!text-base font-title font-bold text-madison-900">
                   {item.highlightValue}
+                  
                 </span>
               </div>
             ))}
+                    {
+                      pricingObservation && 
+                        <span class="font-sans !text-xs !m-0 text-gray-700 italic">{pricingObservation}</span>
+                      
+                    }
           </div>
         </div>
       )}

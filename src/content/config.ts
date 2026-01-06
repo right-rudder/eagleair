@@ -91,7 +91,8 @@ const programsCollection = defineCollection({
       descriptionParagraphs: z.array(z.string()).optional(),
       highlights: z.array(z.object({
         highlightName: z.string(),
-        highlightValue: z.string()
+        highlightValue: z.string(),
+        pricingObservation: z.string().optional()
       })).optional(),
       programHighlights: z.object({
         benefits: z.array(z.string()).optional(),

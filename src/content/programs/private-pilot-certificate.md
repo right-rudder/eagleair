@@ -1,6 +1,6 @@
 ---
 title: "Private Pilot Certificate"
-description: "Begin your aviation journey with FAA Private Pilot training at Eagle Aircraft.<br><span class=\"text-sm italic\">*Contact us for your personalized pricing estimate</span>"
+description: "Begin your aviation journey with FAA Private Pilot training at Eagle Aircraft."
 order: 1
 image: "/src/assets/facebook/student-instructor-front-of-aircraft.jpg"
 alt: "Student and instructor in front of aircraft"
@@ -17,6 +17,7 @@ programIntroduction:
       highlightValue: "5–12 months"
     - highlightName: "Cost"
       highlightValue: "$20,000–$25,000*"
+      pricingObservation: "*Contact us for your personalized pricing estimate"
   programHighlights:
     benefits:
       - "Primary training path via FAA Part 141"

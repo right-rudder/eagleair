@@ -1,6 +1,6 @@
 ---
 title: "Certified Flight Instructor (CFI)"
-description: "Become a professional flight instructor and build hours while earning income. Comprehensive CFI training with right-seat proficiency and teaching techniques. Meet ATP minimums through professional instruction.<br><span class=\"text-sm italic\">*Contact us for your personalized pricing estimate</span>"
+description: "Become a professional flight instructor and build hours while earning income. Comprehensive CFI training with right-seat proficiency and teaching techniques. Meet ATP minimums through professional instruction."
 order: 4
 image: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate-and-instructor.jpg"
 alt: "N4397R Cessna 172M student with certificate and instructor"
@@ -18,6 +18,7 @@ programIntroduction:
       highlightValue: "4-8 weeks"
     - highlightName: "Cost"
       highlightValue: "$8,000 – $11,000*"
+      pricingObservation: "*Contact us for your personalized pricing estimate"
   programHighlights:
     benefits:
       - "Primary Part 61 training: 10-15 flight hours, 40+ ground hours"
