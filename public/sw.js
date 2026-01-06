@@ -1,4 +1,4 @@
-// Service Worker for EagleAir
+// Service Worker for Eagle Aircraft
 const CACHE_VERSION = "v1";
 const CACHE_NAME = `eagleair-${CACHE_VERSION}`;
 

@@ -1,0 +1,247 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { PHONE_NUMBER } from "../data/consts";
+import Hero75 from "../components/Hero75.astro";
+
+const heroData = {
+  image: {
+    src: "/src/assets/drive/fleet-two-cesnas-team_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+    alt: "Fleet two Cessnas team, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+  },
+  title: "Terms of Service",
+  subTitle:
+    "Please read these terms carefully before using our services or enrolling in our flight training programs.",
+};
+
+const lastUpdated = "January 06, 2026";
+---
+
+<BaseLayout
+  siteTitle="Terms of Service | Eagle Aircraft"
+  siteDescription="Eagle Aircraft's terms of service. Review the terms and conditions for using our services and enrolling in our flight training programs."
+>
+  <Hero75 data={heroData} />
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-5 md:px-8 lg:px-12">
+      <div class="mb-8">
+        <p class="text-sm text-gray-600">
+          <strong>Last Updated:</strong>
+          {lastUpdated}
+        </p>
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        <!-- Introduction -->
+        <div class="mb-12">
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Welcome to Eagle Aircraft. These Terms of Service ("Terms") govern
+            your use of our website, facilities, aircraft, flight instruction,
+            and training programs. By accessing our website or enrolling in our
+            programs, you agree to be bound by these Terms.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mt-4">
+            If you do not agree to these Terms, you may not use our services or
+            participate in our flight training programs.
+          </p>
+        </div>
+
+        <!-- Acceptance of Terms -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            Acceptance of Terms
+          </h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            By using our website or enrolling in training, you acknowledge that
+            you have read, understood, and agree to be bound by these Terms and
+            our Privacy Policy. These Terms form a legally binding agreement
+            between you and Eagle Aircraft.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Eagle Aircraft reserves the right to modify these Terms at any time.
+            Continued use of our services after changes are posted constitutes
+            acceptance of the revised Terms.
+          </p>
+        </div>
+
+        <!-- Eligibility -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            Eligibility Requirements
+          </h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            To participate in flight training with Eagle Aircraft, you must:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Meet FAA age requirements for the applicable certificate</li>
+            <li>
+              Be able to read, speak, write, and understand the English language
+            </li>
+            <li>
+              Hold a valid FAA medical certificate (or be eligible to obtain
+              one)
+            </li>
+            <li>Provide valid government-issued identification</li>
+            <li>Meet TSA / AFSP requirements if you are a non-U.S. citizen</li>
+            <li>Comply with all FAA regulations and safety standards</li>
+          </ul>
+        </div>
+
+        <!-- Enrollment -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            Enrollment and Registration
+          </h2>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">
+            Application Process
+          </h3>
+          <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Completion of an enrollment or training request</li>
+            <li>Submission of required documentation</li>
+            <li>Payment of applicable fees or deposits</li>
+            <li>Acceptance by Eagle Aircraft</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">
+            Accurate Information
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            You agree to provide accurate and complete information. Providing
+            false or misleading information may result in suspension or
+            termination of training without refund.
+          </p>
+        </div>
+
+        <!-- Payment -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Payment Terms</h2>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">
+            Tuition and Fees
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Students are responsible for all training costs, including aircraft
+            rental, instructor time, fuel surcharges, materials, and applicable
+            taxes. Payment must be kept current to continue training.
+          </p>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">
+            Late Payments
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Accounts with outstanding balances may result in suspended training
+            privileges until balances are paid in full.
+          </p>
+        </div>
+
+        <!-- Cancellations -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            Cancellations and Refunds
+          </h2>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">
+            Lesson Cancellations
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            A minimum of 24 hours’ notice is required to cancel or reschedule a
+            lesson. Late cancellations may be charged the full scheduled rate.
+          </p>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">
+            Withdrawal
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Refunds for unused prepaid balances may be issued at Eagle
+            Aircraft’s discretion, less any applicable administrative fees.
+          </p>
+        </div>
+
+        <!-- Safety -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            Safety and Risk Acknowledgment
+          </h2>
+          <p class="text-gray-700 leading-relaxed">
+            Flight training involves inherent risks. By enrolling, you
+            acknowledge and accept these risks and agree to follow all safety
+            instructions, FAA regulations, and instructor guidance.
+          </p>
+        </div>
+
+        <!-- Liability -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            Limitation of Liability
+          </h2>
+          <p class="text-gray-700 leading-relaxed">
+            To the maximum extent permitted by law, Eagle Aircraft shall not be
+            liable for indirect, incidental, or consequential damages arising
+            from participation in flight training or use of our services.
+          </p>
+        </div>
+
+        <!-- Governing Law -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            Governing Law and Jurisdiction
+          </h2>
+          <p class="text-gray-700 leading-relaxed">
+            These Terms shall be governed by the laws of the State of Indiana.
+            Any disputes shall be resolved exclusively in the state or federal
+            courts located in Indiana.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
+
+          <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+            <p class="text-gray-900 font-semibold mb-3">Eagle Aircraft</p>
+            <div class="space-y-2 text-gray-700">
+              <p>
+                <strong>Phone:</strong>
+                <a
+                  href={`tel:${PHONE_NUMBER}`}
+                  class="text-monza-600 hover:text-monza-700"
+                >
+                  {PHONE_NUMBER}
+                </a>
+              </p>
+              <p>
+                <strong>Email:</strong>
+                <a
+                  href="mailto:eaglevpz@gmail.com"
+                  class="text-monza-600 hover:text-monza-700"
+                >
+                  eaglevpz@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acknowledgment -->
+        <div
+          class="bg-monza-50 border-l-4 border-monza-600 p-6 rounded-r-xl mt-12"
+        >
+          <p class="text-gray-900 font-semibold mb-2">Acknowledgment</p>
+          <p class="text-gray-700">
+            By using our services or enrolling in flight training, you
+            acknowledge that you have read, understood, and agree to these Terms
+            of Service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .prose h2 {
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+  }
+</style>

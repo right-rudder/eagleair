@@ -82,6 +82,7 @@ export const COMPANY_NAME_CAPS = "EAGLE AIRCRAFT FLIGHT ACADEMY";
 export const COMPANY_NICKNAME = "Eagle Aircraft";
 export const PHONE_NUMBER = "(219) 464-0132";
 export const PHONE_NUMBER_HEADER = "(219) 464-0132";
+export const PHONE_NUMBER_UNFORMATED = "+12194640132";
 export const ADDRESS_LINE_1 = "4001 Murvihill Road";
 export const ADDRESS_LINE_2 = "Valparaiso, IN 46383";
 export const AIRPORT = "Porter County Regional Airport";
@@ -91,7 +92,7 @@ export const ADDRESS_CITY = "Valparaiso";
 export const ADDRESS_STATE = "Indiana";
 export const ADDRESS_ZIP = "46383";
 export const GMAPS = "https://maps.app.goo.gl/k8sGUpJ1DJApg1HJA";
-export const EMAIL_ADDRESS = "eaglevpz@gmail.com";
+export const EMAIL_ADDRESS = "info@mail.eagleaircraftflight.com";
 export const FACEBOOK_URL = "https://www.facebook.com/EagleAircraft";
 export const INSTAGRAM_URL = "https://www.instagram.com/eaglevpz/";
 export const LINKEDIN_URL =
@@ -138,7 +139,7 @@ export const COURSES = [
 
 export const OTHER_COURSES = [
   "Liberty University Aviation Degree partnership",
-  "Purdue Global and Valparaiso University degree pathways",
+  "Valparaiso University degree pathways",
   "VA benefits and GI Bill flight training support",
   "International student M-1 visa and SEVIS support",
   "DOD SkillBridge and BreakTurn career placement",

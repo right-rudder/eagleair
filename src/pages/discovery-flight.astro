@@ -1,19 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeroScreen from "../components/HeroScreen2.astro";
 import { getCollection } from "astro:content";
-import BlogPostCard from "../components/BlogPostCard.astro";
 import CTASection from "../components/CTASection.astro";
-import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
-import CTAEnrollWithUs from "../components/CTAEnrollWithUs.astro";
-import ContactFormSection from "../components/Contact/ContactFormSection.astro";
-import SectionDiscoveryFlight from "../components/Form/SectionDiscoveryFlight.astro";
 import Hero75 from "../components/Hero75.astro";
 import CardSwiper from "../components/CardSwiper/CardSwiper.astro";
-import { COMPANY_NICKNAME } from "../data/consts";
-import CTAMeetOurFleet from "../components/CTAMeetOurFleet.astro";
 import DiscoveryFlightOffering from "../components/DiscoveryFlightOffering.astro";
 import DiscoveryFlightPostOffering from "../components/DiscoveryFlightPostOffering.astro";
+import DiscoveryFlightFormSection from "../components/DiscoveryFlight/DiscoveryFlightFormSection.astro";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -66,7 +59,7 @@ const swiper = {
       description: "",
       image: {
         src: "/src/assets/drive/sky-plane-wing-clouds-sun_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
-        alt: "Sky plane wing view with clouds and sun, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+        alt: "Sky plane wing view with clouds and sun, Eagle Aircraft Indiana USA Valparaiso IN flight school pilot training",
       },
     },
     {
@@ -82,7 +75,7 @@ const swiper = {
       description: "",
       image: {
         src: "/src/assets/drive/sky-plane-mountains-clouds_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
-        alt: "Sky plane flying over mountains and clouds, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+        alt: "Sky plane flying over mountains and clouds, Eagle Aircraft Indiana USA Valparaiso IN flight school pilot training",
       },
     },
     {
@@ -98,7 +91,7 @@ const swiper = {
       description: "",
       image: {
         src: "/src/assets/drive/sky-sunset-plane-wing-2_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
-        alt: "Sky sunset plane wing view 2, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+        alt: "Sky sunset plane wing view 2, Eagle Aircraft Indiana USA Valparaiso IN flight school pilot training",
       },
     },
   ],
@@ -111,7 +104,7 @@ const swiper = {
 >
   <Hero75 data={heroData} />
   <DiscoveryFlightOffering />
-  <SectionDiscoveryFlight />
+  <DiscoveryFlightFormSection/>
   <DiscoveryFlightPostOffering/>
   <div class="py-6"></div>
   <CardSwiper swiperData={swiper} items={swiper.items} />

@@ -1,0 +1,222 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ImageComp from "../components/ImageComp.astro";
+
+import { PHONE_NUMBER, PHONE_NUMBER_UNFORMATED } from "../data/consts";
+const example = {
+  siteTitle: "500 - Server Error | Eagle Aircraft Flight Academy",
+  siteDescription:
+    "Something went wrong on our end. The Eagle Aircraft Flight Academy server encountered an unexpected issue. Please try again or return to the homepage.",
+  image: {
+    src: "/src/assets/drive/sky-sunset-plane-wing_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+    alt: "Sky sunset plane wing view, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+  },
+  title: "500",
+  subttitle: "Internal Server Error",
+  description:
+    "We’ve encountered unexpected turbulence on our end. Our systems are temporarily unavailable, but our team is already working to get everything back on course. Please try again shortly or navigate back to a safe destination.",
+  links: {
+    title: "Helpful Links",
+    items: [
+      { name: "About Eagle Aircraft", href: "/about" },
+      { name: "Our Fleet", href: "/aircraft" },
+      {
+        name: "Private Pilot Certificate",
+        href: "/programs/private-pilot-certificate",
+      },
+      { name: `Call ${PHONE_NUMBER}`, href: `tel:${PHONE_NUMBER_UNFORMATED}` },
+    ],
+  },
+  needHelp: {
+    title: "Need Immediate Assistance?",
+    description:
+      "If this issue persists or you need help right away, our Eagle Aircraft team is happy to assist you.",
+    phone: PHONE_NUMBER_UNFORMATED,
+    link: {
+      href: "/about/contact",
+      title: "Contact Us",
+    },
+  },
+};
+
+const { content = example } = Astro.props;
+---
+
+<BaseLayout
+  siteTitle={content.siteTitle}
+  siteDescription={content.siteDescription}
+>
+  <section
+    class="relative min-h-screen flex items-center justify-center bg-linear-to-b from-white to-neutral-200 text-gray-900 py-20 lg:py-44 px-5"
+  >
+    <div class="absolute inset-0 opacity-30">
+      <ImageComp
+        src={content.image.src}
+        alt={content.image.alt}
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="relative max-w-4xl mx-auto text-center">
+      <!-- 404 Display -->
+      <div class="mb-8 py-6">
+        <h1
+          class="text-9xl md:text-[12rem] font-bold text-madison-950 leading-none mb-4"
+        >
+          {content.title}
+        </h1>
+        <div class="flex items-center justify-center gap-3 mb-6">
+          <div class="h-px w-16 bg-monza-600"></div>
+          <svg
+            class="w-8 h-8 text-monza-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+          </svg>
+          <div class="h-px w-16 bg-monza-600"></div>
+        </div>
+        <!-- Error Message -->
+        <h2
+          class="text-3xl md:text-5xl text-monza-600 font-bold mb-6 leading-tight"
+        >
+          {content.subttitle}
+        </h2>
+      </div>
+
+      <p
+        class="text-xl md:text-2xl text-madison-950 mb-4 leading-relaxed max-w-2xl mx-auto"
+      >
+        {content.description}
+      </p>
+
+      <!-- Navigation Options -->
+      <div class="grid md:grid-cols-2 gap-6 mb-12 max-w-3xl mx-auto">
+        <a
+          href="/"
+          class="group bg-monza-600 hover:bg-madison-950 text-white px-8 py-5 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105"
+        >
+          <div class="flex items-center justify-center gap-3">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              ></path>
+            </svg>
+            <span>Return to Home</span>
+          </div>
+        </a>
+
+        <a
+          href="/programs"
+          class="group bg-white hover:bg-gray-100 text-madison-950 px-8 py-5 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:scale-105"
+        >
+          <div class="flex items-center justify-center gap-3">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              ></path>
+            </svg>
+            <span>View Programs</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Quick Links -->
+      {
+        content.links && (
+          <div class="border-t border-gray-700 pt-10">
+            <p class="text-madison-950 text-xl mb-6 font-semibold uppercase tracking-wider">
+              {content.links.title}
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+              {content.links.items.map((item: any, index: number) => (
+                <>
+                  <a
+                    href={item.href}
+                    class="text-madison-950 hover:text-madison-900 transition-colors font-medium"
+                  >
+                    {item.name}
+                  </a>
+                  {index < content.links.items.length - 1 && (
+                    <span class="text-gray-600">|</span>
+                  )}
+                </>
+              ))}
+            </div>
+          </div>
+        )
+      }
+
+      <!-- Need Help -->
+      <!-- {
+        content.needHelp && (
+          <div class="mt-12 bg-monza-950/50 backdrop-blur-sm border border-monza-800 rounded-xl p-8 max-w-2xl mx-auto">
+            <h3 class="text-xl font-bold mb-3">{content.needHelp.title}</h3>
+            <p class="text-gray-300 mb-6">{content.needHelp.description}</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href={`tel:${PHONE_NUMBER_UNFORMATED}`}
+                class="inline-flex items-center justify-center bg-monza-600 hover:bg-monza-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              >
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                Call {PHONE_NUMBER}
+              </a>
+              <a
+                href={content.needHelp.link.href}
+                class="inline-flex items-center justify-center bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              >
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                {content.needHelp.link.title}
+              </a>
+            </div>
+          </div>
+        )
+      } -->
+    </div>
+  </section>
+</BaseLayout>

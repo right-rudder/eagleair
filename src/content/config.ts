@@ -13,22 +13,22 @@ const crewCollection = defineCollection({
   }),
 });
 
-const programsCollection = defineCollection({
-  type: "content",
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    duration: z.string(),
-    cost: z.string().optional(),
-    image: z.string(),
-    alt: z.string().optional(),
-    reverse: z.boolean().optional(),
-    top: z.boolean().optional(),
-    order: z.number().optional(),
-    highlights: z.array(z.string()).optional(),
-    requirements: z.array(z.string()).optional(),
-  }),
-});
+// const programsCollection = defineCollection({
+//   type: "content",
+//   schema: z.object({
+//     title: z.string(),
+//     description: z.string(),
+//     duration: z.string(),
+//     cost: z.string().optional(),
+//     image: z.string(),
+//     alt: z.string().optional(),
+//     reverse: z.boolean().optional(),
+//     top: z.boolean().optional(),
+//     order: z.number().optional(),
+//     highlights: z.array(z.string()).optional(),
+//     requirements: z.array(z.string()).optional(),
+//   }),
+// });
 
 const aircraftCollection = defineCollection({
   type: "content",
@@ -71,6 +71,104 @@ const blogCollection = defineCollection({
     featured: z.boolean().optional(),
   }),
 });
+
+// new one
+const programsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    // Standard metadata
+    title: z.string().optional(),
+    description: z.string().optional(),
+    order: z.number().optional(),
+    image: z.string().optional(),
+    alt: z.string().optional(),
+    reverse: z.boolean().optional(),
+    top: z.boolean().optional(),
+    // 1. Introduction Section
+    programIntroduction: z.object({
+      title: z.string().optional(),
+      upperheader: z.string().optional(),
+      descriptionParagraphs: z.array(z.string()).optional(),
+      highlights: z.array(z.object({
+        highlightName: z.string(),
+        highlightValue: z.string(),
+        pricingObservation: z.string().optional()
+      })).optional(),
+      programHighlights: z.object({
+        benefits: z.array(z.string()).optional(),
+        requirements: z.array(z.string()).optional()
+      }).optional()
+    }).optional(),
+
+    // 2. First CTA Section
+    firstCTA: z.object({
+      mainImage: z.string().optional(),
+      title: z.string().optional(),
+      upperheader: z.string().optional(),
+      descriptionParagraphs: z.array(z.string()).optional(),
+    }).optional(),
+
+    // 3. What is Included Section
+    whatIsIncluded: z.object({
+      mainImage: z.string().optional(),
+      title: z.string().optional(),
+      upperheader: z.string().optional(),
+      descriptionParagraphs: z.array(z.string()).optional(),
+      bulletPointLists: z.array(z.object({
+        title: z.string(),
+        items: z.array(z.string())
+      })).optional()
+    }).optional(),
+
+    // 4. Why Us Section
+    whyUs: z.object({
+      title: z.string().optional(),
+      upperheader: z.string().optional(),
+      topicTitle: z.string().optional(),
+      topicDescriptionParagraphs: z.array(z.string()).optional(),
+      bulletTitle: z.string().optional(),
+      bulletDescriptionParagraphs: z.array(z.string()).optional(),
+      bulletPoints: z.array(z.string()).optional(),
+      closingTitle: z.string().optional(),
+      closingDescriptionParagraphs: z.array(z.string()).optional(),
+    }).optional(),
+
+    // 5. Training Progression Section
+    trainingProgression: z.object({
+      title: z.string().optional(),
+      upperheader: z.string().optional(),
+      descriptionParagraphs: z.array(z.string()).optional(),
+      phases: z.array(z.object({
+        phaseTitle: z.string(),
+        phaseBulletPoints: z.array(z.string())
+      })).optional(),
+      outcome: z.string().optional()
+    }).optional(),
+
+    // 6. FAQ Section
+    faq: z.object({
+      title: z.string().optional(),
+      upperheader: z.string().optional(),
+      qnas: z.array(z.object({
+        question: z.string(),
+        answer: z.string()
+      })).optional()
+    }).optional(),
+
+    // 7. Final CTA Section
+    finalCTA: z.object({
+      mainImage: z.string().optional(),
+      title: z.string().optional(),
+      upperheader: z.string().optional(),
+      descriptionParagraphs: z.array(z.string()).optional(),
+      mainButtonText: z.string().optional(),
+      mainButtonLink: z.string().optional(),
+      secondButtonText: z.string().optional(),
+      secondButtonLink: z.string().optional(),
+    }).optional(),
+  }),
+});
+
 
 export const collections = {
   crew: crewCollection,

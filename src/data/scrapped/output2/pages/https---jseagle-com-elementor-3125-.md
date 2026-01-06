@@ -11,8 +11,6 @@ LIBERTY UNIVERSITY AVIATION DEGREE
 INTERNATIONAL STUDENTS
 DOD SKILLBRIDGE
 CONTACT US
-Purdue Global Degree
-Purdue Global Degree Program
 
 Want to earn a degree through one of Indiana’s top aviation schools? Eagle Aircraft Flight Academy has partnered with Purdue University Global to offer the Purdue education while flight training here at Eagle. Give us a call at 219-464-0132 or email us at eaglevpz@gmail.com to learn more about how you can sign up! 
 

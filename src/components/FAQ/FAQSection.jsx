@@ -55,7 +55,7 @@ export const trainingFAQs = [
   },
   {
     title: "What aircraft types are used in training?",
-    content: "Students train in Cessna 150 and 172 for Private through Commercial, Rockwell Commander for complex training, and Beechcraft Baron for Multi-Engine training."
+    content: "Students train in Cessna 150 and 172 for Private through Commercial, Piper aircraft for complex training, and Beechcraft Baron for Multi-Engine training."
   },
   {
     title: "Do you offer simulator training?",
@@ -63,7 +63,7 @@ export const trainingFAQs = [
   },
   {
     title: "How long does each program typically take?",
-    content: "Program duration varies: Private Pilot training can be completed quickly with our accelerated Part 141 program, Instrument Rating requires approximately 35 hours of instruction, and Commercial or Multi-Engine programs follow FAA hour requirements."
+    content: "Program duration varies: Private Pilot training generally takes 5-12 months depending on student availability, Instrument Rating requires approximately 3-5 months, and Commercial or Multi-Engine programs follow FAA hour requirements."
   },
   {
     title: "Are there prerequisites for advanced ratings?",
@@ -191,7 +191,7 @@ export default function EnhancedFAQs({
 
         <p className="text-center mt-12 text-gray-600 pb-20">
           If you have any additional questions please send us an email to{" "}
-          <a href="/contact" className="text-madison-700 font-bold underline">
+          <a href="/about/contact" className="text-madison-700 font-bold underline">
             Contact Us
           </a>
         </p>

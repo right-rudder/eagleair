@@ -1,14 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeroScreen from "../components/HeroScreen2.astro";
 import { getCollection } from "astro:content";
-import BlogPostCard from "../components/BlogPostCard.astro";
 import CTASection from "../components/CTASection.astro";
 import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
-import CTAEnrollWithUs from "../components/CTAEnrollWithUs.astro";
-import ContactFormSection from "../components/Contact/ContactFormSection.astro";
 import Hero75 from "../components/Hero75.astro";
-import EnrollmentFormSection from "../components/EnrollmentFormSection.astro";
+import EnrollmentFormSection from "../components/Enrollment/EnrollmentFormSection.astro";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(

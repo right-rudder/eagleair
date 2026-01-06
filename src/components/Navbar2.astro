@@ -43,11 +43,11 @@ export const menu: MenuItem[] = [
     label: "About",
     url: "/about",
     children: [
-      { label: "About EagleAir", url: "/about" },
+      { label: "About Eagle Aircraft", url: "/about" },
       { label: "FAQ", url: "/faq" },
       { label: "Funding Options", url: "/funding-options" },
       { label: "Blog", url: "/blog" },
-      { label: "Contact Us", url: "/contact" },
+      { label: "Contact Us", url: "/about/contact" },
     ],
   },
 ];
@@ -57,11 +57,11 @@ export const footerMenu: MenuItem[] = [
     label: "About",
     url: "/about",
     children: [
-      { label: "About EagleAir", url: "/about" },
+      { label: "About Eagle Aircraft", url: "/about" },
       { label: "FAQ", url: "/faq" },
       { label: "Funding Options", url: "/funding-options" },
       { label: "Blog", url: "/blog" },
-      { label: "Contact Us", url: "/contact" },
+      { label: "Contact Us", url: "/about/contact" },
     ],
   },
 ];
@@ -79,7 +79,7 @@ const { pathname, navBarBG = false } = Astro.props;
       <ImageComp
         class="logo-white w-36 md:w-56 duration-200"
         src={LOGO_ASSETS}
-        alt="EagleAir Logo"
+        alt="Eagle Aircraft Logo"
       />
     </a>
 
@@ -150,7 +150,7 @@ const { pathname, navBarBG = false } = Astro.props;
 
     <!-- Buttons -->
     <div class="buttons">
-      <a href="/contact" class="btn-primary text-lg!">
+      <a href="/about/contact" class="btn-primary text-lg!">
         <IoIosAirplane className="size-6" />
         Contact Us
       </a>
@@ -223,7 +223,7 @@ const { pathname, navBarBG = false } = Astro.props;
     </ul>
 
     <div class="mobile-buttons">
-      <a href="/contact" class="btn-primary text-lg!">
+      <a href="/about/contact" class="btn-primary text-lg!">
         <IoIosAirplane className="size-6" />
         Contact Us
       </a>

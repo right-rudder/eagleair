@@ -11,7 +11,7 @@ highlights:
   - "Build PIC multi-engine time for airline minimums"
   - "Flexible scheduling for military/active-duty constraints"
   - "Optional safety pilot arrangements (reduce costs)"
-  - "Veteran airline captain mentorship"
+  - "Skilled airline captain mentorship"
 requirements:
   - "Valid multi-engine rating"
   - "Current FAA medical certificate"

@@ -3,12 +3,11 @@ import {
   COMPANY_NICKNAME,
   LOCATIONS,
   PHONE_NUMBER,
-//   PHONE_NUMBER_PRETTY,
   EMAIL_ADDRESS,
-} from "../data/consts";
+} from "../../data/consts";
 
-import ContactForm from "./Contact/ContactForm.astro";
-import ImageWithZoomEffect from "./ImageWithZoomEffect.astro";
+import EnrollmentForm from "./EnrollmentForm.astro";
+import ImageWithZoomEffect from "../ImageWithZoomEffect.astro";
 
 const imgForm = "/src/assets/stock-brendan-sapp-waG-U3XAb3I-unsplash.jpg";
 const upperheading = "ENROLLMENT FORM";
@@ -48,7 +47,7 @@ const description =
               {description}
             </p>
           </div>
-          <ContactForm />
+          <EnrollmentForm />
         </div>
       </div>
     </div>

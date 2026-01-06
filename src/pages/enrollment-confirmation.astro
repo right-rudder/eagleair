@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { COMPANY_NAME } from "../data/consts";
+---
+
+<BaseLayout
+  siteTitle={`Enrollment Confirmation | ${COMPANY_NAME}`}
+  siteDescription={`Thank you for enrolling in ${COMPANY_NAME}. Your enrollment is confirmed and we will contact you shortly with further details.`}
+  keywords={`${COMPANY_NAME}, contact confirmation, flight training, aviation, contact us`}
+  class="bg-white text-black"
+>
+  <div
+    class="min-h-[80vh] pt-32 lg:p-44 flex items-center justify-center px-4 sm:px-6 lg:px-8"
+  >
+    <div class="max-w-md mx-auto text-center">
+      <div class="text-monza-700 mb-8">
+        <svg class="w-24 h-24 mx-auto" viewBox="0 0 24 24"
+          ><path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z"
+            clip-rule="evenodd"></path></svg
+        >
+      </div>
+
+      <h1
+        class="text-4xl font-title font-bold leading-tight text-madison-950 mb-4"
+      >
+        Enroll Confirmation
+      </h1>
+
+      <p class="text-lg text-gray-600 mb-8">
+        Thank you for enrolling in {COMPANY_NAME}! Your enrollment is confirmed
+        and we will contact you shortly with further details.
+      </p>
+
+      <div class="space-y-4">
+        <a
+          href="/"
+          class="inline-block bg-primary-600 text-madison-950 px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200"
+        >
+          Return Home
+        </a>
+      </div>
+
+      <!-- Optional suggestion -->
+      <div class="mt-8 p-4 bg-gray-50 rounded-lg">
+        <p class="text-sm text-gray-600 mb-2">
+          Interested in a discovery flight?
+        </p>
+        <a
+          href="/discovery-flight"
+          class="text-primary-600 hover:text-primary-700 font-medium transition-colors"
+        >
+          Book a Discovery Flight
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
