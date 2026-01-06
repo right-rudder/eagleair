@@ -191,7 +191,7 @@ export default function EnhancedFAQs({
 
         <p className="text-center mt-12 text-gray-600 pb-20">
           If you have any additional questions please send us an email to{" "}
-          <a href="/contact" className="text-madison-700 font-bold underline">
+          <a href="/about/contact" className="text-madison-700 font-bold underline">
             Contact Us
           </a>
         </p>
