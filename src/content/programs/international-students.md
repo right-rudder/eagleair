@@ -1,6 +1,6 @@
 ---
 title: "International Student"
-description: "Step-by-step guidance for international students applying for FAA flight training in the United States through the TSA Flight Training Security Program (FTSP). Required for Private, Instrument, and Multi-Engine training.<br><span>*Contact us for your personalized pricing estimate</span>"
+description: "Step-by-step guidance for international students applying for FAA flight training in the United States through the TSA Flight Training Security Program (FTSP). Required for Private, Instrument, and Multi-Engine training."
 order: 6
 image: "/src/assets/drive/pilot-ifly-looking_ifly_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg"
 alt: "Pilot looking at iFly, Eagle Aircraft Indiana USA Valparaiso IN flight school pilot training"
