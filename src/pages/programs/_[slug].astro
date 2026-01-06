@@ -1,0 +1,153 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import type { GetStaticPaths } from "astro";
+import type { CollectionEntry } from "astro:content";
+import Hero75 from "../../components/Hero75.astro";
+import CTAMeetOurFleet from "../../components/CTAMeetOurFleet.astro";
+
+export const getStaticPaths = (async () => {
+  const programs = await getCollection("programs");
+  return programs.map((program: CollectionEntry<"programs">) => ({
+    params: { slug: program.slug },
+    props: { program },
+  }));
+}) satisfies GetStaticPaths;
+
+type Props = {
+  program: CollectionEntry<"programs">;
+};
+
+const { program } = Astro.props as Props;
+const { Content } = await program.render();
+
+const heroData = {
+  image: {
+    src: program.data.image,
+    alt: program.data.alt || program.data.title,
+    reverse: program.data.reverse || false,
+    top: program.data.top || false,
+  },
+  title: program.data.title,
+  subTitle: program.data.description,
+  cta: [
+    {
+      url: "/enrollment",
+      text: "Enroll Now",
+    },
+  ],
+};
+---
+
+<BaseLayout
+  siteTitle={`${program.data.title} | Eagle Aircraft Aviation Academy`}
+  siteDescription={program.data.description}
+  siteImage={program.data.image}
+>
+  <Hero75 data={heroData} />
+
+  <article class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-muted-50 shadow-lg overflow-hidden">
+        <div class="p-8 md:p-12">
+          <h2 class="text-3xl font-title font-bold mb-4 text-madison-950">
+            {program.data.title}
+          </h2>
+
+          <p class="text-xl text-muted-600 mb-8">{program.data.description}</p>
+
+          <div class="flex flex-wrap justify-center gap-6 mb-8 pb-8 border-b">
+            <div class="bg-muted-50 text-center px-6 py-4">
+              <div class="text-sm text-muted-600 mb-1">Duration</div>
+              <div class="text-xl font-bold text-monza-900">
+                {program.data.duration}
+              </div>
+            </div>
+            {
+              program.data.cost && (
+                <div class="bg-muted-50 text-center px-6 py-4 ">
+                  <div class="text-sm text-muted-600 mb-1">Investment</div>
+                  <div class="text-xl font-bold text-monza-900">
+                    {program.data.cost}
+                  </div>
+                </div>
+              )
+            }
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row justify-around gap-6 mb-8 pb-8 border-b"
+          >
+            {
+              program.data.highlights && program.data.highlights.length > 0 && (
+                <div class="mb-8 w-1/2">
+                  <h2 class="text-3xl font-title font-bold mb-4 text-madison-950">
+                    Program Highlights
+                  </h2>
+                  <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {program.data.highlights.map((highlight: string) => (
+                      <li class="flex items-start">
+                        <span class="text-madison-950 mr-3 text-xl">✓</span>
+                        <span class="text-muted-700">{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            }
+            {
+              program.data.requirements &&
+                program.data.requirements.length > 0 && (
+                  <div class="mb-8 border-l border-muted-300 pl-6 w-1/3">
+                    <h2 class="text-3xl font-title font-bold mb-4  text-madison-950">
+                      Requirements
+                    </h2>
+                    <ul class="space-y-2">
+                      {program.data.requirements.map((req: string) => (
+                        <li class="flex items-start">
+                          <span class="text-blue-600 mr-3">•</span>
+                          <span class="text-muted-700">{req}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+            }
+          </div>
+
+          <!-- Content -->
+          <div
+            class="prose max-w-none mt-8 prose-h2:text-3xl prose-h2:font-title prose-h3:text-xl prose-a:text-madison-950 prose-a:underline prose-a:hover:text-muted-800"
+          >
+            <Content />
+          </div>
+
+          <!-- Contact Us CTA -->
+          <div class="mt-12 pt-8 border-t">
+            <h2 class="text-2xl font-bold mb-4">Ready to Get Started?</h2>
+            <p class="text-muted-600 mb-6">
+              Contact us today to learn more about this program and how we can
+              help you achieve your aviation goals.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="/contact"
+                class="inline-block bg-madison-950 text-muted-50 px-8 py-3 hover:bg-monza-700 transition-colors"
+              >
+                Contact Us
+              </a>
+              <a
+                href="/programs"
+                class="inline-block bg-muted-200 text-muted-800 px-8 py-3 hover:bg-muted-300 transition-colors"
+              >
+                View All Programs
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <CTAMeetOurFleet imageSide="left" background="red" />
+</BaseLayout>

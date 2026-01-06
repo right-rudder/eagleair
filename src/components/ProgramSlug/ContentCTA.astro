@@ -1,0 +1,58 @@
+---
+import ImageWithZoomEffectAndStripe from '../ImageWithZoomEffectAndStripe.astro';
+
+interface Props {
+  data: {
+    mainImage?: string;
+    mainImageAlt?: string;
+    title?: string;
+    upperheader?: string;
+    descriptionParagraphs?: string[];
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<section class="py-16 px-4 bg-muted-50 relative">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
+    <div class="flex flex-col lg:flex-row gap-12 items-stretch">
+      
+      <div class="w-full lg:w-1/2 order-1 flex">
+        {data.mainImage && (
+          <div class="relative w-full min-h-[400px] lg:min-h-full">
+            <ImageWithZoomEffectAndStripe 
+              src={data.mainImage} 
+              alt={data.mainImageAlt || data.title || "Program details"} 
+              class="absolute inset-0 h-full w-full object-cover shadow-2xl rounded-lg"
+            />
+          </div>
+        )}
+      </div>
+
+      <div class="w-full lg:w-1/2 order-2 space-y-6 flex flex-col justify-center">
+        {data.upperheader && (
+          <div class="block">
+             <span class="text-madison-600 font-subtitle tracking-widest uppercase font-bold text-sm bg-madison-50 px-3 py-1 rounded inline-block">
+              {data.upperheader}
+            </span>
+          </div>
+        )}
+        
+        {data.title && <h2 class="title text-3xl md:text-4xl">{data.title}</h2>}
+        
+        <div class="prose prose-lg text-muted-600 font-sans">
+          {data.descriptionParagraphs?.map((p) => <p>{p}</p>)}
+        </div>
+
+        <div class="pt-4">
+            <a href="/contact" class="btn-secondary inline-flex w-auto">
+                Discuss Your Options
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+---
+interface Props {
+  data: {
+    mainImage?: string;
+    title?: string;
+    upperheader?: string;
+    descriptionParagraphs?: string[];
+    bulletPointLists?: {
+      title: string;
+      items: string[];
+    }[];
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
+    
+    <div class="text-center max-w-3xl mx-auto mb-20">
+      {data.upperheader && (
+        <span class="text-monza-600 font-subtitle tracking-widest uppercase font-bold text-sm block mb-3">
+          {data.upperheader}
+        </span>
+      )}
+      {data.title && <h2 class="title mb-6">{data.title}</h2>}
+      {data.descriptionParagraphs?.map((p) => (
+        <p class="subtitle text-muted-600">{p}</p>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {data.bulletPointLists?.map((list, index) => (
+        <article class="group bg-muted-50 p-8 rounded-xl border-t-4 border-madison-950 hover:border-monza-500 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div class="mb-6">
+            <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm mb-4 group-hover:bg-monza-50 transition-colors">
+              <span class="font-title text-2xl font-bold text-madison-950 group-hover:text-monza-600">
+                0{index + 1}
+              </span>
+            </div>
+            <h3 class="font-title text-2xl font-bold text-madison-950 group-hover:text-monza-700 transition-colors">
+              {list.title}
+            </h3>
+          </div>
+          
+          <ul class="space-y-4">
+            {list.items.map((item) => (
+              <li class="flex items-start gap-3">
+                <span class="mt-2 w-1.5 h-1.5 rounded-full bg-madison-300 group-hover:bg-monza-500 transition-colors shrink-0"></span>
+                <span class="text-muted-600 text-sm leading-relaxed group-hover:text-muted-800">
+                  {item}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
