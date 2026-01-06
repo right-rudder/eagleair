@@ -1,6 +1,6 @@
 ---
 title: "Airline Transport Pilot"
-description: "Understand the requirements for the FAA Airline Transport Pilot (ATP) Certificate. Learn about the pathways to professional airline operations and the criteria for ATP eligibility.<br><span>*Contact us for your personalized pricing estimate</span>"
+description: "Understand the requirements for the FAA Airline Transport Pilot (ATP) Certificate. Learn about the pathways to professional airline operations and the criteria for ATP eligibility."
 order: 5
 image: "/src/assets/facebook/pilot-in-commercial-aircraft-cockpit.jpg"
 alt: "Pilot in commercial aircraft cockpit"
