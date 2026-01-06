@@ -74,7 +74,7 @@ const heroData = {
       <TimelineProgression data={data.trainingProgression} />
     )}
     {data.finalCTA && (
-      <FinalCTA data={data.finalCTA} />
+      <FinalCTA data={{...data.finalCTA, imagePosition: "object-[50%_50%]"}} />
     )}
     {data.faq && (
       <FAQ data={data.faq} />

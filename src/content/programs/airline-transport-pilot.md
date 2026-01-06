@@ -124,7 +124,7 @@ finalCTA:
   descriptionParagraphs:
     - "Our professional instructors are available to discuss your career pathway and help you plan your time-building phases toward the airlines."
   mainButtonText: "Contact for Mentorship"
-  mainButtonLink: "/contact"
+  mainButtonLink: "/about/contact"
   secondButtonText: "Call Now"
   secondButtonLink: "tel:+12194640132"
 ---

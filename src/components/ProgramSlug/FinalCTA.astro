@@ -1,52 +1,56 @@
 ---
 interface Props {
-  data: {
-    mainImage?: string;
-    title?: string;
-    upperheader?: string;
-    descriptionParagraphs?: string[];
-    mainButtonText?: string;
-    mainButtonLink?: string;
-    secondButtonText?: string;
-    secondButtonLink?: string;
-  };
+  data: {
+    mainImage?: string;
+    imagePosition?: string;
+    title?: string;
+    upperheader?: string;
+    descriptionParagraphs?: string[];
+    mainButtonText?: string;
+    mainButtonLink?: string;
+    secondButtonText?: string;
+    secondButtonLink?: string;
+  };
 }
 
 const { data } = Astro.props;
 ---
 
 <section class="relative py-24 px-4 overflow-hidden">
-  <div class="absolute inset-0 z-0">
-    {data.mainImage && (
-      <img src={data.mainImage} alt="" class="w-full h-full object-cover" />
-    )}
-    <div class="absolute inset-0 bg-gradient-to-r from-madison-950/95 to-madison-900/80"></div>
-  </div>
+  <div class="absolute inset-0 z-0">
+    {data.mainImage && (
+      <img src={data.mainImage} alt="" class={`w-full h-full object-cover ${data.imagePosition || ""}`} />
+    )}
+    <div class="absolute inset-0 bg-gradient-to-r from-madison-950/95 to-madison-900/80"></div>
+  </div>
 
-  <div class="relative z-10 max-w-4xl mx-auto text-center text-white">
-    {data.upperheader && (
-      <span class="text-monza-400 font-subtitle tracking-widest uppercase font-bold text-sm block mb-4">
-        {data.upperheader}
-      </span>
-    )}
-    
-    {data.title && <h2 class="font-title text-4xl md:text-6xl font-bold mb-6">{data.title}</h2>}
-    
-    {data.descriptionParagraphs?.map(p => (
-      <p class="subtitle-white text-lg md:text-xl mb-6 opacity-90">{p}</p>
-    ))}
+  <div class="relative z-10 max-w-4xl mx-auto text-center text-white flex flex-col items-center">
+    {data.upperheader && (
+      <span class="text-muted-50 font-subtitle tracking-widest !font-semibold !text-lg block mb-4">
+        {data.upperheader}
+      </span>
+    )}
+    
+    {data.title && <h2 class="font-title text-4xl md:text-6xl font-bold">{data.title}</h2>}
+    
+    {data.descriptionParagraphs?.map(p => (
+      <p class="sans max-w-xl text-lg md:text-xl opacity-90" set:html={p}></p>
+    ))}
 
-    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-      {data.mainButtonText && (
-        <a href={data.mainButtonLink || "/enrollment"} class="btn-tertiary-red">
-          {data.mainButtonText}
-        </a>
-      )}
-      {data.secondButtonText && (
-        <a href={data.secondButtonLink || "/contact"} class="btn-transparent border-white hover:bg-white hover:text-madison-950 px-8 py-4 text-lg">
-          {data.secondButtonText}
-        </a>
-      )}
-    </div>
-  </div>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+      {data.mainButtonText && (
+        <a href={data.mainButtonLink || "/enrollment"} class="btn-tertiary-red">
+          {data.mainButtonText}
+        </a>
+      )}
+      {data.secondButtonText && (
+        <a 
+          href={data.secondButtonLink || "/contact"} 
+          class="inline-flex items-center justify-center bg-muted-50 font-sans font-bold text-madison-950 px-6 py-3 transition-all duration-300 hover:scale-105 hover:shadow-2xl leading-none"
+        >
+          {data.secondButtonText}
+        </a>
+      )}
+    </div>
+  </div>
 </section>
