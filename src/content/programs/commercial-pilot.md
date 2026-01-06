@@ -132,11 +132,11 @@ faq:
 finalCTA:
   mainImage: "/src/assets/facebook/n1449c-cessna-172s-student-with-certificate-leaning-on-plane.jpg"
   title: "Ready to Start Your Professional Career?"
-  upperheader: "ENROLL TODAY"
+  upperheader: "Enroll Today"
   descriptionParagraphs:
     - "Contact us today to discuss your career goals or to learn more about our commercial pilot training program."
   mainButtonText: "Enroll Now"
   mainButtonLink: "/enrollment"
   secondButtonText: "Contact Us"
-  secondButtonLink: "/contact"
+  secondButtonLink: "/about/contact"
 ---

@@ -124,5 +124,5 @@ finalCTA:
   mainButtonText: "Apply Now"
   mainButtonLink: "/enrollment"
   secondButtonText: "Contact Us"
-  secondButtonLink: "/contact"
+  secondButtonLink: "/about/contact"
 ---

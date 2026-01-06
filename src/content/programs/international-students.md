@@ -127,7 +127,7 @@ finalCTA:
   descriptionParagraphs:
     - "If you experience issues or have questions at any point in the TSA process, Eagle Aircraft is available to assist."
   mainButtonText: "Contact Academy"
-  mainButtonLink: "/contact"
+  mainButtonLink: "/about/contact"
   secondButtonText: "Call Now"
   secondButtonLink: "tel:+12194640132"
 ---

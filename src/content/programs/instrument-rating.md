@@ -124,11 +124,11 @@ faq:
 finalCTA:
   mainImage: "/src/assets/drive/cockpit-pilot-flying_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg"
   title: "Ready to Become an All-Weather Professional?"
-  upperheader: "ENROLL TODAY"
+  upperheader: "Enroll Today"
   descriptionParagraphs:
     - "Take the next step in your aviation career and master the IFR environment with Eagle Aircraft."
   mainButtonText: "Enroll Now"
   mainButtonLink: "/enrollment"
   secondButtonText: "Contact Us"
-  secondButtonLink: "/contact"
+  secondButtonLink: "/about/contact"
 ---

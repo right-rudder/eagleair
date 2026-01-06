@@ -10,7 +10,7 @@ programIntroduction:
   title: "Your First Step into Aviation"
   upperheader: "Private Pilot Certificate"
   descriptionParagraphs:
-    - "Flying begins with a solid foundation. The Private Pilot Certificate (PPC) program at Eagle Aircraft is designed to introduce students to aviation through structured, safety-focused, and professional flight training."
+    - "Flying begins with a solid foundation. The <strong>Private Pilot Certificate (PPC)</strong> program at Eagle Aircraft is designed to introduce students to aviation through structured, safety-focused, and professional flight training."
     - "Whether your goal is to fly for personal enjoyment or to continue toward advanced ratings, Eagle Aircraft provides the skills, confidence, and aeronautical knowledge needed to become a competent and responsible pilot."
   highlights:
     - highlightName: "Duration"
@@ -141,5 +141,5 @@ finalCTA:
   mainButtonText: "Enroll Now"
   mainButtonLink: "/enrollment"
   secondButtonText: "Contact Us"
-  secondButtonLink: "/contact"
+  secondButtonLink: "/about/contact"
 ---

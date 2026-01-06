@@ -125,11 +125,11 @@ faq:
 finalCTA:
   mainImage: "/src/assets/facebook/student-instructor-front-of-aircraft.jpg"
   title: "Ready to Add Your Multi-Engine Rating?"
-  upperheader: "ENROLL TODAY"
+  upperheader: "Enroll Today"
   descriptionParagraphs:
     - "Due to high demand, multi-engine training is currently prioritized for students already enrolled in our professional pilot programs. Contact us to discuss availability."
   mainButtonText: "Get an Estimate"
-  mainButtonLink: "/contact"
+  mainButtonLink: "/about/contact"
   secondButtonText: "Call Us"
   secondButtonLink: "tel:+12194640132"
 ---
