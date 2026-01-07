@@ -147,32 +147,29 @@ const ctaData = {
 
   <section class="pb-12 pt-24 px-5">
     <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      <!-- WHY IT MATTERS -->
+      <!-- ROW 1 — TEXT / IMAGE / QUOTE -->
       <div
-        class="lg:min-h-[500px] flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
+        class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
       >
         <p class="subtitle !mx-0 !text-black">Partnership Overview</p>
         <h2 class="text-5xl text-black font-bold title">
           {iflyEaglePartnership.whyItMatters.title}
         </h2>
-
         {
-          iflyEaglePartnership.whyItMatters.description.map((paragraph) => (
-            <p class="sans">{paragraph}</p>
+          iflyEaglePartnership.whyItMatters.description.map((p) => (
+            <p class="sans">{p}</p>
           ))
         }
       </div>
 
-      <!-- IMAGE -->
       <div class="max-h-80 sm:max-h-140 lg:max-h-none">
         <ImageComp
           src={iflyEaglePartnership.hero.image.src}
           alt={iflyEaglePartnership.hero.image.alt}
-          class="h-full w-full object-cover object-center lg:max-h-none"
+          class="h-full w-full object-cover"
         />
       </div>
 
-      <!-- QUOTE / SHARED VISION -->
       <div
         class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
       >
@@ -183,7 +180,7 @@ const ctaData = {
         <ImQuotesRight className="text-red-700 size-8 self-end" />
       </div>
 
-      <!-- AMERICAN STUDENTS QUOTE -->
+      <!-- ROW 2 — QUOTE / IMAGE / TEXT -->
       <div
         class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
       >
@@ -194,16 +191,31 @@ const ctaData = {
         <ImQuotesRight className="text-red-700 size-8 self-end" />
       </div>
 
-      <!-- IMAGE -->
       <div class="max-h-80 sm:max-h-140 lg:max-h-none">
         <ImageComp
           src={iflyEaglePartnership.hero.image.src}
           alt={iflyEaglePartnership.hero.image.alt}
-          class="h-full w-full object-cover object-center lg:max-h-none"
+          class="h-full w-full object-cover"
         />
       </div>
 
-      <!-- INTERNATIONAL STUDENTS TEXT -->
+      <div
+        class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
+      >
+        <p class="subtitle !mx-0 !text-black">
+          {iflyEaglePartnership.americanStudents.title}
+        </p>
+        <h2 class="text-5xl text-black font-bold title">
+          {iflyEaglePartnership.americanStudents.sections[0].heading}
+        </h2>
+        {
+          iflyEaglePartnership.americanStudents.sections[0].content.map((p) => (
+            <p class="sans">{p}</p>
+          ))
+        }
+      </div>
+
+      <!-- ROW 3 — TEXT / IMAGE / QUOTE -->
       <div
         class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
       >
@@ -213,11 +225,63 @@ const ctaData = {
         <h2 class="text-5xl text-black font-bold title">
           {iflyEaglePartnership.internationalStudents.sections[0].heading}
         </h2>
-
         {
           iflyEaglePartnership.internationalStudents.sections[0].content.map(
-            (paragraph) => <p class="sans">{paragraph}</p>
+            (p) => <p class="sans">{p}</p>
           )
+        }
+      </div>
+
+      <div class="max-h-80 sm:max-h-140 lg:max-h-none">
+        <ImageComp
+          src={iflyEaglePartnership.hero.image.src}
+          alt={iflyEaglePartnership.hero.image.alt}
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div
+        class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
+      >
+        <ImQuotesLeft className="text-red-700 size-8" />
+        <p class="text-lg sans font-semibold">
+          {iflyEaglePartnership.internationalStudents.sections[1].content[0]}
+        </p>
+        <ImQuotesRight className="text-red-700 size-8 self-end" />
+      </div>
+
+      <!-- ROW 4 — QUOTE / IMAGE / TEXT -->
+      <div
+        class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
+      >
+        <ImQuotesLeft className="text-red-700 size-8" />
+        <p class="text-lg sans font-semibold">
+          {iflyEaglePartnership.futureStudents.description[0]}
+        </p>
+        <ImQuotesRight className="text-red-700 size-8 self-end" />
+      </div>
+
+      <div class="max-h-80 sm:max-h-140 lg:max-h-none">
+        <ImageComp
+          src={iflyEaglePartnership.hero.image.src}
+          alt={iflyEaglePartnership.hero.image.alt}
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div
+        class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
+      >
+        <p class="subtitle !mx-0 !text-black">
+          {iflyEaglePartnership.lookingAhead.title}
+        </p>
+        <h2 class="text-5xl text-black font-bold title">
+          Building the Future of Global Flight Training
+        </h2>
+        {
+          iflyEaglePartnership.lookingAhead.description.map((p) => (
+            <p class="sans">{p}</p>
+          ))
         }
       </div>
     </div>
