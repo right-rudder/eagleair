@@ -22,7 +22,7 @@ interface Props {
   class={smallCard
     ? "group block  overflow-hidden outline-hidden border-gray-200 border-2 flex-1"
     : "group block  overflow-hidden outline-hidden shadow-lg shadow-gray-400 transition duration-300 hover:scale-105 focus-visible:scale-105"}
-  href={`/blog/${blogEntry.id}/`}
+  href={`/blog/${blogEntry.slug}/`}
   data-astro-prefetch
 >
   <!-- The container for the blog post's cover image. Uses astro:assets' Image for image source -->
