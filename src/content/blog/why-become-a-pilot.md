@@ -1,7 +1,7 @@
 ---
 title: "Why Become a Pilot? Career Stability, Income Potential, and a Life Above the Ordinary"
 description: "Discover why becoming a pilot is one of today’s most rewarding career paths—and how Eagle Aircraft Flight Academy helps students reach the airlines efficiently."
-pubDate: 2025-01-18
+pubDate: 2025-01-04
 author: "Eagle Aircraft Team"
 image: "/src/assets/facebook/pilot-in-commercial-aircraft-cockpit.jpg"
 tags:

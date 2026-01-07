@@ -1,9 +1,9 @@
 ---
 title: "Eagle Aircraft Flight Academy Announces Strategic Training Partnership With iFly Aviation Group"
 description: "A new international partnership connects iFly Aviation Group students with accelerated U.S. flight training and airline-focused pathways at Eagle Aircraft Flight Academy."
-pubDate: 2025-01-18
+pubDate: 2025-01-09
 author: "Eagle Aircraft Team"
-image: "/src/assets/drive/fleet-two-cesnas-team_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg"
+image: "/src/assets/drive/fleet-two-cesnas-team-5_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg"
 tags:
   - "international pilot training"
   - "flight school partnership"

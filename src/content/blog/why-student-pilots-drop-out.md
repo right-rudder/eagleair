@@ -1,7 +1,7 @@
 ---
 title: "Why Most Student Pilots Drop Out (And How to Avoid It)"
 description: "Flight training dropouts are more common than you think. Learn the real reasons student pilots quit and how Eagle Aircraft Flight Academy helps students succeed."
-pubDate: 2025-01-18
+pubDate: 2025-01-03
 author: "Eagle Aircraft Team"
 image: "/src/assets/facebook/student-simulator-with-staff-and-students.jpg"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "What Is the 1,500-Hour Rule? What Every Aspiring Airline Pilot Needs to Know"
 description: "Learn what the 1,500-hour rule really means, why it exists, and how pilots at Eagle Aircraft Flight Academy reach airline minimums faster."
-pubDate: 2025-01-18
+pubDate: 2025-01-06
 author: "Eagle Aircraft Team"
 image: "/src/assets/facebook/eagle-aircraft-flight-academy-student-writing-on-wall-of-fame.jpg"
 tags:

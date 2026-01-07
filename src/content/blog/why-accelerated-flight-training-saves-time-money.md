@@ -1,7 +1,7 @@
 ---
 title: "Why Accelerated Flight Training Saves Time and Money"
 description: "Accelerated flight training helps students finish faster and often costs less overall. Learn why full-time pilot training works."
-pubDate: 2025-01-18
+pubDate: 2025-01-05
 author: "Eagle Aircraft Team"
 image: "/src/assets/facebook/pad-flight-navigation-sectional-indiana-wisconsin.jpg"
 tags:

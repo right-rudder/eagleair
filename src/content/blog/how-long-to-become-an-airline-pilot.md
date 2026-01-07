@@ -1,7 +1,7 @@
 ---
 title: "How Long Does It Take to Become an Airline Pilot? A Realistic Timeline Explained"
 description: "Learn how long it really takes to become an airline pilot and how structured, accelerated training at Eagle Aircraft Flight Academy can save you years."
-pubDate: 2025-01-18
+pubDate: 2025-01-07
 author: "Eagle Aircraft Team"
 image: "/src/assets/facebook/cessna-172s-student-front-with-certificate.jpg"
 tags:
