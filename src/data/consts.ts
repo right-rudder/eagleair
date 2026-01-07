@@ -255,4 +255,8 @@ export const BREAK_TURN_SKILL_BRIDGE_PROVIDER = {
 export const ifly = {
   name: "iFly Aviation Group",
   website: "https://www.ifly.com.mx",
+  facebook: "https://www.facebook.com/iFlyAviacion",
+  instagram: "https://www.instagram.com/iflyaviacion/",
+  youtube: "https://www.youtube.com/@iflyaviacion5363",
+  twitter: "https://x.com/iFlyAviacion",
 };
