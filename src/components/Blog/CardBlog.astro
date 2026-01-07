@@ -38,10 +38,10 @@ interface Props {
     )
   }
 
-  <div class="p-4 sm:p-6">
+  <div class="px-4 py-4 sm:px-6 bg-monza-700">
     <!-- The container for the blog author's avatar and associated metadata (author name and publication date) -->
     <div>
-      <div class="flex h-full flex-col mb-4 sm:mb-6">
+      <div class="flex h-full flex-col">
         <div class="flex items-center">
           <div class="shrink-0">
             <ImageComp
@@ -52,31 +52,31 @@ interface Props {
           </div>
 
           <div class="ms-2.5 sm:ms-4">
-            <h4 class="font-bold text-[#0b326b]">
+            <h4 class="font-bold text-white">
               {blogEntry.data.author}
             </h4>
-            <p class="text-xs text-[#0b326b]">
+            <p class="text-xs text-white">
               {formatDate(blogEntry.data.pubDate)}
             </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- The container for the blog post's title and description -->
-    <div>
-      <div class="flex h-full flex-col">
-        <h3
-          class={smallCard
-            ? "text-balance text-lg font-bold text-[#0b326b] transition-colors duration-300 group-hover:text-orange-400 sm:text-xl"
-            : "text-balance text-lg font-bold text-[#0b326b] sm:text-3xl"}
-        >
-          {blogEntry.data.title}
-        </h3>
-        <p class="mt-2 text-pretty text-[#0b326b]">
-          {blogEntry.data.description}
-        </p>
-      </div>
+  <!-- The container for the blog post's title and description -->
+  <div class="bg-white w-full px-4 sm:px-6 py-4">
+    <div class="flex h-full flex-col">
+      <h3
+        class={smallCard
+          ? " text-lg font-bold text-madison-950 transition-colors duration-300 group-hover:text-monza-700 sm:text-xl"
+          : " text-lg font-bold text-madison-950 sm:text-3xl"}
+      >
+        {blogEntry.data.title}
+      </h3>
+      <p class="mt-2 text-pretty text-madison-950">
+        {blogEntry.data.description}
+      </p>
     </div>
   </div>
 </a>

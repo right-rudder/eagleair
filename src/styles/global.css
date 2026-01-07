@@ -68,7 +68,7 @@
   @apply bg-madison-950 border border-madison-950 text-muted-50 font-semibold  px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-muted-50 hover:border-muted-50 hover:text-madison-950 transition duration-200 hover:scale-105;
 }
 .btn-secondary {
-  @apply bg-madison-950 border border-madison-950 text-muted-50 font-semibold  px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-monza-600 hover:border-muted-50 hover:text-muted-50 transition duration-200 hover:scale-105;
+  @apply bg-madison-950 border border-madison-950 text-muted-50 font-semibold  px-5 py-2 flex items-center justify-center gap-2 transition cursor-pointer hover:bg-monza-700 hover:border-muted-50 hover:text-muted-50 transition duration-200 hover:scale-105;
 }
 
 .btn-tertiary {
