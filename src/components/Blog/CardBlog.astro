@@ -4,6 +4,7 @@
 import { Image } from "astro:assets";
 import { formatDate } from "./utils";
 import type { CollectionEntry } from "astro:content";
+import ImageComp from "../ImageComp.astro";
 
 const { blogEntry, smallCard = false } = Astro.props;
 
@@ -19,8 +20,8 @@ interface Props {
      which automatically prefetches the linked page to speed up navigation. -->
 <a
   class={smallCard
-    ? "group block rounded-xl overflow-hidden outline-hidden border-gray-200 border-2 flex-1"
-    : "group block rounded-xl overflow-hidden outline-hidden shadow-lg shadow-gray-400 transition duration-300 hover:scale-105 focus-visible:scale-105"}
+    ? "group block  overflow-hidden outline-hidden border-gray-200 border-2 flex-1"
+    : "group block  overflow-hidden outline-hidden shadow-lg shadow-gray-400 transition duration-300 hover:scale-105 focus-visible:scale-105"}
   href={`/blog/${blogEntry.id}/`}
   data-astro-prefetch
 >
@@ -28,13 +29,10 @@ interface Props {
   {
     !smallCard && (
       <div class="relative h-[350px] w-full shrink-0 overflow-hidden">
-        <Image
+        <ImageComp
           class="size-full object-cover"
-          src={blogEntry.data.cardImage}
-          alt={blogEntry.data.cardImageAlt}
-          draggable={"false"}
-          loading={"eager"}
-          format={"avif"}
+          src={blogEntry.data.image}
+          alt={blogEntry.data.title}
         />
       </div>
     )
@@ -46,12 +44,10 @@ interface Props {
       <div class="flex h-full flex-col mb-4 sm:mb-6">
         <div class="flex items-center">
           <div class="shrink-0">
-            <Image
+            <ImageComp
               class="size-[46px] rounded-full border-2 border-gray-900"
-              src={blogEntry.data.authorImage}
-              alt={blogEntry.data.authorImageAlt}
-              draggable={"false"}
-              format={"avif"}
+              src="/src/assets/logo_eagle_aircraft_round_color.png"
+              alt="Eagle Aircraft Logo"
             />
           </div>
 
