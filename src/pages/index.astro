@@ -16,6 +16,7 @@ import CTAEnrollWithUsMiniBlue from "../components/CTAEnrollWithUsMiniBlue.astro
 import GoogleMapLocation from "../components/External/GoogleMapLocation.astro";
 import AOP from "../components/AOP.astro";
 import BlogFeed from "../components/Blog/BlogFeed.astro";
+import GoogleReviews from "../components/External/GoogleReviews.astro";
 
 const heroData = {
   image: {
@@ -227,7 +228,8 @@ const processSteps2 = [
     steps={processSteps2}
   />
   <ProgramsOverview />
-  <Testimonials testimonials={testimonials} />
+  <GoogleReviews />
+  <!-- <Testimonials testimonials={testimonials} /> -->
   <CTAEnrollWithUsMiniBlue />
   <BlogFeed />
   <CTASection {...ctaData} />
