@@ -17,6 +17,7 @@ import GoogleMapLocation from "../components/External/GoogleMapLocation.astro";
 import AOP from "../components/AOP.astro";
 import BlogFeed from "../components/Blog/BlogFeed.astro";
 import GoogleReviews from "../components/External/GoogleReviews.astro";
+import CTAEnrollWithUsBlue from "../components/CTAEnrollWithUsBlue.astro";
 
 const heroData = {
   image: {
@@ -230,7 +231,14 @@ const processSteps2 = [
   <ProgramsOverview />
   <GoogleReviews />
   <!-- <Testimonials testimonials={testimonials} /> -->
-  <CTAEnrollWithUsMiniBlue />
+  <!-- <CTAEnrollWithUsMiniBlue /> -->
+
+  <CTAEnrollWithUsBlue
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    paragraphTextSize="!text-md"
+    showButton={true}
+  />
   <BlogFeed />
   <CTASection {...ctaData} />
   <GoogleMapLocation />
