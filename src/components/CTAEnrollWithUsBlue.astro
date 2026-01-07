@@ -1,0 +1,83 @@
+---
+import { COMPANY_NAME } from "../data/consts";
+const examplesiFly = [
+  {
+    upperHeading: "A Global Path to the Flight Deck",
+    title: "Train with Eagle Aircraft & iFly Aviation Group",
+    subtitle:
+      "Where American pilots train with pride — and international students feel truly at home.",
+  },
+  {
+    upperHeading: "Your Aviation Career Starts Here",
+    title: "Train in the U.S. with Eagle Aircraft & iFly",
+    subtitle:
+      "World-class flight training for American and international students, now united through a global partnership.",
+  },
+  {
+    upperHeading: "Now Welcoming International Students",
+    title: "Eagle Aircraft × iFly Aviation Group",
+    subtitle:
+      "U.S.-based FAA training with international guidance, support, and global career vision.",
+  },
+  {
+    upperHeading: "A New Era of Pilot Training",
+    title: "Eagle Aircraft Flight Academy & iFly Aviation Group",
+    subtitle:
+      "A partnership built to serve American pilots and welcome future aviators from around the world.",
+  },
+];
+
+const randomCTAiFLy =
+  examplesiFly[Math.floor(Math.random() * examplesiFly.length)];
+
+const ctaEnrollWithUsDataPlaceholder = {
+  upperHeading: "Take the Next Step",
+  title: "Train with Eagle Aircraft & iFly Aviation Group",
+  subtitle:
+    "Delivering excellence in flight training through a shared commitment to safety, service, and student growth — empowering both American and international pilots to achieve their aviation goals.",
+};
+
+const {
+  showButton = true,
+  upperHeadingTextSize = "!text-xl",
+  titleTextSize = "!text-3xl",
+  paragraphTextSize = "!text-xl",
+  ctaLink = "/about/contact",
+  ctaLink2 = "/about/eagle-aircraft-ifly-aviation-partnership",
+  ctaData = randomCTAiFLy,
+} = Astro.props;
+---
+
+<section id="our-mission" class="bg-madison-950">
+  <div
+    class="lg:px-16 md:px-12 px-8 py-8 flex space-y-8 flex-col justify-center align-middle"
+  >
+    <p
+      class=`${upperHeadingTextSize} subtitle !text-white  px-2 uppercase mb-4`
+    >
+      {ctaData.upperHeading}
+    </p>
+    <h2
+      class=`${titleTextSize} font-bold text-center title  !text-white max-w-[80%] lg:max-w-4xl mx-auto`
+    >
+      {ctaData.title}
+    </h2>
+    <p
+      class=`!text-white sans text-center ${paragraphTextSize} mx-auto lg:px-52 max-w-[80%] lg:max-w-7xl`
+    >
+      {ctaData.subtitle}
+    </p>
+    {
+      showButton && (
+        <div class="flex items-center justify-center gap-4">
+          <a href={ctaLink} class="btn-tertiary-red">
+            Start Your Journey
+          </a>
+          <a href={ctaLink2} class="btn-tertiary-red">
+            About iFly Partnership
+          </a>
+        </div>
+      )
+    }
+  </div>
+</section>
