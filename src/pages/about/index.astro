@@ -5,6 +5,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import CTASection from "../../components/CTASection.astro";
 import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
 import Hero75 from "../../components/Hero75.astro";
+import GoogleReviews from "../../components/External/GoogleReviews.astro";
 
 const heroData = {
   image: { src: "/src/assets/old website/background.jpg", alt: "Background" },
@@ -13,7 +14,7 @@ const heroData = {
   subTitle:
     "Eagle Aircraft Flight Academy is dedicated to developing confident, skilled pilots through professional instruction, structured training, and a strong safety culture—serving both domestic and international students.",
   cta: [
-    { url: "/discovery-flight", text: "Book a Discovery Flight"  },
+    { url: "/discovery-flight", text: "Book a Discovery Flight" },
     { url: "/crew", text: "Meet the Team" },
   ],
 };
@@ -42,6 +43,7 @@ const ctaData = {
     paragraphTextSize="text-md"
     showButton={false}
   />
+  <GoogleReviews />
   <GoogleMapLocation />
   <CTASection />
 </BaseLayout>
