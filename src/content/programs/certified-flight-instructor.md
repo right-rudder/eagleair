@@ -2,7 +2,7 @@
 title: "Certified Flight Instructor (CFI)"
 description: "Become a professional flight instructor and build hours while earning income. Comprehensive CFI training with right-seat proficiency and teaching techniques. Meet ATP minimums through professional instruction."
 order: 4
-image: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate-and-instructor.jpg"
+image: "/src/assets/facebook/student-on-twin-engine-aircraft-posing.jpg"
 alt: "N4397R Cessna 172M student with certificate and instructor"
 reverse: false
 top: true
@@ -35,7 +35,7 @@ programIntroduction:
       - "Strong communication and teaching aptitude"
 
 firstCTA:
-  mainImage: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate-and-instructor.jpg"
+  mainImage: "/src/assets/facebook/student-instructor-front-of-aircraft.jpg"
   title: "The Eagle Aircraft Advantage"
   upperheader: "Professional Mentorship"
   descriptionParagraphs:
@@ -43,7 +43,7 @@ firstCTA:
     - "Instructors at Eagle Aircraft typically build an average of 70 flight hours per month. We pride ourselves on transparency regarding career expectations and earning potential in our region."
 
 whatIsIncluded:
-  mainImage: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate-and-instructor.jpg"
+  mainImage: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate.jpg"
   title: "CFI Training Breakdown"
   upperheader: "What's Included"
   descriptionParagraphs:
@@ -117,7 +117,7 @@ faq:
       answer: "The CFI checkride is rigorous; we work closely with our Chief Instructor to ensure every candidate meets the high FAA standards."
 
 finalCTA:
-  mainImage: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate-and-instructor.jpg"
+  mainImage: "/src/assets/facebook/students-and-staff-around-white-aircraft-blue-sky-green-grass.jpg"
   title: "Ready to Lead the Next Generation?"
   upperheader: "Start Teaching"
   descriptionParagraphs:

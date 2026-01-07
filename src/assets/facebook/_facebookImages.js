@@ -60,10 +60,6 @@ export const facebookImages = [
     alt: "N4397R Cessna 172M student posing in front of plane",
   },
   {
-    src: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate-and-instructor.jpg",
-    alt: "N4397R Cessna 172M student with certificate and instructor",
-  },
-  {
     src: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate.jpg",
     alt: "N4397R Cessna 172M student with certificate",
   },
