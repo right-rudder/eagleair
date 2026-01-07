@@ -19,14 +19,14 @@ const fleetImages = [
     src: "/src/assets/fleet/fleet-cesna-N745U_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
     alt: "Fleet Cessna N745U, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
   },
-  {
-    src: "/src/assets/fleet/fleet-cesna-N4347R_Eagle-air_Indiana-USA.jpg",
-    alt: "Fleet Cessna N4347R, Eagle Air Indiana USA",
-  },
-  {
-    src: "/src/assets/fleet/fleet-cesna-N6896H_Eagle-air_Indiana-USA.jpg",
-    alt: "Fleet Cessna N6896H, Eagle Air Indiana USA",
-  },
+  // {
+  //   src: "/src/assets/fleet/fleet-cesna-N4347R_Eagle-air_Indiana-USA.jpg",
+  //   alt: "Fleet Cessna N4347R, Eagle Air Indiana USA",
+  // },
+  // {
+  //   src: "/src/assets/fleet/fleet-cesna-N6896H_Eagle-air_Indiana-USA.jpg",
+  //   alt: "Fleet Cessna N6896H, Eagle Air Indiana USA",
+  // },
   {
     src: "/src/assets/fleet/fleet-cesna-N7186S_Eagle-air_Indiana-USA.jpg",
     alt: "Fleet Cessna N7186S, Eagle Air Indiana USA",

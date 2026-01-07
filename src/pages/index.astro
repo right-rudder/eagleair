@@ -15,6 +15,9 @@ import CTATwoTextColumns from "../components/CTATwoTextColumns.astro";
 import CTAEnrollWithUsMiniBlue from "../components/CTAEnrollWithUsMiniBlue.astro";
 import GoogleMapLocation from "../components/External/GoogleMapLocation.astro";
 import AOP from "../components/AOP.astro";
+import BlogFeed from "../components/Blog/BlogFeed.astro";
+import GoogleReviews from "../components/External/GoogleReviews.astro";
+import CTAEnrollWithUsBlue from "../components/CTAEnrollWithUsBlue.astro";
 
 const heroData = {
   image: {
@@ -36,9 +39,9 @@ const heroData = {
     },
   ],
   stats: [
+    { value: "1979", suffix: "", title: "Training Pilots Since" },
     { value: "4,000", suffix: "+", title: "Pilots Trained" },
-    { value: "93", suffix: "%", title: "Checkride Pass Rate" },
-    { value: "9", suffix: "", title: "Training Aircraft" },
+    // { value: "9", suffix: "", title: "Training Aircraft" },
   ],
 };
 
@@ -226,8 +229,17 @@ const processSteps2 = [
     steps={processSteps2}
   />
   <ProgramsOverview />
-  <Testimonials testimonials={testimonials} />
-  <CTAEnrollWithUsMiniBlue />
-  <GoogleMapLocation />
+  <GoogleReviews />
+  <!-- <Testimonials testimonials={testimonials} /> -->
+  <!-- <CTAEnrollWithUsMiniBlue /> -->
+
+  <CTAEnrollWithUsBlue
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    paragraphTextSize="!text-md"
+    showButton={true}
+  />
+  <BlogFeed />
   <CTASection {...ctaData} />
+  <GoogleMapLocation />
 </BaseLayout>

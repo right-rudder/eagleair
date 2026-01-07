@@ -43,13 +43,9 @@ const eagleAirLogo = "/src/assets/logo_eagle_aircraft_round_color.png";
 const heroData = {
   image: { src: "/src/assets/old website/background.jpg", alt: "Background" },
   upperHeader: "Latest Insights",
-  title: "Stay Informed <br> About Aviation and Flight Training",
-  subTitle:
-    "Explore articles, tips, and updates from Eagle Aircraft Flight Academy. Learn from our instructors, discover industry news, and enhance your pilot knowledge.",
-  cta: [
-    { url: "#our-mission", text: "Our Mission" },
-    { url: "#our-team", text: "Meet the Team" },
-  ],
+  title: `${post.data.title}`,
+  subTitle: `${post.data.description}`,
+  cta: [{ url: "#article", text: "Read More" }],
 };
 ---
 
@@ -59,51 +55,57 @@ const heroData = {
   siteImage={post.data.image}
 >
   <Hero75 data={heroData} />
-  
-  <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
-  <article class="py-16 px-4 bg-muted-50 lg:bg-muted-100">
+
+  <CTAEnrollWithUsMini />
+  <article class="py-16 px-4 bg-muted-50 lg:bg-muted-100" id="article">
     <div class="w-full lg:max-w-6xl 2xl:max-w-7xl mx-auto">
-
       <div class="bg-muted-50 lg:shadow-lg p-8 lg:p-12 mb-8">
-      {post.data.image && (
-        <div class="mb-12 overflow-hidden">
-          <ImageWithZoomEffect
-            src={post.data.image}
-            alt={post.data.title}
-            class="w-full h-96 object-cover"
-          />
-        </div>
-      )}
-        <h1 class="title !text-4xl !text-madison-950 !mb-6">{post.data.title}</h1>
-        <div class="flex items-center gap-3 text-sm text-black my-4">
-              <ImageComp
-              class="w-6"
-              src={eagleAirLogo}
-              alt="Eagle Aircraft logo"/>
-              <span >{post.data.author}</span>
-              <span>|</span>
-              <time datetime={post.data.pubDate.toISOString()}>
-                {formatDate(post.data.pubDate)}
-              </time>
+        {
+          post.data.image && (
+            <div class="mb-12 overflow-hidden">
+              <ImageWithZoomEffect
+                src={post.data.image}
+                alt={post.data.title}
+                class="w-full h-96 object-cover"
+              />
             </div>
+          )
+        }
+        <h1 class="title !text-4xl !text-madison-950 !mb-6">
+          {post.data.title}
+        </h1>
+        <div class="flex items-center gap-3 text-sm text-black my-4">
+          <ImageComp class="w-6" src={eagleAirLogo} alt="Eagle Aircraft logo" />
+          <span>{post.data.author}</span>
+          <span>|</span>
+          <time datetime={post.data.pubDate.toISOString()}>
+            {formatDate(post.data.pubDate)}
+          </time>
+        </div>
 
-        {post.data.tags && post.data.tags.length > 0 && (
-          <div class="flex flex-wrap gap-2 mb-8">
-            {post.data.tags.map((tag) => (
-              <span class="bg-monza-700 text-white text-sm px-4 py-2 rounded-full font-sans">
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
+        {
+          post.data.tags && post.data.tags.length > 0 && (
+            <div class="flex flex-wrap gap-2 mb-8">
+              {post.data.tags.map((tag) => (
+                <span class="bg-monza-700 text-white text-sm px-4 py-2 rounded-full font-sans">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )
+        }
 
         <div class="prose prose-lg max-w-none text-black font-sans">
           <Content />
         </div>
       </div>
 
-      <div class="bg-muted-50 border-t-1 border-monza-900 lg:border-t-0 lg:shadow-lg p-8 mb-8">
-        <h3 class="subtitle !mx-0 !text-madison-950 !mb-4">Share this article</h3>
+      <div
+        class="bg-muted-50 border-t-1 border-monza-900 lg:border-t-0 lg:shadow-lg p-8 mb-8"
+      >
+        <h3 class="subtitle !mx-0 !text-madison-950 !mb-4">
+          Share this article
+        </h3>
         <div class="flex gap-4">
           <a
             href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(Astro.url.toString())}`}
@@ -135,23 +137,25 @@ const heroData = {
   </article>
   <section class="bg-monza-800 p-8">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4">
-      {relatedPosts.length > 0 && (
-    <div class="flex flex-col">
-      <p class="mx-auto subtitle !text-white">Read More</p>
-      <h2 class="title !text-muted-50 !mb-8 text-center">Related Articles</h2>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {relatedPosts.map((relatedPost) => (
-          <BlogPostCard post={relatedPost} />
-        ))}
-      </div>
-    </div>
-  )}
+      {
+        relatedPosts.length > 0 && (
+          <div class="flex flex-col">
+            <p class="mx-auto subtitle !text-white">Read More</p>
+            <h2 class="title !text-muted-50 !mb-8 text-center">
+              Related Articles
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {relatedPosts.map((relatedPost) => (
+                <BlogPostCard post={relatedPost} />
+              ))}
+            </div>
+          </div>
+        )
+      }
 
-  <div class="mt-12 text-center">
-    <a href="/blog" class="btn-tertiary inline-block">
-      Back to Blog
-    </a>
-  </div>
+      <div class="mt-12 text-center">
+        <a href="/blog" class="btn-tertiary inline-block"> Back to Blog </a>
+      </div>
     </div>
   </section>
 </BaseLayout>

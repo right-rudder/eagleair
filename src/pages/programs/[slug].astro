@@ -14,6 +14,7 @@ import FAQ from "../../components/ProgramSlug/FAQ.astro";
 import FinalCTA from "../../components/ProgramSlug/FinalCTA.astro";
 import Hero75 from "../../components/Hero75.astro";
 import CTAMeetOurFleet from "../../components/CTAMeetOurFleet.astro";
+import CTAEnrollWithUsBlue from "../../components/CTAEnrollWithUsBlue.astro";
 // Static Path Generation
 export const getStaticPaths = (async () => {
   const programs = await getCollection("programs");
@@ -54,32 +55,35 @@ const heroData = {
   siteDescription={data.description}
   siteImage={data.image}
 >
-  
   <main>
-    
     <Hero75 data={heroData} />
-    {data.programIntroduction && (
-      <ProgramIntro data={data.programIntroduction} />
-    )}
-    {data.firstCTA && (
-      <ContentCTA data={data.firstCTA} />
-    )}
-    {data.whatIsIncluded && (
-      <WhatIsIncluded data={data.whatIsIncluded} />
-    )}
-    {data.whyUs && (
-      <WhyUs data={data.whyUs} />
-    )}
-    {data.trainingProgression && (
-      <TimelineProgression data={data.trainingProgression} />
-    )}
-    {data.finalCTA && (
-      <FinalCTA data={{...data.finalCTA, imagePosition: "object-[50%_50%]"}} />
-    )}
-    {data.faq && (
-      <FAQ data={data.faq} />
-    )}
+    {
+      data.programIntroduction && (
+        <ProgramIntro data={data.programIntroduction} />
+      )
+    }
+    {data.firstCTA && <ContentCTA data={data.firstCTA} />}
+    {data.whatIsIncluded && <WhatIsIncluded data={data.whatIsIncluded} />}
+    {data.whyUs && <WhyUs data={data.whyUs} />}
+    {
+      data.trainingProgression && (
+        <TimelineProgression data={data.trainingProgression} />
+      )
+    }
+    {
+      data.finalCTA && (
+        <FinalCTA
+          data={{ ...data.finalCTA, imagePosition: "object-[50%_50%]" }}
+        />
+      )
+    }
+    {data.faq && <FAQ data={data.faq} />}
+    <CTAEnrollWithUsBlue
+      upperHeadingTextSize="!text-xl"
+      titleTextSize="!text-3xl"
+      paragraphTextSize="!text-md"
+      showButton={true}
+    />
     <CTAMeetOurFleet imageSide="left" background="red" />
   </main>
-
 </BaseLayout>

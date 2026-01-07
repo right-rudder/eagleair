@@ -26,8 +26,8 @@ const example = {
         "Ideal for sightseeing or a first aviation experience",
       ],
       image: {
-        src: "/src/assets/drive/sky-sunset-plane-wing_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
-        alt: "Sky sunset plane wing view, Eagle Aircraft Indiana USA Valparaiso IN flight school pilot training",
+        src: "/src/assets/facebook/aircraft-underview-day-city-canal-angle2.jpg",
+        alt: "Aircraft underview with city canal from angle 2",
       },
     },
     {
@@ -47,8 +47,8 @@ const example = {
         "Perfect for prospective student pilots",
       ],
       image: {
-        src: "/src/assets/drive/sky-plane-mountains-clouds_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
-        alt: "Sky plane flying over mountains and clouds, Eagle Aircraft Indiana USA Valparaiso IN flight school pilot training",
+        src: "/src/assets/facebook/aircraft-night-view-illuminated-city.jpg",
+        alt: "Aircraft night view over illuminated city",
       },
     },
   ],
@@ -88,7 +88,8 @@ const isBackgroundBlue = background === "blue";
   <div class="max-w-7xl mx-auto p-8 lg:px-8">
     <div class="flex lg:items-center gap-8">
       <div
-        class="flex flex-col lg:flex-row justify-around items-center w-full gap-4">
+        class="flex flex-col lg:flex-row justify-around items-center w-full gap-4"
+      >
         <div class="flex flex-col items-center">
           <p
             class="subtitle uppercase mb-4 !text-2xl !text-center !mx-0 !text-black"
@@ -104,17 +105,27 @@ const isBackgroundBlue = background === "blue";
           />
           <!-- Offering Details -->
           <div>
-            <ul  class="grid grid-cols-2 items-center text-center gap-4 my-4">
-                <li class="transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-lg bg-madison-950 p-4 text-white">$ {content.offerings[0].price}</li>
-                <li class="transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-lg bg-madison-950 p-4 text-white">{content.offerings[0].duration}</li>
-                <li class="transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-lg bg-madison-950 p-4 text-white">
-                  Max Passengers: {
-                    content.offerings[0].passengers.maxPassengers
-                  }
-                </li>
-                <li class="transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-lg bg-madison-950 p-4 text-white">
-                  Max Weight: {content.offerings[0].passengers.maxWeightLbs} (lbs)
-                </li>
+            <ul class="grid grid-cols-2 items-center text-center gap-4 my-4">
+              <li
+                class="transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-lg bg-madison-950 p-4 text-white"
+              >
+                $ {content.offerings[0].price}
+              </li>
+              <li
+                class="transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-lg bg-madison-950 p-4 text-white"
+              >
+                {content.offerings[0].duration}
+              </li>
+              <li
+                class="transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-lg bg-madison-950 p-4 text-white"
+              >
+                Max Passengers: {content.offerings[0].passengers.maxPassengers}
+              </li>
+              <li
+                class="transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-lg bg-madison-950 p-4 text-white"
+              >
+                Max Weight: {content.offerings[0].passengers.maxWeightLbs} (lbs)
+              </li>
             </ul>
             <div
               class="sans flex flex-col gap-4 text-center mx-auto text-xl py-6 max-w-3xl"
@@ -123,8 +134,25 @@ const isBackgroundBlue = background === "blue";
                 {
                   content.offerings[0].includes.map((benefit: any) => (
                     <li class={`flex items-center  "!text-white"`}>
-                      <span class={`mr-3 text-4xl text-madison-950 text-2xl font-black flex justify-center items-center`}>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 " viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z"/><path fill="none" d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z"/></svg>
+                      <span
+                        class={`mr-3 text-4xl text-madison-950 text-2xl font-black flex justify-center items-center`}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="w-8 "
+                          viewBox="0 0 32 32"
+                        >
+                          <>
+                            <path
+                              fill="currentColor"
+                              d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z"
+                            />
+                            <path
+                              fill="none"
+                              d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z"
+                            />
+                          </>
+                        </svg>
                       </span>
                       {benefit}
                     </li>

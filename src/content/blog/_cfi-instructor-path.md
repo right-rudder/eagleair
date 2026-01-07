@@ -3,7 +3,7 @@ title: "Becoming a Certified Flight Instructor (CFI)"
 description: "Learn how to gain valuable flight experience and build hours by becoming a CFI at Eagle Aircraft."
 pubDate: 2025-12-18
 author: "Eagle Aircraft Team"
-image: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate-and-instructor.jpg"
+image: "/src/assets/facebook/student-on-twin-engine-aircraft-posing.jpg"
 tags:
   - "CFI"
   - "flight instructor"

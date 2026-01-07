@@ -1,0 +1,48 @@
+---
+import CardBlog from "./CardBlog.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const blogEntries = await getCollection("blog", ({ id }) => {
+  return id;
+});
+
+const blogPosts: CollectionEntry<"blog">[] = blogEntries.sort(
+  (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const mostRecentPost: CollectionEntry<"blog"> = blogPosts.splice(0, 1)[0];
+const threeMorePosts: CollectionEntry<"blog">[] = blogPosts.splice(0, 2);
+
+const data = {
+  title: "Eagle Aircraft Flight Academy Blog",
+  subTitle: "Aviation insights, training tips, and industry news",
+};
+---
+
+<section class="mx-auto max-w-7xl mb-8 px-4 lg:px-0 py-6 lg:py-12">
+  <h2 class="text-center text-xl font-bold uppercase">
+    {data.subTitle}
+  </h2>
+  <h3
+    class="text-center text-4xl font-bold mb-4 uppercase text-madison-950 tracking-wide"
+  >
+    {data.title}
+  </h3>
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+    <CardBlog blogEntry={mostRecentPost} />
+    <div class="flex flex-col gap-4 row-start-2 md:row-start-auto">
+      {
+        threeMorePosts.map((blogEntry) => (
+          <CardBlog blogEntry={blogEntry} smallCard={true} />
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="flex justify-center pt-8">
+    <a href="/blog" class="btn-secondary !text-xl uppercase">Read More →</a>
+  </div>
+</section>

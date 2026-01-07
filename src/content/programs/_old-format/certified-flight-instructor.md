@@ -3,7 +3,7 @@ title: "Certified Flight Instructor (CFI)"
 description: "Become a professional flight instructor and build hours while earning income. Comprehensive CFI training with right-seat proficiency and teaching techniques. Meet ATP minimums through professional instruction."
 duration: "4-8 weeks"
 cost: "$9,000"
-image: "/src/assets/facebook/n4397r-cessna-172m-student-with-certificate-and-instructor.jpg"
+image: "/src/assets/facebook/students-and-staff-around-white-aircraft-blue-sky-green-grass.jpg"
 alt: "N4397R Cessna 172M student with certificate and instructor"
 reverse: false
 top: true
@@ -34,13 +34,17 @@ Our CFI program is primarily conducted under **FAA Part 61**, allowing for a fle
 ## What's Included—Training Breakdown
 
 ### Flight Training (10–15 Hours)
+
 CFI training focuses on proficiency and the ability to teach maneuvers you have already mastered as a commercial pilot.
+
 - **Right-seat operations:** Adapting to the instructor's visual perspective and control access.
 - **Teaching maneuvers:** Explaining and demonstrating private and commercial maneuvers from the right seat.
 - **Error recognition:** Identifying and correcting common student mistakes in real-time.
 
 ### Ground Instruction (40+ Hours)
+
 The majority of CFI training is spent on the ground, mastering the art of instruction.
+
 - **Fundamentals of Instruction (FOI):** Learning theory, human behavior, and effective communication.
 - **Lesson Planning:** Developing structured briefings and curriculum management.
 - **Technical Subject Matter:** Mastering the ability to explain complex aerodynamics, regulations, and weather systems.
@@ -50,12 +54,15 @@ The majority of CFI training is spent on the ground, mastering the art of instru
 ## Why Choose Eagle Aircraft
 
 ### Professional Mentorship
+
 Train under **Eagle Aircraft’s experienced instructors**. Our team focuses on safe aeronautical decision-making and professional standards, ensuring you are prepared for the responsibilities of a flight instructor.
 
 ### Realistic Career Expectations
+
 We pride ourselves on transparency. Instructors at Eagle Aircraft typically build an average of **70 flight hours per month**. Typical annual earnings for active flight instructors in our region range from **$24,000 to $28,000**.
 
 ### Proven Track Record
+
 Eagle Aircraft has trained **over 4,000 pilots**. We utilize our fleet of **9 aircraft** to provide consistent training opportunities for both our students and our staff of **9 professional instructors**.
 
 ---
@@ -63,16 +70,19 @@ Eagle Aircraft has trained **over 4,000 pilots**. We utilize our fleet of **9 ai
 ## Training Progression
 
 ### Phase 1: Fundamentals & Ground Mastery
+
 - Focus on the Fundamentals of Instruction (FOI).
 - Pass the FOI and FIA (Flight Instructor Airplane) written exams.
 - Develop a complete library of lesson plans for all Private and Commercial maneuvers.
 
 ### Phase 2: Right-Seat Flight Proficiency
+
 - Transition to the right seat and master the "instructor's view."
 - Practice flying and talking simultaneously—an essential skill for effective instruction.
 - Mastery of all required maneuvers to ACS standards from the instructor position.
 
 ### Phase 3: Checkride Preparation
+
 - Final review of technical knowledge and instructional techniques.
 - Practice oral examinations with senior instructors.
 - FAA Practical Test with a Designated Pilot Examiner (DPE).
@@ -81,9 +91,10 @@ Eagle Aircraft has trained **over 4,000 pilots**. We utilize our fleet of **9 ai
 
 ## Instructor Employment at Eagle Aircraft
 
-We frequently hire our own graduates based on their performance, safety record, and professionalism during training. 
+We frequently hire our own graduates based on their performance, safety record, and professionalism during training.
 
 **Benefits of Instructing Here:**
+
 - Build hours consistently to reach your 1,000 or 1,500-hour goal.
 - Gain experience in a professional Part 141 and Part 61 environment.
 - Opportunities to add **CFII** and **MEI** ratings to your certificate.
@@ -93,9 +104,11 @@ We frequently hire our own graduates based on their performance, safety record, 
 ## Who This Program Is For
 
 ### Commercial Pilots Building Toward ATP
+
 CFI is the most common way to bridge the gap between 250 hours and the flight time required for airline employment.
 
 ### Passionate Educators
+
 Individuals who have a genuine desire to teach and want to ensure their students become safe, competent pilots.
 
 ---

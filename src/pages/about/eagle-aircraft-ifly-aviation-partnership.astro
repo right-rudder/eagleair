@@ -1,0 +1,310 @@
+---
+import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
+import AboutUsWithImageAndQuote from "../../components/AboutUsWithImageAndQuote.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CTASection from "../../components/CTASection.astro";
+import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
+import Hero75 from "../../components/Hero75.astro";
+
+import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
+import ImageComp from "../../components/ImageComp.astro";
+
+const iflyEaglePartnership = {
+  hero: {
+    image: { src: "/src/assets/old website/background.jpg", alt: "Background" },
+    eyebrow: "Global Aviation Partnership",
+    title: "Eagle Aircraft Flight Academy × iFly Aviation Group",
+    subTitle:
+      "Where Americans can feel pride — and international students can feel welcome.",
+    description: [
+      "Eagle Aircraft Flight Academy is proud to partner with iFly Aviation Group, one of Mexico’s leading aviation training organizations.",
+      "This partnership creates a global training pathway that blends American aviation excellence with international opportunity — preparing pilots for the real-world aviation industry.",
+    ],
+    cta: [
+      { url: "/discovery-flight", text: "Book a Discovery Flight" },
+      { url: "/crew", text: "Meet the Team" },
+    ],
+  },
+
+  whyItMatters: {
+    title: "Why This Partnership Matters",
+    description: [
+      "Aviation is global. Airlines, cargo operators, and charter companies operate across borders every day.",
+      "By joining forces, Eagle Aircraft Flight Academy and iFly Aviation Group are building a training environment that reflects the professional aviation world students are preparing to enter.",
+      "This partnership expands access, strengthens cultural exchange, and opens doors to internationally relevant flight training — without compromising Eagle’s FAA standards or American identity.",
+    ],
+    image: {
+      src: "/src/assets/ifly-website/partner-eagle-aircraft_indinana-USA_ifly_flight-school_pilot-training_ifly_bg_qs_002.webp",
+      alt: "iFly Background QS 002",
+    },
+  },
+
+  americanStudents: {
+    title: "Advantages for American Students",
+    image: {
+      src: "/src/assets/drive/fleet-two-cesnas-team-4_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training.jpg",
+      alt: "Fleet two Cessnas team 4, Eagle Air Indiana USA Valparaiso IN flight school pilot training",
+    },
+    sections: [
+      {
+        heading: "Train in a Global Aviation Environment",
+        content: [
+          "American students train alongside international peers, gaining real-world cross-cultural experience similar to airline and corporate flight operations.",
+          "This environment helps develop communication, adaptability, and professionalism — skills airlines value highly.",
+        ],
+      },
+      {
+        heading: "Stronger Career Readiness",
+        content: [
+          "Exposure to international aviation standards, terminology, and perspectives gives U.S. students a competitive edge.",
+          "Graduates are better prepared for regional airlines, international carriers, and global aviation careers.",
+        ],
+      },
+      {
+        heading: "Preserving American Training Excellence",
+        content: [
+          "Eagle Aircraft Flight Academy remains FAA-regulated, U.S.-based, and grounded in American aviation professionalism.",
+          "The partnership enhances the learning environment without changing Eagle’s core identity.",
+        ],
+      },
+    ],
+  },
+
+  internationalStudents: {
+    title: "Advantages for International Students",
+    image: {
+      src: "/src/assets/ifly-website/partner-eagle-aircraft_indinana-USA_ifly_flight-school_pilot-training_ifly_escuela_de_vuelo_pilotos_029.jpg",
+      alt: "iFly Flight School Pilots 029",
+    },
+    sections: [
+      {
+        heading: "Access to FAA Flight Training",
+        content: [
+          "International students gain structured access to FAA Part 141 training in the United States — a globally respected standard.",
+          "Training includes exposure to U.S. airspace, ATC systems, aircraft, and professional instructional methods.",
+        ],
+      },
+      {
+        heading: "A Guided Pathway into U.S. Training",
+        content: [
+          "Through iFly Aviation Group, international students receive preparation and guidance before transitioning to training in the United States.",
+          "This reduces uncertainty and simplifies the process of beginning FAA flight training.",
+        ],
+      },
+      {
+        heading: "A More Comfortable Transition",
+        content: [
+          "Training alongside American students helps international pilots adapt faster to U.S. aviation culture and English communication.",
+          "Students train together — not separately — creating a welcoming and professional learning environment.",
+        ],
+      },
+    ],
+  },
+
+  sharedVision: {
+    title: "A Shared Vision for Professional Pilots",
+    description: [
+      "Eagle Aircraft Flight Academy and iFly Aviation Group share a commitment to safety-first training, professional discipline, and long-term aviation careers.",
+      "This partnership focuses on quality, structure, and global relevance — not shortcuts.",
+    ],
+  },
+
+  futureStudents: {
+    title: "What This Means for Future Students",
+    description: [
+      "Whether you are an American student planning a professional aviation career or an international student seeking FAA training in the United States, this partnership provides a broader perspective and stronger preparation.",
+      "Students graduate with a more competitive aviation profile and real-world readiness.",
+    ],
+  },
+
+  lookingAhead: {
+    title: "Looking Ahead",
+    description: [
+      "This collaboration is just the beginning.",
+      "Future initiatives include expanded international pathways, coordinated training programs, and increased global visibility for Eagle Aircraft Flight Academy.",
+    ],
+  },
+
+  ctas: {
+    primary: [
+      "Train with a Global Aviation Partner",
+      "Start Your FAA Training Journey",
+      "Talk to an Admissions Advisor",
+    ],
+    secondary: [
+      "International Students: Learn More",
+      "Explore Our iFly Partnership",
+      "Apply for Flight Training",
+    ],
+  },
+};
+
+const ctaData = {
+  title: "Ready to Start Your Airline Career?",
+  description:
+    "The aviation industry is waiting for skilled pilots like you. Take the first step towards your dream job with Eagle Aircraft's comprehensive training programs tailored for structured aviators.",
+  image: {
+    src: "/src/assets/sebastian-zzWYD-tc_jI-unsplash.jpg",
+    alt: "Airliner flying above the clouds",
+  },
+  primaryCTA: {
+    text: "Get Started Today",
+    href: "/about/contact",
+  },
+};
+---
+
+<BaseLayout>
+  <Hero75 data={iflyEaglePartnership.hero} />
+
+  <section class="pb-12 pt-24 px-5">
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- ROW 1 — TEXT / IMAGE / QUOTE -->
+      <div
+        class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
+      >
+        <p class="subtitle !mx-0 !text-black">Partnership Overview</p>
+        <h2 class="text-5xl text-black font-bold title">
+          {iflyEaglePartnership.whyItMatters.title}
+        </h2>
+        {
+          iflyEaglePartnership.whyItMatters.description.map((p) => (
+            <p class="sans">{p}</p>
+          ))
+        }
+      </div>
+
+      <div class="max-h-80 sm:max-h-140 lg:max-h-none">
+        <ImageComp
+          src={iflyEaglePartnership.whyItMatters.image.src}
+          alt={iflyEaglePartnership.whyItMatters.image.alt}
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div
+        class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
+      >
+        <ImQuotesLeft className="text-red-700 size-8" />
+        <p class="text-lg sans font-semibold">
+          {iflyEaglePartnership.sharedVision.description[0]}
+        </p>
+        <ImQuotesRight className="text-red-700 size-8 self-end" />
+      </div>
+
+      <!-- ROW 2 — QUOTE / IMAGE / TEXT -->
+      <div
+        class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
+      >
+        <ImQuotesLeft className="text-red-700 size-8" />
+        <p class="text-lg sans font-semibold">
+          {iflyEaglePartnership.americanStudents.sections[0].content[0]}
+        </p>
+        <ImQuotesRight className="text-red-700 size-8 self-end" />
+      </div>
+
+      <div class="max-h-80 sm:max-h-140 lg:max-h-none">
+        <ImageComp
+          src={iflyEaglePartnership.americanStudents.image.src}
+          alt={iflyEaglePartnership.americanStudents.image.alt}
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div
+        class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
+      >
+        <p class="subtitle !mx-0 !text-black">
+          {iflyEaglePartnership.americanStudents.title}
+        </p>
+        <h2 class="text-5xl text-black font-bold title">
+          {iflyEaglePartnership.americanStudents.sections[0].heading}
+        </h2>
+        {
+          iflyEaglePartnership.americanStudents.sections[0].content.map((p) => (
+            <p class="sans">{p}</p>
+          ))
+        }
+      </div>
+
+      <!-- ROW 3 — TEXT / IMAGE / QUOTE -->
+      <div
+        class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
+      >
+        <p class="subtitle !mx-0 !text-black">
+          {iflyEaglePartnership.internationalStudents.title}
+        </p>
+        <h2 class="text-5xl text-black font-bold title">
+          {iflyEaglePartnership.internationalStudents.sections[0].heading}
+        </h2>
+        {
+          iflyEaglePartnership.internationalStudents.sections[0].content.map(
+            (p) => <p class="sans">{p}</p>
+          )
+        }
+      </div>
+
+      <div class="max-h-80 sm:max-h-140 lg:max-h-none">
+        <ImageComp
+          src={iflyEaglePartnership.internationalStudents.image.src}
+          alt={iflyEaglePartnership.internationalStudents.image.alt}
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div
+        class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
+      >
+        <ImQuotesLeft className="text-red-700 size-8" />
+        <p class="text-lg sans font-semibold">
+          {iflyEaglePartnership.internationalStudents.sections[1].content[0]}
+        </p>
+        <ImQuotesRight className="text-red-700 size-8 self-end" />
+      </div>
+
+      <!-- ROW 4 — QUOTE / IMAGE / TEXT -->
+      <div
+        class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
+      >
+        <ImQuotesLeft className="text-red-700 size-8" />
+        <p class="text-lg sans font-semibold">
+          {iflyEaglePartnership.futureStudents.description[0]}
+        </p>
+        <ImQuotesRight className="text-red-700 size-8 self-end" />
+      </div>
+
+      <div class="max-h-80 sm:max-h-140 lg:max-h-none">
+        <ImageComp
+          src={iflyEaglePartnership.hero.image.src}
+          alt={iflyEaglePartnership.hero.image.alt}
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div
+        class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
+      >
+        <p class="subtitle !mx-0 !text-black">
+          {iflyEaglePartnership.lookingAhead.title}
+        </p>
+        <h2 class="text-5xl text-black font-bold title">
+          Building the Future of Global Flight Training
+        </h2>
+        {
+          iflyEaglePartnership.lookingAhead.description.map((p) => (
+            <p class="sans">{p}</p>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CTAEnrollWithUs
+    upperHeadingTextSize="!text-xl"
+    titleTextSize="!text-3xl"
+    paragraphTextSize="text-md"
+    showButton={true}
+  />
+  <GoogleMapLocation />
+  <CTASection />
+</BaseLayout>

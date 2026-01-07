@@ -33,7 +33,7 @@ const heroData = {
   subTitle:
     "Explore articles, tips, and updates from Eagle Aircraft Flight Academy. Learn from our instructors, discover industry news, and enhance your pilot knowledge.",
   cta: [
-    { url: "/discovery-flight", text: "Book a Discovery Flight"  },
+    { url: "/discovery-flight", text: "Book a Discovery Flight" },
     { url: "/crew", text: "Meet the Team" },
   ],
 };
@@ -45,7 +45,7 @@ const constBlogData = {
     "Stay informed with the latest aviation insights, training tips, relevant informations, and industry news.",
   ],
   upperHeaderTwo: "They Are Here For You",
-  titleTwo: "Our Fleet Aircrafts"
+  titleTwo: "Our Fleet Aircrafts",
 };
 ---
 
@@ -55,35 +55,44 @@ const constBlogData = {
 >
   <Hero75 data={heroData} />
 
-  <CTAEnrollWithUsMini></CTAEnrollWithUsMini>
-  
+  <CTAEnrollWithUsMini />
+
   <section class="py-16 px-4 bg-muted-50">
     <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        {featuredPost && (
-          <div class="md:col-span-2 lg:col-span-3">
-            <div class="relative">
-              <span class="absolute top-4 left-4 bg-monza-700 text-white px-4 py-1 text-sm font-bold uppercase z-10">
-                Featured
-              </span>
-              <BlogPostCard isHighlight={true} post={featuredPost} featured={true}></BlogPostCard>
+      <div class="flex flex-col gap-6 lg:gap-12">
+        {
+          featuredPost && (
+            <div class="">
+              <div class="relative">
+                <span class="absolute top-4 left-4 bg-monza-700 text-white px-4 py-1 text-sm font-bold uppercase z-10">
+                  Featured
+                </span>
+                <BlogPostCard
+                  isHighlight={true}
+                  post={featuredPost}
+                  featured={true}
+                />
+              </div>
             </div>
-          </div>
-        )}
-        
-        {remainingPosts.map((post) => (
-          <BlogPostCard post={post}></BlogPostCard>
-        ))}
-        
+          )
+        }
+        <div class="flex flex-wrap gap-y-6 gap-x-4 justify-between">
+          {
+            remainingPosts.map((post) => (
+              <div class="w-full md:w-1/2 lg:w-[30%]">
+                <BlogPostCard post={post} />
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   </section>
-  
+
   <CTAEnrollWithUs
     upperHeadingTextSize="!text-xl"
     titleTextSize="!text-3xl"
-    showButton={true} 
+    showButton={true}
   />
   <CTASection />
 </BaseLayout>

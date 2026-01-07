@@ -4,49 +4,64 @@ import { COMPANY_NAME } from "../data/consts";
 const ctaMeetOurFleetPlaceholder = {
   upperHeading: "OUR STATE-OF-THE-ART AIRCRAFTS",
   title: `MEET THE ${COMPANY_NAME} FLEET`,
-  paragraph: "Discover how Eagle Aircraft partners with Liberty University to combine hands-on flight training with college credit. Watch the video to see how our students earn their aviation degree while training locally, and learn how this unique affiliation can launch your career in aviation.",
+  paragraph:
+    "Discover how Eagle Aircraft partners with Liberty University to combine hands-on flight training with college credit. Watch the video to see how our students earn their aviation degree while training locally, and learn how this unique affiliation can launch your career in aviation.",
   ctaLink: "https://www.liberty.edu/eaglestudent",
-  ctaText:"Apply Today"
-}
+  ctaText: "Apply Today",
+};
 
 const videoPlaceholder = {
   youtubeId: "lRN7FOMXbuw",
-  alt: "Military aircraft in flight"
-}
+  alt: "Military aircraft in flight",
+};
 
-const { 
+const {
   ctaData = ctaMeetOurFleetPlaceholder,
   showButton = true,
   upperHeadingTextSize = "!text-xl",
   titleTextSize = "!text-3xl",
-  imageSide = "left", 
+  imageSide = "left",
   background = "blue",
-  video = videoPlaceholder
- } = Astro.props;
+  video = videoPlaceholder,
+} = Astro.props;
 
 const isImageOnLeft = imageSide === "left";
 const isBackgroundBlue = background === "blue";
 ---
 
-<section id="liberty-university-affiliate-program" class=`${isBackgroundBlue ? "bg-madison-950" : "bg-monza-800" } py-8`>
+<section
+  id="liberty-university-affiliate-program"
+  class=`${isBackgroundBlue ? "bg-madison-950" : "bg-monza-800" } py-8`
+>
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 items-center">
-      
-      <div class=`${isImageOnLeft ? "xl:order-2" : "xl:order-1"} flex flex-col justify-start`>
-        <p class=`${upperHeadingTextSize} !text-center lg:!text-left !mx-0 subtitle !text-white uppercase mb-4`>
+      <div
+        class=`${isImageOnLeft ? "xl:order-2" : "xl:order-1"} flex flex-col justify-start`
+      >
+        <p
+          class=`${upperHeadingTextSize} !text-center lg:!text-left !mx-0 subtitle !text-white uppercase mb-4`
+        >
           {ctaData.upperHeading}
         </p>
-        <h2 class=`${titleTextSize} !text-center lg:!text-left mx-auto lg:!mx-0 max-w-[80%] lg:max-w-[50%] xl:max-w-[70%] font-bold title !text-white`>
+        <h2
+          class=`${titleTextSize} uppercase !text-center lg:!text-left mx-auto lg:!mx-0 max-w-[80%] lg:max-w-[50%] xl:max-w-[70%] font-bold title !text-white`
+        >
           {ctaData.title}
         </h2>
         <p class="text-white sans !mx-0 !text-center lg:!text-left text-xl">
           {ctaData.paragraph}
         </p>
-        {showButton && (
-          <a href={ctaData.ctaLink} target="_blank" class={`my-8 mx-auto lg:mx-0 ${isBackgroundBlue ? "bg-monza-800" : "bg-madison-950"} text-base text-white w-fit sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
-            {ctaData.ctaText}
-          </a>
-        )}
+        {
+          showButton && (
+            <a
+              href={ctaData.ctaLink}
+              target="_blank"
+              class={`my-8 mx-auto lg:mx-0 ${isBackgroundBlue ? "bg-monza-800" : "bg-madison-950"} text-base text-white w-fit sm:text-lg md:text-xl px-8 py-4 min-w-[200px] text-center font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
+            >
+              {ctaData.ctaText}
+            </a>
+          )
+        }
       </div>
 
       <div class=`${isImageOnLeft ? "xl:order-1" : "xl:order-2"} w-full`>
@@ -56,11 +71,9 @@ const isBackgroundBlue = background === "blue";
             src={`https://www.youtube.com/embed/${video.youtubeId}?rel=0&modestbranding=1`}
             title={video.alt}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+            allowfullscreen></iframe>
         </div>
       </div>
-
     </div>
   </div>
 </section>

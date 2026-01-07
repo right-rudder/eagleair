@@ -251,3 +251,12 @@ export const BREAK_TURN_SKILL_BRIDGE_PROVIDER = {
   description:
     "BreakTurn offers free career counseling and mentorship to Service Members transitioning to the civilian aviation industry and, as a DoD-approved SkillBridge provider, places them with partner companies for up to their last 180 days of service. Click here for more info!",
 };
+
+export const ifly = {
+  name: "iFly Aviation Group",
+  website: "https://www.ifly.com.mx",
+  facebook: "https://www.facebook.com/iFlyAviacion",
+  instagram: "https://www.instagram.com/iflyaviacion/",
+  youtube: "https://www.youtube.com/@iflyaviacion5363",
+  twitter: "https://x.com/iFlyAviacion",
+};
