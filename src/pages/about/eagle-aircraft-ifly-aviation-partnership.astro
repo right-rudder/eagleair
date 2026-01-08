@@ -15,14 +15,37 @@ const iflyEaglePartnership = {
     eyebrow: "Global Aviation Partnership",
     title: "Eagle Aircraft Flight Academy × iFly Aviation Group",
     subTitle:
-      "Where Americans can feel pride — and international students can feel welcome.",
+      "Where Americans can feel pride , and international students can feel welcome.",
     description: [
       "Eagle Aircraft Flight Academy is proud to partner with iFly Aviation Group, one of Mexico’s leading aviation training organizations.",
-      "This partnership creates a global training pathway that blends American aviation excellence with international opportunity — preparing pilots for the real-world aviation industry.",
+      "This partnership creates a global training pathway that blends American aviation excellence with international opportunity , preparing pilots for the real-world aviation industry.",
     ],
     cta: [
       { url: "/discovery-flight", text: "Book a Discovery Flight" },
       { url: "/crew", text: "Meet the Team" },
+    ],
+  },
+
+  whoIsIFly: {
+    title: "Who Is iFly Aviation Group?",
+    subtitle: "Opening the Door to Global Aviation Opportunities",
+    description:
+      "iFly Aviation Group is an international aviation organization dedicated to guiding pilots beyond borders , connecting professional flight training with real-world global experience. At Eagle Aircraft, students now have the opportunity to train locally while being exposed to a truly international aviation mindset.",
+    descriptions: [
+      "Through iFly Aviation Group, pilots can experience aviation as a global profession , understanding international operations, cultural awareness, and worldwide career pathways.This partnership allows student pilots to think beyond a single country and begin building confidence for flying, communicating, and operating in an international environment.",
+    ],
+    bullets: [
+      "International aviation guidance and student support",
+      "Exposure to global flight operations and standards",
+      "A pathway for students interested in flying beyond their home country",
+    ],
+    ctas: [
+      {
+        href: "/about/contact",
+        title: "Learn About International Training Opportunities",
+        description:
+          "Discover how iFly Aviation Group expands what’s possible during your training at Eagle Aircraft.",
+      },
     ],
   },
 
@@ -31,7 +54,7 @@ const iflyEaglePartnership = {
     description: [
       "Aviation is global. Airlines, cargo operators, and charter companies operate across borders every day.",
       "By joining forces, Eagle Aircraft Flight Academy and iFly Aviation Group are building a training environment that reflects the professional aviation world students are preparing to enter.",
-      "This partnership expands access, strengthens cultural exchange, and opens doors to internationally relevant flight training — without compromising Eagle’s FAA standards or American identity.",
+      "This partnership expands access, strengthens cultural exchange, and opens doors to internationally relevant flight training , without compromising Eagle’s FAA standards or American identity.",
     ],
     image: {
       src: "/src/assets/ifly-website/partner-eagle-aircraft_indinana-USA_ifly_flight-school_pilot-training_ifly_bg_qs_002.webp",
@@ -50,7 +73,7 @@ const iflyEaglePartnership = {
         heading: "Train in a Global Aviation Environment",
         content: [
           "American students train alongside international peers, gaining real-world cross-cultural experience similar to airline and corporate flight operations.",
-          "This environment helps develop communication, adaptability, and professionalism — skills airlines value highly.",
+          "This environment helps develop communication, adaptability, and professionalism , skills airlines value highly.",
         ],
       },
       {
@@ -80,7 +103,7 @@ const iflyEaglePartnership = {
       {
         heading: "Access to FAA Flight Training",
         content: [
-          "International students gain structured access to FAA Part 141 training in the United States — a globally respected standard.",
+          "International students gain structured access to FAA Part 141 training in the United States , a globally respected standard.",
           "Training includes exposure to U.S. airspace, ATC systems, aircraft, and professional instructional methods.",
         ],
       },
@@ -95,7 +118,7 @@ const iflyEaglePartnership = {
         heading: "A More Comfortable Transition",
         content: [
           "Training alongside American students helps international pilots adapt faster to U.S. aviation culture and English communication.",
-          "Students train together — not separately — creating a welcoming and professional learning environment.",
+          "Students train together , not separately , creating a welcoming and professional learning environment.",
         ],
       },
     ],
@@ -105,7 +128,7 @@ const iflyEaglePartnership = {
     title: "A Shared Vision for Professional Pilots",
     description: [
       "Eagle Aircraft Flight Academy and iFly Aviation Group share a commitment to safety-first training, professional discipline, and long-term aviation careers.",
-      "This partnership focuses on quality, structure, and global relevance — not shortcuts.",
+      "This partnership focuses on quality, structure, and global relevance , not shortcuts.",
     ],
   },
 
@@ -158,8 +181,55 @@ const ctaData = {
   <Hero75 data={iflyEaglePartnership.hero} />
 
   <section class="pb-12 pt-24 px-5">
+    <!-- Intro -->
+    <div class="text-center mb-12 md:mb-16">
+      {
+        iflyEaglePartnership.whoIsIFly.subtitle && (
+          <p class="subtitle">{iflyEaglePartnership.whoIsIFly.subtitle}</p>
+        )
+      }
+      <h2 class="title">
+        {iflyEaglePartnership.whoIsIFly.title}
+      </h2>
+      <div
+        class="flex flex-row justify-center items-center gap-2 max-w-7xl text-lg mx-auto"
+      >
+        <div class="flex flex-col justify-center items-center gap-2 w-full">
+          {
+            iflyEaglePartnership.whoIsIFly.description && (
+              <p class="sans py-1 ">
+                {iflyEaglePartnership.whoIsIFly.description}
+              </p>
+            )
+          }
+          <div
+            class="bg-madison-950 text-white p-8 flex flex-col lg:flex-row w-full items-center justify-around"
+          >
+            <ImageComp
+              src="/src/assets/logo_eagle_aircraft_round_color.png"
+              alt="1fb1e6"
+              class="w-64"
+            />
+            <ImageComp
+              src="/src/assets/ifly-website/partner-eagle-aircraft_indinana-USA_ifly_flight-school_pilot-training_ifly_logo_aviation_group_blanco_ok.webp"
+              alt="1fb1e6"
+              class="w-96"
+            />
+          </div>
+
+          {
+            iflyEaglePartnership.whoIsIFly.descriptions &&
+              iflyEaglePartnership.whoIsIFly.descriptions.map((paragraph) => (
+                <p class="sans  py-1">{paragraph}</p>
+              ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- ROWS -->
     <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      <!-- ROW 1 — TEXT / IMAGE / QUOTE -->
+      <!-- ROW 1 , TEXT / IMAGE / QUOTE -->
       <div
         class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
       >
@@ -192,7 +262,7 @@ const ctaData = {
         <ImQuotesRight className="text-red-700 size-8 self-end" />
       </div>
 
-      <!-- ROW 2 — QUOTE / IMAGE / TEXT -->
+      <!-- ROW 2 , QUOTE / IMAGE / TEXT -->
       <div
         class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
       >
@@ -227,7 +297,7 @@ const ctaData = {
         }
       </div>
 
-      <!-- ROW 3 — TEXT / IMAGE / QUOTE -->
+      <!-- ROW 3 , TEXT / IMAGE / QUOTE -->
       <div
         class="flex flex-col items-center sm:items-start gap-3 sm:col-span-2 lg:col-span-1"
       >
@@ -262,7 +332,7 @@ const ctaData = {
         <ImQuotesRight className="text-red-700 size-8 self-end" />
       </div>
 
-      <!-- ROW 4 — QUOTE / IMAGE / TEXT -->
+      <!-- ROW 4 , QUOTE / IMAGE / TEXT -->
       <div
         class="bg-madison-950 text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
       >
