@@ -66,10 +66,10 @@ const ctaMiniData = {
 };
 
 const libertyHighlights = [
-  { label: "Degree Earned", value: "B.S. in Aeronautics" },
-  { label: "Program Length", value: "2–3 Years" },
-  { label: "ATP Eligibility", value: "Restricted ATP @ 1,000 Hours" },
-  { label: "Affiliate Since", value: "2014" },
+  { title: "Degree Earned", value: "B.S. in Aeronautics" },
+  { title: "Program Length", value: "2–3 Years" },
+  { title: "ATP Eligibility", value: "Restricted ATP to 1,000 Hours" },
+  { title: "Affiliate Since", value: "2014" },
 ];
 ---
 
@@ -77,11 +77,6 @@ const libertyHighlights = [
   <Hero75 data={heroData} />
   <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4 items-center">
-      <ImageComp
-        src={LibertyUniversityLogo}
-        alt="Liberty University School of Aeronautics Afiliate Logo"
-        class="pl-1 w-[450px] h-auto"
-      />
       <p class="mx-auto subtitle !text-black">
         {libertyUniversityIntroData.upperHeader}
       </p>
@@ -89,11 +84,72 @@ const libertyHighlights = [
         set:html={libertyUniversityIntroData.title}
         class="text-4xl md:text-5xl mx-auto font-bold text-center title"
       />
+
       {
         libertyUniversityIntroData.paragraphs.map((paragraph: string) => (
-          <p class="text-xl text-center sans max-w-2xl mx-auto">{paragraph}</p>
+          <p class="text-xl text-center sans max-w-5xl py-2 mx-auto">
+            {paragraph}
+          </p>
         ))
       }
+      <ImageComp
+        src={LibertyUniversityLogo}
+        alt="Liberty University School of Aeronautics Afiliate Logo"
+        class="pl-1 w-full max-w-4xl self-center lg:hidden"
+      />
+
+      <!-- Hight Lights and Logo -->
+      <div
+        class="flex flex-col lg:flex-row justify-center items-center border-y-2 py-6 my-2"
+      >
+        <!-- High Lights -->
+        {
+          libertyHighlights && (
+            <ul class="flex flex-col items-center justify-center gap-6 py-6 font-title text-pretty max-w-1/4">
+              {libertyHighlights.slice(0, 2).map((stat: any) => (
+                <li class="flex flex-col-reverse gap-2 ">
+                  <div class=" flex items-center justify-center">
+                    <span class="text-md  lg:text-xl">{stat.prefix}</span>
+                    <p class="text-md lg:text-2xl text-madison-950 text-center font-semibold">
+                      {stat.value}
+                    </p>
+                    <span class="text-md  lg:text-xl">{stat.suffix}</span>
+                  </div>
+                  <h2 class=" text-md text-center md:text-xl/tight lg:text-2xl">
+                    {stat.title}
+                  </h2>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+        <ImageComp
+          src={LibertyUniversityLogo}
+          alt="Liberty University School of Aeronautics Afiliate Logo"
+          class="pl-1 w-full max-w-xl self-center hidden lg:block"
+        />
+
+        {
+          libertyHighlights && (
+            <ul class="flex flex-col items-center justify-center gap-6 py-6 font-title text-pretty max-w-1/4">
+              {libertyHighlights.slice(2, 4).map((stat: any) => (
+                <li class="flex flex-col-reverse gap-2 ">
+                  <div class=" flex items-center justify-center">
+                    <span class="text-md  lg:text-xl">{stat.prefix}</span>
+                    <p class="text-md lg:text-2xl text-madison-950 text-center font-semibold">
+                      {stat.value}
+                    </p>
+                    <span class="text-md  lg:text-xl">{stat.suffix}</span>
+                  </div>
+                  <h2 class=" text-md text-center md:text-xl/tight lg:text-2xl">
+                    {stat.title}
+                  </h2>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </div>
     </div>
   </section>
   <CTAMeetOurAffiliateProgram background="red" ctaData={ctaProgramsData} />
