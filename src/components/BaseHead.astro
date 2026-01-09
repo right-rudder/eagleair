@@ -36,7 +36,8 @@ const {
                                                __/ |                
                                               |___/                 
 
-    Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact-us -->
+    Nice to see you here.  Find new student pilots with Right Rudder Marketing.  
+    https://rightruddermarketing.com/contact-us -->
 
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/png" href={FAVICON} />
@@ -50,44 +51,34 @@ const {
   rel="alternate"
   type="application/rss+xml"
   title={SITE_TITLE}
-  href={"/rss.xml"}
+  href="/rss.xml"
 />
 
 <meta name="generator" content={Astro.generator} />
-
-<!-- TODO : Google tag (gtag.js) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCNNK7Z4RF"></script>
-  <script type="text/javascript">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-HCNNK7Z4RF');
-</script> -->
 
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FlightSchool",
-    "name": "EagleAir",
+    "name": "Eagle Aircraft Flight Academy",
     "alternateName": "Eagle Aircraft",
-    "url": "https://eagleair.com/",
-    "description": "Eagle Aircraft is an award-winning flight school that offers specialized courses for both beginner pilots and military aviators transitioning to civilian aviation. Our highly trained instructors bring extensive experience, ensuring you receive exceptional training tailored to your needs. We offer ATP-CTP certification, ATP flight training, rotorcraft transition programs, and airline hiring preparation.",
-    "telephone": "+1 (919) 526-4287",
-    "email": "contact@eagleair.com",
+    "url": "https://eagleaircraftflightacademy.com/",
+    "description": "Eagle Aircraft Flight Academy is a professional flight school offering FAA Part 141 and Part 61 pilot training. Programs range from Private Pilot through Commercial and Flight Instructor, with structured pathways to airline careers and university partnerships.",
+    "telephone": "+1 (219) 464-0130",
+    "email": "info@eagleaircraftflightacademy.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "278 Aviation Rd.",
-      "addressLocality": "Pikeville",
-      "addressRegion": "NC",
-      "postalCode": "27863",
+      "streetAddress": "4207 Murvihill Rd",
+      "addressLocality": "Valparaiso",
+      "addressRegion": "IN",
+      "postalCode": "46383",
       "addressCountry": "US"
     },
     "currenciesAccepted": "USD",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 35.4929,
-      "longitude": -77.9834
+      "latitude": 41.453,
+      "longitude": -87.0071
     },
     "openingHoursSpecification": [
       {
@@ -102,24 +93,26 @@ const {
           "Sunday"
         ],
         "opens": "08:00",
-        "closes": "20:00"
+        "closes": "18:00"
       }
     ],
     "sameAs": [
-      "https://www.facebook.com/EagleAircraft",
-      "https://www.linkedin.com/company/eagle-aircraft-inc/about/"
-      // "https://www.instagram.com/",
-      // "https://www.twitter.com/."
+      "https://www.facebook.com/EagleAircraftFlightAcademy",
+      "https://www.linkedin.com/company/eagle-aircraft-inc/"
     ],
     "areaServed": {
       "@type": "Place",
-      "name": ["Pikeville, NC", "Goldsboro, NC", "Wayne County, NC"]
+      "name": [
+        "Valparaiso, IN",
+        "Northwest Indiana",
+        "Chicago Metropolitan Area"
+      ]
     },
     "makesOffer": {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "serviceType": "ATP Certification and Military Transition Training"
+        "serviceType": "FAA Pilot Training and Flight Instruction"
       },
       "priceCurrency": "USD",
       "price": "Varies"
@@ -132,11 +125,11 @@ const {
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta name="keywords" content={keywords} />
-<meta name="author" content="EagleAir" />
-<meta name="geo.region" content="US-NC" />
-<meta name="geo.placename" content="Pikeville" />
-<meta name="geo.position" content="35.4929;-77.9834" />
-<meta name="ICBM" content="35.4929, -77.9834" />
+<meta name="author" content="Eagle Aircraft Flight Academy" />
+<meta name="geo.region" content="US-IN" />
+<meta name="geo.placename" content="Valparaiso" />
+<meta name="geo.position" content="41.4530;-87.0071" />
+<meta name="ICBM" content="41.4530, -87.0071" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -145,7 +138,7 @@ const {
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
 <meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="EagleAir" />
+<meta property="og:site_name" content="Eagle Aircraft Flight Academy" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
