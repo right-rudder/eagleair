@@ -30,7 +30,7 @@ const defaultSteps = [
     imagePath: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
     title: "Train at KVPZ",
     description:
-      "Train with experienced instructors in Cessna and Tecnam aircraft and Elite simulators at Porter County Regional Airport in Valparaiso.",
+      "Train with experienced instructors in Cessna and Tecnam aircraft and FRASCA simulators at Porter County Regional Airport in Valparaiso.",
   },
   {
     imagePath: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
@@ -40,7 +40,11 @@ const defaultSteps = [
   },
 ];
 
-const { title = "Our Team", subtitle = "Get to know with what you`ll be flying with", steps = defaultSteps } = Astro.props;
+const {
+  title = "Our Team",
+  subtitle = "Get to know with what you`ll be flying with",
+  steps = defaultSteps,
+} = Astro.props;
 
 const defaultImage = "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg";
 ---
@@ -62,44 +66,44 @@ const defaultImage = "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg";
       </div>
 
       <div class="flex flex-col mx-auto gap-6 max-w-5xl">
-        {steps.map((step, index) => {
-          const isReversed = index % 2 !== 0;
-          const stepImage = step.imagePath || defaultImage;
+        {
+          steps.map((step, index) => {
+            const isReversed = index % 2 !== 0;
+            const stepImage = step.imagePath || defaultImage;
 
-          return (
-            <div
-              class="bg-muted-50 shadow-md transition ease-out duration-200 hover:scale-105 hover:shadow-2xl hover:-translate-y-2"
-            >
-              <div
-                class={`flex flex-col gap-6 p-8 items-center
-                  ${isReversed ? "md:flex-row-reverse" : "md:flex-row"}`}
-              >
-                <div class="flex-shrink-0">
-                  <div class="w-20 h-20 md:w-24 md:h-24 overflow-hidden rounded-full shadow-lg">
-                    <ImageComp
-                      src={stepImage}
-                      alt={step.title}
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-
+            return (
+              <div class="bg-muted-50 shadow-md transition ease-out duration-200 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
                 <div
-                  class={`flex-1 mt-4 md:mt-0
+                  class={`flex flex-col gap-6 p-8 items-center
+                  ${isReversed ? "md:flex-row-reverse" : "md:flex-row"}`}
+                >
+                  <div class="flex-shrink-0">
+                    <div class="w-20 h-20 md:w-24 md:h-24 overflow-hidden rounded-full shadow-lg">
+                      <ImageComp
+                        src={stepImage}
+                        alt={step.title}
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class={`flex-1 mt-4 md:mt-0
                     text-center
                     ${isReversed ? "md:text-right md:pr-4" : "md:text-left md:pl-4"}`}
-                >
-                  <h3 class="text-2xl md:text-3xl font-title font-bold text-muted-600 mb-3">
-                    {step.title}
-                  </h3>
-                  <p class="text-muted-700 leading-relaxed">
-                    {step.description}
-                  </p>
+                  >
+                    <h3 class="text-2xl md:text-3xl font-title font-bold text-muted-600 mb-3">
+                      {step.title}
+                    </h3>
+                    <p class="text-muted-700 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })
+        }
       </div>
     </div>
   </div>
