@@ -2,7 +2,7 @@
 name: "Ryan Leto"
 title: "CFI"
 bio: "Graduate from Indiana State with Bachelor's in Aviation, specializing in Private and Commercial instruction."
-image: "/src/assets/crew/team-member-placeholder.jpg"
+image: "/src/assets/crew/team-member-placeholder_eagle-aircraft-flight-academy_Valparaiso-Indiana-USA_Flight-School_Pilot-training.png"
 order: 10
 certifications:
   - "CFI - Certified Flight Instructor"
