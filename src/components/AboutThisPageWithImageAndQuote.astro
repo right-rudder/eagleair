@@ -5,38 +5,24 @@ import { COMPANY_NAME } from "../data/consts";
 
 const MainImage = "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg";
 
-const aboutThisPageWithQuotePlaceholder = 
-    {
-      upperHeading: "Our History",
-      title: "About Us",
-      paragraphs: [
-        `Welcome to ${COMPANY_NAME}, where dreams take flight. Founded and
-        operated by Hal Harris and his family, our academy is rooted in a love
-        for aviation that spans generations. Hal, a seasoned Certified Flight
-        Instructor (CFI) and jet pilot with a Citation type rating, has been
-        sharing his passion for flying with aspiring pilots for over 30 years.
-        His dedication to aviation is matched by his wife, MariCris, and their
-        daughter, Grace, who both contribute their unique talents and
-        enthusiasm to our family run school.`,
-        `Our vision is to build a future where innovation, excellence, and meaningful
-        experiences shape everything we do. As we grow, ${COMPANY_NAME} remains committed
-        to expanding our capabilities, elevating our standards, and continually improving
-        the way we serve our community. We look ahead with intention — embracing new
-        opportunities, adopting modern solutions, and staying focused on long-term impact.
-        Our future is guided by progress, responsibility, and the belief that great
-        experiences are built through consistent dedication and purpose.`
-      ],
-      image: "/src/assets/aircraft-window-view.jpg",
-      quote: `When you join ${COMPANY_NAME}, you become part of our family.`,
-    }
+const aboutThisPageWithQuotePlaceholder = {
+  upperHeading: "Our History",
+  title: "About Us",
+  paragraphs: [
+    `Welcome to ${COMPANY_NAME}, Founded in 1979 by Dr. John Reed, Eagle Aircraft has established itself as a prominent flight school in Northwest Indiana. To date, the institution has successfully trained over 4,000 students, significantly contributing to the development of future generations of pilots. Eagle Aircraft possesses a rich heritage and holds a distinguished place in the lives of many individuals. `,
+    `Following its inception, Eagle was managed by John and Joy Slegers, who played a pivotal role in its expansion into a primary flight training center during the early 2000s. The current phase of Eagle's evolution includes a strategic partnership with iFly Aviation Group, which has opened new avenues for growth and innovation. `,
+    `The team at Eagle Aircraft is deeply committed to flight training and is enthusiastic about the many opportunities and experiences that aviation offers. The organization prioritizes safety, efficiency, and cost-effectiveness in all operations. Furthermore, Eagle Aircraft aims to instill a passion for aviation in its students, equipping them to excel in their careers and beyond.`,
+  ],
+  image: "/src/assets/aircraft-window-view.jpg",
+  quote: `When you join ${COMPANY_NAME}, you become part of our family.`,
+};
 
-const { aboutThisPageWithQuoteData = aboutThisPageWithQuotePlaceholder } = Astro.props;
+const { aboutThisPageWithQuoteData = aboutThisPageWithQuotePlaceholder } =
+  Astro.props;
 ---
-
 
 <section class="pb-12 pt-24 px-5 bg-monza-800">
   <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
-
     <div class="flex flex-col items-center sm:items-start gap-3 lg:col-span-2">
       <p class="subtitle !mx-0 !text-muted-50 UPPER">
         {aboutThisPageWithQuoteData.upperHeading}
@@ -51,13 +37,14 @@ const { aboutThisPageWithQuoteData = aboutThisPageWithQuotePlaceholder } = Astro
       }
     </div>
 
-    <div class="bg-muted-50 text-white aspect-video p-8 lg:px-20 lg:py-16 flex flex-col justify-center gap-10">
+    <div
+      class="bg-muted-50 text-white aspect-video p-8 lg:px-20 lg:py-16 flex flex-col justify-center gap-10"
+    >
       <ImQuotesLeft className="text-red-700 size-8" />
       <p class="text-lg text-madison-950 !text-2xl sans font-semibold">
         {aboutThisPageWithQuoteData.quote}
       </p>
       <ImQuotesRight className="text-red-700 size-8 self-end" />
     </div>
-
   </div>
 </section>
