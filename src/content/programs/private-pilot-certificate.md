@@ -65,7 +65,7 @@ whatIsIncluded:
         - "Practical test (checkride) preparation"
     - title: "Aircraft & Training Environment"
       items:
-        - "Fleet of 9 well-maintained aircraft"
+        - "Fleet of well-maintained aircraft"
         - "Emphasis on checklist usage, cockpit discipline, and professional operations"
         - "Real-world flying experience in local and regional airspace"
 

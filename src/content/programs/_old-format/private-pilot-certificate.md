@@ -32,7 +32,7 @@ Whether your goal is to fly for personal enjoyment or to continue toward advance
 
 ## Training Pathways: Part 141 & Part 61
 
-Eagle Aircraft is primarily a **Part 141 flight school**, which is the required path for our Liberty University, International, and Veteran programs. However, we also offer **Part 61 training** for students who require a more flexible, less rigid schedule. 
+Eagle Aircraft is primarily a **Part 141 flight school**, which is the required path for our Liberty University, International, and Veteran programs. However, we also offer **Part 61 training** for students who require a more flexible, less rigid schedule.
 
 Regardless of the pathway you choose, we utilize our structured **Part 141 syllabus** for all students to ensure the highest standards of safety and proficiency.
 
@@ -62,7 +62,7 @@ Eagle Aircraft emphasizes **FAA Part 141** training as our primary path, providi
 
 ### Aircraft & Training Environment
 
-- Fleet of 9 well-maintained aircraft
+- Fleet of well-maintained aircraft
 - Emphasis on checklist usage, cockpit discipline, and professional operations
 - Real-world flying experience in local and regional airspace
 
