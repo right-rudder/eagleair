@@ -9,7 +9,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://eagleair.com",
+  site: "https://jseagle.com",
   integrations: [
     react(),
     sitemap({
