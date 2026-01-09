@@ -92,7 +92,7 @@ export const facebookImages = [
     alt: "Student on stairs in front of Wall of Fame with certificate",
   },
   {
-    src: "/src/assets/facebook/student-on-twin-engine-aircraft-posing.jpg",
+    src: "/src/assets/facebook/students-and-staff-around-white-aircraft-blue-sky-green-grass.jpg",
     alt: "Student on twin engine aircraft posing",
   },
   {

@@ -2,7 +2,7 @@
 title: "Multi-Engine Rating"
 description: "Professional multi-engine training in our Beechcraft Baron 55. Structured Part 141 and Part 61 pathways with transparent pricing and experienced instruction at KVPZ."
 order: 5
-image: "/src/assets/facebook/student-on-twin-engine-aircraft-posing.jpg"
+image: "/src/assets/facebook/students-and-staff-around-white-aircraft-blue-sky-green-grass.jpg"
 alt: "Student and instructor in front of aircraft"
 reverse: false
 top: true

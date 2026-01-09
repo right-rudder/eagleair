@@ -2,7 +2,7 @@
 title: "Certified Flight Instructor (CFI)"
 description: "Become a professional flight instructor and build hours while earning income. Comprehensive CFI training with right-seat proficiency and teaching techniques. Meet ATP minimums through professional instruction."
 order: 4
-image: "/src/assets/facebook/student-on-twin-engine-aircraft-posing.jpg"
+image: "/src/assets/facebook/students-and-staff-around-white-aircraft-blue-sky-green-grass.jpg"
 alt: "N4397R Cessna 172M student with certificate and instructor"
 reverse: false
 top: true
