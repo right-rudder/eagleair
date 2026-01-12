@@ -2,7 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ImageComp from "../components/ImageComp.astro";
 
-import { PHONE_NUMBER, PHONE_NUMBER_UNFORMATED } from "../data/consts";
+import {
+  COMPANY_NAME,
+  PHONE_NUMBER,
+  PHONE_NUMBER_UNFORMATED,
+} from "../data/consts";
 const example = {
   siteTitle: "500 - Server Error | Eagle Aircraft Flight Academy",
   siteDescription:
@@ -43,8 +47,8 @@ const { content = example } = Astro.props;
 ---
 
 <BaseLayout
-  siteTitle={content.siteTitle}
-  siteDescription={content.siteDescription}
+  siteTitle={`Server Error | ${COMPANY_NAME}`}
+  siteDescription={`Something went wrong on our end. Please try again or return to ${COMPANY_NAME}.`}
 >
   <section
     class="relative min-h-screen flex items-center justify-center bg-linear-to-b from-white to-neutral-200 text-gray-900 py-20 lg:py-44 px-5"
