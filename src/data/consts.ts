@@ -104,6 +104,29 @@ export const GITHUB_URL = "";
 // Podcast Eagle's Nest Eagle Aircraft
 export const SPOTIFY = "https://open.spotify.com/show/3kSF0bwT4fFBQPH5TFPThM";
 
+export const SOCIAL = {
+  facebook: "https://www.facebook.com/EagleAircraft",
+  instagram: "https://www.instagram.com/eaglevpz/",
+  linkedin: "https://www.linkedin.com/company/eagle-aircraft-inc",
+  twitter: "",
+  youtube: "https://www.youtube.com/@eagleaircraft9980",
+  spotify: "https://open.spotify.com/show/3kSF0bwT4fFBQPH5TFPThM",
+  github: "",
+};
+
+export const LOCATION = {
+  city: "Valparaiso",
+  state: "Indiana",
+  locationShort: "Valparaiso, IN",
+  locationFull: "Valparaiso, Indiana",
+  zip: "46383",
+  address: "4001 Murvihill Road",
+  fullAddress: "4001 Murvihill Road, Valparaiso, IN 46383",
+  phone: "",
+  forwardPhone: "",
+  gMaps: "https://maps.app.goo.gl/Dp37mS36aLfQ4kEs6",
+};
+
 export const UVP = [
   "International School for International Students",
   "We want Americans to fill proud and International Students to fill welcome",

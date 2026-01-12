@@ -8,7 +8,12 @@ import ProcessSteps from "../components/ProcessSteps.astro";
 import ProcessSteps2 from "../components/ProcessSteps2.astro";
 import Testimonials from "../components/Testimonials.astro";
 import CTASection from "../components/CTASection.astro";
-import { PHONE_NUMBER, COMPANY_NICKNAME } from "../data/consts";
+import {
+  PHONE_NUMBER,
+  COMPANY_NICKNAME,
+  COMPANY_NAME,
+  LOCATION,
+} from "../data/consts";
 import RRMDivider from "../components/RRMDivider.astro";
 import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
 import CTATwoTextColumns from "../components/CTATwoTextColumns.astro";
@@ -213,7 +218,10 @@ const processSteps2 = [
 ];
 ---
 
-<BaseLayout>
+<BaseLayout
+  siteTitle={`Flight School in ${LOCATION.locationFull} | ${COMPANY_NAME}`}
+  siteDescription={`Professional flight training in  ${LOCATION.locationFull}. FAA Part 141 and Part 61 pilot training near Chicago at Eagle Aircraft Flight Academy.`}
+>
   <HeroScreen data={heroData} />
   <ProcessSteps
     title="Your Path to the Airlines"
