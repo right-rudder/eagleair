@@ -15,6 +15,7 @@ import FinalCTA from "../../components/ProgramSlug/FinalCTA.astro";
 import Hero75 from "../../components/Hero75.astro";
 import CTAMeetOurFleet from "../../components/CTAMeetOurFleet.astro";
 import CTAEnrollWithUsBlue from "../../components/CTAEnrollWithUsBlue.astro";
+import { COMPANY_NAME, LOCATION } from "../../data/consts";
 // Static Path Generation
 export const getStaticPaths = (async () => {
   const programs = await getCollection("programs");
@@ -51,7 +52,7 @@ const heroData = {
 ---
 
 <BaseLayout
-  siteTitle={`${data.title} | Eagle Aircraft Aviation Academy`}
+  siteTitle={`${data.title} in ${LOCATION.city}, ${LOCATION.state} | ${COMPANY_NAME}`}
   siteDescription={data.description}
   siteImage={data.image}
 >
