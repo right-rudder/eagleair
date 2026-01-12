@@ -27,9 +27,10 @@ const heroData = {
 const ctaProgramsData = {
   upperHeading: "FLIGHT TRAINING AFFILIATE PROGRAM",
   title: `TRAIN WITH ${COMPANY_NICKNAME} AND LIBERTY UNIVERSITY`,
-  paragraph: "Discover how Eagle Aircraft partners with Liberty University to combine hands-on flight training with college credit. Watch the video to see how our students earn their aviation degree while training locally, and learn how this unique affiliation can launch your career in aviation.",
+  paragraph:
+    "Discover how Eagle Aircraft partners with Liberty University to combine hands-on flight training with college credit. Watch the video to see how our students earn their aviation degree while training locally, and learn how this unique affiliation can launch your career in aviation.",
   ctaLink: "https://www.liberty.edu/eaglestudent",
-  ctaText: "Apply Today"
+  ctaText: "Apply Today",
 };
 
 const benefitList = [
@@ -111,17 +112,17 @@ const newToFlyingsStepsData = {
       },
     },
     {
-        stepNumber: "05",
-        title: "Reach the Airlines",
-        description: `<b>Turn your training into a professional airline career.</b>
+      stepNumber: "05",
+      title: "Reach the Airlines",
+      description: `<b>Turn your training into a professional airline career.</b>
             After earning your advanced ratings and building flight time, the final destination is the airlines. Eagle Aircraft helps you prepare for this transition by developing strong aeronautical decision-making, real-world IFR experience, and professional standards that airlines expect. Many pilots build their hours as CFIs, then move on to regional and major airlines with confidence.
             
             What to expect: Time building toward ATP minimums, airline-focused procedures, interview readiness, and a clear path from flight school to the cockpit of an airliner.`,
-        image: {
-            src: "/src/assets/facebook/pilot-in-commercial-aircraft-cockpit.jpg",
-            alt: "Pilot in commercial aircraft cockpit",
-        },
-        }
+      image: {
+        src: "/src/assets/facebook/pilot-in-commercial-aircraft-cockpit.jpg",
+        alt: "Pilot in commercial aircraft cockpit",
+      },
+    },
   ],
   cta: {
     url: "/about/contact",
@@ -159,20 +160,29 @@ const ctaData = {
 ---
 
 <BaseLayout
-  siteTitle="New To Flying | Eagle Aircraft Aviation Academy"
-  siteDescription="Explore our comprehensive flight training programs designed to take you from zero to hero"
+  siteTitle={`New to Flying? Start Here | ${COMPANY_NAME}`}
+  siteDescription={`New to aviation? Learn how to become a pilot with structured flight training at ${COMPANY_NAME}.`}
 >
   <Hero75 data={heroData} />
-  <NewToFlyingStepByStep newToFlyingStepsData={newToFlyingsStepsData}/>
-  <CTAMeetOurAffiliateProgram video={videoData}  showButton={false} background="red" ctaData={ctaVideoData}/>
-  <BenefitsListBreakTurn
-  imageSide="right"
-  background="white"
-  image={benefitsImage}
-  benefitsData={benefitsSection}
-  benefitList={benefitList}
+  <NewToFlyingStepByStep newToFlyingStepsData={newToFlyingsStepsData} />
+  <CTAMeetOurAffiliateProgram
+    video={videoData}
+    showButton={false}
+    background="red"
+    ctaData={ctaVideoData}
   />
-  <CTAMeetOurAffiliateProgram showButton={false} background="red" ctaData={ctaProgramsData}/>
-    <GoogleMapLocation />
+  <BenefitsListBreakTurn
+    imageSide="right"
+    background="white"
+    image={benefitsImage}
+    benefitsData={benefitsSection}
+    benefitList={benefitList}
+  />
+  <CTAMeetOurAffiliateProgram
+    showButton={false}
+    background="red"
+    ctaData={ctaProgramsData}
+  />
+  <GoogleMapLocation />
   <CTASection {...ctaData} />
 </BaseLayout>
