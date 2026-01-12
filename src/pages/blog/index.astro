@@ -7,6 +7,7 @@ import CTASection from "../../components/CTASection.astro";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
 import Hero75 from "../../components/Hero75.astro";
+import { COMPANY_NAME } from "../../data/consts";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -50,8 +51,8 @@ const constBlogData = {
 ---
 
 <BaseLayout
-  siteTitle="Blog | Eagle Aircraft Aviation Academy"
-  siteDescription="Aviation insights, training tips, and industry news"
+  siteTitle={`Aviation Blog | ${COMPANY_NAME}`}
+  siteDescription={`Aviation insights, pilot career advice, and flight training tips from ${COMPANY_NAME}.`}
 >
   <Hero75 data={heroData} />
 
