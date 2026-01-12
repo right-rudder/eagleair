@@ -6,7 +6,7 @@ import CTASection from "../../components/CTASection.astro";
 import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
 import Hero75 from "../../components/Hero75.astro";
 import GoogleReviews from "../../components/External/GoogleReviews.astro";
-import { COMPANY_NAME } from "../../data/consts";
+import { COMPANY_NAME, LOCATION } from "../../data/consts";
 import CTAEnrollWithUsBlue from "../../components/CTAEnrollWithUsBlue.astro";
 
 const heroData = {
@@ -36,7 +36,10 @@ const ctaData = {
 };
 ---
 
-<BaseLayout>
+<BaseLayout
+  siteTitle={`About ${COMPANY_NAME} | ${LOCATION.state} Flight School`}
+  siteDescription={`Learn about ${COMPANY_NAME}, a trusted ${LOCATION.state} flight school offering professional pilot training near Chicago.`}
+>
   <Hero75 data={heroData} />
   <AboutUsWithImageAndQuote />
   <CTAEnrollWithUs
