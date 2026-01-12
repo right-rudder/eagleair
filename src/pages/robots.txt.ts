@@ -157,7 +157,7 @@ Disallow: /
 
 export const GET: APIRoute = ({ site }) => {
   // Hardcoded base URL as requested for simplicity
-  const baseURL = "https://jseagle.com";
+  const baseURL = "https://www.eagleaircraftflight.com/";
 
   const robotsContent = getRobotsTxt(baseURL);
 
