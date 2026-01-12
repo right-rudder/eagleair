@@ -5,6 +5,7 @@ import CTASection from "../components/CTASection.astro";
 import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
 import Hero75 from "../components/Hero75.astro";
 import EnrollmentFormSection from "../components/Enrollment/EnrollmentFormSection.astro";
+import { COMPANY_NAME } from "../data/consts";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -29,9 +30,7 @@ const heroData = {
   title: "Begin Your <br> Flight Training",
   subTitle:
     "Ready to enroll at Eagle Aircraft Flight Academy? Our admissions team will guide you through program options, requirements, and next steps for domestic and international students.",
-  cta: [
-    { url: "/enrollment#enroll", text: "Start Enrollment" },
-  ],
+  cta: [{ url: "/enrollment#enroll", text: "Start Enrollment" }],
 };
 
 const constBlogData = {
@@ -44,8 +43,8 @@ const constBlogData = {
 ---
 
 <BaseLayout
-  siteTitle="Enrollment | Eagle Aircraft Aviation Academy"
-  siteDescription="Aviation insights, training tips, and industry news"
+  siteTitle={`Enroll in Flight Training | ${COMPANY_NAME}`}
+  siteDescription={`Enroll in professional flight training at ${COMPANY_NAME} and begin your journey to becoming a pilot.`}
 >
   <Hero75 minHeight="min-h-[70vh]" data={heroData} />
 
