@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero75 from "../../components/Hero75.astro";
 import ImageComp from "../../components/ImageComp.astro";
+import { COMPANY_NAME } from "../../data/consts";
 
 const heroData = {
   image: {
@@ -266,21 +267,24 @@ const trainingDocs = [
 ];
 ---
 
-<BaseLayout>
+<BaseLayout
+  siteTitle={`Student Pilot Resources | ${COMPANY_NAME}`}
+  siteDescription={`Access important resources and documents for student pilots training at ${COMPANY_NAME}.`}
+>
   <Hero75 minHeight="min-h-[70vh]" data={heroData} />
   <section class="py-16 px-4 md:px-8 lg:px-16 bg-muted-50">
     <div class="max-w-7xl mx-auto">
       <h1 class="title text-center mb-8">Student Resources</h1>
       <p class="text-center text-muted-700 mb-12 max-w-3xl mx-auto">
         Below are various resources to help you during your training with Eagle
-        Aircraft. If you have any questions or need further assistance, please don't
-        hesitate to reach out to your instructor or our support team.
+        Aircraft. If you have any questions or need further assistance, please
+        don't hesitate to reach out to your instructor or our support team.
       </p>
 
       <div class="flex flex-row justify-between">
         <div class="flex flex-col my-auto">
-        {
-          trainingDocs.slice(0, 2).map((section) => (
+          {
+            trainingDocs.slice(0, 2).map((section) => (
               <div class="my-12">
                 <h2 class="text-2xl font-title font-bold text-monza-900 mb-4">
                   {section.section}
@@ -303,13 +307,15 @@ const trainingDocs = [
                   ))}
                 </ul>
               </div>
-          ))
-        }
+            ))
+          }
         </div>
         <ImageComp
-          src="/src/assets/facebook/student-in-front-of-wall-of-fame.jpg",
-          alt="Student in front of Wall of Fame",
-          class="w-1/2 h-auto shadow-md" 
+          src="/src/assets/facebook/student-in-front-of-wall-of-fame.jpg"
+          ,
+          alt="Student in front of Wall of Fame"
+          ,
+          class="w-1/2 h-auto shadow-md"
         />
       </div>
       {
