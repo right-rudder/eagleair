@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { PHONE_NUMBER } from "../data/consts";
+import { COMPANY_NAME, PHONE_NUMBER } from "../data/consts";
 import Hero75 from "../components/Hero75.astro";
 
 const heroData = {
@@ -17,8 +17,8 @@ const lastUpdated = "January 06, 2025";
 ---
 
 <BaseLayout
-  siteTitle="Privacy Policy | Eagle Aircraft"
-  siteDescription="Eagle Aircraft's privacy policy. Learn how we collect, use, and protect your personal information."
+  siteTitle={`Privacy Policy | ${COMPANY_NAME}`}
+  siteDescription={`Review how ${COMPANY_NAME} collects, uses, and protects your personal information.`}
 >
   <Hero75 data={heroData} />
 
