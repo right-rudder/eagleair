@@ -16,6 +16,7 @@ const results = files.map((file) => {
   const title = $("title").text().trim();
   const description =
     $('meta[name="description"]').attr("content")?.trim() || "";
+  const keywords = $('meta[name="keywords"]').attr("content")?.trim() || "";
   const h1 = $("h1").first().text().trim();
 
   const page =
@@ -29,9 +30,11 @@ const results = files.map((file) => {
     page,
     title,
     description,
+    keywords,
     h1,
     hasTitle: Boolean(title),
     hasDescription: Boolean(description),
+    hasKeywords: Boolean(keywords),
     hasH1: Boolean(h1),
   };
 });
@@ -41,6 +44,7 @@ const summary = {
   totalPages: results.length,
   missingTitle: results.filter((r) => !r.hasTitle).length,
   missingDescription: results.filter((r) => !r.hasDescription).length,
+  missingKeywords: results.filter((r) => !r.hasKeywords).length,
   missingH1: results.filter((r) => !r.hasH1).length,
 };
 
@@ -49,15 +53,17 @@ console.log("==============");
 console.log(`Total pages:           ${summary.totalPages}`);
 console.log(`Missing <title>:       ${summary.missingTitle}`);
 console.log(`Missing description:   ${summary.missingDescription}`);
+console.log(`Missing keywords:      ${summary.missingKeywords}`);
 console.log(`Missing <h1>:          ${summary.missingH1}`);
 
 /* -------- Console table -------- */
 console.log("\n📄 PAGE DETAILS");
 console.table(
-  results.map(({ page, title, description, h1 }) => ({
+  results.map(({ page, title, description, keywords, h1 }) => ({
     page,
     title,
     description,
+    keywords,
     h1,
   }))
 );
@@ -70,10 +76,10 @@ fs.writeFileSync(
 );
 
 /* -------- Save CSV -------- */
-const csvHeader = "page,title,description,h1\n";
+const csvHeader = "page,title,description,keywords,h1\n";
 const csvRows = results
-  .map(({ page, title, description, h1 }) =>
-    [page, title, description, h1]
+  .map(({ page, title, description, keywords, h1 }) =>
+    [page, title, description, keywords, h1]
       .map((v) => `"${(v || "").replace(/"/g, '""')}"`)
       .join(",")
   )
