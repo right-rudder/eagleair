@@ -7,6 +7,7 @@ import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithIm
 import OurCrewCardGrid from "../../components/OurCrewCardGrid.astro";
 import CTASection from "../../components/CTASection.astro";
 import Hero75 from "../../components/Hero75.astro";
+import { COMPANY_NAME, LOCATION } from "../../data/consts";
 
 type CrewMember = CollectionEntry<"crew">;
 
@@ -25,7 +26,7 @@ const heroData = {
   title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
   subTitle:
     "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
-  cta: [{  url: "/discovery-flight", text: "Book a Discovery Flight"  }],
+  cta: [{ url: "/discovery-flight", text: "Book a Discovery Flight" }],
 };
 
 const ourCrewData = {
@@ -43,8 +44,8 @@ const { ourCrewPageData = ourCrewData } = Astro.props;
 ---
 
 <BaseLayout
-  siteTitle="Our Team | Eagle Aircraft Aviation Academy"
-  siteDescription="Meet our experienced flight instructors and staff"
+  siteTitle={`Meet Our Flight Instructors | ${COMPANY_NAME}`}
+  siteDescription={`Meet the experienced flight instructors and staff guiding student pilots at ${COMPANY_NAME} in ${LOCATION.state}.`}
 >
   <Hero75 data={heroData} />
   <section class="py-16 px-4">

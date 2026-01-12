@@ -8,6 +8,7 @@ import HeroScreen from "../../components/HeroScreen2.astro";
 import ImageComp from "../../components/ImageComp.astro";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import Hero75 from "../../components/Hero75.astro";
+import { COMPANY_NAME } from "../../data/consts";
 
 export const getStaticPaths = (async () => {
   const blogPosts = await getCollection("blog");
@@ -50,7 +51,7 @@ const heroData = {
 ---
 
 <BaseLayout
-  siteTitle={`${post.data.title} | Eagle Aircraft Aviation Academy Blog`}
+  siteTitle={`${post.data.title} | ${COMPANY_NAME} Blog`}
   siteDescription={post.data.description}
   siteImage={post.data.image}
 >

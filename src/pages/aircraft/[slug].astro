@@ -7,6 +7,7 @@ import HeroScreen from "../../components/HeroScreen2.astro";
 import ImageWithZoomEffect from "../../components/ImageWithZoomEffect.astro";
 import FleetSlider from "../../components/FleetSlider.astro";
 import Hero75 from "../../components/Hero75.astro";
+import { COMPANY_NAME, LOCATION } from "../../data/consts";
 
 export const getStaticPaths = (async () => {
   const aircraft = await getCollection("aircraft");
@@ -23,10 +24,11 @@ type Props = {
 const { plane } = Astro.props as Props;
 const { Content } = await plane.render();
 
-const galleryImages = plane.data.gallery?.map((item) => ({
-  src: item.image,
-  alt: item.alt
-})) || [];
+const galleryImages =
+  plane.data.gallery?.map((item) => ({
+    src: item.image,
+    alt: item.alt,
+  })) || [];
 
 const heroData = {
   image: {
@@ -37,22 +39,27 @@ const heroData = {
   title: "From First Flight <br> to Certified Pilot <br> All in One Academy",
   subTitle:
     "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
-  cta: [{ url: "#", text: "Private Pilot (PPL)" }]
+  cta: [{ url: "#", text: "Private Pilot (PPL)" }],
 };
 ---
 
 <BaseLayout
-  siteTitle={`${plane.data.name} | Eagle Aircraft Aviation Academy`}
+  siteTitle={`${plane.data.name} in ${LOCATION.city}, ${LOCATION.state} | ${COMPANY_NAME}`}
   siteDescription={plane.data.description}
   siteImage={plane.data.image}
 >
-  <Hero75 minHeight="min-h-[70vh]" data={heroData}/>
+  <Hero75 minHeight="min-h-[70vh]" data={heroData} />
 
   <section class="bg-muted-50">
     <div class="max-w-7xl mx-auto px-4 lg:px-8 space-y-8">
       {
         plane.data.features && plane.data.features.length > 0 && (
-          <FleetSlider plane={plane} slideImageSoloAlt={plane.data.imageAlt} slideImageSolo={plane.data.image} slideImages={galleryImages}/>
+          <FleetSlider
+            plane={plane}
+            slideImageSoloAlt={plane.data.imageAlt}
+            slideImageSolo={plane.data.image}
+            slideImages={galleryImages}
+          />
         )
       }
       {

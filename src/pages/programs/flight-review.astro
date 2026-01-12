@@ -1,7 +1,12 @@
 ---
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
 import AboutUsWithImageAndQuote from "../../components/AboutUsWithImageAndQuote.astro";
-import { COMPANY_NICKNAME, PHONE_NUMBER } from "../../data/consts";
+import {
+  COMPANY_NAME,
+  COMPANY_NICKNAME,
+  LOCATION,
+  PHONE_NUMBER,
+} from "../../data/consts";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
@@ -34,7 +39,10 @@ const ctaData = {
 };
 ---
 
-<BaseLayout>
+<BaseLayout
+  siteTitle={`Flight Review Training in ${LOCATION.state} | ${COMPANY_NAME}`}
+  siteDescription={`Stay current and proficient with FAA flight review training at ${COMPANY_NAME}.`}
+>
   <HeroScreen data={heroData} />
   <h2>Flight Review</h2>
   <p>

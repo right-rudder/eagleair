@@ -8,6 +8,7 @@ import Hero75 from "../../components/Hero75.astro";
 
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import ImageComp from "../../components/ImageComp.astro";
+import { COMPANY_NAME } from "../../data/consts";
 
 const iflyEaglePartnership = {
   hero: {
@@ -177,7 +178,10 @@ const ctaData = {
 };
 ---
 
-<BaseLayout>
+<BaseLayout
+  siteTitle={`${COMPANY_NAME} × iFly Aviation Partnership | Flight Training`}
+  siteDescription={`Learn about the international flight training partnership between ${COMPANY_NAME} and iFly Aviation Group.`}
+>
   <Hero75 data={iflyEaglePartnership.hero} />
 
   <section class="pb-12 pt-24 px-5">

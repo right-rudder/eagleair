@@ -5,6 +5,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
 import Hero75 from "../../components/Hero75.astro";
+import { COMPANY_NAME } from "../../data/consts";
 
 const heroData = {
   image: {
@@ -16,7 +17,7 @@ const heroData = {
   subTitle:
     "From getting started and medical requirements to international students and career pathways, find clear answers to the questions we hear most often.",
   cta: [
-    { url: "/aircraft", text: "Meet Our Fleet"  },
+    { url: "/aircraft", text: "Meet Our Fleet" },
     { url: "/crew", text: "Meet the Team" },
   ],
 };
@@ -32,7 +33,10 @@ const faqPagePlaceholder = {
 const { faqPageData = faqPagePlaceholder } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout
+  siteTitle={`Flight Training FAQs | ${COMPANY_NAME}`}
+  siteDescription={`Find answers to common questions about flight training, pilot licenses, and enrollment at ${COMPANY_NAME}.`}
+>
   <Hero75 data={heroData} />
   <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4">

@@ -94,26 +94,6 @@ const breadcrumbs = generateBreadcrumbs(pathname, customBreadcrumbs);
       </script>
     )}
     
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        (w as any)[l] = (w as any)[l] || [];
-        (w as any)[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        var script = j as HTMLScriptElement;
-        script.async = true;
-        script.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        if (f && f.parentNode) {
-          f.parentNode.insertBefore(script, f);
-        }
-      })(window, document, "script", "dataLayer", "GTM-WQWV363W");
-    </script>
-    <!-- End Google Tag Manager -->
     <!-- Preconnect to external domains to improve performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -126,22 +106,12 @@ const breadcrumbs = generateBreadcrumbs(pathname, customBreadcrumbs);
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#1e40af" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <!-- <script
-      src="https://widgets.leadconnectorhq.com/loader.js"
-      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-      data-widget-id=""></script> -->
   </head>
   <body class="font-sans">
-    <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id="
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"></iframe></noscript
-    > -->
-
-    <!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8D4Q8ZN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <HeaderContact />
     <header class="sticky w-full h-0 inset-0 z-50">
       <Navbar pathname={pathname} navBarBG={navBarBG}></Navbar>

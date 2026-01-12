@@ -8,6 +8,7 @@ import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
 import ContactFormSection from "../../components/Contact/ContactFormSection.astro";
 import Hero75 from "../../components/Hero75.astro";
+import { COMPANY_NAME, LOCATION } from "../../data/consts";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -48,10 +49,10 @@ const constBlogData = {
 ---
 
 <BaseLayout
-  siteTitle="Contact Us | Eagle Aircraft Aviation Academy"
-  siteDescription="Aviation insights, training tips, and industry news"
+  siteTitle={`Contact ${COMPANY_NAME} | ${LOCATION.state} Flight School`}
+  siteDescription={`Contact ${COMPANY_NAME} in ${LOCATION.city}, ${LOCATION.state} and take the first step toward your pilot training.`}
 >
-  <Hero75 minHeight="min-h-[70vh]"  data={heroData} />
+  <Hero75 minHeight="min-h-[70vh]" data={heroData} />
 
   <CTAEnrollWithUsMini />
   <!-- <CTAEnrollWithUs
