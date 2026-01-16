@@ -129,5 +129,5 @@ finalCTA:
   mainButtonText: "Contact Academy"
   mainButtonLink: "/about/contact"
   secondButtonText: "Call Now"
-  secondButtonLink: "tel:+12194640132"
+  secondButtonLink: "tel:+12193009895"
 ---

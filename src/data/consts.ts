@@ -80,9 +80,9 @@ export const LOGO_ASSETS_2 = "/src/assets/logo_eagle_aircraft_round_color.png";
 export const COMPANY_NAME = "Eagle Aircraft Flight Academy";
 export const COMPANY_NAME_CAPS = "EAGLE AIRCRAFT FLIGHT ACADEMY";
 export const COMPANY_NICKNAME = "Eagle Aircraft";
-export const PHONE_NUMBER = "(219) 464-0132";
-export const PHONE_NUMBER_HEADER = "(219) 464-0132";
-export const PHONE_NUMBER_UNFORMATED = "+12194640132";
+export const PHONE_NUMBER = "(219) 300-9895";
+export const PHONE_NUMBER_HEADER = "(219) 300-9895";
+export const PHONE_NUMBER_UNFORMATED = "+12193009895";
 export const ADDRESS_LINE_1 = "4001 Murvihill Road";
 export const ADDRESS_LINE_2 = "Valparaiso, IN 46383";
 export const AIRPORT = "Porter County Regional Airport";
@@ -142,8 +142,8 @@ export const LOCATIONS = [
     zip: "46383",
     gMaps:
       "https://www.google.com/maps?q=4001+Murvihill+Rd,+Valparaiso,+IN+46383",
-    phone: "(219) 464-0132",
-    forwardPhone: "(219) 464-0132",
+    phone: "(219) 300-9895",
+    forwardPhone: "(219) 300-9895",
     fullAddress: "4001 Murvihill Road, Valparaiso, IN 46383",
     fullAddressLineBreak: "4001 Murvihill Road\nValparaiso, IN 46383",
   },

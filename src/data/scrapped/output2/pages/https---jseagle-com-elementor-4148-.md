@@ -14,7 +14,7 @@ CONTACT US
 Flight Review
 Flight Review
 
-Please go to https://docs.google.com/forms/d/e/1FAIpQLSdGEv7AiZhTsQ2AcItIyBkAEguiwenStVvGM9zAF3uKD-nlTA/viewform?usp=preview to start the scheduling process for your flight review. Then call us at 219-464-0132 so we can schedule your flight!
+Please go to https://docs.google.com/forms/d/e/1FAIpQLSdGEv7AiZhTsQ2AcItIyBkAEguiwenStVvGM9zAF3uKD-nlTA/viewform?usp=preview to start the scheduling process for your flight review. Then call us at 219-300-9895 so we can schedule your flight!
 
 Search for:
 Search …
@@ -29,11 +29,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 AIRCRAFT CHECKOUT AND RENTAL RATES AIRLINE TRANSPORT PILOT CFI APPLICATION CFI RATING COMMERCIAL PILOT CONTACT EAGLE AIRCRAFT DISCOVERY FLIGHTS DOD SKILLBRIDGE FLIGHT REVIEW INSTRUMENT RATING INTERNATIONAL STUDENTS LIBERTY UNIVERSITY AVIATION DEGREE OUR FLEET OUR INSTRUCTORS PURDUE GLOBAL DEGREE STUDENT DOCS YOU CAN LEARN TO FLY!
 Hestia | Developed by ThemeIsle

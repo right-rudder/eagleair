@@ -142,7 +142,7 @@ If you experience issues or have questions at any point in the process, Eagle Ai
 
 **Contact Eagle Aircraft Flight Academy**
 
-- **Phone:** +1 (219) 464-0132
+- **Phone:** +1 (219) 300-9895
 - **Email:** eaglevpz@gmail.com
 
 ---

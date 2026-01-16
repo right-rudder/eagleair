@@ -53,7 +53,7 @@ export const internationalStudentFAQs = [
   {
     title: "Who can I contact for assistance with my application?",
     content:
-      "Eagle Aircraft staff are available to help international students with any questions about forms, payments, or visa instructions. Call +1 (219) 464-0132 or email eaglevpz@gmail.com.",
+      "Eagle Aircraft staff are available to help international students with any questions about forms, payments, or visa instructions. Call +1 (219) 300-9895 or email eaglevpz@gmail.com.",
   },
 ];
 

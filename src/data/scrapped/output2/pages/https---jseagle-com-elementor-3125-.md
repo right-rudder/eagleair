@@ -12,7 +12,7 @@ INTERNATIONAL STUDENTS
 DOD SKILLBRIDGE
 CONTACT US
 
-Want to earn a degree through one of Indiana’s top aviation schools? Eagle Aircraft Flight Academy has partnered with Purdue University Global to offer the Purdue education while flight training here at Eagle. Give us a call at 219-464-0132 or email us at eaglevpz@gmail.com to learn more about how you can sign up! 
+Want to earn a degree through one of Indiana’s top aviation schools? Eagle Aircraft Flight Academy has partnered with Purdue University Global to offer the Purdue education while flight training here at Eagle. Give us a call at 219-300-9895 or email us at eaglevpz@gmail.com to learn more about how you can sign up! 
 
 Already a licensed pilot? You can transfer up to 45 flight training and certification credits – saving you time and money! Start flight instructing during your first term!
 
@@ -43,11 +43,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 AIRCRAFT CHECKOUT AND RENTAL RATES AIRLINE TRANSPORT PILOT CFI APPLICATION CFI RATING COMMERCIAL PILOT CONTACT EAGLE AIRCRAFT DISCOVERY FLIGHTS DOD SKILLBRIDGE FLIGHT REVIEW INSTRUMENT RATING INTERNATIONAL STUDENTS LIBERTY UNIVERSITY AVIATION DEGREE OUR FLEET OUR INSTRUCTORS PURDUE GLOBAL DEGREE STUDENT DOCS YOU CAN LEARN TO FLY!
 Hestia | Developed by ThemeIsle

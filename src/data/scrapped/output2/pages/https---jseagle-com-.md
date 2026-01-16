@@ -38,7 +38,7 @@ We love hiring students who have trained through our program. Being a CFI is sti
 
 Male Student Housing Available
 
-We have room for two male students right now. $500/mo rent or $50/night. Call for more details (219) 464-0132.
+We have room for two male students right now. $500/mo rent or $50/night. Call for more details (219) 300-9895.
 
 Cross Country Fuel Receipt Submission
 
@@ -62,7 +62,7 @@ Our next free Ground School is: Jan 15th – Mar 5th
 
 Tue/Thurs Evenings 6-8:30pm 
 
-Call to get on the list 219-464-0132.
+Call to get on the list 219-300-9895.
 
 You Can Learn to Fly!
 Eagle Through the Years!

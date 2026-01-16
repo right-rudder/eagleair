@@ -32,7 +32,7 @@ Train Here, Work Here!
 We love hiring students who have trained through our program. Being a CFI is still the best way to build hours toward your future career goals. Click here to apply for a position at Eagle as a CFI, CFII, MEI!
 
 Male Student Housing Available
-We have room for two male students right now. $500/mo rent or $50/night. Call for more details (219) 464-0132.
+We have room for two male students right now. $500/mo rent or $50/night. Call for more details (219) 300-9895.
 
 Cross Country Fuel Receipt Submission
 Follow the link here to submit any fuel receipts have from cross countries with Eagle’s aircraft.
@@ -51,7 +51,7 @@ Our next free Ground School is: Jan 15th – Mar 5th
 
 Tue/Thurs Evenings 6-8:30pm
 
-Call to get on the list 219-464-0132.
+Call to get on the list 219-300-9895.
 
 You Can Learn to Fly!
 
@@ -132,11 +132,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
 
@@ -182,11 +182,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
 
@@ -238,11 +238,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
 
@@ -343,11 +343,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
 
@@ -407,7 +407,7 @@ Eagle Aircraft has approval from the IN Department of Veterans Affairs to accept
 
 News
 Eagle Aircraft partners with Liberty University
-We have been accepted as an affiliate of Liberty University in Lynchburg Virginia. \*For more information contact Eagle Aircraft at (219) 464-0132.
+We have been accepted as an affiliate of Liberty University in Lynchburg Virginia. \*For more information contact Eagle Aircraft at (219) 300-9895.
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
 
@@ -456,11 +456,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
 
@@ -521,11 +521,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
 
@@ -600,11 +600,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
 
@@ -636,11 +636,11 @@ Eagle Aircraft is a Cessna Pilot Center. The Cessna program is the only integrat
 
 We are also approved for VA benefits and SEVIS approved for International students. We welcome international students who want to come to the United States to train and will issue an I-20 to students who need an M-1 visa to begin flight training at our facility. Affordable housing will be arranged for our students.
 
-Contact Eagle Aircraft at +1 (219)-464-0132 or email eaglevpz@gmail.com for more information about our international student program.
+Contact Eagle Aircraft at +1 (219)-300-9895 or email eaglevpz@gmail.com for more information about our international student program.
 
 “You’ve always dreamed of soaring the skies, stop dreaming and start flying today!”
 
-Call (219) 464-0132 to schedule your first flight lesson today!
+Call (219) 300-9895 to schedule your first flight lesson today!
 
 Aircraft Checkout and Rental Rates Airline Transport Pilot CFI Application CFI Rating Commercial Pilot Contact Eagle Aircraft Discovery Flights DOD Skillbridge Flight Review Instrument Rating International Students Liberty University Aviation Degree Our Fleet Our Instructors Purdue Global Degree Student Docs You Can Learn to Fly!Hestia | Developed by ThemeIsle
 
