@@ -5,7 +5,7 @@ import type { GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import ImageWithZoomEffectAndStripe from "../../components/ImageWithZoomEffectAndStripe.astro";
-import { COMPANY_NICKNAME } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../../data/consts";
 import CTASection from "../../components/CTASection.astro";
 import CTAMeetOurFleet from "../../components/CTAMeetOurFleet.astro";
 import Hero75 from "../../components/Hero75.astro";
@@ -35,13 +35,39 @@ const heroData = {
     "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
   cta: [{ url: "#", text: "Private Pilot (PPL)" }],
 };
+
+const metaTagsData = {
+  siteTitle: `${member.data.name} | ${member.data.title} at ${COMPANY_NAME}`,
+  siteDescription: `${member.data.name} is a ${member.data.title} at ${COMPANY_NICKNAME} in ${LOCATION.city}, ${LOCATION.state}. Read more about our professional flight instructor's experience and certifications at ${AIRPORT} (${AIRPORT_CODE}).`,
+  siteKeywords: [
+    `${member.data.name}`,
+    `${member.data.name} ${COMPANY_NICKNAME}`,
+    `${member.data.name} flight instructor`,
+    `${member.data.name} pilot`,
+    `${COMPANY_NAME} team`,
+    `${COMPANY_NAME} instructors`,
+    `${COMPANY_NICKNAME} crew`,
+    `flight instructors in ${LOCATION.locationFull}`,
+    `certified flight instructors ${LOCATION.city}`,
+    `CFI ${LOCATION.city} ${LOCATION.state}`,
+    `best flight instructors ${LOCATION.state}`,
+    `pilot training at ${AIRPORT}`,
+    `${AIRPORT_CODE} instructors`,
+    `professional pilot mentors`,
+    `learn to fly with ${member.data.name}`,
+    `aviation experts ${LOCATION.city}`,
+    `FAA certified flight instructors`,
+    `Part 141 flight instructors Indiana`,
+    `Cessna Pilot Center instructors`,
+    `Porter County aviation professionals`,
+    `airline pilot career mentors`,
+    `${COMPANY_NAME} staff`,
+    `flight training faculty ${LOCATION.city}`
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`${member.data.name} | Eagle Aircraft Aviation Academy`}
-  siteDescription={member.data.bio}
-  siteImage={member.data.image}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
   <section class="bg-muted-50">
     <div class="max-w-7xl mx-auto py-16 px-4 lg:px-8 space-y-8">

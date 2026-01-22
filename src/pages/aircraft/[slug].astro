@@ -7,7 +7,7 @@ import HeroScreen from "../../components/HeroScreen2.astro";
 import ImageWithZoomEffect from "../../components/ImageWithZoomEffect.astro";
 import FleetSlider from "../../components/FleetSlider.astro";
 import Hero75 from "../../components/Hero75.astro";
-import { COMPANY_NAME, LOCATION } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../../data/consts";
 
 export const getStaticPaths = (async () => {
   const aircraft = await getCollection("aircraft");
@@ -41,13 +41,44 @@ const heroData = {
     "Accelerated FAA Part 141 pilot training designed for future commercial and airline pilots",
   cta: [{ url: "#", text: "Private Pilot (PPL)" }],
 };
+
+const metaTagsData = {
+  siteTitle: `${plane.data.name} in ${LOCATION.locationFull} | ${COMPANY_NAME}`,
+  siteDescription: `${plane.data.description} Train in our ${plane.data.name} at ${AIRPORT} (${AIRPORT_CODE}). ${COMPANY_NICKNAME} offers professional flight training in ${LOCATION.city}, ${LOCATION.state} for students and career pilots.`,
+  siteKeywords: [
+    plane.data.name,
+    `${plane.data.name} flight training`,
+    `${plane.data.name} rental ${LOCATION.city}`,
+    `${plane.data.name} specifications`,
+    `${plane.data.name} cockpit`,
+    `${COMPANY_NAME} fleet`,
+    `${COMPANY_NICKNAME} aircraft`,
+    `fly a ${plane.data.name} in ${LOCATION.state}`,
+    `flight school fleet ${LOCATION.locationFull}`,
+    AIRPORT,
+    AIRPORT_CODE,
+    `pilot training ${LOCATION.city}`,
+    `learn to fly ${LOCATION.locationShort}`,
+    "Cessna Pilot Center Indiana",
+    "training aircraft Valparaiso",
+    "aviation fleet Northwest Indiana",
+    "single engine aircraft training",
+    "flight school KVPZ",
+    "rent a plane in Valparaiso Indiana",
+    "Porter County Regional Airport aircraft",
+    "FAA approved training fleet",
+    "well-maintained training planes",
+    "glass cockpit flight training",
+    "modern aviation fleet",
+    "career pilot aircraft",
+    "private pilot training aircraft",
+    "instrument rating fleet",
+    "commercial pilot license planes"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`${plane.data.name} in ${LOCATION.city}, ${LOCATION.state} | ${COMPANY_NAME}`}
-  siteDescription={plane.data.description}
-  siteImage={plane.data.image}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 minHeight="min-h-[70vh]" data={heroData} />
 
   <section class="bg-muted-50">

@@ -6,7 +6,7 @@ import CTASection from "../../components/CTASection.astro";
 import ImageComp from "../../components/ImageComp.astro";
 import ListOfCoursesSection from "../../components/ListOfCoursesSection.astro";
 import BenefitsListLibertyUniversity from "../../components/BenefitsListLibertyUniversity.astro";
-import { COMPANY_NAME, COMPANY_NICKNAME } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION, OTHER_COURSES } from "../../data/consts";
 import CTAEnrollWithUsMiniWhite from "../../components/CTAEnrollWithUsMiniWhite.astro";
 import Hero75 from "../../components/Hero75.astro";
 
@@ -71,12 +71,41 @@ const libertyHighlights = [
   { title: "ATP Eligibility", value: "Restricted ATP to 1,000 Hours" },
   { title: "Affiliate Since", value: "2014" },
 ];
+
+const metaTagsData = {
+  siteTitle: `${OTHER_COURSES[0]} | ${COMPANY_NAME}`,
+  siteDescription: `Earn your aviation degree with ${COMPANY_NAME}, a premier Liberty University Flight Training Affiliate in ${LOCATION.city}, ${LOCATION.state}. Use VA benefits and financial aid for flight training at ${AIRPORT} (${AIRPORT_CODE}).`,
+  siteKeywords: [
+    `${OTHER_COURSES[0]}`,
+    "Liberty University Flight Training Affiliate",
+    "aviation degree online",
+    "Bachelor of Science in Aeronautics",
+    `flight school in ${LOCATION.locationFull}`,
+    `pilot training ${LOCATION.city}`,
+    `${AIRPORT} flight training`,
+    `${AIRPORT_CODE} aviation`,
+    `${COMPANY_NAME} Liberty partnership`,
+    "Liberty University FTA Indiana",
+    "VA benefits for flight school",
+    "GI Bill flight training Indiana",
+    "financial aid for pilot school",
+    "college credit for flight hours",
+    "commercial pilot degree",
+    "professional pilot pathway",
+    "Liberty University aviation affiliate",
+    "veteran flight training",
+    "military flight training benefits",
+    `learn to fly in ${LOCATION.state}`,
+    "airline pilot degree program",
+    "certified flight instructor degree",
+    "aviation career education",
+    "online bachelor's degree aviation",
+    "Liberty University School of Aeronautics affiliate"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`Liberty University Flight Training Partner | ${COMPANY_NAME}`}
-  siteDescription={`${COMPANY_NAME} proudly supports Liberty University aviation students with professional flight training.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
   <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4 items-center">

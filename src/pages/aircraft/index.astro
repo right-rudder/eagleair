@@ -5,7 +5,7 @@ import type { CollectionEntry } from "astro:content";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import OurFleetCardGrid from "../../components/OurFleetCardGrid.astro";
 import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithImageAndQuote.astro";
-import { COMPANY_NAME } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, FLEET, LOCATION } from "../../data/consts";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import CTASection from "../../components/CTASection.astro";
 import Hero75 from "../../components/Hero75.astro";
@@ -58,12 +58,39 @@ const aboutThisPageWithQuoteData = {
 };
 
 const { ourFleetPageData = ourFleetData } = Astro.props;
+
+const metaTagsData = {
+  siteTitle: `Our Aircraft Fleet | ${COMPANY_NAME}`,
+  siteDescription: `Explore the training fleet at ${COMPANY_NICKNAME}. From the ${FLEET[1].title} to the ${FLEET[2].title} and ${FLEET[3].title}, our aircraft at ${AIRPORT} (${AIRPORT_CODE}) are maintained for safety and excellence in ${LOCATION.locationFull}.`,
+  siteKeywords: [
+    `${COMPANY_NAME} fleet`,
+    `${COMPANY_NICKNAME} aircraft`,
+    `${FLEET[0].title} training`,
+    `${FLEET[1].title} Valparaiso`,
+    `${FLEET[2].title} Indiana`,
+    `${FLEET[3].title} training`,
+    "flight training aircraft",
+    "Cessna Pilot Center fleet",
+    `flying at ${AIRPORT}`,
+    `${AIRPORT_CODE} aircraft rental`,
+    "G1000 equipped training planes",
+    "glass cockpit flight training",
+    "well-maintained flight school fleet",
+    "multi-engine training aircraft",
+    "single engine trainer",
+    "aviation simulator training Indiana",
+    `learn to fly in ${LOCATION.city}`,
+    `pilot training ${LOCATION.locationFull}`,
+    "modern flight training equipment",
+    "Porter County aviation fleet",
+    "training aircraft specifications",
+    "safe flight training planes",
+    "Elite flight simulator Indiana"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`Training Aircraft Fleet | ${COMPANY_NAME}`}
-  siteDescription={`Explore the modern and reliable training aircraft used for pilot training at ${COMPANY_NAME}.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
   <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4">

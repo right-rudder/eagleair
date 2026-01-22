@@ -127,6 +127,10 @@ export const LOCATION = {
   gMaps: "https://maps.app.goo.gl/Dp37mS36aLfQ4kEs6",
 };
 
+export const NEAR_LOCATIONS = [
+  "Chicago"
+]
+
 export const UVP = [
   "International School for International Students",
   "We want Americans to fill proud and International Students to fill welcome",

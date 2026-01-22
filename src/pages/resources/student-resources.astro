@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero75 from "../../components/Hero75.astro";
 import ImageComp from "../../components/ImageComp.astro";
-import { COMPANY_NAME } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../../data/consts";
 
 const heroData = {
   image: {
@@ -265,12 +265,44 @@ const trainingDocs = [
     ],
   },
 ];
+
+const metaTagsData = {
+  siteTitle: `Student Resources | ${COMPANY_NAME} at ${AIRPORT_CODE}`,
+  siteDescription: `Access flight schedules, forms, and manuals for students at ${COMPANY_NICKNAME}. Located at ${AIRPORT} in ${LOCATION.city}, we provide resources for VA benefits, Liberty University degree partnerships, and student fleet information.`,
+  siteKeywords: [
+    `${COMPANY_NAME} student resources`,
+    `${COMPANY_NICKNAME} pilot tools`,
+    `flight training documents ${LOCATION.city}`,
+    `${AIRPORT} student pilot info`,
+    `${AIRPORT_CODE} training resources`,
+    "flight schedule pro login",
+    "aviation student forms",
+    "cross country fuel reimbursement form",
+    "flight review google form",
+    "FAA Part 141 student syllabus",
+    "FAA Part 61 resources",
+    "VA benefits flight training student guide",
+    "Liberty University aviation degree affiliate resources",
+    "Valparaiso University flight training partner tools",
+    "international student SEVIS support documentation",
+    "Elite PI-1000 simulator manual",
+    "Cessna 172 Skyhawk checklists",
+    "Tecnam P2010 training documents",
+    "Cessna 150 student info",
+    "DOD SkillBridge BreakTurn career placement",
+    "40 hour club private pilot requirements",
+    "pilot time building resources Indiana",
+    "Porter County Regional Airport pilot amenities",
+    "Northwest Indiana flight school support",
+    "Chicagoland aviation student portal",
+    "ATP ground course materials",
+    "CFI training resources",
+    "commercial pilot license student tools"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`Student Pilot Resources | ${COMPANY_NAME}`}
-  siteDescription={`Access important resources and documents for student pilots training at ${COMPANY_NAME}.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 minHeight="min-h-[70vh]" data={heroData} />
   <section class="py-16 px-4 md:px-8 lg:px-16 bg-muted-50">
     <div class="max-w-7xl mx-auto">

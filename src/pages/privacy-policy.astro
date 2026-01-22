@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { COMPANY_NAME, PHONE_NUMBER } from "../data/consts";
+import { COMPANY_NAME, COMPANY_NICKNAME, LOCATION, PHONE_NUMBER } from "../data/consts";
 import Hero75 from "../components/Hero75.astro";
 
 const heroData = {
@@ -13,13 +13,23 @@ const heroData = {
     "Your privacy is important to us. Learn how we collect, use, and protect your personal information.",
 };
 
-const lastUpdated = "January 06, 2025";
+const lastUpdated = "January 22, 2025";
+
+const metaTagsData = {
+  siteTitle: `Privacy Policy | ${COMPANY_NAME}`,
+  siteDescription: `Read the Privacy Policy for ${COMPANY_NAME}. Learn how we handle your data and protect your privacy while you explore flight training in ${LOCATION.locationFull}.`,
+  siteKeywords: [
+    "privacy policy",
+    "data protection",
+    COMPANY_NAME,
+    COMPANY_NICKNAME,
+    "flight school privacy",
+    "legal information"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`Privacy Policy | ${COMPANY_NAME}`}
-  siteDescription={`Review how ${COMPANY_NAME} collects, uses, and protects your personal information.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
 
   <section class="py-16 md:py-24 bg-white">

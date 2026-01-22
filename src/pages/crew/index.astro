@@ -7,7 +7,7 @@ import AboutThisPageWithImageAndQuote from "../../components/AboutThisPageWithIm
 import OurCrewCardGrid from "../../components/OurCrewCardGrid.astro";
 import CTASection from "../../components/CTASection.astro";
 import Hero75 from "../../components/Hero75.astro";
-import { COMPANY_NAME, LOCATION } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../../data/consts";
 
 type CrewMember = CollectionEntry<"crew">;
 
@@ -41,12 +41,34 @@ const ourCrewData = {
 };
 
 const { ourCrewPageData = ourCrewData } = Astro.props;
+
+const metaTagsData = {
+  siteTitle: `Our Flight Instructors & Staff | ${COMPANY_NAME}`,
+  siteDescription: `Meet the professional flight instructors and dedicated staff at ${COMPANY_NICKNAME}. Our team at ${AIRPORT} (${AIRPORT_CODE}) in ${LOCATION.locationFull} is committed to providing expert FAA Part 141 and Part 61 flight training.`,
+  siteKeywords: [
+    `${COMPANY_NAME} crew`,
+    `${COMPANY_NICKNAME} instructors`,
+    `flight instructors in ${LOCATION.city}`,
+    `aviation experts ${LOCATION.state}`,
+    `learn to fly with ${COMPANY_NICKNAME}`,
+    `${AIRPORT} flight staff`,
+    `${AIRPORT_CODE} instructors`,
+    "certified flight instructors Indiana",
+    "CFI CFII MEI team",
+    "professional pilot mentors",
+    "Eagle Aircraft staff",
+    `pilot training experts ${LOCATION.locationFull}`,
+    "FAA certified instructors",
+    "Cessna Pilot Center team",
+    "aviation career mentoring",
+    "flight school leadership",
+    "experienced pilots Valparaiso",
+    "Porter County Regional Airport staff"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`Meet Our Flight Instructors | ${COMPANY_NAME}`}
-  siteDescription={`Meet the experienced flight instructors and staff guiding student pilots at ${COMPANY_NAME} in ${LOCATION.state}.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
   <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4">

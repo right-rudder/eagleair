@@ -7,7 +7,7 @@ import CTASection from "../../components/CTASection.astro";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import CTAEnrollWithUs from "../../components/CTAEnrollWithUs.astro";
 import Hero75 from "../../components/Hero75.astro";
-import { COMPANY_NAME } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../../data/consts";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -47,6 +47,43 @@ const constBlogData = {
   ],
   upperHeaderTwo: "They Are Here For You",
   titleTwo: "Our Fleet Aircrafts",
+};
+
+const metaTagsData = {
+  siteTitle: `Aviation News & Flight Training Tips | ${COMPANY_NAME} Blog`,
+  siteDescription: `Stay updated with the latest aviation insights, flight training tips, and news from ${COMPANY_NICKNAME}. Read about pilot life at ${AIRPORT} (${AIRPORT_CODE}), career advice, and training updates in ${LOCATION.locationFull}.`,
+  siteKeywords: [
+    "aviation blog",
+    "flight training tips",
+    "pilot news Indiana",
+    `learning to fly in ${LOCATION.city}`,
+    `${COMPANY_NAME} updates`,
+    `${COMPANY_NICKNAME} blog`,
+    `${AIRPORT} news`,
+    `${AIRPORT_CODE} aviation articles`,
+    "how to become a pilot blog",
+    "commercial pilot career advice",
+    "private pilot training insights",
+    "Cessna Pilot Center news",
+    "FAA Part 141 training updates",
+    "instrument rating tips",
+    "flight instructor stories",
+    "aviation lifestyle blog",
+    "airline pilot pathway news",
+    "student pilot resources",
+    `aviation community ${LOCATION.state}`,
+    "veteran flight training stories",
+    "international flight student blog",
+    "Liberty University aviation news",
+    "Valparaiso University flight training updates",
+    "aircraft maintenance tips",
+    "aviation safety blog",
+    "Discovery Flight stories",
+    "Northwest Indiana aviation news",
+    "Chicagoland flight school blog",
+    "career pilot transition tips",
+    "Elite simulator training benefits"
+  ].join(", "),
 };
 ---
 

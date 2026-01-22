@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero75 from "../../components/Hero75.astro";
 import NewToFlyingStepByStep from "../../components/NewToFlyingStepByStep.astro";
 import CTAMeetOurAffiliateProgram from "../../components/CTAMeetOurAffiliateProgram.astro";
-import { COMPANY_NAME, COMPANY_NICKNAME } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../../data/consts";
 import BenefitsListBreakTurn from "../../components/BenefitsListBreakTurn.astro";
 import CTASection from "../../components/CTASection.astro";
 import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
@@ -157,12 +157,44 @@ const ctaData = {
     href: "/about/contact",
   },
 };
+
+const metaTagsData = {
+  siteTitle: `Why Become a Pilot? | Start Your Aviation Journey at ${COMPANY_NAME}`,
+  siteDescription: `Explore the rewards of a career in aviation at ${COMPANY_NICKNAME}. Located at ${AIRPORT} (${AIRPORT_CODE}) in ${LOCATION.locationFull}, we provide the path from your first discovery flight to the airlines. Learn about the pilot lifestyle, career outlook, and our FAA Part 141 and 61 programs.`,
+  siteKeywords: [
+    "why become a pilot",
+    "reasons to learn to fly",
+    "aviation career benefits",
+    "is being a pilot worth it",
+    "pilot job outlook",
+    "how to become a pilot in Indiana",
+    `flight training ${LOCATION.city} ${LOCATION.state}`,
+    `learn to fly at ${AIRPORT}`,
+    `${AIRPORT_CODE} flight school`,
+    COMPANY_NAME,
+    COMPANY_NICKNAME,
+    "discovery flight experience",
+    "private pilot license advantages",
+    "commercial pilot salary and lifestyle",
+    "airline pilot career path",
+    "becoming a pilot for veterans",
+    "flight school for international students",
+    "Cessna Pilot Center advantages",
+    "FAA Part 141 vs Part 61",
+    "accelerated flight training programs",
+    "aviation degree partnerships",
+    "flight instructor career opportunities",
+    "Northwest Indiana pilot training",
+    "Chicagoland aviation schools",
+    "professional pilot training costs",
+    "student pilot requirements",
+    "aviation mentorship",
+    "flying as a hobby vs career"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`New to Flying? Start Here | ${COMPANY_NAME}`}
-  siteDescription={`New to aviation? Learn how to become a pilot with structured flight training at ${COMPANY_NAME}.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
   <NewToFlyingStepByStep newToFlyingStepsData={newToFlyingsStepsData} />
   <CTAMeetOurAffiliateProgram
