@@ -8,7 +8,7 @@ import Hero75 from "../../components/Hero75.astro";
 
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import ImageComp from "../../components/ImageComp.astro";
-import { COMPANY_NAME } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../../data/consts";
 
 const iflyEaglePartnership = {
   hero: {
@@ -176,12 +176,38 @@ const ctaData = {
     href: "/about/contact",
   },
 };
+
+const metaTagsData = {
+  siteTitle: `${COMPANY_NAME} x iFly Aviation Partnership | Flight Training`,
+  siteDescription: `Exclusive flight training partnership between iFly Aviation and ${COMPANY_NAME}. International pilot programs, M-1 visa support, and professional training at ${AIRPORT} in ${LOCATION.locationFull}. Join the Yo Vuelo program and start your aviation career today.`,
+  siteKeywords: [
+    "iFly Aviation",
+    COMPANY_NAME,
+    COMPANY_NICKNAME,
+    "Yo Vuelo partnership",
+    "international pilot training",
+    `flight school ${LOCATION.city}`,
+    `pilot training ${LOCATION.state}`,
+    "M-1 visa flight school",
+    "SEVIS approved flight school Indiana",
+    "iFly Aviacion flight training",
+    "Latin American pilot students USA",
+    "professional pilot program",
+    AIRPORT,
+    AIRPORT_CODE,
+    "Cessna Pilot Center",
+    "FAA Part 141 international students",
+    "flight training partnership",
+    "aviation career pathways",
+    "become a pilot in USA",
+    "English for pilots program",
+    "cross-border flight training",
+    "Porter County Regional Airport pilot school"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`${COMPANY_NAME} × iFly Aviation Partnership | Flight Training`}
-  siteDescription={`Learn about the international flight training partnership between ${COMPANY_NAME} and iFly Aviation Group.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={iflyEaglePartnership.hero} />
 
   <section class="pb-12 pt-24 px-5">

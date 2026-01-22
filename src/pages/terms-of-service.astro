@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { COMPANY_NAME, PHONE_NUMBER } from "../data/consts";
+import { COMPANY_NAME, COMPANY_NICKNAME, LOCATION, PHONE_NUMBER } from "../data/consts";
 import Hero75 from "../components/Hero75.astro";
 
 const heroData = {
@@ -13,13 +13,23 @@ const heroData = {
     "Please read these terms carefully before using our services or enrolling in our flight training programs.",
 };
 
-const lastUpdated = "January 06, 2026";
+const lastUpdated = "January 22, 2026";
+
+const metaTagsData = {
+  siteTitle: `Terms of Service | ${COMPANY_NAME}`,
+  siteDescription: `View the Terms of Service for ${COMPANY_NAME} Flight Academy. Review the legal terms and conditions for our flight training services in ${LOCATION.locationFull}.`,
+  siteKeywords: [
+    "terms of service",
+    "terms and conditions",
+    COMPANY_NAME,
+    COMPANY_NICKNAME,
+    "flight school legal",
+    "training agreement terms"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`Terms of Service | ${COMPANY_NAME}`}
-  siteDescription={`Read the terms and conditions for using services and enrolling at ${COMPANY_NAME}.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
 
   <section class="py-16 md:py-24 bg-white">

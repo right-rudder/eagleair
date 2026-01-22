@@ -5,7 +5,7 @@ import CTASection from "../components/CTASection.astro";
 import CTAEnrollWithUsMini from "../components/CTAEnrollWithUsMini.astro";
 import Hero75 from "../components/Hero75.astro";
 import EnrollmentFormSection from "../components/Enrollment/EnrollmentFormSection.astro";
-import { COMPANY_NAME } from "../data/consts";
+import { AIRPORT, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../data/consts";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -40,12 +40,34 @@ const constBlogData = {
   upperHeaderTwo: "They Are Here For You",
   titleTwo: "Our Fleet Aircrafts",
 };
+
+const metaTagsData = {
+  siteTitle: `Enroll Now | Start Your Flight Training at ${COMPANY_NAME}`,
+  siteDescription: `Begin your aviation career at ${COMPANY_NICKNAME}. Enroll in our Private Pilot, Instrument Rating, or Commercial Pilot programs in ${LOCATION.locationFull} at ${AIRPORT}.`,
+  siteKeywords: [
+    `enroll at ${COMPANY_NAME}`,
+    "flight school registration",
+    "start flight training Indiana",
+    `pilot school enrollment ${LOCATION.city}`,
+    "how to join flight academy",
+    "become a student pilot",
+    "apply for flight school",
+    "aviation training enrollment",
+    `${COMPANY_NICKNAME} admission`,
+    "Liberty University flight affiliate enrollment",
+    "VA benefits flight training enrollment",
+    "M-1 visa flight school application",
+    "international student pilot enrollment",
+    "Private Pilot Certificate enrollment",
+    "Instrument Rating enrollment",
+    "Commercial Pilot Certificate enrollment",
+    "CFI training enrollment",
+    "ATP ground course sign up"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`Enroll in Flight Training | ${COMPANY_NAME}`}
-  siteDescription={`Enroll in professional flight training at ${COMPANY_NAME} and begin your journey to becoming a pilot.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 minHeight="min-h-[70vh]" data={heroData} />
 
   <CTAEnrollWithUsMini />

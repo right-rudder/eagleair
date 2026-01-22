@@ -6,7 +6,7 @@ import CTASection from "../../components/CTASection.astro";
 import GoogleMapLocation from "../../components/External/GoogleMapLocation.astro";
 import Hero75 from "../../components/Hero75.astro";
 import GoogleReviews from "../../components/External/GoogleReviews.astro";
-import { COMPANY_NAME, LOCATION } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION, NEAR_LOCATIONS } from "../../data/consts";
 import CTAEnrollWithUsBlue from "../../components/CTAEnrollWithUsBlue.astro";
 
 const heroData = {
@@ -34,12 +34,38 @@ const ctaData = {
     href: "/about/contact",
   },
 };
+
+const metaTagsData = {
+  siteTitle: `About Us | ${COMPANY_NAME} in ${LOCATION.locationFull}`,
+  siteDescription: `Learn about ${COMPANY_NAME}, a premier Cessna Pilot Center at ${AIRPORT} (${AIRPORT_CODE}). Since 1979, we have trained over 4,000 pilots in ${LOCATION.locationFull}. Meet our team and discover our FAA Part 141 and Part 61 flight training legacy.`,
+  siteKeywords: [
+    `about ${COMPANY_NAME}`,
+    `${COMPANY_NICKNAME} history`,
+    `flight school in ${LOCATION.city} ${LOCATION.state}`,
+    `pilot training ${LOCATION.locationFull}`,
+    `${AIRPORT} flight academy`,
+    `${AIRPORT_CODE} aviation school`,
+    "Cessna Pilot Center history",
+    "professional flight instructors Indiana",
+    "FAA Part 141 approved school",
+    "Part 61 flight training Indiana",
+    "aviation career mentorship",
+    `learn to fly near ${NEAR_LOCATIONS[0]}`,
+    "veteran owned flight school",
+    "Liberty University flight training affiliate",
+    "Valparaiso University aviation partner",
+    "training pilots since 1979",
+    "Northwest Indiana aviation legacy",
+    "Eagle Aircraft Valparaiso team",
+    "commercial pilot training experts",
+    "airline pilot pathway Indiana",
+    "international student flight school Indiana",
+    "SEVIS approved aviation academy"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`About ${COMPANY_NAME} | ${LOCATION.state} Flight School`}
-  siteDescription={`Learn about ${COMPANY_NAME}, a trusted ${LOCATION.state} flight school offering professional pilot training near Chicago.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
   <AboutUsWithImageAndQuote />
   <CTAEnrollWithUs

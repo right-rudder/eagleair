@@ -7,7 +7,7 @@ import CardSwiper from "../components/CardSwiper/CardSwiper.astro";
 import DiscoveryFlightOffering from "../components/DiscoveryFlightOffering.astro";
 import DiscoveryFlightPostOffering from "../components/DiscoveryFlightPostOffering.astro";
 import DiscoveryFlightFormSection from "../components/DiscoveryFlight/DiscoveryFlightFormSection.astro";
-import { LOCATION, COMPANY_NAME } from "../data/consts";
+import { LOCATION, COMPANY_NAME, NEAR_LOCATIONS, AIRPORT_CODE, AIRPORT, COMPANY_NICKNAME } from "../data/consts";
 
 const blogPosts = await getCollection("blog");
 const sortedPosts = blogPosts.sort(
@@ -81,12 +81,46 @@ const swiper = {
     },
   ],
 };
+
+const metaTagsData = {
+  siteTitle: `Discovery Flight in ${LOCATION.city}, ${LOCATION.state} | ${COMPANY_NAME}`,
+  siteDescription: `Book your first flight lesson at ${COMPANY_NICKNAME}. Experience a hands-on discovery flight at ${AIRPORT} (${AIRPORT_CODE}) and start your journey toward becoming a pilot in ${LOCATION.locationFull}.`,
+  siteKeywords: [
+    `discovery flight ${LOCATION.city}`,
+    `introductory flight lesson ${LOCATION.locationFull}`,
+    `learn to fly ${LOCATION.city}`,
+    `first flight lesson ${LOCATION.state}`,
+    `intro flight ${AIRPORT_CODE}`,
+    `pilot training near ${NEAR_LOCATIONS[0]}`,
+    `flight school ${LOCATION.locationFull}`,
+    `${COMPANY_NAME} discovery flight`,
+    `${COMPANY_NICKNAME} intro flight`,
+    `flying lessons ${LOCATION.city}`,
+    `aviation experience ${LOCATION.state}`,
+    `Cessna discovery flight ${LOCATION.city}`,
+    `discovery flight gift certificate ${LOCATION.state}`,
+    `how to start flight training at ${AIRPORT}`,
+    `beginner flight lessons ${LOCATION.city}`,
+    `becoming a pilot at ${COMPANY_NAME}`,
+    `flight training Porter County`,
+    `discovery flight Indiana`,
+    `start flight school ${LOCATION.city}`,
+    `hands on flight training ${AIRPORT_CODE}`,
+    `scenic discovery flights ${LOCATION.city}`,
+    `introduction to aviation ${LOCATION.locationFull}`,
+    `affordable discovery flights ${LOCATION.state}`,
+    `pilot career path discovery flight`,
+    `Cessna Pilot Center ${LOCATION.city}`,
+    `FAA Part 141 discovery flight`,
+    `KVPZ discovery flight`,
+    `flight school near ${NEAR_LOCATIONS[0]}`,
+    `discovery flight for students`,
+    `discovery flight for veterans`
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`Discovery Flight in ${LOCATION.city}, ${LOCATION.state} | ${COMPANY_NAME}`}
-  siteDescription={`Take the controls on your first flight lesson. Book a discovery flight with ${COMPANY_NAME} in ${LOCATION.city}, ${LOCATION.state}.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
   <DiscoveryFlightOffering />
   <DiscoveryFlightFormSection />

@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import Hero75 from "../../components/Hero75.astro";
 import ImageComp from "../../components/ImageComp.astro";
-import { COMPANY_NAME, LOCATION } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COURSES, LOCATION, LOCATION_KEYWORDS, NEAR_LOCATIONS } from "../../data/consts";
 
 type Program = CollectionEntry<"programs">;
 
@@ -28,12 +28,15 @@ const heroData = {
     },
   ],
 };
+
+const metaTagsData = {
+  siteTitle: `${COURSES[1]} & ${COURSES[3]} | ${COMPANY_NAME}`,
+  siteDescription: `Explore professional flight training programs at ${COMPANY_NAME}. We offer ${COURSES.slice(0, 6).join(", ")} at ${AIRPORT} (${AIRPORT_CODE}) in ${LOCATION.locationFull}. Join our Cessna Pilot Center and start your aviation career today.`,
+  siteKeywords: `${COMPANY_NAME}, ${COURSES[1]}, ${COURSES[2]}, ${COURSES[3]}, ${COURSES[4]}, ${COURSES[5]}, flight training ${LOCATION.city} ${LOCATION.state}, pilot programs ${AIRPORT_CODE}, ${LOCATION_KEYWORDS.primary}, professional pilot course Indiana, flight school near ${NEAR_LOCATIONS[0]}`,
+};
 ---
 
-<BaseLayout
-  siteTitle={`Flight Training Programs | ${COMPANY_NAME}`}
-  siteDescription={`Explore comprehensive flight training programs in ${LOCATION.state}, from Private Pilot through Airline Transport Pilot.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
 
   <section class="py-20 px-20 flex flex-wrap justify-center gap-6">

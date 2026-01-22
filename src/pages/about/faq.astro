@@ -5,7 +5,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeroScreen from "../../components/HeroScreen2.astro";
 import CTASection from "../../components/CTASection.astro";
 import Hero75 from "../../components/Hero75.astro";
-import { COMPANY_NAME } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../../data/consts";
 
 const heroData = {
   image: {
@@ -31,12 +31,46 @@ const faqPagePlaceholder = {
 };
 
 const { faqPageData = faqPagePlaceholder } = Astro.props;
+
+const metaTagsData = {
+  siteTitle: `Frequently Asked Questions | ${COMPANY_NAME}`,
+  siteDescription: `Find answers to common questions about flight training at ${COMPANY_NICKNAME} in ${LOCATION.city}. Learn about our FAA approved programs, ${AIRPORT} facilities, enrollment process, and career pathways.`,
+  siteKeywords: [
+    `flight school FAQ ${LOCATION.city}`,
+    `pilot training questions ${LOCATION.state}`,
+    `${COMPANY_NAME} frequently asked questions`,
+    `how to start flight training at ${AIRPORT}`,
+    `${AIRPORT_CODE} flight school information`,
+    "flight training requirements Indiana",
+    "private pilot license FAQ",
+    "instrument rating requirements",
+    "commercial pilot training costs",
+    "Cessna Pilot Center FAQ",
+    "FAA Part 141 vs Part 61",
+    "VA benefits for flight training",
+    "GI Bill flight school Indiana",
+    "international student pilot visa M-1",
+    "SEVIS approved flight school Indiana",
+    "Liberty University flight training partner",
+    "Valparaiso University aviation",
+    "discovery flight cost",
+    "how long to become a pilot",
+    "aviation medical certificate questions",
+    "flight instructor ratings CFI CFII MEI",
+    "airline transport pilot training",
+    "Elite simulator training",
+    "Porter County flight training",
+    "Chicagoland flight school FAQ",
+    "Northwest Indiana pilot academy",
+    "becoming a pilot at Eagle Aircraft",
+    "enrollment process for flight school",
+    "aircraft rental Valparaiso",
+    "flight school housing Indiana"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`Flight Training FAQs | ${COMPANY_NAME}`}
-  siteDescription={`Find answers to common questions about flight training, pilot licenses, and enrollment at ${COMPANY_NAME}.`}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
   <section class="py-16 px-4">
     <div class="max-w-7xl mx-auto flex flex-col space-y-4">

@@ -8,7 +8,7 @@ import HeroScreen from "../../components/HeroScreen2.astro";
 import ImageComp from "../../components/ImageComp.astro";
 import CTAEnrollWithUsMini from "../../components/CTAEnrollWithUsMini.astro";
 import Hero75 from "../../components/Hero75.astro";
-import { COMPANY_NAME } from "../../data/consts";
+import { AIRPORT, AIRPORT_CODE, COMPANY_NAME, COMPANY_NICKNAME, LOCATION } from "../../data/consts";
 
 export const getStaticPaths = (async () => {
   const blogPosts = await getCollection("blog");
@@ -48,13 +48,46 @@ const heroData = {
   subTitle: `${post.data.description}`,
   cta: [{ url: "#article", text: "Read More" }],
 };
+
+const metaTagsData = {
+  siteTitle: `${post.data.title} | ${COMPANY_NAME} Blog`,
+  siteDescription: `${post.data.description}`,
+  siteKeywords: [
+    `${post.data.title}`,
+    `${post.data.tags?.join(", ")}`,
+    `${COMPANY_NAME} blog`,
+    `${COMPANY_NICKNAME} aviation news`,
+    `flight training articles ${LOCATION.city}`,
+    `pilot career advice ${LOCATION.state}`,
+    `${AIRPORT} aviation insights`,
+    `${AIRPORT_CODE} flight academy updates`,
+    "how to become a pilot blog",
+    "aviation training tips",
+    "learn to fly indiana",
+    "flight school student resources",
+    "commercial pilot career blog",
+    "airline pilot training insights",
+    "cessna pilot center news",
+    "FAA part 141 training blog",
+    "private pilot certificate tips",
+    "instrument rating guide",
+    "multi-engine training blog",
+    "certified flight instructor updates",
+    "aviation industry news indiana",
+    "porter county regional airport news",
+    "northwest indiana flight training blog",
+    "chicagoland aviation insights",
+    "liberty university aviation partner blog",
+    "veteran flight training news",
+    "international student pilot articles",
+    "pilot license requirements blog",
+    "flight instructor career path",
+    "aviation safety and training tips"
+  ].join(", "),
+};
 ---
 
-<BaseLayout
-  siteTitle={`${post.data.title} | ${COMPANY_NAME} Blog`}
-  siteDescription={post.data.description}
-  siteImage={post.data.image}
->
+<BaseLayout {...metaTagsData}>
   <Hero75 data={heroData} />
 
   <CTAEnrollWithUsMini />
