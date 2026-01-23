@@ -112,9 +112,13 @@ const { pathname, navBarBG = false } = Astro.props;
     <a href="/" class="object-contain h-auto">
       <div class="logo-default">
         <ImageComp
-          class="logo-muted-50 w-36 max-w-36 md:w-56 md:max-w-56 duration-200"
-          src={LOGO_ASSETS}
-          alt="Eagle Aircraft Logo"
+            class="logo-muted-50 w-36 max-w-36 md:w-56 md:max-w-56 duration-200"
+            src={LOGO_ASSETS}
+            alt="Eagle Aircraft Logo"
+            widths={[144, 224, 288]}
+            sizes="(max-width: 768px) 144px, 224px"
+            quality={60}
+            loading="eager"
         />
       </div>
 
@@ -123,6 +127,10 @@ const { pathname, navBarBG = false } = Astro.props;
           class="logo-muted-50 w-16 max-w-16 md:w-26 md:max-w-26 duration-200"
           src={LOGO_ASSETS_2}
           alt="Eagle Aircraft Icon"
+          widths={[64, 104]}
+          sizes="(max-width: 768px) 64px, 104px"
+          quality={60}
+          loading="eager"
         />
       </div>
     </a>
@@ -132,7 +140,7 @@ const { pathname, navBarBG = false } = Astro.props;
       {
         sortedPrograms && (
           <li
-            class={`menu-item text-xl ${sortedPrograms.length >= 1 ? "has-children" : ""}`}
+            class={`menu-item !text-black text-xl ${sortedPrograms.length >= 1 ? "has-children" : ""}`}
           >
             <a href="/programs">{sortedPrograms[0].collection}</a>
             {sortedPrograms.length >= 1 ? (
@@ -340,7 +348,7 @@ const { pathname, navBarBG = false } = Astro.props;
         {/* ... seus ícones sociais ... */}
         {
           FACEBOOK_URL && (
-            <a
+            <a  aria-label="Link to Facebook profile"
               href={FACEBOOK_URL}
               target="_blank"
               class="text-monza-700 hover:text-monza-800"
@@ -361,7 +369,7 @@ const { pathname, navBarBG = false } = Astro.props;
         }
         {
           X_URL && (
-            <a
+            <a aria-label="Link to X (previously Twitter) profile"
               href={X_URL}
               target="_blank"
               class="text-monza-700 hover:text-monza-800"
@@ -382,7 +390,7 @@ const { pathname, navBarBG = false } = Astro.props;
         }
         {
           INSTAGRAM_URL && (
-            <a
+            <a aria-label="Link to Instagram profile"
               href={INSTAGRAM_URL}
               target="_blank"
               class="text-monza-700 hover:text-monza-800"
@@ -403,7 +411,7 @@ const { pathname, navBarBG = false } = Astro.props;
         }
         {
           LINKEDIN_URL && (
-            <a
+            <a aria-label="Link to Linkedin profile"
               href={LINKEDIN_URL}
               target="_blank"
               class="text-monza-700 hover:text-monza-800"
