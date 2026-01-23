@@ -49,7 +49,9 @@ const { data } = Astro.props;
     alt={data.image.alt}
     class="absolute inset-0 h-full w-full object-cover object-center brightness-90 animate-slow-zoom -z-20"
     loading="eager"
-    quality={100}
+    fetchpriority="high"
+    quality={80}
+    width={1920}
   />
 
   <!-- Content Container -->
