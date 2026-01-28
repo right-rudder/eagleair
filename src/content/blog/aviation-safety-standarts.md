@@ -1,7 +1,7 @@
 ---
 title: "Aviation Safety Standards: Why Professional Training Matters"
 description: "Discover how Eagle Aircraft Flight Academy maintains high safety standards at KVPZ and how our structured Part 141 training builds safer, more confident pilots."
-pubDate: 2026-01-28
+pubDate: 2026-01-15
 author: "Eagle Aircraft Team"
 image: "/src/assets/drive/sky-sunset-plane-wing_eagle-air_indiana-USA_valparaiso-IN_Flight-school_pilot-training-cropped.jpg"
 tags:
